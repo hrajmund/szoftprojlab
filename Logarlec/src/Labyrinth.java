@@ -10,5 +10,8 @@ public class Labyrinth {
     public void Merge(){}
     public void Split(){}
     public void notifyStudents(HashMap<IPlayer, Room> position){}
+    public void changePosition(IPlayer iPlayer){}
+    public void getPlayersFromRoom(){}
+    //Ez itt egy komment
 
 }
