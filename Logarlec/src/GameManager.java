@@ -25,7 +25,7 @@ public class GameManager {
         return pickedUpLogarlec;
     }
     public void setHasLogarlec(boolean hasLogarlec) {
-        this.hasLogarlec = hasLogarlec;
+        this.pickedUpLogarlec = hasLogarlec;
     }
     public void gameEnd(){}
     public ArrayList<Tranzisztor> getFifoTransistorList() {

@@ -1,5 +1,6 @@
 public class Student implements IPlayer{
 
+    boolean protection;
     public Student(){
 
     }
@@ -42,4 +43,7 @@ public class Student implements IPlayer{
     public void UseItem(int i){}
     public void Teleport(){}
     public void Die(){}
+    public boolean hasProtection(){
+        return protection;
+    }
 }
