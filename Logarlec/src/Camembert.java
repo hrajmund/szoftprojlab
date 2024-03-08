@@ -1,7 +1,8 @@
-public class Camembert extends BaseItem{
+public class Camembert extends BaseItem implements IRound{
     public Camembert(){}
     @Override
-    void effect() {
+    void effect(Student student) {
 
     }
+    public void tick(){}
 }

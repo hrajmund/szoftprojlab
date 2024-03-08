@@ -3,7 +3,7 @@ import java.util.List;
 
 public class GameManager {
     Labyrinth gameMap;
-    ArrayList<IPlayer> players;
+    ArrayList<Person> players;
     ArrayList<Tranzisztor> fifoTransistorList;
     boolean pickedUpLogarlec;
     public GameManager(){}
@@ -15,10 +15,10 @@ public class GameManager {
     public void setGameMap(Labyrinth gameMap) {
         this.gameMap = gameMap;
     }
-    public ArrayList<IPlayer> getPlayers() {
+    public ArrayList<Person> getPlayers() {
         return players;
     }
-    public void setPlayers(ArrayList<IPlayer> players) {
+    public void setPlayers(ArrayList<Person> players) {
         this.players = players;
     }
     public boolean getLogarlec() {

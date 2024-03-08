@@ -2,16 +2,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Labyrinth {
+public class Labyrinth implements IRound{
     HashMap<Room, ArrayList<Room>> rooms;
-    HashMap<IPlayer, Room> positions;
+    HashMap<Person, Room> positions;
     public Labyrinth(){}
     public void Dijkstra(){}
     public void Merge(){}
     public void Split(){}
-    public void notifyStudents(HashMap<IPlayer, Room> position){}
-    public void changePosition(IPlayer iPlayer){}
-    public void getPlayersFromRoom(){}
-    //Ez itt egy komment
-
+    public void tick(){}
 }

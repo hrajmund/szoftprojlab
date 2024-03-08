@@ -1,15 +1,18 @@
 public class Tranzisztor extends BaseItem{
     Room position;
-    Tranzisztor paired;
-    boolean activated;
+    Tranzisztor connected;
+    boolean active;
     @Override
-    void effect() {
+    void effect(Student student) {
 
     }
-    public void setActivated(boolean activated) {
-        this.activated = activated;
+    public void setActivated(boolean active) {
+        this.active = active;
     }
     boolean getActivated(){
-        return activated;
+        return active;
     }
+    Tranzisztor(){}
+    public void activate(Tranzisztor t){}
+    public void deactivate(){}
 }

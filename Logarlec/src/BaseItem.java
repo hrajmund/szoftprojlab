@@ -1,6 +1,7 @@
 public abstract class BaseItem {
     String name;
+    Person holder;
     public BaseItem(){}
-    abstract void effect();
+    abstract void effect(Student student);
 
 }

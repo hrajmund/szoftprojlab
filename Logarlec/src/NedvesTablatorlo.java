@@ -1,8 +1,8 @@
-public class NedvesTablatorlo extends BaseItem{
+public class NedvesTablatorlo extends BaseItem implements IRound{
     int timeUsage;
     public NedvesTablatorlo(){}
     @Override
-    void effect() {
+    void effect(Student student) {
 
     }
     public int getTimeUsage() {
@@ -12,5 +12,7 @@ public class NedvesTablatorlo extends BaseItem{
     public void setTimeUsage(int timeUsage) {
         this.timeUsage = timeUsage;
     }
+    public void tick(){}
+    public void activate(Student s){}
 
 }

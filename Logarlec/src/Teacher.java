@@ -1,4 +1,4 @@
-public class Teacher implements IPlayer{
+public class Teacher extends Person{
     public Teacher(){}
 
     @Override
@@ -35,4 +35,8 @@ public class Teacher implements IPlayer{
     public int getICapacity() {
         return 0;
     }
+    @Override
+    public void tick(){}
+    public void dropAllItems(){}
+    public void stun(){}
 }

@@ -1,10 +1,12 @@
 import java.util.List;
 
-public class Room {
+public class Room implements IRound{
     int capacity;
-    List<Room> neighbours;
+    List<Room> outgoingDoors;
+    List<Room> incomingDoors;
     List<BaseItem> items;
     boolean gas;
+    RoomState stateOfRoom;
 
     public int getCapacity() {
         return capacity;
@@ -14,21 +16,22 @@ public class Room {
         this.capacity = capacity;
     }
 
-    public List<Room> getNeighbours() {
-        return neighbours;
+    public List<Room> getOutgoingDoors() {
+        return outgoingDoors;
     }
 
-    public void removeNeighbour(Room r){
-        neighbours.add(r);
+    public List<Room> getIncomingDoors() {
+        return incomingDoors;
     }
 
-    public void removeNeighbour(int i){
-        neighbours.remove(neighbours.get(i));
+    public void addIncomingDoor(Room r){
+        incomingDoors.add(r);
     }
 
-    public void setNeighbours(List<Room> neighbours) {
-        this.neighbours = neighbours;
-    }
+    public void removeIncomingDoor(Room r){}
+
+    public void addOutgoingDoor(Room r){}
+    public void removeOutgoingDoor(Room r){}
 
     public List<BaseItem> getItems() {
         return items;
@@ -49,5 +52,10 @@ public class Room {
     public Room(){
 
     }
+
+    public void tick(){}
+    public void addItem(BaseItem b){}
+    public void addPerson(Person p){}
+    public void removePerson(Person p){}
 
 }

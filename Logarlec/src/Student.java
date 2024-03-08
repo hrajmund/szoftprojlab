@@ -1,6 +1,7 @@
-public class Student implements IPlayer{
+public class Student extends Person{
 
-    boolean protection;
+    boolean teacherProtected;
+    boolean gasProtected;
     public Student(){
 
     }
@@ -43,7 +44,11 @@ public class Student implements IPlayer{
     public void UseItem(int i){}
     public void Teleport(){}
     public void Die(){}
-    public boolean hasProtection(){
-        return protection;
-    }
+
+    public boolean isTeacherProtected(){ return teacherProtected;}
+    public boolean isGasProtected(){return gasProtected;}
+    @Override
+    public void tick(){}
+    public void dropAllItems(){}
+    public void stun(){}
 }
