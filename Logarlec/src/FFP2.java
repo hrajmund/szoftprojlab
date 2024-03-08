@@ -1,9 +1,7 @@
-public class FFP2 extends BaseItem implements IRound{
+public class FFP2 extends BaseItem{
     int timeUsage;
-    public FFP2(){}
     @Override
-    public void effect(Student student){
+    public void effect(Student student){}
 
-    }
-    public void tick(){}
+
 }

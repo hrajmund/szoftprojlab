@@ -1,10 +1,9 @@
-public class SzentSorosPoharak extends BaseItem implements IRound{
+public class SzentSorosPoharak extends BaseItem{
     int timeUsage;
-    public SzentSorosPoharak(){}
+
     @Override
     void effect(Student student) {
 
     }
     public void tick(){}
-    public void activate(Student s){}
 }

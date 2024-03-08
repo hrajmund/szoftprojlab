@@ -3,10 +3,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Labyrinth implements IRound{
-    HashMap<Room, ArrayList<Room>> rooms;
-    HashMap<Person, Room> positions;
-    public Labyrinth(){}
-    public void Dijkstra(){}
+    ArrayList<Room> rooms;
+    ArrayList<Student> players;
+    ArrayList<Teacher> teacher;
     public void Merge(){}
     public void Split(){}
     public void tick(){}

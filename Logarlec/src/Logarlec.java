@@ -1,7 +1,9 @@
 public class Logarlec extends BaseItem{
-    public Logarlec(){}
     @Override
     void effect(Student student) {
+    }
 
+    @Override
+    public void setHolder(Person holder){
     }
 }
