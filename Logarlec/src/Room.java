@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Room implements IRound{
@@ -6,6 +7,9 @@ public class Room implements IRound{
     List<Room> incomingDoors;
     List<BaseItem> items;
     boolean gas;
+    ArrayList<Person> people;
+
+    void setNeighbours(ArrayList<Room> outRooms, ArrayList<Room> inRooms){}
 
     /*public int getCapacity() {
         return capacity;
@@ -15,8 +19,16 @@ public class Room implements IRound{
         this.capacity = capacity;
     }*/
 
-   /* public void addIncomingDoor(Room r){
+    public void addIncomingDoor(Room r){
         incomingDoors.add(r);
+    }
+
+    ArrayList<Room> getIncomingDoors(){
+        return (ArrayList<Room>) incomingDoors;
+    }
+
+    ArrayList<Room> getOutgoingDoors(){
+        return (ArrayList<Room>) outgoingDoors;
     }
 
     public void removeIncomingDoor(Room r){}
@@ -27,7 +39,7 @@ public class Room implements IRound{
     public List<BaseItem> getItems() {
         return items;
     }
-*/
+
     /*public void setItems(List<BaseItem> items) {
         this.items = items;
     }*/
