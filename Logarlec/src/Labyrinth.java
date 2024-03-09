@@ -8,5 +8,8 @@ public class Labyrinth implements IRound{
     ArrayList<Teacher> teacher;
     public void Merge(){}
     public void Split(){}
+
+    public void removeRoom(Room r){}
+
     public void tick(){}
 }

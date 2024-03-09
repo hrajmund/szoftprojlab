@@ -31,6 +31,11 @@ public class Room implements IRound{
         return (ArrayList<Room>) outgoingDoors;
     }
 
+    public ArrayList<Room> getMovePossibilities(){
+        ArrayList<Room> movePossibilities = new ArrayList<>();
+        return movePossibilities;
+    }
+
     public void removeIncomingDoor(Room r){}
 
     public void addOutgoingDoor(Room r){}
@@ -40,9 +45,13 @@ public class Room implements IRound{
         return items;
     }
 
-    /*public void setItems(List<BaseItem> items) {
+    public void setItems(List<BaseItem> items) {
         this.items = items;
-    }*/
+    }
+
+    public void addItems(List<BaseItem> items) {
+        this.items.addAll(items);
+    }
 
     public boolean isGas() {
         return gas;
