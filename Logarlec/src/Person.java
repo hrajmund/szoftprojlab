@@ -14,4 +14,5 @@ public abstract class Person implements IRound{
     public abstract void tick();
     public abstract void dropAllItems();
     public abstract void stun();
+    public abstract void kill();
 }

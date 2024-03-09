@@ -42,9 +42,6 @@ public class Student extends Person{
 
     public void PutDownItem(int i){}
     public void UseItem(int i){}
-    public void Teleport(){}
-    public void Die(){}
-
     public boolean isTeacherProtected(){ return teacherProtected;}
     public boolean isGasProtected(){return gasProtected;}
     @Override

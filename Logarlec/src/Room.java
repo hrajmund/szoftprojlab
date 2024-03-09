@@ -6,25 +6,16 @@ public class Room implements IRound{
     List<Room> incomingDoors;
     List<BaseItem> items;
     boolean gas;
-    RoomState stateOfRoom;
 
-    public int getCapacity() {
+    /*public int getCapacity() {
         return capacity;
     }
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
-    }
+    }*/
 
-    public List<Room> getOutgoingDoors() {
-        return outgoingDoors;
-    }
-
-    public List<Room> getIncomingDoors() {
-        return incomingDoors;
-    }
-
-    public void addIncomingDoor(Room r){
+   /* public void addIncomingDoor(Room r){
         incomingDoors.add(r);
     }
 
@@ -36,10 +27,10 @@ public class Room implements IRound{
     public List<BaseItem> getItems() {
         return items;
     }
-
-    public void setItems(List<BaseItem> items) {
+*/
+    /*public void setItems(List<BaseItem> items) {
         this.items = items;
-    }
+    }*/
 
     public boolean isGas() {
         return gas;
@@ -49,9 +40,6 @@ public class Room implements IRound{
         this.gas = gas;
     }
 
-    public Room(){
-
-    }
 
     public void tick(){}
     public void addItem(BaseItem b){}
