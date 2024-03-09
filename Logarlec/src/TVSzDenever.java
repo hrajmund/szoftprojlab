@@ -1,7 +1,7 @@
 public class TVSzDenever extends BaseItem{
     //public TVSzDenever(){}
 
-    int remaining_uses;
+    int remainingUsages;
     @Override
     void effect(Student student) {
     }

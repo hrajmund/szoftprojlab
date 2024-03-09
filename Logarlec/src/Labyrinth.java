@@ -5,7 +5,7 @@ import java.util.List;
 public class Labyrinth implements IRound{
     ArrayList<Room> rooms;
     ArrayList<Student> players;
-    ArrayList<Teacher> teacher;
+    ArrayList<Teacher> teachers;
     public void Merge(){}
     public void Split(){}
 

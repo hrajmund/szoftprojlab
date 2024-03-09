@@ -8,6 +8,7 @@ public class Room implements IRound{
     List<BaseItem> items;
     boolean gas;
     ArrayList<Person> people;
+    RoomState state;
 
     void setNeighbours(ArrayList<Room> outRooms, ArrayList<Room> inRooms){}
 

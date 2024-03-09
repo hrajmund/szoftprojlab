@@ -48,4 +48,9 @@ public class Student extends Person{
     public void tick(){}
     public void dropAllItems(){}
     public void stun(){}
+
+    @Override
+    public void kill() {
+
+    }
 }

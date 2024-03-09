@@ -4,7 +4,7 @@ public enum RoomState {
     public RoomState[] valuesOfRooms(){
         return new RoomState[2];
     }
-    public RoomState valueOfARoom(String s){
+    public RoomState valueOfARoom(Room r){
         return this;
     }
 }

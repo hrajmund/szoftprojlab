@@ -1,5 +1,5 @@
 public class NedvesTablatorlo extends BaseItem{
-    int remaining_rounds;
+    int remainingRounds;
 
     @Override
     void effect(Student student) {
