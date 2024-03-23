@@ -1,6 +1,15 @@
 import java.util.List;
 
 public class Student extends Person{
+    boolean teacherProtected;
+    boolean gasProtected;
+    public Student(){
+
+    }
+    @Override
+    public void Move() {
+
+    }
 
     @Override
     public void Move() {}
@@ -27,9 +36,18 @@ public class Student extends Person{
     public int getICapacity() {
         return 0;
     }
+    public void PutDownItem(int i){}
+    public void UseItem(int i){}
+    public boolean isTeacherProtected(){ return teacherProtected;}
+    public boolean isGasProtected(){return gasProtected;}
+    @Override
+    public void tick(){}
+    public void dropAllItems(){}
+    public void stun(){}
 
-    public void PutDownItem(Item i){}
-    public void UseItem(Item i){}
-    public void Teleport(){}
-    public void Die(){}
+    @Override
+    public void kill() {
+
+    }
+
 }

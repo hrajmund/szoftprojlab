@@ -1,5 +1,4 @@
-public class Camembert extends Item{
-
-    public void effect(Student s){}
-
-}
+public class Camembert extends BaseItem{
+    @Override
+    void effect(Student student) {
+    }

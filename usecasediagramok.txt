@@ -1,0 +1,56 @@
+Szoba
+
+Meg kell nézni, hogy be lehet menni vagy ki lehet menni - feltétel
+
+Student átmegy egy szobába
+Student megpróbál átmenni egy ELGÁZOSÍTOTT szobába, de nincs rajta maszk
+Student megpróbál átmenni egy ELGÁZOSÍTOTT szobába, de van rajta maszk
+Student megpróbál átmenni egy teli szobába
+Student átmegy egy szobába, ahol egy Teacher van, viszont nincs semmilyen védekezése ellene
+Student átmegy egy szobába, ahol egy Teacher van, de van nála TVSZDenevér
+Student átmegy egy szobába, ahol egy Teacher van, de van nála SzentSorosPoharak
+Student megpróbál átmenni egy szobába, de azon az ajtón keresztül nincs kiút
+
+Két szoba összeolvad
+Egy szoba kettéválik
+
+Egy elátkozott szobában az ajtók eltűnnek
+Egy elátkozott szobában az ajtók előjönnek
+
+Teacher átmegy egy szobába
+Teacher megpróbálj megölni egy Studentet, de a TVSZDenevér megmenti
+Teacher megpróbálj megölni egy Studentet, de a SzentSorosPoharak megmenti
+Teacher megpróbálj megölni egy Studentet és annak nincs védekezése ellene
+Student meghal és törlődik a labirintusból
+
+Teacher bemegy egy szobába, ahol NedvesTablatorlo van és elkábul
+Student bemegy egy szobába, ahol NedvesTablatorlo van és elkábul
+
+Tárgyak 
+
+Person felvesz egy tárgyat
+
+Student felveszi a Logarlécet és vége van a játéknak
+Student felvesz egy Camembertet
+Student felvesz egy SzentSorosPoharakat
+Student felvesz egy TVSZDenevert
+Student felvesz egy FFP2-őt
+Student felvesz egy NedvesTablatorlo-t
+Student felvesz egy inaktív Tranzisztort
+Student kidob egy tárgyat a kezéből
+
+Student aktiválja az FFP2-őt
+Student aktiválja a SzentSorosPoharakat
+Student aktiválja a NedvesTablatorlo-t
+Student aktiválja a párban elsőnek szereplő Tranzisztort
+Student aktiválja a párban másodiknak szereplő Tranzisztort
+
+Ha TVSZDenevér elhasználja az utolsó mentését, akkor törlődik a Student kezéből
+Ha SzentSorosPoharak ideje lejár, akkor törlődik a Student kezéből
+Ha NedvesTablatorlo ideje lejár, akkor eltűnik a szobából
+Ha Camembert ideje lejár, akkor eltűnik a szobából és nem lesz gázosítva a szoba
+
+Teacher felvesz egy tárgyat
+Teacher felvesz egy inaktív Tranzisztort
+Teacher megpróbál felvenni egy aktív Tranzisztort
+Teacher lerak egy tárgyat

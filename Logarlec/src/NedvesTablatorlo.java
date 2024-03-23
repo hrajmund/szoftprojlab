@@ -1,9 +1,11 @@
-public class NedvesTablatorlo extends Item{
-    int timeUsage;
-    boolean active;
+public class NedvesTablatorlo extends BaseItem{
+    int remainingRounds;
 
     @Override
-    void effect(Student s) {
+    void effect(Student student) {
 
     }
+
+    public void tick(){}
+
 }

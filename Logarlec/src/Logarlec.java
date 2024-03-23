@@ -1,5 +1,10 @@
-public class Logarlec extends Item{
+
+public class Logarlec extends BaseItem{
     @Override
-    void effect(Student s) {
+    void effect(Student student) {
+    }
+
+    @Override
+    public void setHolder(Person holder){
     }
 }

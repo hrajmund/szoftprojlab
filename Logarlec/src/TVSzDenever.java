@@ -1,8 +1,9 @@
-public class TVSzDenever extends Item{
-
-    int usage;
+public class TVSzDenever extends BaseItem{
+    //public TVSzDenever(){}
+    int remainingUsages;
     @Override
-    void effect(Student s) {
-
+    void effect(Student student) {
     }
+
+
 }

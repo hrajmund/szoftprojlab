@@ -1,34 +1,18 @@
-import java.util.List;
-
-public abstract class Person {
-
-    String name;
-
-    List<Item> items;
-
-    Room currentRoom;
-
+public abstract class Person implements IRound{
+    String name = null;
+    BaseItem[] items = new BaseItem[5];
     boolean stunned;
-
-    public void dropAllItems() {}
-
-
-    public void Move() {}
-
-    public void PickUpItem(Object o) {}
-
-    public String getName() {
-        return null;
-    }
-
-    public void setName(String s) {
-    }
-
-    public void setItems(Object o) {
-    }
-
-    public int getICapacity() {
-        return 0;
-    }
-
+    Room currentRoom;
+    int ICapacity;
+    public abstract void Move();
+    public abstract void PickUpItem(Object o);
+    public abstract String getName();
+    public abstract void setName(String s);
+    public abstract BaseItem[] getItems();
+    public abstract void setItems(Object o);
+    public abstract int getICapacity();
+    public abstract void tick();
+    public abstract void dropAllItems();
+    public abstract void stun();
+    public abstract void kill();
 }
