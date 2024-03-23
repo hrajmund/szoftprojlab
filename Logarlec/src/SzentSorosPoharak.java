@@ -1,8 +1,9 @@
-public class SzentSorosPoharak extends BaseItem{
+public class SzentSorosPoharak extends Item{
     int timeUsage;
-    public SzentSorosPoharak(){}
-    @Override
-    void effect() {
 
+    boolean active;
+
+    @Override
+    void effect(Student s) {
     }
 }

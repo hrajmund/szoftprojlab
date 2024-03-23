@@ -1,7 +1,5 @@
-public class Logarlec extends BaseItem{
-    public Logarlec(){}
+public class Logarlec extends Item{
     @Override
-    void effect() {
-
+    void effect(Student s) {
     }
 }

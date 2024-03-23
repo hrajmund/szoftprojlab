@@ -1,16 +1,9 @@
-public class NedvesTablatorlo extends BaseItem{
+public class NedvesTablatorlo extends Item{
     int timeUsage;
-    public NedvesTablatorlo(){}
+    boolean active;
+
     @Override
-    void effect() {
+    void effect(Student s) {
 
     }
-    public int getTimeUsage() {
-        return timeUsage;
-    }
-
-    public void setTimeUsage(int timeUsage) {
-        this.timeUsage = timeUsage;
-    }
-
 }

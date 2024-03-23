@@ -1,4 +1,4 @@
-public class Teacher implements IPlayer{
+public class Teacher extends Person{
     public Teacher(){}
 
     @Override
@@ -17,22 +17,8 @@ public class Teacher implements IPlayer{
     }
 
     @Override
-    public void setName(String s) {
-
-    }
+    public void setName(String s) {}
 
     @Override
-    public BaseItem[] getItems() {
-        return new BaseItem[0];
-    }
-
-    @Override
-    public void setItems(Object o) {
-
-    }
-
-    @Override
-    public int getICapacity() {
-        return 0;
-    }
+    public void setItems(Object o) {}
 }

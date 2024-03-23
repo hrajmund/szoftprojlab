@@ -3,15 +3,9 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Labyrinth {
-    HashMap<Room, ArrayList<Room>> rooms;
-    HashMap<IPlayer, Room> positions;
-    public Labyrinth(){}
-    public void Dijkstra(){}
+    List<Room> rooms;
+    List<Person> players;
     public void Merge(){}
     public void Split(){}
-    public void notifyStudents(HashMap<IPlayer, Room> position){}
-    public void changePosition(IPlayer iPlayer){}
-    public void getPlayersFromRoom(){}
-    //Ez itt egy komment
 
 }

@@ -1,8 +1,8 @@
-public class FFP2 extends BaseItem{
+public class FFP2 extends Item{
     int timeUsage;
-    public FFP2(){}
+
     @Override
-    public void effect(){
+    void effect(Student s) {
 
     }
 }

@@ -3,12 +3,9 @@ import java.util.List;
 public class Room {
     int capacity;
     List<Room> neighbours;
-    List<BaseItem> items;
+    List<Item> items;
     boolean gas;
-
-    public int getCapacity() {
-        return capacity;
-    }
+    List<Person> people;
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
@@ -17,28 +14,19 @@ public class Room {
     public List<Room> getNeighbours() {
         return neighbours;
     }
-
-    public void removeNeighbour(Room r){
-        neighbours.add(r);
-    }
-
-    public void removeNeighbour(int i){
-        neighbours.remove(neighbours.get(i));
-    }
-
     public void setNeighbours(List<Room> neighbours) {
         this.neighbours = neighbours;
     }
 
-    public List<BaseItem> getItems() {
+    public List<Item> getItems() {
         return items;
     }
 
-    public void setItems(List<BaseItem> items) {
+    public void setItems(List<Item> items) {
         this.items = items;
     }
 
-    public boolean isGas() {
+    public boolean getGas() {
         return gas;
     }
 
@@ -46,8 +34,11 @@ public class Room {
         this.gas = gas;
     }
 
-    public Room(){
+    public void notifyStudents(){}
 
-    }
+    public void addPerson(Person person) {}
 
+    public void removePerson(Person person) {}
+
+    public RoomState getState() {return RoomState.open;}
 }

@@ -1,7 +1,8 @@
-public class TVSzDenever extends BaseItem{
-    public TVSzDenever(){}
+public class TVSzDenever extends Item{
+
+    int usage;
     @Override
-    void effect() {
+    void effect(Student s) {
 
     }
 }
