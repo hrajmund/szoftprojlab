@@ -1,11 +1,12 @@
-public class NedvesTablatorlo extends BaseItem{
+public class NedvesTablatorlo extends BaseItem implements IRound{
     int remainingRounds;
 
     @Override
-    void effect(Student student) {
-
+    public void effect() {
     }
 
-    public void tick(){}
+    public void tick(){
+        System.out.println(this.toString() + ":: tick() függvénye");
+    }
 
 }

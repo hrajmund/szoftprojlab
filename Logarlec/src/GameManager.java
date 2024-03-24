@@ -3,7 +3,6 @@ import java.util.List;
 
 public class GameManager {
     Labyrinth gameMap;
-    //ez egy komment
     ArrayList<Person> players;
     ArrayList<Tranzisztor> fifoTransistorList;
     boolean pickedUpLogarlec;

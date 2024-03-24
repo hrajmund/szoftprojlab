@@ -1,39 +1,24 @@
-<<<<<<< HEAD
-public class Tranzisztor extends Item{
-    Room room;
-    Tranzisztor Connected;
-    boolean active;
-
-    public void setState(boolean activated) {
-        this.active = activated;
-    }
-    boolean getState(){
-        return active;
-    }
-
-    void deactivate(){
-        this.active = false;
-    }
-
-    @Override
-    void effect(Student s) {
-=======
 public class Tranzisztor extends BaseItem{
     Room position;
     Tranzisztor connected;
->>>>>>> 160a2fb8b8b4fc9593f286374dafec4394cd16e8
-
+    TranzisztorHandler handler;
     boolean active;
+
     @Override
-    void effect(Student student) {
+    public void effect() {
     }
-<<<<<<< HEAD
-=======
     @Override
     public void setHolder(Person holder){
+
     }
-    @Override
-    public void setRoom(Room position){
+    public void setPosition(Room p){position=p;}
+    public Room getPosition(){return position;}
+    public Tranzisztor getConnected(){
+        return connected;
     }
->>>>>>> 160a2fb8b8b4fc9593f286374dafec4394cd16e8
+    public Boolean getState(){
+        return active;
+    }
+    public void setState(boolean state){active=state;}
+
 }

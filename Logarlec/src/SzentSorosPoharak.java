@@ -1,9 +1,11 @@
-public class SzentSorosPoharak extends Item{
+public class SzentSorosPoharak extends BaseItem{
     int timeUsage;
-    boolean active;
-
     @Override
-    void effect(Student s) {
+    public  void effect() {
+        holder.setTeacherProtection(true);
     }
     public void tick(){}
+    public Boolean death_protection(){
+        return false;
+    }
 }

@@ -7,5 +7,4 @@ public enum RoomState {
     public RoomState valueOfARoom(Room r){
         return this;
     }
-
 }

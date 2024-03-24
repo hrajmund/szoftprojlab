@@ -1,9 +1,13 @@
 public class TVSzDenever extends BaseItem{
-    //public TVSzDenever(){}
-    int remainingUsages;
-    @Override
-    void effect(Student student) {
-    }
 
+    private int remainingUsage;
+
+    @Override
+    public void effect() {
+    }
+    @Override
+    public Boolean protAgainstTeacher(){
+        return true;
+    }
 
 }

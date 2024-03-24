@@ -1,19 +1,19 @@
 
-7
-java:S1220""Move this file to a named package.8Í¼Ë£à1
 
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(†Êñ¼8…×£à1
-£
-java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(áúó•ıÿÿÿÿ8Ï¼Ë£à1
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´ğç8³üŞ†ç1
 
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•Œï›8Ï¼Ë£à1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(×˜©Òıÿÿÿÿ8Ï¼Ë£à1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•éõ£ıÿÿÿÿ8Ï¼Ë£à1
-
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…™Ôw8Ï¼Ë£à1
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡Š¤—8´üŞ†ç1
 
-java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ôÿÊ‰8Ï¼Ë£à1
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼·äö8´üŞ†ç1
+
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ô¼ºÉ8´üŞ†ç1
+
+java:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(—ı¬™8´üŞ†ç1
+
+java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(øİø8´üŞ†ç1
+
+java:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°8´üŞ†ç1
 £
-java:S1186""€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(–×áàúÿÿÿÿ8Ï¼Ë£à1
+java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(èêñŞùÿÿÿÿ8´üŞ†ç1
+G	java:S106 "+Replace this use of System.out by a logger.(˜†’À8·üŞ†ç1
+G	java:S106M"+Replace this use of System.out by a logger.(™İŸç8¸üŞ†ç1

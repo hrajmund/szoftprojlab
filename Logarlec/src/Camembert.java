@@ -1,4 +1,9 @@
 public class Camembert extends BaseItem{
     @Override
-    void effect(Student student) {
+    public void effect() {
+
     }
+    public void tick(){
+        System.out.println(this.toString() + ":: tick() függvénye");
+    }
+}

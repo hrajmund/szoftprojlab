@@ -1,7 +1,10 @@
-public class FFP2 extends Item{
+public class FFP2 extends BaseItem{
     int timeUsage;
+    public void effect(){
 
-    @Override
-    public void effect(Student student){}
+    }
+    public void tick(){
+        System.out.println(this.toString() + ":: tick() függvénye");
+    }
 
 }
