@@ -1,5 +1,5 @@
 
-0
-java:S1220""Move this file to a named package.
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Û¬ÉŒ8Ñ”ä£à1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(û¨èÖıÿÿÿÿ8ãÄå†ç1
+O
+java:S1068"2Remove this unused "remainingUsage" private field.(Ï—Î8äÄå†ç1
