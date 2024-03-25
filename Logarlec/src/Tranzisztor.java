@@ -9,16 +9,27 @@ public class Tranzisztor extends BaseItem{
     }
     @Override
     public void setHolder(Person holder){
-
+        this.holder=holder;
+        for(BaseItem item: holder.items){
+            if(item.isConnected()!=null){
+                item.setConnected(this);
+                setConnected(item);
+                return;
+            }
+        }
     }
-    public void setPosition(Room p){position=p;}
-    public Room getPosition(){return position;}
-    public Tranzisztor getConnected(){
-        return connected;
+    public Tranzisztor isConnected(){
+        if(connected==null)
+            return this;
+        return null;
     }
     public Boolean getState(){
         return active;
     }
     public void setState(boolean state){active=state;}
+
+    public void setConnected(BaseItem t ){
+        connected =(Tranzisztor)t;
+    }
 
 }

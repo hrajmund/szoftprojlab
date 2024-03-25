@@ -1,17 +1,9 @@
 
 public abstract class BaseItem{
-    String name;
-    Person holder;
-    Room room;
-
-    public void setName(String s){
-        System.out.println(this.toString() + " " + " :: setName() paramétere:" + s + "-re");
-        name = s;
-    }
-    public String getName() {
-        System.out.println(this.toString() + " " + " :: getName() függvénye");
-        return name;
-    }
+    protected String name;
+    protected Person holder;
+    protected Room room;
+    protected Boolean active=false;
 
     public void setRoom(Room room){
         System.out.println(this.toString() + " " + " :: setRoom() paramétere: " + room.toString() + "-re");

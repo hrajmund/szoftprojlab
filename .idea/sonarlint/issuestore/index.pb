@@ -1,8 +1,6 @@
 
 I
 Logarlec/src/Student.java,c\8\c889f452caaf4fcfc63967ff0e3c2b6d67808f85
-F
-Logarlec/src/Item.java,c\a\cafd07e955ae92907ddfe8cb28d14666d1c4411c
 H
 Logarlec/src/Person.java,f\e\fe78d5b6798756b57167798cbcb6eabf57598e7d
 I
@@ -45,3 +43,5 @@ $Logarlec/src/TranzisztorHandler.java,d\a\da3fd94717232ae82c3d944795adf4cd13bc4
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+M
+Logarlec/src/TestPrinter.java,f\0\f096fdebee6dff029198c3a5c23b41daeb3b029b

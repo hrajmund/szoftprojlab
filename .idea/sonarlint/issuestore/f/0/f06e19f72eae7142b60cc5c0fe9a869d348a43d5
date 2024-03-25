@@ -1,14 +1,14 @@
 
-n	java:S116"MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òª÷©ÿÿÿÿÿ8ÇŠÜ†ç1
+n	java:S116"MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òª÷©ÿÿÿÿÿ8®şæç1
 £
-java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«Ü¦‹üÿÿÿÿ8ÇŠÜ†ç1
+java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«Ü¦‹üÿÿÿÿ8¯şæç1
 
-java:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÿš­Ü8ÇŠÜ†ç1
+java:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÿš­Ü8¯şæç1
 £
-java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ßßá™ÿÿÿÿÿ8ÇŠÜ†ç1
-L	java:S106"+Replace this use of System.out by a logger.(·ô‰´øÿÿÿÿ8ÉŠÜ†ç1
-G	java:S106"+Replace this use of System.out by a logger.(ğßÈç8ÉŠÜ†ç1
-L	java:S106"+Replace this use of System.out by a logger.(ÿ€¯½ûÿÿÿÿ8ÉŠÜ†ç1
-G	java:S106"+Replace this use of System.out by a logger.(üĞùá8ÊŠÜ†ç1
-L	java:S106"+Replace this use of System.out by a logger.(ù•»Áÿÿÿÿÿ8ÊŠÜ†ç1
-G	java:S106$"+Replace this use of System.out by a logger.(ÁŸ˜¤8ÊŠÜ†ç1
+java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ßßá™ÿÿÿÿÿ8¯şæç1
+K
+java:S1068")Remove this unused "rooms" private field.(ÄÑ‘ıúÿÿÿÿ8–¾š¤ç1
+I
+java:S1068",Remove this unused "teachers" private field.(òæ¼­8–¾š¤ç1
+R
+java:S1068	"6Remove this unused "tranzisztorHandler" private field.(–™Ê-8–¾š¤ç1

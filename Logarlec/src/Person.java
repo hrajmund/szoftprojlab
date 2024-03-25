@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 
 public abstract class Person implements IRound{
-    Labyrinth labyrinth;
-    String name = null;
-    ArrayList<BaseItem> items = new ArrayList<>();
-    boolean stunned;
-    Room currentRoom;
-    int capacity=5;
+    protected Labyrinth labyrinth;
+    protected String name = null;
+    protected ArrayList<BaseItem> items = new ArrayList<>();
+    protected boolean stunned;
+    protected Room currentRoom;
+    protected int capacity=5;
 
     public abstract String getName();
     public abstract void setName(String s);
@@ -19,10 +19,17 @@ public abstract class Person implements IRound{
         return currentRoom;
     }
     public void pickUpItem(BaseItem i){
-        i.setHolder(this);
-        currentRoom.removeItem(i);
-        addItem(i);
+        TestPrinter.printCallingMethod();
+        if(!i.getActive()) {
+            if(capacity < items.size()) {
+                i.setHolder(this);
+                i.setRoom(null);
+                currentRoom.removeItem(i);
+                addItem(i);
+            }
+        }
     }
+
     public void putDownItem(BaseItem i){
         i.setHolder(null);
         i.setRoom(currentRoom);

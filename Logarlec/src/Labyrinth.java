@@ -14,7 +14,11 @@ public class Labyrinth implements IRound{
         System.out.println(this.toString() + ":: removeRoom() paramétere: " + r.toString() + "-re");
     }
     public void removeStudent(Student s) {
-        System.out.println(this.toString() + ":: removeStudent() paramétere: " + s.toString() + "-re");
+        TestPrinter.printCallingMethod(s);
+        players.remove(s);
+        if(players.isEmpty()){
+            GM.gameEnd();
+        }
     }
 
     public void personInTeacherList() {

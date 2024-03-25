@@ -1,4 +1,3 @@
 
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(û¨èÖýÿÿÿÿ8“ªÝ†ç1
-L	java:S106	"+Replace this use of System.out by a logger.(ù•»Áÿÿÿÿÿ8•ªÝ†ç1
+\
+java:S1161":Add the "@Override" annotation above this method signature(íÌÆðüÿÿÿÿ8¬’Å˜ç1

@@ -82,6 +82,11 @@ public class Room implements IRound{
         if(gas) {
             p.stun();
         }
+        for(BaseItem item : items){
+            if(item.canStun()){
+                p.stunTeacher();
+            }
+        }
     }
     public void removePerson(Person p){
         System.out.println(this.toString() + ":: removePerson() paramétere: " + p.toString() + "-re");
