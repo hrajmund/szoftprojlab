@@ -1,0 +1,8 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ËØ„­ç1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8ÍØ„­ç1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ÍØ„­ç1
+I
+java:S1068"-Remove this unused "timeUsage" private field.(¹üà8ÍØ„­ç1

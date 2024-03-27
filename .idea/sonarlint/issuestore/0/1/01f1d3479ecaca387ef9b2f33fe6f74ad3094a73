@@ -1,0 +1,18 @@
+
+Q
+java:S1066w"/Merge this if statement with the enclosing one.(¦ƒ›¶şÿÿÿÿ8‰Ÿ£­ç1
+’
+java:S1319N"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óşÿÿÿÿ8ŠŸ£­ç1
+‚
+java:S1319V"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8ŠŸ£­ç1
+E
+java:S5411v"(Use a primitive boolean expression here.(Óõå©8‹Ÿ£­ç1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8Ÿ£­ç1
+…
+java:S4144¬"bUpdate this method so that its implementation is not identical to "canPickUpLogarlec" on line 157.(‘¹÷Üùÿÿÿÿ8 Ÿ£­ç1
+O
+java:S1172–"1Remove this unused method parameter "protection".(´Ñ¸8³Ÿ£­ç1
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ÀŸ£­ç1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ÀŸ£­ç1
