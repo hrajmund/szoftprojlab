@@ -16,7 +16,7 @@ public class Room{
     /**
      * A szoba befogadóképessége.
      */
-    protected int capacity;
+    protected int capacity = 5;
 
     /**
      * A szobából kimenő ajtók listája.
@@ -171,6 +171,7 @@ public class Room{
      */
     public void addOutgoingDoor(Room r){
         TestPrinter.printCallingMethod(r);
+        outgoingDoors.add(r);
     }
 
     /**
@@ -235,8 +236,8 @@ public class Room{
      * @param p Az eltávolítandó személy.
      */
     public void removePerson(Person p){
-        people.remove(p);
         TestPrinter.printCallingMethod(p);
+        people.remove(p);
     }
 
     /**

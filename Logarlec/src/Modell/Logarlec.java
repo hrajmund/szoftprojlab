@@ -8,6 +8,7 @@ public class Logarlec extends BaseItem{
      */
     @Override
     public void effect() {
+        //hamis logarléc nem csinál semmit
     }
     /**
      * A felvételét megvalósító metódus

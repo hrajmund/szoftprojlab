@@ -14,7 +14,10 @@ public class FFP2 extends BaseItem implements IRound {
      * A tárgy hatását végrehajtó metódus
      */
     public void effect(){
-        holder.setGasProtection(true);
+        TestPrinter.printCallingMethod();
+        if(!fake){
+            holder.setGasProtection(true);
+        }
         active=true;
     }
     /**
@@ -22,6 +25,17 @@ public class FFP2 extends BaseItem implements IRound {
      */
     public void tick(){
         TestPrinter.printCallingMethod();
+        if(active){
+            if(timeUsage>0){
+                if(timeUsage==1){
+                    timeUsage-=1;
+                    holder.removeItem(this);
+                    holder=null;
+                }else{
+                    timeUsage-=1;
+                }
+            }
+        }
     }
 
     @Override
@@ -32,5 +46,6 @@ public class FFP2 extends BaseItem implements IRound {
         holder = null;
         room = r;
     }
+
 
 }

@@ -3,6 +3,8 @@ package Modell;
  * TVSZDenevér
  */
 public class TVSzDenever extends BaseItem{
+
+    private Boolean fake = false;
     private int remainingUsage=3;
 
     /**
@@ -28,13 +30,12 @@ public class TVSzDenever extends BaseItem{
     @Override
     public Boolean protAgainstTeacher(){
         TestPrinter.printCallingMethod();
-        this.effect();
-        return true;
-    }
-    @Override
-    public void putDown(Room r){
-        TestPrinter.printCallingMethod(holder);
-        holder = null;
-        room = r;
+        //MÓDOSÍTÁS: csak igazi tárgy tud venni
+        if(!fake){
+            this.effect();
+            return true;
+        }else{
+            return false;
+        }
     }
 }

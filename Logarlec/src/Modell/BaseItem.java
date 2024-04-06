@@ -102,5 +102,8 @@ public abstract class BaseItem{
      *A tárgy lerakása
      * MÓDOSÍTÁS: az Itemek intézik a lerakásukat, a Student csak meghívja rajtuk
      */
-    public abstract void putDown(Room r);
+    public  void putDown(Room r){
+        holder = null;
+        room = r;
+    }
 }

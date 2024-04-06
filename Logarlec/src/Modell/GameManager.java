@@ -14,7 +14,9 @@ public class GameManager {
     /**
      * Játék vége
      */
-    public void gameEnd(){}
+    public void gameEnd(){
+        TestPrinter.printCallingMethod();
+    }
 
     /*
     public void ReadFile(){}

@@ -34,7 +34,6 @@ public class Szkeleton {
         s.setCurrentRoom(r);
 
         s.move(gasRoom);
-        gasRoom.addPerson(s);
 
     }
 

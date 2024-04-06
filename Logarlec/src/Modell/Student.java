@@ -92,6 +92,8 @@ public class Student extends Person{
      */
     public void dropAllItems(){
         TestPrinter.printCallingMethod();
+        currentRoom.addItems(items);
+        items.clear();
     }
     /**
      * A hallgatót megöli
