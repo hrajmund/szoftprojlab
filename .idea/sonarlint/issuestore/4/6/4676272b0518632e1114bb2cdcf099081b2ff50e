@@ -5,9 +5,7 @@ java:S2293"YReplace the type specification in this constructor call with the d
 java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸Æçàÿÿÿÿÿ8¸©÷¬ç1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8¹©÷¬ç1
 ]	java:S125#"<This block of commented-out lines of code should be removed.(€ÏÅ£ýÿÿÿÿ8½©÷¬ç1
-O
-java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8½©÷¬ç1
-Y
-java:S1068"7Remove this unused "cursedIncomingDoors" private field.(ò¤ªÃúÿÿÿÿ8½©÷¬ç1
+^
+java:S11266"AReplace this if-then-else statement by a single return statement.(©œ‹8æëø˜ë1
 Y
 java:S1068"7Remove this unused "cursedOutgoingDoors" private field.(¸Æçàÿÿÿÿÿ8½©÷¬ç1

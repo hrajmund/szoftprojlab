@@ -134,7 +134,6 @@ public class Student extends Person{
     public void move(Room r) {
         TestPrinter.printCallingMethod(r);
         if(currentRoom.movePossibilities().contains(r)){
-            System.out.println(this.toString() + ":: move() paramétere: " + r.toString() + "-re");
             currentRoom.removePerson(this);
             r.addPerson(this);
             currentRoom = r;

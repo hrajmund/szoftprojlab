@@ -1,18 +1,4 @@
 
-E
-java:S5411m"(Use a primitive boolean expression here.(Şí…¤8Ä¾˜®ç1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8Çƒ•®ç1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ŠÉÍ™ë1
 …
-java:S4144¥"bUpdate this method so that its implementation is not identical to "canPickUpLogarlec" on line 123.(‘¹÷Üùÿÿÿÿ8Ò¾˜®ç1
-j	java:S100D"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¾ë°8×¾˜®ç1
-W
-java:S1161]":Add the "@Override" annotation above this method signature(¦×¡õ8ÙÂœ®ç1
-W
-java:S1161{":Add the "@Override" annotation above this method signature(ºå±8Ú¾˜®ç1
-H	java:S106‰"+Replace this use of System.out by a logger.(™İŸç8Û¾˜®ç1
-]
-java:S1161¥":Add the "@Override" annotation above this method signature(‘¹÷Üùÿÿÿÿ8Òô—®ç1
-q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8¥ª®ç1
-v
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8¥ª®ç1
+java:S4144§"bUpdate this method so that its implementation is not identical to "canPickUpLogarlec" on line 126.(‘¹÷Üùÿÿÿÿ8ÉÍ™ë1

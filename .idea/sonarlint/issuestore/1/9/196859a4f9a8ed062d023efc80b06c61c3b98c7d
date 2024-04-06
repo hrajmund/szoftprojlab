@@ -1,10 +1,5 @@
 
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8›´æ¬ç1
-v
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¥Ó˜Ëıÿÿÿÿ8Şúˆ­ç1
-v
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8Şúˆ­ç1
-q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8Şúˆ­ç1
-v
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8Şúˆ­ç1
+n	java:S116 "MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÄİ‰üÿÿÿÿ8¥‰—ë1
+F
+java:S1068")Remove this unused "rooms" private field.(½Û¬8«‰—ë1

@@ -115,12 +115,14 @@ public abstract class Person{
      */
     public void pickUpItem(BaseItem i){
         TestPrinter.printCallingMethod(i);
-        if(!i.getActive()) {
-            if(capacity > items.size()) {
-                i.setHolder(this);
-                i.setRoom(null);
-                currentRoom.removeItem(i);
-                addItem(i);
+        if(!currentRoom.getSticky()){ //MÓDOSÍTÁS: ha a szoba ragacsos, nem vehetünk fel benne itemet
+            if(!i.getActive()) {
+                if(capacity > items.size()) {
+                    i.setHolder(this);
+                    i.setRoom(null);
+                    currentRoom.removeItem(i);
+                    addItem(i);
+                }
             }
         }
     }

@@ -90,4 +90,10 @@ public abstract class BaseItem{
     public void setConnected(BaseItem t){
         TestPrinter.printCallingMethod(t);
     }
+
+    /**
+     *A tárgy lerakása
+     * MÓDOSÍTÁS: az Itemek intézik a lerakásukat, a Student csak meghívja rajtuk
+     */
+    public abstract void putDown(Room r);
 }
