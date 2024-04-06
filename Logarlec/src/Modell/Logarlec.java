@@ -3,6 +3,9 @@ package Modell;
  * Logarlec tárgy
  */
 public class Logarlec extends BaseItem{
+    
+    private Boolean fake = false;
+    
     /**
      * A tárgy hatását végrehajtó metódus
      */
@@ -14,10 +17,19 @@ public class Logarlec extends BaseItem{
      * A felvételét megvalósító metódus
      */
     @Override
-    public void setHolder(Person holder) {
-        TestPrinter.printCallingMethod(holder);
-        if(holder.canPickUpLogarlec()){
-            holder.labyrinth.endGame();
+    public void setHolder(Person p) {
+        if (p == null){
+            TestPrinter.printCallingMethod();
+        }
+        else {
+            TestPrinter.printCallingMethod(p);
+        }
+        if(p.canPickUpLogarlec()){
+            if(!fake){
+                p.labyrinth.endGame();
+            }else{
+                holder = p;
+            }
         }
     }
     @Override

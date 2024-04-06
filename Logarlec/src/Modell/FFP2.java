@@ -6,6 +6,9 @@ import Modell.TestPrinter;
  * FFP2 maszk tárgy
  */
 public class FFP2 extends BaseItem implements IRound {
+
+    private Boolean fake = false;
+
     /**
      * A tárgy hátralévő ideje
      */
