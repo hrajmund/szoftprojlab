@@ -38,4 +38,8 @@ public class TVSzDenever extends BaseItem{
             return false;
         }
     }
+
+    public void setFake(Boolean b){
+        fake= b;
+    }
 }

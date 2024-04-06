@@ -50,5 +50,7 @@ public class FFP2 extends BaseItem implements IRound {
         room = r;
     }
 
-
+    public void setFake(Boolean b){
+        fake= b;
+    }
 }

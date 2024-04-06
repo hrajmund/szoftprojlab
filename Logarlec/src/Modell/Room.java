@@ -192,6 +192,9 @@ public class Room{
     public void addItems(List<BaseItem> items) {
         TestPrinter.printCallingMethod(items);
         this.items.addAll(items);
+        for(BaseItem item: items){
+            item.setRoom(this);
+        }
     }
 
     /**
@@ -356,5 +359,17 @@ public class Room{
      */
     public Boolean getSticky(){
         return sticky;
+    }
+    /**
+     * Viszaadja, hogy a szobában mennyi láogató volt takarítás után
+     *
+     */
+    public int getPersonCounter(){return personCounter;}
+
+    public void increasePersonCounter(){
+        personCounter++;
+        if(personCounter==5){
+            sticky=true;
+        }
     }
 }

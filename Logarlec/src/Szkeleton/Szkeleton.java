@@ -5,6 +5,7 @@ import Modell.GameManager;
 import Modell.TVSzDenever;
 
 import java.lang.reflect.Method;
+import java.sql.SQLOutput;
 import java.util.*;
 
 public class Szkeleton {
@@ -696,6 +697,118 @@ public class Szkeleton {
         s.move(r2);
     }
 
+    private void StudentUseLegfrissito(){
+        Room r = new Room();
+        Room gasRoom = new Room();
+        Legfrissito frissit= new Legfrissito();
+        gasRoom.setGas(true);
+        Student s= new Student();
+        r.addOutgoingDoor(gasRoom);
+        gasRoom.addIncomingDoor(r);
+        s.addItem(frissit);
+        frissit.setHolder(s);
+        r.addPerson(s);
+        s.setCurrentRoom(r);
+
+        s.move(gasRoom);
+        s.pickUpItem(frissit);
+        s.UseItem(0);
+        System.out.println(gasRoom.getGas());//TESZTELES SZEMPONTJABOL VAN
+    }
+
+    private void TakkerneniEntersAGasRoom(){
+        Takarito takaritonooo = new Takarito();
+        Room r= new Room();
+        Room gasRoom= new Room();
+        gasRoom.setGas(true);
+        r.addOutgoingDoor(gasRoom);
+        gasRoom.addIncomingDoor(r);
+        r.addPerson(takaritonooo);
+        takaritonooo.setCurrentRoom(r);
+
+        takaritonooo.move(gasRoom);
+        System.out.println("Gas: "+ gasRoom.getGas());
+        System.out.println("Latogatok takker utan: "+ gasRoom.getPersonCounter());
+    }
+
+    public void TakkerneniEntersARoomWhereSomeoneIs(){
+        Room r1= new Room();
+        Room r2= new Room();
+        Room r3= new Room();
+        Student s1= new Student();
+        Student s2= new Student();
+        Takarito takaritonooo= new Takarito();
+        r1.addOutgoingDoor(r2);
+        r2.addIncomingDoor(r1);
+        r2.addOutgoingDoor(r3);
+        r3.addIncomingDoor(r2);
+        r2.addPerson(s1);
+        s1.setCurrentRoom(r2);
+        r2.addPerson(s2);
+        s2.setCurrentRoom(r2);
+        r1.addPerson(takaritonooo);
+        takaritonooo.setCurrentRoom(r1);
+
+        takaritonooo.move(r2);
+
+        //TESZTELÉS MIATT VAN ITT HOGY JÓL MŰKÖDIK E
+        System.out.println("Student 1 roomja: "+ s1.getCurrentRoom());
+        System.out.println("Student 2 roomja: "+ s2.getCurrentRoom());
+    }
+
+    public void RoomBecomesStickyAfterTakker(){
+        Student s= new Student();
+        Takarito takaritonooo= new Takarito();
+        Room r1= new Room();
+        Room r2= new Room();
+        Room r3= new Room();
+        FFP2 mask= new FFP2();
+        r1.addOutgoingDoor(r2);
+        r2.addIncomingDoor(r1);
+        r2.addOutgoingDoor(r3);
+        r3.addIncomingDoor(r2);
+        r1.addPerson(takaritonooo);
+        takaritonooo.setCurrentRoom(r1);
+        r1.addPerson(s);
+        s.setCurrentRoom(r1);
+        r2.addItem(mask);
+        mask.setRoom(r2);
+        takaritonooo.move(r2);
+        takaritonooo.move(r3);
+        r2.increasePersonCounter();
+        r2.increasePersonCounter();
+        r2.increasePersonCounter();
+        r2.increasePersonCounter();
+        r2.increasePersonCounter();
+        s.move(r2);
+        s.pickUpItem(mask);
+
+        //Tesztelés miatt
+        System.out.println(mask.getHolder());
+    }
+
+    public void StudentPicksUpFakeItemAndTriesToUseIt(){
+        Student s= new Student();
+        Room r = new Room();
+        TVSzDenever tvsz= new TVSzDenever();
+        FFP2 mask= new FFP2();
+        Logarlec log= new Logarlec();
+        tvsz.setFake(true);
+        mask.setFake(true);
+        log.setFake(true);
+        ArrayList<BaseItem>items= new ArrayList<>();
+        items.add(mask);
+        items.add(tvsz);
+        items.add(log);
+        r.addPerson(s);
+        s.setCurrentRoom(r);
+
+        s.pickUpItem(mask);
+        s.UseItem(0);
+        //Tesztelés
+        System.out.println(s.isGasProtected());
+    }
+
     public static void main(String[] args) {
         Szkeleton szkeleton = new Szkeleton();
         List<Runnable> functions = new ArrayList<Runnable>();
@@ -737,6 +850,11 @@ public class Szkeleton {
         functions.add(szkeleton::TeacherPicksUpAnItem); tesztek.add("TeacherPicksUpAnItem");
         functions.add(szkeleton::TeacherPutsDownAnItemFromItsHand); tesztek.add("TeacherPutsDownAnItemFromItsHand");
         functions.add(szkeleton::StudentUseNewSzentSorospoharak); tesztek.add("StudentUseNewSzentSorospoharak");
+        functions.add(szkeleton::StudentUseLegfrissito); tesztek.add("StudentUseLegfrissito");
+        functions.add(szkeleton::TakkerneniEntersAGasRoom); tesztek.add("TakkerneniEntersAGasRoom");
+        functions.add(szkeleton::TakkerneniEntersARoomWhereSomeoneIs); tesztek.add("TakkerneniEntersARoomWhereSomeoneIs");
+        functions.add(szkeleton::RoomBecomesStickyAfterTakker); tesztek.add("RoomBecomesStickyAfterTakker");
+        functions.add(szkeleton::StudentPicksUpFakeItemAndTriesToUseIt); tesztek.add("StudentPicksUpFakeItemAndTriesToUseIt");
 
         for (int i = 0; i < tesztek.size(); i++) {
             System.out.println((i+1)+ ". "+ tesztek.get(i));

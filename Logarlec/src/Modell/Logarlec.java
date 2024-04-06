@@ -37,4 +37,8 @@ public class Logarlec extends BaseItem{
         TestPrinter.printCallingMethod(holder);
         //ezt nem rakod le
     }
+
+    public void setFake(Boolean b){
+        fake= b;
+    }
 }

@@ -37,6 +37,7 @@ public class Teacher extends Person{
         TestPrinter.printCallingMethod(r);
         currentRoom.removePerson(this);
         r.addPerson(this);
+        r.increasePersonCounter();
         currentRoom = r;
         for(Person p : r.getPeople()){
             p.killed();

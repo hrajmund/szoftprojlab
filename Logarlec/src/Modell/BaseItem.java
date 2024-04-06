@@ -52,6 +52,10 @@ public abstract class BaseItem{
         holder = p;
     }
     /**
+     *A tárgy tulajdonosát adja vissza
+     */
+    public Person getHolder(){return holder;}
+    /**
      *A tárgy hatásának végrehajtása
      */
     public abstract void effect();
