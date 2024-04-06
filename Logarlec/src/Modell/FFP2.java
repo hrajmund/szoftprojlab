@@ -24,4 +24,13 @@ public class FFP2 extends BaseItem implements IRound {
         TestPrinter.printCallingMethod();
     }
 
+    @Override
+    public void putDown(Room r){
+        TestPrinter.printCallingMethod(holder);
+        holder.setGasProtection(false);
+        active = false;
+        holder = null;
+        room = r;
+    }
+
 }

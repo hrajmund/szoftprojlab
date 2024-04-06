@@ -31,5 +31,10 @@ public class TVSzDenever extends BaseItem{
         this.effect();
         return true;
     }
-
+    @Override
+    public void putDown(Room r){
+        TestPrinter.printCallingMethod(holder);
+        holder = null;
+        room = r;
+    }
 }

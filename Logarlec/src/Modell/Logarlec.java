@@ -19,4 +19,9 @@ public class Logarlec extends BaseItem{
             holder.labyrinth.endGame();
         }
     }
+    @Override
+    public void putDown(Room r){
+        TestPrinter.printCallingMethod(holder);
+        //ezt nem rakod le
+    }
 }

@@ -1,24 +1,24 @@
 
 
-java:S1319="pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8ÓŞ™ë1
+java:S1319="pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8¦Ñ¯ë1
 ~
-java:S1319e"aThe type of "n" should be an interface such as "List" rather than the implementation "ArrayList".(üƒæÉ8ÔŞ™ë1
+java:S1319e"aThe type of "n" should be an interface such as "List" rather than the implementation "ArrayList".(üƒæÉ8§Ñ¯ë1
 Š
-java:S1319o"mThe type of "outgoingDoors" should be an interface such as "List" rather than the implementation "ArrayList".(´™±×8ÔŞ™ë1
+java:S1319o"mThe type of "outgoingDoors" should be an interface such as "List" rather than the implementation "ArrayList".(´™±×8§Ñ¯ë1
 “
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡„‰õúÿÿÿÿ8ÔŞ™ë1
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡„‰õúÿÿÿÿ8§Ñ¯ë1
 “
-java:S1319—"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(İŠ¹ğüÿÿÿÿ8ÔŞ™ë1
+java:S1319—"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(İŠ¹ğüÿÿÿÿ8§Ñ¯ë1
 ‹
-java:S1319¤"hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8ÔŞ™ë1
+java:S1319¤"hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8§Ñ¯ë1
 ‡
-java:S1319¤"dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8ÔŞ™ë1
-s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÛ×½ûÿÿÿÿ8ÔŞ™ë1
+java:S1319¤"dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8§Ñ¯ë1
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÛ×½ûÿÿÿÿ8§Ñ¯ë1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ÕŞ™ë1
 O
-java:S1905",Remove this unnecessary cast to "ArrayList".(–ø™ºûÿÿÿÿ8ßŞ™ë1
+java:S1905",Remove this unnecessary cast to "ArrayList".(–ø™ºûÿÿÿÿ8­Ñ¯ë1
 J
-java:S1905™",Remove this unnecessary cast to "ArrayList".(ŒæÆ”8ßŞ™ë1
-Y	java:S125 "<This block of commented-out lines of code should be removed.(†Áˆ8àŞ™ë1
+java:S1905™",Remove this unnecessary cast to "ArrayList".(ŒæÆ”8®Ñ¯ë1
+Y	java:S125 "<This block of commented-out lines of code should be removed.(†Áˆ8®Ñ¯ë1
 F
-java:S1172˜"(Remove this unused method parameter "r".(˜ÒÔ¥8ÖÀß™ë1
+java:S1172˜"(Remove this unused method parameter "r".(˜ÒÔ¥8°Ñ¯ë1

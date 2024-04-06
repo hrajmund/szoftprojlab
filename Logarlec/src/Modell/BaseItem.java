@@ -7,6 +7,13 @@ public abstract class BaseItem{
      *A tárgy neve
      */
     protected String name;
+
+
+    /**
+     * A tárgy hamis-e
+     */
+    protected boolean isFake;
+
     /**
      *A tárgy tulajdonosa
      */

@@ -47,4 +47,13 @@ public class CursedRoom extends Room implements IRound {
         }
         */
     }
+
+    @Override
+    public boolean isEnterable(Room r){
+
+        if(!cursedIncomingDoors.contains(r) || people.size()<capacity){
+            return true;
+        }
+        return false;
+    }
 }

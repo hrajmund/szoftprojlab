@@ -132,8 +132,10 @@ public abstract class Person{
      */
     public void putDownItem(BaseItem i){
         TestPrinter.printCallingMethod();
-        i.setRoom(currentRoom);
-        i.setHolder(null);
+        //kommenteltek kiszervezése az itembe hogy mindegyik item maga tudja mit kell tennie
+        i.putDown(currentRoom);
+        //i.setRoom(currentRoom);
+        //i.setHolder(null);
         items.remove(i);
         currentRoom.addItem(i);
     }

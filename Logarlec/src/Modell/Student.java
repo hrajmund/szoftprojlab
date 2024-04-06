@@ -101,6 +101,9 @@ public class Student extends Person{
         TestPrinter.printCallingMethod();
         //Ha van nála aktív SzentSorosPoharak, akkor védelme van a Teacher ellen
         if(teacherProtected){
+            teacherProtected=false; //AAAAAA
+            //MÓDOSÍTÁS: a még aktív söröskorsót használva a hallgatók elejtik az egyik náluk levő tárgyat.
+            putDownItem(getItems().get(0));
             return;
         }
         //Ha nincs aktív SzentSorospohara, akkor megnézi, hogy van-e nála olyan item, ami megvédi a Teachertől

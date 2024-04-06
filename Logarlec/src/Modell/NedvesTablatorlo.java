@@ -46,5 +46,10 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
         return active;
     }
 
-
+    @Override
+    public void putDown(Room r){
+        TestPrinter.printCallingMethod(holder);
+        holder = null;
+        room = r;
+    }
 }

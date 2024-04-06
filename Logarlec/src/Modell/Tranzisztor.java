@@ -77,4 +77,10 @@ public class Tranzisztor extends BaseItem{
         active=false;
         connected=null;
     }
+    @Override
+    public void putDown(Room r){
+        TestPrinter.printCallingMethod(holder);
+        holder = null;
+        room = r;
+    }
 }

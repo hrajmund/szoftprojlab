@@ -1,15 +1,17 @@
 package Modell;
 /**
- * Camambert tárgy
+ * MÓDOSÍTÁS: légfrissítő. Egyszerhasználatos tárgy. Gázos szobában lerakva semlegesíti a gázhatást.
+ *A Légfrissítő tárgy
  */
-public class Camembert extends BaseItem{
+public class Legfrissito extends BaseItem{
     /**
      * A tárgy hatását végrehajtó metódus
      */
     @Override
     public void effect() {
+        TestPrinter.printCallingMethod(holder);
         holder.putDownItem(this);
-        room.setGas(true);
+        room.setGas(false);
         room.removeItem(this);
         room=null;
     }

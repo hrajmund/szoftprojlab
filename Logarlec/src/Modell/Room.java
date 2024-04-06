@@ -44,6 +44,16 @@ public class Room{
     protected ArrayList<Person> people = new ArrayList<>();
 
     /**
+     * A szoba ragadós-e
+     */
+    protected Boolean sticky = false;
+
+    /**
+     * A szobába hány ember járt a takarító után
+     */
+    protected int personCounter = Integer.MIN_VALUE; //inicializáláskor minimumról indul, majd a takarító nullázza
+
+    /**
      * Visszaadja a szobában tartózkodó emberek listáját.
      *
      * @return A szobában tartózkodó emberek listája.
@@ -143,16 +153,16 @@ public class Room{
         return (ArrayList<Room>) outgoingDoors;
     }
 
-    /**
-     * Visszaadja a szoba által biztosított mozgási lehetőségeket.
-     *
-     * @return A mozgási lehetőségek listája.
-     */
+    /*
+     // Visszaadja a szoba által biztosított mozgási lehetőségeket.
+     //
+     // @return A mozgási lehetőségek listája.
     public ArrayList<Room> getMovePossibilities(){
         TestPrinter.printCallingMethod();
         ArrayList<Room> movePossibilities = new ArrayList<>();
         return outgoingDoors;
     }
+    */
 
     /**
      * Hozzáad egy kimenő ajtót a szobához.
@@ -256,7 +266,21 @@ public class Room{
      */
     public List<Room> movePossibilities() {
         TestPrinter.printCallingMethod();
-        return outgoingDoors;
+        List<Room> MovePossibilities = new ArrayList<>();
+        for (Room r: outgoingDoors) {
+            if (r.isEnterable(this))
+                MovePossibilities.add(r);
+        }
+        return MovePossibilities;
+    }
+
+    /**
+     * Visszaadja ,hogy a szobába van e még férőhely.
+     */
+    public boolean isEnterable(Room r){
+        //r nincs használva, csak a cursedroom-ban
+        TestPrinter.printCallingMethod();
+        return people.size() < capacity;
     }
 
     /**
@@ -286,6 +310,7 @@ public class Room{
         items.addAll(r.items);
         gas = gas || r.gas;
         capacity = Math.max(capacity, r.capacity);
+        personCounter = Math.min(personCounter, r.personCounter); //
         labyrinth.removeRoom(r);
     }
 
@@ -306,7 +331,7 @@ public class Room{
         }
         newroom.gas = gas;
         newroom.capacity = capacity;
-
+        newroom.personCounter = personCounter; //
         addOutgoingDoor(newroom);
         addIncomingDoor(newroom);
         newroom.addOutgoingDoor(this);
@@ -320,5 +345,13 @@ public class Room{
      */
     public void setLabyrinth(Labyrinth l){
         labyrinth=l;
+    }
+
+    /**
+     * Viszaadja, hogy a szoba ragacsos e
+     *
+     */
+    public Boolean getSticky(){
+        return sticky;
     }
 }

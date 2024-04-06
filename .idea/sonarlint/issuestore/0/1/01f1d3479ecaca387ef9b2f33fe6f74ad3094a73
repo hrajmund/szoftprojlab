@@ -10,6 +10,6 @@ java:S1319V"eThe type of "items" should be an interface such as "List" rather t
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8‡çÈ—ë1
 …
 java:S4144°"bUpdate this method so that its implementation is not identical to "canPickUpLogarlec" on line 161.(‘¹÷Üùÿÿÿÿ8ŽçÈ—ë1
-Y	java:S125‰"<This block of commented-out lines of code should be removed.(ø¸Ó¡8’çÈ—ë1
+Y	java:S125‰"<This block of commented-out lines of code should be removed.(ø¸Ó¡8Ãþ®žë1
 O
 java:S1172š"1Remove this unused method parameter "protection".(´Ñ¸8’çÈ—ë1

@@ -11,7 +11,17 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
     @Override
     public  void effect() {
         TestPrinter.printCallingMethod();
+        active=true;
         holder.setTeacherProtection(true);
+    }
+
+    @Override
+    public void putDown(Room r) {
+        TestPrinter.printCallingMethod(holder);
+        holder.setTeacherProtection(false);
+        active = false;
+        holder = null;
+        room = r;
     }
 
     /**
@@ -23,6 +33,7 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
             if(timeUsage>0){
                 if(timeUsage==1){
                     timeUsage-=1;
+                    holder.setTeacherProtection(false);
                     holder.removeItem(this);
                     holder=null;
                 }else{
