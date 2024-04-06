@@ -201,6 +201,7 @@ public class Room{
      */
     public void addItem(BaseItem b){
         TestPrinter.printCallingMethod(b);
+        items.add(b);
     }
 
     /**
@@ -210,6 +211,7 @@ public class Room{
      */
     public void removeItem (BaseItem b) {
         TestPrinter.printCallingMethod(b);
+        items.remove(b);
     }
 
     /**
@@ -247,7 +249,7 @@ public class Room{
      */
     public void removeOutgoingDoor(Room r){
         TestPrinter.printCallingMethod(r);
-        r.removeIncomingDoor(this);
+        outgoingDoors.remove(r);
     }
 
     /**
@@ -257,7 +259,7 @@ public class Room{
      */
     public void removeIncomingDoor(Room r){
         TestPrinter.printCallingMethod(r);
-        r.removeOutgoingDoor(this);
+        incomingDoors.remove(r);
     }
 
     /**

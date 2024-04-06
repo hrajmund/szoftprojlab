@@ -41,6 +41,8 @@ public class Szkeleton {
         Student s = new Student();
         Teacher t = new Teacher();
         Labyrinth l = new Labyrinth();
+        GameManager GM= new GameManager();
+        l.setGameManager(GM);
         Room r1 = new Room();
         Room r2 = new Room();
         l.addStudent(s);
@@ -660,6 +662,40 @@ public class Szkeleton {
         t.putDownItem(tvsz);
     }
 
+    private void StudentUseNewSzentSorospoharak(){
+        Room r1 = new Room();
+        Room r2 = new Room();
+        Student s = new Student();
+        Teacher t= new Teacher();
+        FFP2 mask = new FFP2();
+        Tranzisztor tran = new Tranzisztor();
+        Camembert cam = new Camembert();
+        Logarlec log = new Logarlec();
+        TVSzDenever tvsz = new TVSzDenever();
+        NedvesTablatorlo tablatorlo = new NedvesTablatorlo();
+        SzentSorosPoharak pohar= new SzentSorosPoharak();
+        ArrayList<BaseItem> items= new ArrayList<>();
+        r1.addOutgoingDoor(r2);
+        r2.addIncomingDoor(r1);
+        items.add(mask);
+        items.add(tran);
+        items.add(cam);
+        items.add(log);
+        items.add(tvsz);
+        items.add(tablatorlo);
+        items.add(pohar);
+        r1.addItems(items);
+        r1.addPerson(s);
+        s.setCurrentRoom(r1);
+        r2.addPerson(t);
+        t.setCurrentRoom(r2);
+        s.pickUpItem(mask);
+        s.pickUpItem(pohar);
+        s.UseItem(1);
+
+        s.move(r2);
+    }
+
     public static void main(String[] args) {
         Szkeleton szkeleton = new Szkeleton();
         List<Runnable> functions = new ArrayList<Runnable>();
@@ -700,6 +736,7 @@ public class Szkeleton {
         functions.add(szkeleton::NedvesTablatorloTimeIsUp); tesztek.add("NedvesTablatorloTimeIsUp");
         functions.add(szkeleton::TeacherPicksUpAnItem); tesztek.add("TeacherPicksUpAnItem");
         functions.add(szkeleton::TeacherPutsDownAnItemFromItsHand); tesztek.add("TeacherPutsDownAnItemFromItsHand");
+        functions.add(szkeleton::StudentUseNewSzentSorospoharak); tesztek.add("StudentUseNewSzentSorospoharak");
 
         for (int i = 0; i < tesztek.size(); i++) {
             System.out.println((i+1)+ ". "+ tesztek.get(i));

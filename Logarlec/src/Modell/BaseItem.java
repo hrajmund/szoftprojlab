@@ -8,7 +8,6 @@ public abstract class BaseItem{
      */
     protected String name;
 
-
     /**
      * A tárgy hamis-e
      */
