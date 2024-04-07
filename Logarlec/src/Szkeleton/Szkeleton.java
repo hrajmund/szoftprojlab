@@ -1,8 +1,4 @@
-package Szkeleton;
-import Modell.*;
-import Modell.CursedRoom;
-import Modell.GameManager;
-import Modell.TVSzDenever;
+package Szkeleton; import Modell.*; import Modell.CursedRoom; import Modell.GameManager; import Modell.TVSzDenever;
 
 import java.lang.reflect.Method;
 import java.sql.SQLOutput;
@@ -602,7 +598,7 @@ public class Szkeleton {
         s.move(r2);
     }
 
-    private void SzentSorospharTimeIsUp(){
+    private void SzentSorospoharakTimeIsUp(){
         SzentSorosPoharak pohar = new SzentSorosPoharak();
         Student s= new Student();
         Room r= new Room();
@@ -716,7 +712,7 @@ public class Szkeleton {
         System.out.println(gasRoom.getGas());//TESZTELES SZEMPONTJABOL VAN
     }
 
-    private void TakkerneniEntersAGasRoom(){
+    private void TakaritoNoEntersAGasRoom(){
         Takarito takaritonooo = new Takarito();
         Room r= new Room();
         Room gasRoom= new Room();
@@ -731,7 +727,7 @@ public class Szkeleton {
         System.out.println("Latogatok takker utan: "+ gasRoom.getPersonCounter());
     }
 
-    public void TakkerneniEntersARoomWhereSomeoneIs(){
+    public void TakaritoNoEntersARoomWhereSomeoneIs(){
         Room r1= new Room();
         Room r2= new Room();
         Room r3= new Room();
@@ -845,14 +841,14 @@ public class Szkeleton {
         functions.add(szkeleton::StudentPutsDownSecondActiveTranzisztor); tesztek.add("StudentPutsDownSecondActiveTranzisztor");
         functions.add(szkeleton::StudentTriesToPickUpActiveTranzisztor); tesztek.add("StudentTriesToPickUpActiveTranzisztor");
         functions.add(szkeleton::StudentEntersARomWithATeacherInItHasALastOneTVSZDenever); tesztek.add("StudentEntersARomWithATeacherInItHasALastOneTVSZDenever");
-        functions.add(szkeleton::SzentSorospharTimeIsUp); tesztek.add("SzentSorospharTimeIsUp");
+        functions.add(szkeleton::SzentSorosppharakTimeIsUp); tesztek.add("SzentSorospharTimeIsUp");
         functions.add(szkeleton::NedvesTablatorloTimeIsUp); tesztek.add("NedvesTablatorloTimeIsUp");
         functions.add(szkeleton::TeacherPicksUpAnItem); tesztek.add("TeacherPicksUpAnItem");
         functions.add(szkeleton::TeacherPutsDownAnItemFromItsHand); tesztek.add("TeacherPutsDownAnItemFromItsHand");
         functions.add(szkeleton::StudentUseNewSzentSorospoharak); tesztek.add("StudentUseNewSzentSorospoharak");
         functions.add(szkeleton::StudentUseLegfrissito); tesztek.add("StudentUseLegfrissito");
-        functions.add(szkeleton::TakkerneniEntersAGasRoom); tesztek.add("TakkerneniEntersAGasRoom");
-        functions.add(szkeleton::TakkerneniEntersARoomWhereSomeoneIs); tesztek.add("TakkerneniEntersARoomWhereSomeoneIs");
+        functions.add(szkeleton::TakaritoNoEntersAGasRoom); tesztek.add("TakkerneniEntersAGasRoom");
+        functions.add(szkeleton::TakaritoNoEntersARoomWhereSomeoneIs); tesztek.add("TakkerneniEntersARoomWhereSomeoneIs");
         functions.add(szkeleton::RoomBecomesStickyAfterTakker); tesztek.add("RoomBecomesStickyAfterTakker");
         functions.add(szkeleton::StudentPicksUpFakeItemAndTriesToUseIt); tesztek.add("StudentPicksUpFakeItemAndTriesToUseIt");
 
