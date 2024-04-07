@@ -23,7 +23,7 @@ public abstract class Person{
     /**
      * A személy bénítva van-e
      */
-    protected boolean stunned = false;
+    protected boolean stunned;
     /**
      * A személy jelenlegi szobája
      */

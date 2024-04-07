@@ -1,23 +1,15 @@
 
 L
-java:S1066w"/Merge this if statement with the enclosing one.(Óõå©8ôşÊ—ë1
+java:S1066w"/Merge this if statement with the enclosing one.(Óõå©8˜¹˜Åë1
 Q
-java:S1066x"/Merge this if statement with the enclosing one.(¦ƒ›¶şÿÿÿÿ8õşÊ—ë1
+java:S1066x"/Merge this if statement with the enclosing one.(¦ƒ›¶şÿÿÿÿ8™¹˜Åë1
 ’
-java:S1319N"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óşÿÿÿÿ8‡çÈ—ë1
+java:S1319N"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óşÿÿÿÿ8™¹˜Åë1
 ‚
-java:S1319V"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8‡çÈ—ë1
-J
-java:S5411v"(Use a primitive boolean expression here.(§‰ÈÄûÿÿÿÿ8ğŒÓŸë1
-E
-java:S5411w"(Use a primitive boolean expression here.(Óõå©8ğŒÓŸë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8‡çÈ—ë1
+java:S1319V"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8™¹˜Åë1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8š¹˜Åë1
 …
-java:S4144°"bUpdate this method so that its implementation is not identical to "canPickUpLogarlec" on line 161.(‘¹÷Üùÿÿÿÿ8çÈ—ë1
-Y	java:S125‰"<This block of commented-out lines of code should be removed.(ø¸Ó¡8Ãş®ë1
+java:S4144°"bUpdate this method so that its implementation is not identical to "canPickUpLogarlec" on line 161.(‘¹÷Üùÿÿÿÿ8œ¹˜Åë1
+Y	java:S125‰"<This block of commented-out lines of code should be removed.(ø¸Ó¡8¡¹˜Åë1
 O
-java:S1172š"1Remove this unused method parameter "protection".(´Ñ¸8’çÈ—ë1
-q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8úŒÓŸë1
-v
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8úŒÓŸë1
+java:S1172š"1Remove this unused method parameter "protection".(´Ñ¸8¢¹˜Åë1

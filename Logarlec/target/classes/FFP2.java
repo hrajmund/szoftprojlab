@@ -1,28 +1,31 @@
 package Modell;
 import Modell.IRound;
 import Modell.TestPrinter;
-/**
- * A nedves táblatörlő tárgy
- */
-public class NedvesTablatorlo extends BaseItem implements IRound {
-    /**
-     * A tárgy hatásának ideje
-     */
-    private int timeUsage = 10;
 
+/**
+ * FFP2 maszk tárgy
+ */
+public class FFP2 extends BaseItem implements IRound {
+
+    private Boolean fake = false;
+
+    /**
+     * A tárgy hátralévő ideje
+     */
+    private int timeUsage;
     /**
      * A tárgy hatását végrehajtó metódus
      */
-    @Override
-    public void effect() {
+    public void effect(){
         TestPrinter.printCallingMethod();
-        active = true;
-        holder.putDownItem(this);
+        if(!fake){
+            holder.setGasProtection(true);
+        }
+        active=true;
     }
-
     /**
-     * A tárgy kezelése körönként
-     * */
+     * A tárgyat kezeli körönként
+     */
     public void tick(){
         TestPrinter.printCallingMethod();
         if(active){
@@ -37,13 +40,17 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
             }
         }
     }
-    /**
-     * A tárgy tud-e elkábítani
-     */
+
     @Override
-    public Boolean canStun(){
-        TestPrinter.printCallingMethod();
-        return active;
+    public void putDown(Room r){
+        TestPrinter.printCallingMethod(holder);
+        holder.setGasProtection(false);
+        active = false;
+        holder = null;
+        room = r;
     }
 
+    public void setFake(Boolean b){
+        fake= b;
+    }
 }

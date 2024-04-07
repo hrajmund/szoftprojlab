@@ -4,7 +4,7 @@ import Modell.TestPrinter;
 /**
  * Techer osztály
  */
-public class  Teacher extends Person{
+public class Teacher extends Person{
     /**
      * Teacher eldobja az összes tárgyát
      */

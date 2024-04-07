@@ -27,11 +27,6 @@ public class Labyrinth implements IRound {
     private ArrayList<Teacher> teachers = new ArrayList<>();
 
     /**
-     * A labirintusban található tanárok listája.
-     */
-    private ArrayList<Takarito> cleaner= new ArrayList<>();
-
-    /**
      * A játékmenedzser, amely felelős a játék kezeléséért.
      */
     private GameManager GM;

@@ -1,8 +1,8 @@
 package Modell;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import Szkeleton.Szkeleton;
 
 /**
  * Elátkozott szoba
@@ -31,13 +31,8 @@ public class CursedRoom extends Room implements IRound {
      */
     public void cursed(){
         TestPrinter.printCallingMethod();
-        Random randomNum;
-        if (Szkeleton.DETERMINISTIC_MODE) {
-            randomNum = new Random(Szkeleton.RAND_INIT_WHEN_DETERMINISTIC); // A kezdőérték, ha determinisztikus módban vagyunk
-        } else {
-            randomNum = new Random(); // Normál, véletlenszerű módban
-        }
-
+        /*
+        Random randomNum = new Random();
         int rand1 = randomNum.nextInt(incomingDoors.size());
         for (int i = 0; i < rand1; i++) {
             int rand2 = randomNum.nextInt(incomingDoors.size());
@@ -50,6 +45,7 @@ public class CursedRoom extends Room implements IRound {
             cursedOutgoingDoors.add(outgoingDoors.get(rand4));
             removeOutgoingDoor(outgoingDoors.get(rand4));
         }
+        */
     }
 
     @Override

@@ -9,9 +9,6 @@ import java.sql.SQLOutput;
 import java.util.*;
 
 public class Szkeleton {
-    public static final boolean DETERMINISTIC_MODE = true; // True, ha determinisztikus módban akarjuk futtatni
-    public static final int RAND_INIT_WHEN_DETERMINISTIC = 123; //Random konstruktor inicializáló száma, ha determinisztikus módban futtatunk
-
     private void StudentEntersARoom(){
         Student s = new Student();
         Room r1 = new Room();
