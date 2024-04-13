@@ -732,9 +732,10 @@ public class Szkeleton {
         takaritonooo.move(gasRoom);
         System.out.println("Gas: "+ gasRoom.getGas());
         System.out.println("Latogatok takker utan: "+ gasRoom.getPersonCounter());
+        System.out.println("Stun: " + takaritonooo.getStun());
     }
 
-    public void TakkerneniEntersARoomWhereSomeoneIs(){
+    public void TakkerneniEntersARoomWhereTwoPeopleAreAndOneIsStunned(){
         Room r1= new Room();
         Room r2= new Room();
         Room r3= new Room();
@@ -751,6 +752,7 @@ public class Szkeleton {
         s2.setCurrentRoom(r2);
         r1.addPerson(takaritonooo);
         takaritonooo.setCurrentRoom(r1);
+        s1.stun();
 
         takaritonooo.move(r2);
 
@@ -808,8 +810,34 @@ public class Szkeleton {
 
         s.pickUpItem(mask);
         s.UseItem(0);
+        s.pickUpItem(log);
         //Tesztelés
         System.out.println(s.isGasProtected());
+    }
+
+    public void StudentTriesToUseFakeTVSZ(){
+        Room r1= new Room();
+        Room r2= new Room();
+        Student s= new Student();
+        Teacher t= new Teacher();
+        Labyrinth l= new Labyrinth();
+        GameManager gm= new GameManager();
+        l.addRoom(r1);
+        l.addRoom(r2);
+        l.addStudent(s);
+        l.addTeacher(t);
+        l.setGameManager(gm);
+        TVSzDenever tvsz= new TVSzDenever();
+        tvsz.setFake(true);
+        r1.addOutgoingDoor(r2);
+        r2.addIncomingDoor(r1);
+        r1.addItem(tvsz);
+        r1.addPerson(s);
+        s.setCurrentRoom(r1);
+        r2.addPerson(t);
+        t.setCurrentRoom(r2);
+
+        s.move(r2);
     }
 
     public static void main(String[] args) {
@@ -855,9 +883,10 @@ public class Szkeleton {
         functions.add(szkeleton::StudentUseNewSzentSorospoharak); tesztek.add("StudentUseNewSzentSorospoharak");
         functions.add(szkeleton::StudentUseLegfrissito); tesztek.add("StudentUseLegfrissito");
         functions.add(szkeleton::TakkerneniEntersAGasRoom); tesztek.add("TakkerneniEntersAGasRoom");
-        functions.add(szkeleton::TakkerneniEntersARoomWhereSomeoneIs); tesztek.add("TakkerneniEntersARoomWhereSomeoneIs");
+        functions.add(szkeleton::TakkerneniEntersARoomWhereTwoPeopleAreAndOneIsStunned); tesztek.add("TakkerneniEntersARoomWhereTwoPeopleAreAndOneIsStunned");
         functions.add(szkeleton::RoomBecomesStickyAfterTakker); tesztek.add("RoomBecomesStickyAfterTakker");
         functions.add(szkeleton::StudentPicksUpFakeItemAndTriesToUseIt); tesztek.add("StudentPicksUpFakeItemAndTriesToUseIt");
+        functions.add(szkeleton::StudentTriesToUseFakeTVSZ); tesztek.add("StudentTriesToUseFakeTVSZ");
 
         for (int i = 0; i < tesztek.size(); i++) {
             System.out.println((i+1)+ ". "+ tesztek.get(i));

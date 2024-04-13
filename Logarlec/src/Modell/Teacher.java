@@ -1,6 +1,10 @@
 package Modell;
 import Modell.Room;
 import Modell.TestPrinter;
+import Szkeleton.Szkeleton;
+
+import java.util.Random;
+
 /**
  * Techer osztály
  */
@@ -35,6 +39,12 @@ public class  Teacher extends Person{
     @Override
     public void move(Room r) {
         TestPrinter.printCallingMethod(r);
+        if(!Szkeleton.DETERMINISTIC_MODE){
+            Random randomNum = new Random();
+            int rand1 = randomNum.nextInt(currentRoom.movePossibilities().size());
+            r=currentRoom.movePossibilities().get(rand1);
+        }
+
         currentRoom.removePerson(this);
         r.addPerson(this);
         r.increasePersonCounter();

@@ -11,6 +11,8 @@ import java.util.ArrayList;
  */
 public class Labyrinth implements IRound {
 
+    boolean Game_End = false;
+
     /**
      * A labirintusban található szobák listája.
      */
