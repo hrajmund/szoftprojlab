@@ -29,8 +29,9 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
             if(timeUsage>0){
                 if(timeUsage==1){
                     timeUsage-=1;
-                    holder.removeItem(this);
-                    holder=null;
+                    //a szobából eltávolítja a tárgyat, ha lejárt
+                    room.removeItem(this);
+                    room=null;
                 }else{
                     timeUsage-=1;
                 }
