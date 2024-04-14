@@ -36,7 +36,6 @@ public class Student extends Person{
     /**
      * Védelem a tanár ellen
      */
-    @Override
     public void setTeacherProtection(boolean protection){
         TestPrinter.printCallingMethod(protection);
         teacherProtected = protection;
@@ -56,7 +55,6 @@ public class Student extends Person{
      * Beállítja a hallgató gáz elleni védelmét
      * @param b igazságérték, amie állítni kell
      */
-    @Override
     public void setGasProtection(Boolean b){
         TestPrinter.printCallingMethod();
         gasProtected = b;
@@ -103,7 +101,7 @@ public class Student extends Person{
         TestPrinter.printCallingMethod();
         //Ha van nála aktív SzentSorosPoharak, akkor védelme van a Teacher ellen
         if(teacherProtected){
-            teacherProtected=false; //AAAAAA
+            //teacherProtected=false; //AAAAAA
             //MÓDOSÍTÁS: a még aktív söröskorsót használva a hallgatók elejtik az egyik náluk levő tárgyat.
             putDownItem(getItems().get(0));
             return;
@@ -172,4 +170,8 @@ public class Student extends Person{
         return true;
     }
 
+    @Override
+    public void tick() {
+
+    }
 }

@@ -35,10 +35,15 @@ public class Logarlec extends BaseItem{
     @Override
     public void putDown(Room r){
         TestPrinter.printCallingMethod(holder);
-        //ezt nem rakod le
+        //ha hamis, le kell tudni rakni
+        holder = null;
+        room = r;
     }
 
     public void setFake(Boolean b){
         fake= b;
     }
+
+    @Override
+    public void tick() {}
 }

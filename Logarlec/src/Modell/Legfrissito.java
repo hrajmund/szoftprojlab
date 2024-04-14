@@ -21,4 +21,6 @@ public class Legfrissito extends BaseItem{
         holder = null;
         room = r;
     }
+    @Override
+    public void tick() {}
 }

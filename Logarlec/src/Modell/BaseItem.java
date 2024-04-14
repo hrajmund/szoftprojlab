@@ -2,7 +2,7 @@ package Modell;
 /**
  *A játékban használt tárgyak ősosztálya
  */
-public abstract class BaseItem{
+public abstract class BaseItem implements IRound{
     /**
      *A tárgy neve
      */
@@ -101,6 +101,6 @@ public abstract class BaseItem{
      */
     public  void putDown(Room r){
         holder = null;
-        room = r;
+        setRoom(r);
     }
 }

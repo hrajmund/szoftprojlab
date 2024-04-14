@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * Személy ősosztály
  */
-public abstract class Person{
+public abstract class Person implements IRound{
     /**
      * A személy labirintusa
      */
@@ -145,16 +145,18 @@ public abstract class Person{
      */
     public void dropAllItems(){
         TestPrinter.printCallingMethod();
+        for(BaseItem i : items){
+            i.putDown(currentRoom);
+        }
         currentRoom.addItems(items);
+        items.clear();
     }
-
     /**
      * Beállítja a tanár elleni védelmet
      */
     public void setTeacherProtection(boolean protection){
         TestPrinter.printCallingMethod();
     }
-
     /**
      * Fel tudja-e venni a logarlécet
      */

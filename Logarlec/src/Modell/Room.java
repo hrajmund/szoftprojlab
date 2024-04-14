@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * A szoba osztály reprezentál egy labirintus szobát.
  */
-public class Room{
+public class Room implements IRound{
 
     /**
      * A szobához tartozó labirintus.
@@ -371,5 +371,8 @@ public class Room{
         if(personCounter==5){
             sticky=true;
         }
+    }
+    public void tick(){
+
     }
 }

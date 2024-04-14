@@ -83,4 +83,6 @@ public class Tranzisztor extends BaseItem{
         holder = null;
         room = r;
     }
+     public void tick(){
+     }
 }

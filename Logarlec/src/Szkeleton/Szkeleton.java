@@ -872,7 +872,7 @@ public class Szkeleton {
         functions.add(szkeleton::StudentPutsDownSecondActiveTranzisztor); tesztek.add("StudentPutsDownSecondActiveTranzisztor");
         functions.add(szkeleton::StudentTriesToPickUpActiveTranzisztor); tesztek.add("StudentTriesToPickUpActiveTranzisztor");
         functions.add(szkeleton::StudentEntersARomWithATeacherInItHasALastOneTVSZDenever); tesztek.add("StudentEntersARomWithATeacherInItHasALastOneTVSZDenever");
-        functions.add(szkeleton::SzentSorosppharakTimeIsUp); tesztek.add("SzentSorospharTimeIsUp");
+        functions.add(szkeleton::SzentSorospoharakTimeIsUp); tesztek.add("SzentSorospharTimeIsUp");
         functions.add(szkeleton::NedvesTablatorloTimeIsUp); tesztek.add("NedvesTablatorloTimeIsUp");
         functions.add(szkeleton::TeacherPicksUpAnItem); tesztek.add("TeacherPicksUpAnItem");
         functions.add(szkeleton::TeacherPutsDownAnItemFromItsHand); tesztek.add("TeacherPutsDownAnItemFromItsHand");

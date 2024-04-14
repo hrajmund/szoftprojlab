@@ -77,4 +77,8 @@ public class  Teacher extends Person{
         this.stun();
     }
 
+    @Override
+    public void tick() {
+
+    }
 }

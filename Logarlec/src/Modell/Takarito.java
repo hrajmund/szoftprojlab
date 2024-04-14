@@ -29,10 +29,16 @@ public class Takarito extends Person{
         r.addPerson(this); //Emiatt van csak itt hozzáadva
     }
 
+    /**
+     * Kábítja a jelenlegi szobában lévő entitásokat
+     */
     @Override
     public void stun() {
     }
 
+    /**
+     * N
+     */
     @Override
     public void kill(Person p) {
     }
@@ -43,5 +49,10 @@ public class Takarito extends Person{
 
     @Override
     public void stunTeacher() {
+    }
+
+    @Override
+    public void tick() {
+
     }
 }
