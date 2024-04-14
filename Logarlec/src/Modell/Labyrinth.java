@@ -11,6 +11,8 @@ import java.util.ArrayList;
  */
 public class Labyrinth implements IRound {
 
+    boolean Game_End = false;
+
     /**
      * A labirintusban található szobák listája.
      */
@@ -25,6 +27,11 @@ public class Labyrinth implements IRound {
      * A labirintusban található tanárok listája.
      */
     private ArrayList<Teacher> teachers = new ArrayList<>();
+
+    /**
+     * A labirintusban található tanárok listája.
+     */
+    private ArrayList<Takarito> cleaner= new ArrayList<>();
 
     /**
      * A játékmenedzser, amely felelős a játék kezeléséért.

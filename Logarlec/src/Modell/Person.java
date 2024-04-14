@@ -23,7 +23,7 @@ public abstract class Person{
     /**
      * A személy bénítva van-e
      */
-    protected boolean stunned;
+    protected boolean stunned = false;
     /**
      * A személy jelenlegi szobája
      */
@@ -204,4 +204,8 @@ public abstract class Person{
     public void setLabyrinth(Labyrinth l){
         labyrinth=l;
     }
+    /**
+     * Vissza adja, hogy stunolva van e.
+     */
+    public boolean getStun(){return stunned;}
 }

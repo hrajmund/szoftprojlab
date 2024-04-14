@@ -5,6 +5,9 @@ import java.sql.SQLOutput;
 import java.util.*;
 
 public class Szkeleton {
+    public static final boolean DETERMINISTIC_MODE = true; // True, ha determinisztikus módban akarjuk futtatni
+    public static final int RAND_INIT_WHEN_DETERMINISTIC = 123; //Random konstruktor inicializáló száma, ha determinisztikus módban futtatunk
+
     private void StudentEntersARoom(){
         Student s = new Student();
         Room r1 = new Room();
@@ -725,6 +728,7 @@ public class Szkeleton {
         takaritonooo.move(gasRoom);
         System.out.println("Gas: "+ gasRoom.getGas());
         System.out.println("Latogatok takker utan: "+ gasRoom.getPersonCounter());
+        System.out.println("Stun: " + takaritonooo.getStun());
     }
 
     public void TakaritoNoEntersARoomWhereSomeoneIs(){
@@ -744,6 +748,7 @@ public class Szkeleton {
         s2.setCurrentRoom(r2);
         r1.addPerson(takaritonooo);
         takaritonooo.setCurrentRoom(r1);
+        s1.stun();
 
         takaritonooo.move(r2);
 
@@ -801,8 +806,34 @@ public class Szkeleton {
 
         s.pickUpItem(mask);
         s.UseItem(0);
+        s.pickUpItem(log);
         //Tesztelés
         System.out.println(s.isGasProtected());
+    }
+
+    public void StudentTriesToUseFakeTVSZ(){
+        Room r1= new Room();
+        Room r2= new Room();
+        Student s= new Student();
+        Teacher t= new Teacher();
+        Labyrinth l= new Labyrinth();
+        GameManager gm= new GameManager();
+        l.addRoom(r1);
+        l.addRoom(r2);
+        l.addStudent(s);
+        l.addTeacher(t);
+        l.setGameManager(gm);
+        TVSzDenever tvsz= new TVSzDenever();
+        tvsz.setFake(true);
+        r1.addOutgoingDoor(r2);
+        r2.addIncomingDoor(r1);
+        r1.addItem(tvsz);
+        r1.addPerson(s);
+        s.setCurrentRoom(r1);
+        r2.addPerson(t);
+        t.setCurrentRoom(r2);
+
+        s.move(r2);
     }
 
     public static void main(String[] args) {
@@ -851,6 +882,7 @@ public class Szkeleton {
         functions.add(szkeleton::TakaritoNoEntersARoomWhereSomeoneIs); tesztek.add("TakkerneniEntersARoomWhereSomeoneIs");
         functions.add(szkeleton::RoomBecomesStickyAfterTakker); tesztek.add("RoomBecomesStickyAfterTakker");
         functions.add(szkeleton::StudentPicksUpFakeItemAndTriesToUseIt); tesztek.add("StudentPicksUpFakeItemAndTriesToUseIt");
+        functions.add(szkeleton::StudentTriesToUseFakeTVSZ); tesztek.add("StudentTriesToUseFakeTVSZ");
 
         for (int i = 0; i < tesztek.size(); i++) {
             System.out.println((i+1)+ ". "+ tesztek.get(i));

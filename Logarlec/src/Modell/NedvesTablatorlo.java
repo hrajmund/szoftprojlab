@@ -8,7 +8,7 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
     /**
      * A tárgy hatásának ideje
      */
-    private int timeUsage;
+    private int timeUsage = 10;
 
     /**
      * A tárgy hatását végrehajtó metódus

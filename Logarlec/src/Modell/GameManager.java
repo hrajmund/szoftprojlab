@@ -1,7 +1,10 @@
 package Modell;
 
+import Szkeleton.Szkeleton;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Játék vezérlését végző osztály
@@ -17,6 +20,8 @@ public class GameManager {
     public void gameEnd(){
         TestPrinter.printCallingMethod();
     }
+
+
 
     /*
     public void ReadFile(){}

@@ -10,12 +10,10 @@ java:S1319"pThe return type of this method should be an interface such as "Li
 “
 java:S1319—"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(έΉπόÿÿÿÿ8λ1
 ‹
-java:S1319§"hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".( φ²όÿÿÿÿ8λ1
+java:S1319ª"hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".( φ²όÿÿÿÿ8λ1
 ‡
-java:S1319§"dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".( φ²όÿÿÿÿ8λ1
-s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(κΫΧ½ϋÿÿÿÿ8λ1
-K
-java:S5411ε"(Use a primitive boolean expression here.(κμβ’ωÿÿÿÿ8›λ1
+java:S1319ª"dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".( φ²όÿÿÿÿ8λ1
+s	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(κΫΧ½ϋÿÿÿÿ8λ1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ψ—ύμϊÿÿÿÿ8›λ1
 O
 java:S1905",Remove this unnecessary cast to "ArrayList".(–ψ™Ίϋÿÿÿÿ8¨λ1
@@ -23,4 +21,4 @@ J
 java:S1905™",Remove this unnecessary cast to "ArrayList".(ζΖ”8©λ1
 Y	java:S125 "<This block of commented-out lines of code should be removed.(†Α8©λ1
 F
-java:S1172›"(Remove this unused method parameter "r".(ÒΤ¥8«λ1
+java:S1172"(Remove this unused method parameter "r".(ÒΤ¥8«λ1

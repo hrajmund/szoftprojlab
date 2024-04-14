@@ -9,11 +9,11 @@ public class Student extends Person{
     /**
      * Tanár elleni védelem, amit a SzentSorospohar állítja be
      */
-    private boolean teacherProtected;
+    private boolean teacherProtected = false;
     /**
      * Gáz elleni védelem, amit a FFP2 maszk állítja be
      */
-    private boolean gasProtected;
+    private boolean gasProtected = false;
 
     /**
      * Visszaadja a hallgató kapacitását
