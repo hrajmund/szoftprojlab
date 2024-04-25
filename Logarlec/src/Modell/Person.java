@@ -199,4 +199,6 @@ public abstract class Person implements IRound{
     public boolean getStun(){return stunned;}
 
     public abstract void PrintOutPerson();
+
+    public void UseItem(int i){}
 }

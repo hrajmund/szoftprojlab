@@ -97,7 +97,7 @@ public class GameManager {
                             }
                         }
                         if(r1==null || r2== null){
-                            System.out.println("Érvénytelen parancs: " + command);
+                            System.out.println("Unknown Command: " + command);
                             break;
                         }
                         r1.addOutgoingDoor(r2);
@@ -166,7 +166,7 @@ public class GameManager {
                         if(stunPerson!=null){
                             stunPerson.stun();
                         }else{
-                            System.out.println("Érvénytelen parancs: " + command + "\n");
+                            System.out.println("Unknown Command: " + command + "\n");
                         }
                         break;
                     case "tvsz":
@@ -249,7 +249,7 @@ public class GameManager {
                             additemritem.setRoom(additemroom);
                             Items.remove(additemritem);
                         }else{
-                            System.out.println("Érvénytelen parancs: " + command + "\n");
+                            System.out.println("Unknown Command: " + command + "\n");
                         }
                         break;
                     case "additem_p":
@@ -274,7 +274,7 @@ public class GameManager {
                             additempitem.setHolder(additemp);
                             Items.remove(additempitem);
                         }else{
-                            System.out.println("Érvénytelen parancs: " + command + "\n");
+                            System.out.println("Unknown Command: " + command + "\n");
                         }
 
                         break;
@@ -300,7 +300,7 @@ public class GameManager {
                         break;
 
                     default:
-                        System.out.println("Érvénytelen parancs: " + command + "\n");
+                        System.out.println("Unknown Command: " + command + "\n");
                 }
             }
             scanner.close();
@@ -316,7 +316,7 @@ public class GameManager {
         String[] parts = line.split(" ");
         String commandName = parts[0];
         while(!line.equals("init")) {
-            if(commandName.equals(random)){
+            if(commandName.equals("random")){
                     if (parts[1].equals(true)) {
                         random = true;
                     } else if (parts[1].equals(false)) {
@@ -333,8 +333,123 @@ public class GameManager {
         }
 
         while (!labyrinth.Game_End) {
-            for(Person p: people){
-                //DE HOGY A GECIBE
+            ArrayList<Person> peopleCopy=new ArrayList<>(people);
+            for(Person p: peopleCopy){
+                line=scanner.nextLine();
+                parts = line.split(" ");
+                while(!parts[0].equals("next") || !parts[0].equals("move")){
+                    String commandName_ = parts[0];
+                    switch (commandName_) {
+                        case "neighbours":
+                            for(Room r : p.getCurrentRoom().getOutgoingDoors()){
+                                r.PrintOutRoom();
+                            }
+                            break;
+                        case "move":
+                            Room r=null;
+                            //Person movep=null;
+                            //String movepName= parts[1];
+                            String moverName= parts[2];
+                            for(Room v : labyrinth.getRooms()){
+                                if(v.getName().equals(moverName)){
+                                    r=v;
+                                    break;
+                                }
+                            }
+                            /*
+                            for(Person v :people){
+                                if(v.getName().equals(movepName)){
+                                    movep=v;
+                                    break;
+                                }
+                            }*/
+                            if(r!=null){
+                                p.move(r);
+                            }else{
+                                System.out.println("Unknown Command: " + line + "\n");
+                            }
+
+                            break;
+                        case "roomitems":
+                            if(p.getCurrentRoom().getItems()!=null){
+                                for(BaseItem v: p.getCurrentRoom().getItems()){
+                                    v.PrintOutItem();
+                                }
+                            }else{
+                                System.out.println("Nincs Item\n");
+                            }
+
+                            break;
+                        case "pickup":
+                            String pickupItemName=parts[1];
+                            BaseItem pickupItem=null;
+                            if(!p.getCurrentRoom().getItems().isEmpty()) {
+                                for (BaseItem v : p.getCurrentRoom().getItems()) {
+                                    if (v.getName().equals(pickupItemName)) {
+                                        pickupItem = v;
+                                    }
+                                }
+                            }
+                            if(pickupItem!=null){
+                                p.pickUpItem(pickupItem);
+                            }else {
+                                System.out.println("Unknown Command: " + line + "\n");
+                            }
+
+                            break;
+                        case "ownitems":
+                            if(p.getItems()!=null){
+                                for(BaseItem v: p.getItems()){
+                                    v.PrintOutItem();
+                                }
+                            }else{
+                                System.out.println("Nincs Item\n");
+                            }
+
+                            break;
+                        case "useitem":
+                            BaseItem useItem= null;
+                            String useitemName=parts[1];
+                            if(!p.getItems().isEmpty()) {
+                                for (BaseItem v : p.getItems()) {
+                                    if (v.getName().equals(useitemName)) {
+                                        useItem = v;
+                                        break;
+                                    }
+                                }
+                            }
+                            if(useItem!=null){
+                                p.UseItem(p.getItems().indexOf(useItem));
+                            }else{
+                                System.out.println("Nincs ilyen Item\n");
+                            }
+                            break;
+                        case "putdwon":
+                             String putdownItemName=parts[1];
+                            BaseItem putdownItem=null;
+                            if(!p.getItems().isEmpty()) {
+                                for (BaseItem v : p.getItems()) {
+                                    if (v.getName().equals(putdownItemName)) {
+                                        putdownItem = v;
+                                    }
+                                }
+                            }
+                            if(putdownItem!=null){
+                                p.putDownItem(putdownItem);
+                            }else {
+                                System.out.println("Unknown Command: " + line + "\n");
+                            }
+                            break;
+                        case "next":
+                            break;
+                        case "list":
+                            labyrinth.PrintOut();
+                            break;
+                        default:
+                            System.out.println("Unknown Command: " + line + "\n");
+                    }
+                    line=scanner.nextLine();
+                }
 
             }
         }

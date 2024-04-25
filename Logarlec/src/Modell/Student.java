@@ -68,6 +68,7 @@ public class Student extends Person{
      * Használ egy tárgyat
      * @param i tárgy sorszáma
      */
+    @Override
     public void UseItem(int i){
         items.get(i).effect();
     }

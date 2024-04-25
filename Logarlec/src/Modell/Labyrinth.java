@@ -147,17 +147,7 @@ public class Labyrinth implements IRound {
             System.out.println("GAME_END");
         }else {
             for (Room r : this.getRooms()) {
-                System.out.print(r.getName() +
-                        "\n\t [Gas] " + r.getGas() +
-                        "\n\t [Sticky] " + r.getSticky() +
-                        "\n\t [Capacity] " + r.getCapacity()
-                );
-
-                System.out.print("\n\t [Incoming] ");
-                r.getIncomingDoors().forEach(incoming -> System.out.println(incoming.getName() + " "));
-                System.out.print("\n\t [Outgoing] ");
-                r.getOutgoingDoors().forEach(outgoing -> System.out.println(outgoing.getName() + " "));
-
+                r.PrintOutRoom();
                 for (Person person : r.getPeople()) {
                     person.PrintOutPerson();
                 }
