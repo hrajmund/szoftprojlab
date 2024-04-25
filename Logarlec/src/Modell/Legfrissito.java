@@ -4,12 +4,20 @@ package Modell;
  *A Légfrissítő tárgy
  */
 public class Legfrissito extends BaseItem{
+
+    public Legfrissito(){
+        name="UnknownFresh";
+    }
+
+    public Legfrissito(String n){
+        name=n;
+    }
+
     /**
      * A tárgy hatását végrehajtó metódus
      */
     @Override
     public void effect() {
-        TestPrinter.printCallingMethod(holder);
         holder.putDownItem(this);
         room.setGas(false);
         room.removeItem(this);
@@ -17,10 +25,13 @@ public class Legfrissito extends BaseItem{
     }
     @Override
     public void putDown(Room r){
-        TestPrinter.printCallingMethod(holder);
         holder = null;
         room = r;
     }
     @Override
     public void tick() {}
+    @Override
+    public void PrintOutItem(){
+        System.out.print(this.getName() + " (Active) " + this.getActive() + " (Holder) " + this.getHolder());
+    }
 }

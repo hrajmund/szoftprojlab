@@ -1,2 +1,18 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8’ë¬ç1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8–Ÿª´ñ1J$1f66a9e4-6091-410a-9147-1a5af9dfe2a4
+Ä
+java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²8Ÿª´ñ1J$901888d3-11e8-42f4-85b1-a5a98229867a
+É
+java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8Ÿª´ñ1J$6c8d6f23-9bd5-4440-85e0-96a800261764
+}
+java:S1161":Add the "@Override" annotation above this method signature(¦×¡õ8 Ÿª´ñ1J$023f5326-f141-4163-b3fd-bd063bd610db
+f
+java:S21195"Save and re-use this "Random".(€ÏÅ£ıÿÿÿÿ8£Ÿª´ñ1J$6fe0c7ff-168a-4e9d-ad78-48dbf8889416
+m	java:S106^"+Replace this use of System.out by a logger.(¶´¬8¦Ÿª´ñ1J$eeaf1aef-1540-4cf7-9d42-f0fc3308ef9e
+r	java:S106c"+Replace this use of System.out by a logger.(•ë÷ìÿÿÿÿÿ8¦Ÿª´ñ1J$943084a3-ecea-403c-9a98-056b05f62e5f
+—
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8§Ÿª´ñ1J$967276b8-d6e1-4298-892f-78969fc2d6bd
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8§Ÿª´ñ1J$d8df4bd4-f53c-4e12-b633-e27006fa7b79
+q
+java:S1128".Remove this unused import 'javax.naming.Name'.(ºÄä”8§Ÿª´ñ1J$d0ef0daf-a317-4aca-935a-91bc5a1a0aa6

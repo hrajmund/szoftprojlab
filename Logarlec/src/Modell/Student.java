@@ -20,14 +20,21 @@ public class Student extends Person{
      */
     @Override
     public int getCapacity(){
-        TestPrinter.printCallingMethod();
         return 0;
     }
+
+    public Student(){
+        name = "UnknownStudent";
+    }
+
+    public Student(String n){
+        name = n;
+    }
+
     /**
      * Megbénítja a hallgatót
      */
     public void stun(){
-        TestPrinter.printCallingMethod();
         if (!this.isGasProtected()){
             this.dropAllItems();
             this.stunned=true;
@@ -37,7 +44,6 @@ public class Student extends Person{
      * Védelem a tanár ellen
      */
     public void setTeacherProtection(boolean protection){
-        TestPrinter.printCallingMethod(protection);
         teacherProtected = protection;
     }
 
@@ -45,18 +51,17 @@ public class Student extends Person{
      * Visszaadja, hogy a hallgató védve van-e a tanártól
      * @return
      */
-    public boolean isTeacherProtected(){ TestPrinter.printCallingMethod(); return teacherProtected;}
+    public boolean isTeacherProtected(){ return teacherProtected;}
     /**
      * Visszaadja, hogy a hallgató védve van-e a gáztól
      * @return
      */
-    public boolean isGasProtected(){TestPrinter.printCallingMethod(); return gasProtected;}
+    public boolean isGasProtected(){ return gasProtected;}
     /**
      * Beállítja a hallgató gáz elleni védelmét
      * @param b igazságérték, amie állítni kell
      */
     public void setGasProtection(Boolean b){
-        TestPrinter.printCallingMethod();
         gasProtected = b;
     }
     /**
@@ -64,7 +69,6 @@ public class Student extends Person{
      * @param i tárgy sorszáma
      */
     public void UseItem(int i){
-        TestPrinter.printCallingMethod();
         items.get(i).effect();
     }
     /**
@@ -72,7 +76,6 @@ public class Student extends Person{
      * @param i tárgy, amit hozzá kell adni
      */
     public void addItem(BaseItem i){
-        TestPrinter.printCallingMethod(i);
         items.add(i);
     }
 
@@ -82,14 +85,12 @@ public class Student extends Person{
      */
     @Override
     public void removeItem(BaseItem i){
-        TestPrinter.printCallingMethod(i);
         items.remove(i);
     }
     /**
      * Minden tárgyat eldob a hallgató
      */
     public void dropAllItems(){
-        TestPrinter.printCallingMethod();
         currentRoom.addItems(items);
         items.clear();
     }
@@ -98,7 +99,6 @@ public class Student extends Person{
      *
      */
     public void killed() {
-        TestPrinter.printCallingMethod();
         //Ha van nála aktív SzentSorosPoharak, akkor védelme van a Teacher ellen
         if(teacherProtected){
             //teacherProtected=false; //AAAAAA
@@ -106,7 +106,7 @@ public class Student extends Person{
             putDownItem(getItems().get(0));
             return;
         }
-        //Ha nincs aktív SzentSorospohara, akkor megnézi, hogy van-e nála olyan item, ami megvédi a Teachertől
+        //Ha nincs aktív SzentSorospoharak, akkor megnézi, hogy van-e nála olyan item, ami megvédi a Teachertől
         else{
             for(BaseItem item : items) {
                 if (item.protAgainstTeacher()) {
@@ -124,7 +124,6 @@ public class Student extends Person{
      * @return True, ha a hallgató felvehette a Logarlec-et, egyébként False
      */
     public Boolean canPickUpLogarlec(){
-        TestPrinter.printCallingMethod();
         return true;
     }
 
@@ -135,7 +134,6 @@ public class Student extends Person{
      */
     @Override
     public void move(Room r) {
-        TestPrinter.printCallingMethod(r);
         if(currentRoom.movePossibilities().contains(r)){
             currentRoom.removePerson(this);
             r.addPerson(this);
@@ -153,25 +151,38 @@ public class Student extends Person{
      * @param p Az a személy, aki megölte a hallgatót
      */
     public void kill(Person p){
-        TestPrinter.printCallingMethod(p);
+
     }
 
     /**
      * A teacher stunolásához használt függvény.
      */
-    public void stunTeacher(){TestPrinter.printCallingMethod();}
+    public void stunTeacher(){}
     /**
      * Ellenőrzi, hogy a hallgató aktiválhatja-e a Tranzisztort
      *
      * @return True, ha a hallgató aktiválhatja a Tranzisztor-t, egyébként False
      */
     public Boolean canActivateTranzisztor(){
-        TestPrinter.printCallingMethod();
         return true;
     }
 
     @Override
     public void tick() {
 
+    }
+
+    @Override
+    public void PrintOutPerson(){
+        System.out.print("\t" + this.getName() +
+                "\n\t    [CurrentRoom] " + this.getCurrentRoom().Name +
+                "\n\t    [Stun] " + this.getStun() +
+                "\n\t    [GasProtected] " + this.isGasProtected() +
+                "\n\t    [TeacherProtected] " + this.isTeacherProtected()
+        );
+        for(int i = 0; i < this.items.size(); i++){
+            System.out.print(String.format("[Item %d]", i));
+            this.items.get(i).PrintOutItem();
+        }
     }
 }

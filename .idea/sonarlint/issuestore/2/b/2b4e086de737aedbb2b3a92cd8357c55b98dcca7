@@ -1,24 +1,31 @@
 
-
-java:S1319="pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8šŒšŸë1
-~
-java:S1319e"aThe type of "n" should be an interface such as "List" rather than the implementation "ArrayList".(üƒæÉ8šŒšŸë1
-Š
-java:S1319o"mThe type of "outgoingDoors" should be an interface such as "List" rather than the implementation "ArrayList".(´™±×8šŒšŸë1
-“
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡„‰õúÿÿÿÿ8šŒšŸë1
-“
-java:S1319—"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(İŠ¹ğüÿÿÿÿ8šŒšŸë1
-‹
-java:S1319ª"hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8šŒšŸë1
-‡
-java:S1319ª"dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8šŒšŸë1
-s	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÛ×½ûÿÿÿÿ8šŒšŸë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8›ŒšŸë1
-O
-java:S1905",Remove this unnecessary cast to "ArrayList".(–ø™ºûÿÿÿÿ8¨ŒšŸë1
-J
-java:S1905™",Remove this unnecessary cast to "ArrayList".(ŒæÆ”8©ŒšŸë1
-Y	java:S125 "<This block of commented-out lines of code should be removed.(†Áˆ8©ŒšŸë1
-F
-java:S1172"(Remove this unused method parameter "r".(˜ÒÔ¥8«ŒšŸë1
+³
+java:S1319F"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8Ø¨´ñ1J$04ce8c87-8958-441e-964f-5d423b55b323
+¤
+java:S1319j"aThe type of "n" should be an interface such as "List" rather than the implementation "ArrayList".(üƒæÉ8Ø¨´ñ1J$1b9068d1-8aad-4b4c-861a-fa73f805bf23
+°
+java:S1319s"mThe type of "outgoingDoors" should be an interface such as "List" rather than the implementation "ArrayList".(´™±×8Ø¨´ñ1J$05980cea-4871-47c6-8f7d-58e2aaec63d9
+¹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡„‰õúÿÿÿÿ8Ø¨´ñ1J$a647c8f0-fb70-4ed0-84dc-e15b5367795e
+¹
+java:S1319—"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(İŠ¹ğüÿÿÿÿ8ŸØ¨´ñ1J$02973dbd-ca70-438a-a294-8915761df9a2
+±
+java:S1319"hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8ŸØ¨´ñ1J$26cd1d68-9ed4-4e7e-99fb-959f8f547938
+­
+java:S1319"dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8ŸØ¨´ñ1J$29cf86b1-8375-4f5c-a2c7-56a1bc0ac3d7
+™	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÛ×½ûÿÿÿÿ8ñ®®ñ1J$07161a7e-573f-4b5e-94c9-3c39bc08c527
+q
+java:S5411á"(Use a primitive boolean expression here.(êìâ’ùÿÿÿÿ8¶Ù¨´ñ1J$861d43b9-66ae-48e9-898f-2701ec395d5f
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8€Á®®ñ1J$da49dfbd-c45d-4dc3-a89d-2e056b60ec53
+‘	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê°ñä8ìÁ®®ñ1J$3bc2ffb6-166e-425b-9a34-e54789b69088
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜ ö²üÿÿÿÿ8¬ñ®®ñ1J$424b31f2-8d21-46c3-a1ff-7943003c17e9
+Ê
+java:S1186é"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8¬ñ®®ñ1J$343a9bf4-74c9-43c1-9deb-473ef82ead03
+u
+java:S1905",Remove this unnecessary cast to "ArrayList".(–ø™ºûÿÿÿÿ8´ñ®®ñ1J$8e2bd3c4-38fb-4f41-a0c9-ec56abeeefdb
+p
+java:S1905˜",Remove this unnecessary cast to "ArrayList".(ŒæÆ”8µñ®®ñ1J$2ef4a8bf-f716-43c5-93ee-fe47e0332767
+	java:S125Ÿ"<This block of commented-out lines of code should be removed.(†Áˆ8¸ñ®®ñ1J$e0be9823-de9f-4dce-85dc-e18eed6844b8
+l
+java:S1172“"(Remove this unused method parameter "r".(˜ÒÔ¥8ÇÚ¨´ñ1J$40c9a2b7-2278-421e-b7cd-667814fa7a1b

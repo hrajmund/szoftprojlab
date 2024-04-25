@@ -1,4 +1,11 @@
 
-L
-java:S1066!"/Merge this if statement with the enclosing one.(±†øè8Ïº°ë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8éš†—ë1
+r
+java:S1066+"/Merge this if statement with the enclosing one.(±†øè8Ïº°ë1J$6d63b96b-89b6-419c-be34-699a312602e4
+k
+java:S5411*"(Use a primitive boolean expression here.(•ëŞ‚8íÍö³ñ1J$d6031bf1-f02a-463c-9f51-8bceca255e87
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8éš†—ë1J$b8c5ccad-5e02-4c53-aa4e-35b806c4af1f
+m	java:S1069"+Replace this use of System.out by a logger.(’‚»ş8 ±à±ñ1J$84e80c95-cf59-42c8-8ad5-73af70444b4b
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8ûÍö³ñ1J$bfb42ffe-9f51-488b-a4af-28eb6c695203
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ûÍö³ñ1J$b4a49428-8047-443c-a74b-7aec3a730022

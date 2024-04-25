@@ -4,6 +4,7 @@ import Modell.IRound;
 import Modell.Room;
 import Modell.TestPrinter;
 
+import java.math.RoundingMode;
 import java.util.ArrayList;
 
 /**
@@ -44,7 +45,7 @@ public class Labyrinth implements IRound {
      * @param r Az eltávolítandó szoba.
      */
     public void removeRoom(Room r){
-        TestPrinter.printCallingMethod(r);
+
     }
 
     /**
@@ -53,7 +54,6 @@ public class Labyrinth implements IRound {
      * @param s Az eltávolítandó diák.
      */
     public void removeStudent(Student s) {
-        TestPrinter.printCallingMethod(s);
         players.remove(s);
         if(players.isEmpty()){
             GM.gameEnd();
@@ -64,14 +64,13 @@ public class Labyrinth implements IRound {
      * A kört lépteti.
      */
     public void tick(){
-        TestPrinter.printCallingMethod();
+
     }
 
     /**
      * Új kört kezd.
      */
     public void newRound(){
-        TestPrinter.printCallingMethod();
         if(players.isEmpty()){
             GM.gameEnd();
         }
@@ -83,7 +82,6 @@ public class Labyrinth implements IRound {
      * @param s A hozzáadandó diák.
      */
     public void addStudent(Student s){
-        TestPrinter.printCallingMethod(s);
         players.add(s);
         s.setLabyrinth(this);
     }
@@ -94,10 +92,19 @@ public class Labyrinth implements IRound {
      * @param t A hozzáadandó tanár.
      */
     public void addTeacher(Teacher t){
-        TestPrinter.printCallingMethod(t);
         teachers.add(t);
         t.setLabyrinth(this);
     }
+
+    /*
+        * Hozzáad egy takarítót a labirintushoz.
+        * @param t A hozzáadandó takarító.
+     */
+    public void addCleaner(Takarito t) {
+        cleaner.add(t);
+        t.setLabyrinth(this);
+    }
+
 
     /**
      * Hozzáad egy szobát a labirintushoz.
@@ -105,14 +112,13 @@ public class Labyrinth implements IRound {
      * @param r A hozzáadandó szoba.
      */
     public void addRoom(Room r) {
-        TestPrinter.printCallingMethod(r);
+        rooms.add(r);
     }
 
     /**
      * Befejezi a játékot.
      */
     public void endGame(){
-        TestPrinter.printCallingMethod();
         GM.gameEnd();
     }
 
@@ -122,8 +128,41 @@ public class Labyrinth implements IRound {
      * @param gm A beállítandó játékmenedzser.
      */
     public void setGameManager(GameManager gm) {
-        TestPrinter.printCallingMethod(gm);
         GM=gm;
+    }
+
+    public ArrayList<Room>getRooms(){
+        return rooms;
+    }
+    public ArrayList<Person>getPeople(){
+        ArrayList<Person> people= new ArrayList<>();
+        people.addAll(this.cleaner);
+        people.addAll(this.players);
+        people.addAll(this.teachers);
+        return people;
+    }
+
+    public void PrintOut(){
+        if(Game_End){
+            System.out.println("GAME_END");
+        }else {
+            for (Room r : this.getRooms()) {
+                System.out.print(r.getName() +
+                        "\n\t [Gas] " + r.getGas() +
+                        "\n\t [Sticky] " + r.getSticky() +
+                        "\n\t [Capacity] " + r.getCapacity()
+                );
+
+                System.out.print("\n\t [Incoming] ");
+                r.getIncomingDoors().forEach(incoming -> System.out.println(incoming.getName() + " "));
+                System.out.print("\n\t [Outgoing] ");
+                r.getOutgoingDoors().forEach(outgoing -> System.out.println(outgoing.getName() + " "));
+
+                for (Person person : r.getPeople()) {
+                    person.PrintOutPerson();
+                }
+            }
+        }
     }
 
 }

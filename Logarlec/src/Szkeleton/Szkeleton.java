@@ -1,13 +1,39 @@
 package Szkeleton; import Modell.*; import Modell.CursedRoom; import Modell.GameManager; import Modell.TVSzDenever;
 
-import java.lang.reflect.Method;
-import java.sql.SQLOutput;
+import java.io.*;
 import java.util.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.api.Assumptions;
+
+import java.nio.charset.StandardCharsets;
+import java.nio.file.FileSystems;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.PathMatcher;
+import java.nio.file.Paths;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Stream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Map;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+import java.util.function.BiFunction;
 
 public class Szkeleton {
     public static final boolean DETERMINISTIC_MODE = true; // True, ha determinisztikus módban akarjuk futtatni
     public static final int RAND_INIT_WHEN_DETERMINISTIC = 123; //Random konstruktor inicializáló száma, ha determinisztikus módban futtatunk
 
+    public void osszecsuk() { //koszi <3
+    /*
     private void StudentEntersARoom(){
         Student s = new Student();
         Room r1 = new Room();
@@ -835,8 +861,74 @@ public class Szkeleton {
 
         s.move(r2);
     }
+*/
+    }
 
-    public static void main(String[] args) {
+//    /**
+//     * Input commands are provided as a parameter.
+//     * Expected outputs may be provided in another file.  In case the
+//     * output file does not exist, it is simply ignored and the test is
+//     * inconclusive.
+//     */
+//    @ParameterizedTest
+//    @MethodSource("provideTestFiles")
+//    void runCommandsFromFile_Success(File inputFile, File outputFile) throws IOException {
+//        // Arrange
+//        InputStream in = new FileInputStream(inputFile);
+//        OutputStream actualOut = new ByteArrayOutputStream();
+//
+//        // Act
+//        //IDE, a pálya betöltését! (amit Máté írt)
+//        //IDE, a parancsok futtatását!
+//
+//        // Assert, osszehasonlitas
+//        if (! outputFile.exists()) {
+//            // No output file was provided; test is inconclusive but we
+//            // still get coverage metrics for the execution
+//            inconclusive();
+//        } else {
+//            try (InputStream expectedOut = new FileInputStream(outputFile)) {
+//                String expected = normalizeString(new String(expectedOut.readAllBytes(), StandardCharsets.UTF_8));
+//                String actual = normalizeString(actualOut.toString());
+//                assertEquals(expected, actual);
+//            }
+//        }
+//    }
+//    private static Stream<Arguments> provideTestFiles() throws IOException {
+//        PathMatcher matcher = FileSystems.getDefault().getPathMatcher("glob:**/input*");
+//
+//        Map<File, File> files = new HashMap<>(); // map of input-output files
+//        Files.walkFileTree(Paths.get("test-data/"), new SimpleFileVisitor<Path>() {
+//            @Override
+//            public FileVisitResult visitFile(Path path, BasicFileAttributes attrs) throws IOException {
+//                if (matcher.matches(path)) {
+//                    File in = path.toFile();
+//                    File out = Path.of(path.toString().replace("input", "output")).toFile();
+//                    files.put(in, out);
+//                }
+//                return FileVisitResult.CONTINUE;
+//            }
+//        });
+//
+//        return files.entrySet().stream().map((entry) -> Arguments.of(entry.getKey(), entry.getValue()));
+//    }
+//
+//    /**
+//     * Utility method to force a test result to be 'inconclusive'.
+//     */
+//    private static void inconclusive() {
+//        Assumptions.assumeTrue(false, "Inconclusive");
+//    }
+//
+//    /**
+//     * Normalize a string by stripping all leading and trailing whitespace
+//     * and replacing all whitespace with a single space.
+//     */
+//    private static String normalizeString(String s) {
+//        return s.strip().replaceAll("\\s+", " ");
+//    }
+
+        /*
         Szkeleton szkeleton = new Szkeleton();
         List<Runnable> functions = new ArrayList<Runnable>();
         List<String> tesztek= new ArrayList<>();
@@ -883,7 +975,10 @@ public class Szkeleton {
         functions.add(szkeleton::RoomBecomesStickyAfterTakker); tesztek.add("RoomBecomesStickyAfterTakker");
         functions.add(szkeleton::StudentPicksUpFakeItemAndTriesToUseIt); tesztek.add("StudentPicksUpFakeItemAndTriesToUseIt");
         functions.add(szkeleton::StudentTriesToUseFakeTVSZ); tesztek.add("StudentTriesToUseFakeTVSZ");
+*/
 
+    public static void main(String[] args) throws FileNotFoundException {
+        /*
         for (int i = 0; i < tesztek.size(); i++) {
             System.out.println((i+1)+ ". "+ tesztek.get(i));
         }
@@ -899,5 +994,28 @@ public class Szkeleton {
                 System.out.println("Hibas.");
             }
         } while (choice != 0);
+        */
+
+        System.out.println("LOGARLÉC");
+        System.out.println("_____________________________________________");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Would you like to play a Game or run test? (play/test):");
+        String valasz = scanner.nextLine();
+
+
+        if (valasz.equalsIgnoreCase("test")) {
+
+            while(!valasz.equalsIgnoreCase("exit")){
+                System.out.println("Which test would you like to run? (test_0):");
+                valasz = scanner.nextLine();
+                GameManager gameManager = new GameManager(valasz);
+            }
+
+        } else {
+
+            GameManager gameManager = new GameManager();
+        }
+
     }
 }

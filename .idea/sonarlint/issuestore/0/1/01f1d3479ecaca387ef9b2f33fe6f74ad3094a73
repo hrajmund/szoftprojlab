@@ -1,15 +1,20 @@
 
-L
-java:S1066w"/Merge this if statement with the enclosing one.(Óõå©8˜¹˜Åë1
-Q
-java:S1066x"/Merge this if statement with the enclosing one.(¦ƒ›¶þÿÿÿÿ8™¹˜Åë1
-’
-java:S1319N"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óþÿÿÿÿ8™¹˜Åë1
-‚
-java:S1319V"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8™¹˜Åë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8š¹˜Åë1
-…
-java:S4144°"bUpdate this method so that its implementation is not identical to "canPickUpLogarlec" on line 161.(‘¹÷Üùÿÿÿÿ8œ¹˜Åë1
-Y	java:S125‰"<This block of commented-out lines of code should be removed.(ø¸Ó¡8¡¹˜Åë1
-O
-java:S1172š"1Remove this unused method parameter "protection".(´Ñ¸8¢¹˜Åë1
+r
+java:S1066p"/Merge this if statement with the enclosing one.(Óõå©8ìÙö¯ñ1J$b5d596a5-3bb5-4329-8beb-32034e1fb77b
+w
+java:S1066q"/Merge this if statement with the enclosing one.(¦ƒ›¶þÿÿÿÿ8ìÙö¯ñ1J$f2b289d2-3e16-4c52-b799-9c09e9208955
+¸
+java:S1319M"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óþÿÿÿÿ8¡î³ñ1J$0d492eff-3185-4f03-9f5b-6e506a943c0a
+¨
+java:S1319T"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8¡î³ñ1J$e05fe340-7f36-4db6-bcb6-29ad76573f99
+p
+java:S5411o"(Use a primitive boolean expression here.(§‰ÈÄûÿÿÿÿ8‘¡î³ñ1J$be7aac82-ff08-4944-9223-f91a79883a5b
+k
+java:S5411p"(Use a primitive boolean expression here.(Óõå©8‘¡î³ñ1J$2c3c194c-9aa1-4e63-9e33-cd0d8395dc78
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8íÙö¯ñ1J$7f01d313-6eeb-4343-b426-2eee637ca156
+	java:S125"<This block of commented-out lines of code should be removed.(ø¸Ó¡8òÙö¯ñ1J$19e6cdd8-064e-4477-8156-baae18edc34c
+	java:S100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(žî>8 £î³ñ1J$3afa6f48-859f-4540-808a-306fb4fd8def
+—
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8œ¤î³ñ1J$7a9bf8bb-5bb8-43e8-819f-7a64b6498819
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8œ¤î³ñ1J$b6c95158-a376-4391-8ee3-ca322fec242d

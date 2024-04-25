@@ -12,12 +12,28 @@ public class FFP2 extends BaseItem implements IRound {
     /**
      * A tárgy hátralévő ideje
      */
-    private int timeUsage;
+    private int timeUsage=5;
+
+    /**
+     *
+     */
+    public FFP2(){
+        name="UnknownFFP2Mask";
+    }
+
+    public FFP2(String n){
+        name=n;
+    }
+
+    public FFP2(String n,int i){
+        name=n;
+        timeUsage=i;
+    }
+
     /**
      * A tárgy hatását végrehajtó metódus
      */
     public void effect(){
-        TestPrinter.printCallingMethod();
         if(!fake){
             holder.setGasProtection(true);
         }
@@ -27,7 +43,6 @@ public class FFP2 extends BaseItem implements IRound {
      * A tárgyat kezeli körönként
      */
     public void tick(){
-        TestPrinter.printCallingMethod();
         if(active){
             if(timeUsage>0){
                 if(timeUsage==1){
@@ -43,7 +58,6 @@ public class FFP2 extends BaseItem implements IRound {
 
     @Override
     public void putDown(Room r){
-        TestPrinter.printCallingMethod(holder);
         holder.setGasProtection(false);
         active = false;
         holder = null;
@@ -52,5 +66,11 @@ public class FFP2 extends BaseItem implements IRound {
 
     public void setFake(Boolean b){
         fake= b;
+    }
+    @Override
+    public void PrintOutItem(){
+        System.out.print(this.getName() + " (Active) " +
+                this.getActive() + " (Holder) " + this.getHolder() +
+                " (Fake) " + this.fake + " (TimeUsage) " + this.timeUsage);
     }
 }

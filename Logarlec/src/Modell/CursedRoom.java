@@ -19,18 +19,25 @@ public class CursedRoom extends Room implements IRound {
      */
     private List<Room> cursedOutgoingDoors= new ArrayList<Room>();
 
+    public CursedRoom() {
+        super();
+    }
+
+    public CursedRoom(String cursedroomName) {
+        super(cursedroomName);
+    }
+
+
     /**
      * Ennek a függvénynek a határásra változnak meg az elátkozott ajtók
      */
     public void tick(){
-        TestPrinter.printCallingMethod();
         cursed();
     }
     /**
      * Ennek a függvénynek a határásra változnak meg az elátkozott ajtók
      */
     public void cursed(){
-        TestPrinter.printCallingMethod();
         Random randomNum;
         if (Szkeleton.DETERMINISTIC_MODE) {
             randomNum = new Random(Szkeleton.RAND_INIT_WHEN_DETERMINISTIC); // A kezdőérték, ha determinisztikus módban vagyunk

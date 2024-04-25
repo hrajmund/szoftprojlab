@@ -6,12 +6,19 @@ import Modell.TestPrinter;
 public class Tranzisztor extends BaseItem{
     private Tranzisztor connected;
 
+    public Tranzisztor(){
+        name="UnknownTranzisztor";
+    }
+
+    public Tranzisztor(String n){
+        name=n;
+    }
+
     /**
      * A tárgy hatását végrehajtó metódus
      */
     @Override
     public void effect() {
-        TestPrinter.printCallingMethod();
         if(holder.items.contains(this.connected)){
             active=true;
             holder.putDownItem(this);
@@ -32,19 +39,19 @@ public class Tranzisztor extends BaseItem{
     @Override
     public void setHolder(Person holder){
         if (holder == null) {
-            TestPrinter.printCallingMethod();
+            this.holder=holder;
         }
         else{
-            TestPrinter.printCallingMethod(holder);
             for(BaseItem item: holder.items){
                 if(item.isConnected()!=null){
                     item.setConnected(this);
                     setConnected(item);
+                    this.holder=holder;
                     return;
                 }
             }
         }
-        this.holder=holder;
+
 
     }
 
@@ -52,7 +59,6 @@ public class Tranzisztor extends BaseItem{
      * A tranzisztor összkapcsolható-e
      */
     public Tranzisztor isConnected(){
-        TestPrinter.printCallingMethod();
         if(connected==null)
             return this;
         return null;
@@ -63,7 +69,6 @@ public class Tranzisztor extends BaseItem{
      */
     @Override
     public void setConnected(BaseItem t){
-        TestPrinter.printCallingMethod(t);
         connected =(Tranzisztor) t;
     }
 
@@ -71,7 +76,6 @@ public class Tranzisztor extends BaseItem{
      * Tranzisztorok alaphelyzetbe állítása
      */
     public void resetTranzisztors(){
-        TestPrinter.printCallingMethod();
         connected.active=false;
         connected.connected=null;
         active=false;
@@ -79,10 +83,16 @@ public class Tranzisztor extends BaseItem{
     }
     @Override
     public void putDown(Room r){
-        TestPrinter.printCallingMethod(holder);
         holder = null;
         room = r;
     }
-     public void tick(){
-     }
+    public void tick(){
+    }
+
+    @Override
+    public void PrintOutItem(){
+        System.out.print(this.getName() + " (Active) " +
+                this.getActive() + " (Holder) " + this.getHolder() +
+                " (Connected) " + this.connected.name);
+    }
 }

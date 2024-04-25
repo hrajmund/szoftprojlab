@@ -8,6 +8,8 @@ import java.util.List;
  */
 public class Room implements IRound{
 
+    protected String Name;
+
     /**
      * A szobához tartozó labirintus.
      */
@@ -52,6 +54,13 @@ public class Room implements IRound{
      * A szobába hány ember járt a takarító után
      */
     protected int personCounter = Integer.MIN_VALUE; //inicializáláskor minimumról indul, majd a takarító nullázza
+    public Room(){
+        Name = "UnknownRoom";
+    }
+
+    public Room(String n){
+            Name = n;
+    }
 
     /**
      * Visszaadja a szobában tartózkodó emberek listáját.
@@ -59,7 +68,6 @@ public class Room implements IRound{
      * @return A szobában tartózkodó emberek listája.
      */
     public ArrayList<Person> getPeople() {
-        TestPrinter.printCallingMethod();
         return people;
     }
 
@@ -69,7 +77,6 @@ public class Room implements IRound{
      * @return A szoba befogadóképessége.
      */
     public int getCapacity() {
-        TestPrinter.printCallingMethod();
         return capacity;
     }
 
@@ -79,7 +86,6 @@ public class Room implements IRound{
      * @param capacity A beállítandó befogadóképesség.
      */
     public void setCapacity(int capacity) {
-        TestPrinter.printCallingMethod(capacity);
         this.capacity = capacity;
     }
 
@@ -89,7 +95,6 @@ public class Room implements IRound{
      * @return A szobában található tárgyak listája.
      */
     public List<BaseItem> getItems() {
-        TestPrinter.printCallingMethod();
         return items;
     }
 
@@ -99,7 +104,6 @@ public class Room implements IRound{
      * @param n Az új ajtók listája.
      */
     public void setIncomingDoors(ArrayList<Room> n){
-        TestPrinter.printCallingMethod(n);
         incomingDoors = n;
     }
 
@@ -109,7 +113,6 @@ public class Room implements IRound{
      * @param outgoingDoors Az új kimenő ajtók listája.
      */
     public void setOutgoingDoors(ArrayList<Room> outgoingDoors) {
-        TestPrinter.printCallingMethod(outgoingDoors);
         this.outgoingDoors = outgoingDoors;
     }
 
@@ -119,7 +122,6 @@ public class Room implements IRound{
      * @return True, ha a szobában van gáz, különben false.
      */
     public boolean getGas() {
-        TestPrinter.printCallingMethod();
         return gas;
     }
 
@@ -129,7 +131,6 @@ public class Room implements IRound{
      * @param gas True, ha a szobában van gáz, különben false.
      */
     public void setGas(boolean gas) {
-        TestPrinter.printCallingMethod(gas);
         this.gas = gas;
     }
 
@@ -139,7 +140,6 @@ public class Room implements IRound{
      * @return A szobába belépő ajtók listája.
      */
     public ArrayList<Room> getIncomingDoors(){
-        TestPrinter.printCallingMethod();
         return (ArrayList<Room>) incomingDoors;
     }
 
@@ -149,7 +149,6 @@ public class Room implements IRound{
      * @return A szobából kimenő ajtók listája.
      */
     public ArrayList<Room> getOutgoingDoors(){
-        TestPrinter.printCallingMethod();
         return (ArrayList<Room>) outgoingDoors;
     }
 
@@ -170,7 +169,6 @@ public class Room implements IRound{
      * @param r A hozzáadandó kimenő ajtó.
      */
     public void addOutgoingDoor(Room r){
-        TestPrinter.printCallingMethod(r);
         outgoingDoors.add(r);
     }
 
@@ -180,7 +178,6 @@ public class Room implements IRound{
      * @param r A hozzáadandó belépő ajtó.
      */
     public void addIncomingDoor(Room r){
-        TestPrinter.printCallingMethod(r);
         incomingDoors.add(r);
     }
 
@@ -190,7 +187,6 @@ public class Room implements IRound{
      * @param items A hozzáadandó tárgyak listája.
      */
     public void addItems(List<BaseItem> items) {
-        TestPrinter.printCallingMethod(items);
         this.items.addAll(items);
         for(BaseItem item: items){
             item.setRoom(this);
@@ -203,7 +199,6 @@ public class Room implements IRound{
      * @param b A hozzáadandó tárgy.
      */
     public void addItem(BaseItem b){
-        TestPrinter.printCallingMethod(b);
         items.add(b);
     }
 
@@ -213,7 +208,6 @@ public class Room implements IRound{
      * @param b Az eltávolítandó tárgy.
      */
     public void removeItem (BaseItem b) {
-        TestPrinter.printCallingMethod(b);
         items.remove(b);
     }
 
@@ -223,7 +217,6 @@ public class Room implements IRound{
      * @param p A hozzáadandó személy.
      */
     public void addPerson(Person p){
-        TestPrinter.printCallingMethod(p);
         people.add(p);
         if(gas) {
             p.stun();
@@ -241,7 +234,6 @@ public class Room implements IRound{
      * @param p Az eltávolítandó személy.
      */
     public void removePerson(Person p){
-        TestPrinter.printCallingMethod(p);
         people.remove(p);
     }
 
@@ -251,7 +243,6 @@ public class Room implements IRound{
      * @param r Az eltávolítandó kimenő ajtó.
      */
     public void removeOutgoingDoor(Room r){
-        TestPrinter.printCallingMethod(r);
         outgoingDoors.remove(r);
     }
 
@@ -261,7 +252,6 @@ public class Room implements IRound{
      * @param r Az eltávolítandó belépő ajtó.
      */
     public void removeIncomingDoor(Room r){
-        TestPrinter.printCallingMethod(r);
         incomingDoors.remove(r);
     }
 
@@ -271,7 +261,6 @@ public class Room implements IRound{
      * @return A mozgási lehetőségek listája.
      */
     public List<Room> movePossibilities() {
-        TestPrinter.printCallingMethod();
         List<Room> MovePossibilities = new ArrayList<>();
         for (Room r: outgoingDoors) {
             if (r.isEnterable(this))
@@ -285,7 +274,6 @@ public class Room implements IRound{
      */
     public boolean isEnterable(Room r){
         //r nincs használva, csak a cursedroom-ban
-        TestPrinter.printCallingMethod();
         return people.size() < capacity;
     }
 
@@ -296,7 +284,6 @@ public class Room implements IRound{
      * @param room     A szoba, amelyhez hozzáadjuk az ajtókat.
      */
     public void addDoors(ArrayList<Room> newDoors, ArrayList<Room> room){
-        TestPrinter.printCallingMethod(newDoors, room);
     }
 
     /**
@@ -305,7 +292,6 @@ public class Room implements IRound{
      * @param r Az összefésülendő szoba.
      */
     public void merge(Room r){
-        TestPrinter.printCallingMethod();
 
         addDoors(r.outgoingDoors,outgoingDoors);
         addDoors(r.incomingDoors,incomingDoors);
@@ -324,9 +310,8 @@ public class Room implements IRound{
      * Szétosztja a szobát.
      */
     public void split(){
-        TestPrinter.printCallingMethod();
 
-        Room newroom = new Room();
+        Room newroom = new Room("R"+labyrinth.getRooms().size()); //inkrementalis elnevezes
         labyrinth.addRoom(newroom);
 
         newroom.outgoingDoors = outgoingDoors;
@@ -365,6 +350,7 @@ public class Room implements IRound{
      *
      */
     public int getPersonCounter(){return personCounter;}
+    public String getName(){return Name;}
 
     public void increasePersonCounter(){
         personCounter++;

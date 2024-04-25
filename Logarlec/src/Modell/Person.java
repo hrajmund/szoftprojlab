@@ -62,7 +62,6 @@ public abstract class Person implements IRound{
      * A személy nevének lekérdezése
      */
     public String getName() {
-        TestPrinter.printCallingMethod();
         return name;
     }
 
@@ -70,13 +69,12 @@ public abstract class Person implements IRound{
      * A személy nevének beállítása
      */
     public void setName(String s) {
-        TestPrinter.printCallingMethod(s);
+
     }
     /**
      * A személy tárgyainak lekérdezése
      */
     public ArrayList<BaseItem> getItems() {
-        TestPrinter.printCallingMethod();
         return items;
     }
 
@@ -84,7 +82,6 @@ public abstract class Person implements IRound{
      * A személy tárgyainak beállítása
      */
     public void setItems(ArrayList<BaseItem> items){
-        TestPrinter.printCallingMethod(items);
         this.items=items;
     }
 
@@ -92,13 +89,11 @@ public abstract class Person implements IRound{
      * A személy kapacitásának lekérdezése
      */
     public int getCapacity() {
-        TestPrinter.printCallingMethod();
         return capacity;}
     /**
      * A személy jelenlegi szobájának beállítása
      */
     public void setCurrentRoom(Room c){
-        TestPrinter.printCallingMethod(c);
         currentRoom=c;
     }
 
@@ -106,7 +101,6 @@ public abstract class Person implements IRound{
      * A személy jelenlegi szobájának lekérdezése
      */
     public Room getCurrentRoom(){
-        TestPrinter.printCallingMethod();
         return currentRoom;
     }
 
@@ -114,7 +108,6 @@ public abstract class Person implements IRound{
      *  Személy felvesz egy tárgyat
      */
     public void pickUpItem(BaseItem i){
-        TestPrinter.printCallingMethod(i);
         if(!currentRoom.getSticky()){ //MÓDOSÍTÁS: ha a szoba ragacsos, nem vehetünk fel benne itemet
             if(!i.getActive()) {
                 if(capacity > items.size()) {
@@ -131,7 +124,6 @@ public abstract class Person implements IRound{
      * Személy leteszi a tárgyat
      */
     public void putDownItem(BaseItem i){
-        TestPrinter.printCallingMethod();
         //kommenteltek kiszervezése az itembe hogy mindegyik item maga tudja mit kell tennie
         i.putDown(currentRoom);
         //i.setRoom(currentRoom);
@@ -144,7 +136,6 @@ public abstract class Person implements IRound{
      * Személy eldobja az össuzes tárgyat
      */
     public void dropAllItems(){
-        TestPrinter.printCallingMethod();
         for(BaseItem i : items){
             i.putDown(currentRoom);
         }
@@ -155,13 +146,12 @@ public abstract class Person implements IRound{
      * Beállítja a tanár elleni védelmet
      */
     public void setTeacherProtection(boolean protection){
-        TestPrinter.printCallingMethod();
+
     }
     /**
      * Fel tudja-e venni a logarlécet
      */
     public Boolean canPickUpLogarlec(){
-        TestPrinter.printCallingMethod();
         return false;
     }
 
@@ -169,21 +159,19 @@ public abstract class Person implements IRound{
      * Beállítja a gázok elleni védelmet
      */
     public void setGasProtection(Boolean b){
-        TestPrinter.printCallingMethod(b);
+
     }
 
     /**
      * Tud-e tranzisztort aktiválni
      */
     public Boolean canActivateTranzisztor(){
-        TestPrinter.printCallingMethod();
         return false;
     }
     /**
      * Tárgy eltávolítása a személytől
      */
     public void removeItem(BaseItem i){
-        TestPrinter.printCallingMethod(i);
         items.remove(i);
     }
 
@@ -191,7 +179,6 @@ public abstract class Person implements IRound{
      * A személy teleportálása
      */
     public void teleport(Room r){
-        TestPrinter.printCallingMethod(r);
         currentRoom.removePerson(this);
         r.addPerson(this);
         currentRoom = r;
@@ -210,4 +197,6 @@ public abstract class Person implements IRound{
      * Vissza adja, hogy stunolva van e.
      */
     public boolean getStun(){return stunned;}
+
+    public abstract void PrintOutPerson();
 }

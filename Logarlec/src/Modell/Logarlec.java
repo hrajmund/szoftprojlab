@@ -5,6 +5,14 @@ package Modell;
 public class Logarlec extends BaseItem{
     
     private Boolean fake = false;
+
+    public Logarlec(){
+        name="UnknownLogarlec";
+    }
+
+    public Logarlec(String n){
+        name=n;
+    }
     
     /**
      * A tárgy hatását végrehajtó metódus
@@ -18,12 +26,6 @@ public class Logarlec extends BaseItem{
      */
     @Override
     public void setHolder(Person p) {
-        if (p == null){
-            TestPrinter.printCallingMethod();
-        }
-        else {
-            TestPrinter.printCallingMethod(p);
-        }
         if(p.canPickUpLogarlec()){
             if(!fake){
                 p.labyrinth.endGame();
@@ -34,7 +36,6 @@ public class Logarlec extends BaseItem{
     }
     @Override
     public void putDown(Room r){
-        TestPrinter.printCallingMethod(holder);
         //ha hamis, le kell tudni rakni
         holder = null;
         room = r;
@@ -46,4 +47,10 @@ public class Logarlec extends BaseItem{
 
     @Override
     public void tick() {}
+    @Override
+    public void PrintOutItem(){
+        System.out.print(this.getName() + " (Active) " +
+                this.getActive() + " (Holder) " + this.getHolder() +
+                " (Fake) " + this.fake);
+    }
 }

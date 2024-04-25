@@ -1,15 +1,19 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ
-—
-java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…â™
-œ
-java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Æ¤Æ­şÿÿÿÿ
-—
-java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°
-—
-java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²
-—
-java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘‡Ù
-Q	java:S125"<This block of commented-out lines of code should be removed.(¥«ÇÏ
-G
-java:S1135"2Complete the task associated to this TODO comment.(È…‡J
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8×”ù±ñ1J$91c0fc68-d3f3-4705-8fab-fd55213aea16
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…â™8Ù”ù±ñ1J$eb64bf5b-03c0-431f-9d6c-ae1aff83bc8e
+É
+java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Æ¤Æ­şÿÿÿÿ8Ù”ù±ñ1J$5a945ac6-bbcb-434c-ae91-be98907abdb3
+Ä
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°8Ù”ù±ñ1J$c8305cc9-f2d3-461a-9d54-19b92b3338e1
+Ä
+java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²8Ú”ù±ñ1J$a7fbdbfa-1d20-4b1f-ae75-0f256216faa7
+Ä
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘‡Ù8Ú”ù±ñ1J$6edad08e-423d-47ba-9da2-7227d35dd856
+É
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8Ú”ù±ñ1J$3a208fad-0804-4d3a-a5b5-6ebe6b875840
+a
+java:S2119 "Save and re-use this "Random".(–áÍÈ8Ü”ù±ñ1J$07e300f5-c9e2-41fe-a315-0c3af4e7e156
+t
+java:S1135$"2Complete the task associated to this TODO comment.(È…‡J8İ”ù±ñ1J$b07d82df-1d4c-45a2-96ae-a1aaaffed74b
+r	java:S106F"+Replace this use of System.out by a logger.(àß‰áşÿÿÿÿ8Ş”ù±ñ1J$d9e0d1f1-9eb3-46e3-895c-3dff269d35fc

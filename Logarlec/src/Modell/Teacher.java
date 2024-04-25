@@ -3,24 +3,36 @@ import Modell.Room;
 import Modell.TestPrinter;
 import Szkeleton.Szkeleton;
 
+import javax.naming.Name;
 import java.util.Random;
 
 /**
  * Techer osztály
  */
 public class  Teacher extends Person{
+
+    public Teacher(){
+        name = "UnknownRoom";
+    }
+
+    public Teacher(String n){
+            name = n;
+    }
+
     /**
      * Teacher eldobja az összes tárgyát
      */
     public void dropAllItems(){
-        TestPrinter.printCallingMethod();
+        for(BaseItem i : items){
+            i.putDown(currentRoom);
+        }
+        items.clear();
     }
 
     /**
      * Tanár megbénul gáz miatt
      */
     public void stun(){
-        TestPrinter.printCallingMethod();
         dropAllItems();
         stunned=true;
     }
@@ -29,7 +41,6 @@ public class  Teacher extends Person{
      * Tanár felvesz egy tárgyat
      */
     public void addItem(BaseItem i){
-        TestPrinter.printCallingMethod();
         items.add(i);
     }
 
@@ -38,7 +49,6 @@ public class  Teacher extends Person{
      */
     @Override
     public void move(Room r) {
-        TestPrinter.printCallingMethod(r);
         if(!Szkeleton.DETERMINISTIC_MODE){
             Random randomNum = new Random();
             int rand1 = randomNum.nextInt(currentRoom.movePossibilities().size());
@@ -58,7 +68,6 @@ public class  Teacher extends Person{
      * A tanár öl
      */
     public void kill(Person p){
-        TestPrinter.printCallingMethod(p);
         p.killed();
     }
 
@@ -66,19 +75,29 @@ public class  Teacher extends Person{
      * A tanár meg lesz ölve
      */
     public void killed(){
-        TestPrinter.printCallingMethod();
+
     }
 
     /**
      * A tanár megbénul
      */
     public void stunTeacher() {
-        TestPrinter.printCallingMethod();
         this.stun();
     }
 
     @Override
     public void tick() {
 
+    }
+    @Override
+    public void PrintOutPerson(){
+        System.out.println("\n\t" + this.getName() +
+                "\n\t    [CurrentRoom] " + this.getCurrentRoom().Name +
+                "\n\t    [Stun] " + this.getStun()
+        );
+        for(int i = 0; i < this.items.size(); i++){
+            System.out.println(String.format("[Item %d]", i));
+            this.items.get(i).PrintOutItem();
+        }
     }
 }

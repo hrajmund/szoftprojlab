@@ -5,19 +5,30 @@ import Modell.TestPrinter;
 public class SzentSorosPoharak extends BaseItem implements IRound {
     private int timeUsage=10;
 
+    public SzentSorosPoharak(){
+        name="UnknownSzentSorosPohar";
+    }
+
+    public SzentSorosPoharak(String n){
+        name=n;
+    }
+
+    public SzentSorosPoharak(String n,int i){
+        name=n;
+        timeUsage=i;
+    }
+
     /**
      * Beaktiválja a SzetnSorospohrak tárgyat amely védelmet nyújt a tanárok ellen
      */
     @Override
     public  void effect() {
-        TestPrinter.printCallingMethod();
         active=true;
         holder.setTeacherProtection(true);
     }
 
     @Override
     public void putDown(Room r) {
-        TestPrinter.printCallingMethod(holder);
         holder.setTeacherProtection(false);
         active = false;
         holder = null;
@@ -28,7 +39,6 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
      *  A tick egy függvény a tárgy használatának idejét csökkenti, majd ha lejár az ideje törli a hallgató kezéből
      */
     public void tick(){
-        TestPrinter.printCallingMethod();
         if(active){
             if(timeUsage>0){
                 if(timeUsage==1){
@@ -41,5 +51,11 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
                 }
             }
         }
+    }
+    @Override
+    public void PrintOutItem(){
+        System.out.print("\t\t\t"+this.getName() + " (Active) " +
+                this.getActive() + " (Holder) " + this.getHolder().getName() +
+                " (TimeUsage) " + this.timeUsage+"\n");
     }
 }

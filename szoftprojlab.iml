@@ -7,10 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-params:5.8.1" level="project" />
   </component>
-
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="aa873661-abbf-4d5f-9695-b221cc376ff4" />
-  </component>
-
 </module>

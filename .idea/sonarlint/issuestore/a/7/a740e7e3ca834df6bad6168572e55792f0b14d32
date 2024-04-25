@@ -1,3 +1,61 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8ÌÁ‹­ç1
-X	java:S125"<This block of commented-out lines of code should be removed.(³€‰…8ÏÁ‹­ç1
+Ž	java:S112¶"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‰óˆ´ñ1J$e5793c29-c989-4705-9e8f-5101fd7027de
+›
+java:S1192d"XDefine a constant instead of duplicating this literal "Ã‰rvÃ©nytelen parancs: " 5 times.(¥šé£8Šóˆ´ñ1J$01cbe124-3627-4468-9265-202a96e185e5
+’	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸’ìg8Šóˆ´ñ1J$5107e38a-ebc3-4864-a996-6984564b076e
+˜	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò®…³úÿÿÿÿ8‹óˆ´ñ1J$dfdc159b-3f31-4c81-95ba-a71d6b46e95d
+k
+java:S5411s"(Use a primitive boolean expression here.(ûþ©è8Œóˆ´ñ1J$6ecf195c-4fc3-430d-8fe1-a32b3e1ecb76
+q
+java:S5411É"(Use a primitive boolean expression here.(Š•Â‚ýÿÿÿÿ8Œóˆ´ñ1J$d32da2d4-31ef-4035-a413-d3585b6c58c9
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8óˆ´ñ1J$d16ec171-665a-48c2-866f-fb61eda30c10
+ƒ
+java:S2259›"?A "NullPointerException" could be thrown; "p" is nullable here.(ÜÚ‘¸8­õˆ´ñ1J$eb075f59-4825-43bf-a380-ae5fe9c4fe13
+ˆ
+java:S2259«"DA "NullPointerException" could be thrown; "active" is nullable here.(þê§Ä8­õˆ´ñ1J$3dab9cb7-404a-4f5d-b318-e23e133ac15d
+”
+java:S2259š"KA "NullPointerException" could be thrown; "roomAddPerson" is nullable here.(Î¼Ù…ÿÿÿÿÿ8­õˆ´ñ1J$c2f80326-986f-4fe1-b713-240fda8f8f27
+
+java:S2259ø"IA "NullPointerException" could be thrown; "additemroom" is nullable here.(Ø’­«8­õˆ´ñ1J$a2d7256a-a50d-474a-9bcd-8f82230c87f1
+†
+java:S2259¡"BA "NullPointerException" could be thrown; "fake" is nullable here.(‘¤Á›8­õˆ´ñ1J$44c64e39-9882-4a6a-b3a1-cd39a064746e
+­
+java:S4165Ã"dRemove this useless assignment; "random" already holds the assigned value along all execution paths.(ª²Þòúÿÿÿÿ8­õˆ´ñ1J$63c2c486-0af5-4e3c-95c1-2599a9b5da40
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Š¡ãõþÿÿÿÿ8®õˆ´ñ1J$3bfb1647-1104-436d-b73f-630e8e9f7493
+r	java:S106"+Replace this use of System.out by a logger.(Âº™êúÿÿÿÿ8°õˆ´ñ1J$ccaffa58-ff23-4554-97db-b382cdc6ab87
+i
+java:S1075"&Remove this hard-coded path-delimiter.(”±Åœ8°õˆ´ñ1J$4445cffc-ae8c-415c-8080-face79b71c70
+h
+java:S1075"&Remove this hard-coded path-delimiter.(¸’ìg8±õˆ´ñ1J$0af0f919-27dc-4823-954e-7f3596be5fc7
+r	java:S106""+Replace this use of System.out by a logger.(“å³ñüÿÿÿÿ8³õˆ´ñ1J$1221a163-8001-43a9-981c-151ddc93ed15
+m	java:S106+"+Replace this use of System.out by a logger.(žÎú€8³õˆ´ñ1J$0ac00d5c-e073-4441-88e4-e2b4ba99bc0d
+•	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûñæ±üÿÿÿÿ8´õˆ´ñ1J$db04c484-69bb-4347-8483-adbaa68095ed
+›
+java:S37764"SRefactor this method to reduce its Cognitive Complexity from 125 to the 15 allowed.(Ûñæ±üÿÿÿÿ8´õˆ´ñ1J$dc45c8d6-0069-4e75-b0c2-dfdd9e7242c1
+m	java:S106d"+Replace this use of System.out by a logger.(¥šé£8»õˆ´ñ1J$213c57e2-28ff-4aa7-839c-f856b12be1b8
+r	java:S106t"+Replace this use of System.out by a logger.(ò”ï²ýÿÿÿÿ8¼õˆ´ñ1J$3955a5c1-873b-488c-b873-fd82f1d91a89
+s	java:S106©"+Replace this use of System.out by a logger.(œ§Í„ýÿÿÿÿ8¾õˆ´ñ1J$437bdd30-85ce-48ba-a77c-9ba1b3cfe70d
+”
+java:S1764÷"KCorrect one of the identical sub-expressions on both sides of operator "&&"(Û§î¶üÿÿÿÿ8Ñõˆ´ñ1J$a617690f-5378-447d-8c6d-ad4374772a23
+s	java:S106ü"+Replace this use of System.out by a logger.(œ§Í„ýÿÿÿÿ8Òõˆ´ñ1J$ce494f05-e129-4b9d-ad4e-2aed6bc960ac
+s	java:S106•"+Replace this use of System.out by a logger.(œ§Í„ýÿÿÿÿ8Óõˆ´ñ1J$31d49f4f-52f0-4878-b4ba-ffe457849e55
+s	java:S106¯"+Replace this use of System.out by a logger.(œ§Í„ýÿÿÿÿ8Ôõˆ´ñ1J$1d7e36e0-fb7a-45ae-8d62-c68c7db52e8d
+n	java:S106³"+Replace this use of System.out by a logger.(«‘žÙ8Ôõˆ´ñ1J$eb0cf389-9568-4b21-aeb0-245303085cd1
+–	java:S100¹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­µ¨°üÿÿÿÿ8Õõˆ´ñ1J$fc1770ae-0b04-460b-86a2-c796c35b4b25
+Ÿ
+java:S2159¿"VRemove this call to "equals"; comparisons between unrelated types always return false.(å¯ïˆÿÿÿÿÿ8‹öˆ´ñ1J$70af741b-deaa-4d39-950b-c46a6c9a173d
+Ÿ
+java:S2159À"VRemove this call to "equals"; comparisons between unrelated types always return false.(‹Çíéûÿÿÿÿ8Œöˆ´ñ1J$7769af44-a0ad-41dd-bd55-e2eba15800b7
+š
+java:S2159Â"VRemove this call to "equals"; comparisons between unrelated types always return false.(û¨´8öˆ´ñ1J$6165f8b8-8923-46d7-a763-25453ed1299e
+¤
+java:S3923É"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Š•Â‚ýÿÿÿÿ8Žöˆ´ñ1J$29b63463-5b4e-4bf0-a967-0d012dfe7467
+p
+java:S1125É"'Remove the unnecessary boolean literal.(Š•Â‚ýÿÿÿÿ8öˆ´ñ1J$6a7c4bcf-553f-42d7-a99b-f50155216e01
+j
+java:S1481Ð"&Remove this unused "p" local variable.(×ç‰‚8®öˆ´ñ1J$ab1a8a1b-5c0e-4c62-b757-bf4a40242997
+x
+java:S1128"0Remove this unused import 'Szkeleton.Szkeleton'.(¦€¤‰þÿÿÿÿ8¯öˆ´ñ1J$3a56f2c7-897f-41b7-90cd-a8a334175bdd
+
+java:S65414"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 259 to 64, Complexity from 60 to 14, Nesting Level from 5 to 2, Number of Variables from 79 to 6.(Ûñæ±üÿÿÿÿ8°öˆ´ñ1J$a7ce4858-9174-4893-bfca-c072a91974de

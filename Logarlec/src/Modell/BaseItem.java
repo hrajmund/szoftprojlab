@@ -25,24 +25,12 @@ public abstract class BaseItem implements IRound{
      *A szobájának beállítása
      */
     public void setRoom(Room r){
-        if(r == null){
-            TestPrinter.printCallingMethod();
-        }
-        else {
-            TestPrinter.printCallingMethod(r);
-        }
         room=r;
     }
     /**
      *A tárgy tulajdonosának beállítása
      */
     public void setHolder(Person p) {
-        if (p == null){
-            TestPrinter.printCallingMethod();
-        }
-        else {
-            TestPrinter.printCallingMethod(p);
-        }
         holder = p;
     }
     /**
@@ -57,42 +45,37 @@ public abstract class BaseItem implements IRound{
      *A véd-e teacher ellen
      */
     public Boolean protAgainstTeacher(){
-        TestPrinter.printCallingMethod();
         return false;
     }
     /**
      *A tárgy tud-e bénítani
      */
     public Boolean canStun(){
-        TestPrinter.printCallingMethod();
         return false;
     }
     /**
      *A tárgy aktív-e
      */
     public Boolean getActive(){
-        TestPrinter.printCallingMethod();
         return active;
     }
     /**
      *A tárgy aktív állapotának beállítása
      */
     public void setActive(Boolean b){
-        TestPrinter.printCallingMethod(b);
         active=b;
     }
     /**
      *A tárgy párjának lekérdezése, minden tárgy esetében ez null-t ad vissza
      */
     public Tranzisztor isConnected(){
-        TestPrinter.printCallingMethod();
         return null;
     }
     /**
      *A tárgy párjának beállítása, nem csinál semmit
      */
     public void setConnected(BaseItem t){
-        TestPrinter.printCallingMethod(t);
+
     }
 
     /**
@@ -103,4 +86,10 @@ public abstract class BaseItem implements IRound{
         holder = null;
         setRoom(r);
     }
+    public String getName(){
+        return name;
+    }
+    public abstract void PrintOutItem();
+
+    public void setFake(Boolean b){}
 }

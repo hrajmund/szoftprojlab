@@ -1,6 +1,15 @@
 
-L
-java:S1066 "/Merge this if statement with the enclosing one.(±†øè8Œžâžë1
-J
-java:S5411"(Use a primitive boolean expression here.(êÃ’ˆøÿÿÿÿ8•˜Ôžë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8•˜Ôžë1
+r
+java:S1066/"/Merge this if statement with the enclosing one.(±†øè8Œžâžë1J$1b78f24b-639d-4bde-b6b3-a0d3299d7ea6
+p
+java:S5411%"(Use a primitive boolean expression here.(êÃ’ˆøÿÿÿÿ8•˜Ôžë1J$816abcc6-506e-47c3-82c9-0d6ffe0cbd2e
+k
+java:S5411."(Use a primitive boolean expression here.(•ëÞ‚8Åî½´ñ1J$eb8d831d-d120-48c4-bb64-f585c5ae2994
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8•˜Ôžë1J$f4b1a58e-aa26-4121-a894-0deaa0fddfe5
+}
+java:S1161C":Add the "@Override" annotation above this method signature(øÖÇ°8Ëî½´ñ1J$47d4e73b-a72a-40fa-a4c9-29ac91f238ea
+m	java:S106H"+Replace this use of System.out by a logger.(ãçê×8¸¯í°ñ1J$0d99e9cc-01a1-4e97-9a50-137765359ca4
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8Íî½´ñ1J$9bc6e6e2-1857-46b8-b704-6d3e3d48a334
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8Íî½´ñ1J$6e06c7bc-55e8-47b0-b3bd-64c47b26b477

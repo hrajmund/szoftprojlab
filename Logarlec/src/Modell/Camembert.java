@@ -3,6 +3,15 @@ package Modell;
  * Camambert tárgy
  */
 public class Camembert extends BaseItem{
+    
+    public Camembert(){
+        name="UnknownCamambert";
+    }
+
+    public Camembert(String n){
+        name=n;
+    }
+    
     /**
      * A tárgy hatását végrehajtó metódus
      */
@@ -15,7 +24,6 @@ public class Camembert extends BaseItem{
     }
     @Override
     public void putDown(Room r){
-        TestPrinter.printCallingMethod(holder);
         holder = null;
         room = r;
     }
@@ -26,5 +34,9 @@ public class Camembert extends BaseItem{
         room.removeItem(this);
         room = null;
 
+    }
+    @Override
+    public void PrintOutItem(){
+        System.out.print(this.getName() + " (Active) " + this.getActive() + " " + this.getHolder());
     }
 }

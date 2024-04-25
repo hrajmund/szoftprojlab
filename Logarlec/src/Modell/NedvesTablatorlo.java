@@ -10,12 +10,20 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
      */
     private int timeUsage = 10;
 
+
+    public NedvesTablatorlo(){
+        name="UnknownTablatorlo";
+    }
+
+    public NedvesTablatorlo(String n){
+        name=n;
+    }
+
     /**
      * A tárgy hatását végrehajtó metódus
      */
     @Override
     public void effect() {
-        TestPrinter.printCallingMethod();
         active = true;
         holder.putDownItem(this);
     }
@@ -24,7 +32,6 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
      * A tárgy kezelése körönként
      * */
     public void tick(){
-        TestPrinter.printCallingMethod();
         if(active){
             if(timeUsage>0){
                 if(timeUsage==1){
@@ -43,8 +50,13 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
      */
     @Override
     public Boolean canStun(){
-        TestPrinter.printCallingMethod();
         return active;
+    }
+    @Override
+    public void PrintOutItem(){
+        System.out.print(this.getName() + " (Active) " +
+                this.getActive() + " (Holder) " + this.getHolder() +
+                " (TimeUsage) " + this.timeUsage);
     }
 
 }
