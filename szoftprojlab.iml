@@ -9,6 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-params:5.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.11.0-M1" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="77e1ce8f-0273-4d58-bbbd-f395cbe7e823" />

@@ -1,16 +1,0 @@
-
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8ôýŠÏñ1J$ccffec87-65d1-4641-b3bc-da19779b1dcc
-Ä
-java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²8ùýŠÏñ1J$9267045b-3cf1-402a-88e5-535508a485e8
-É
-java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆðüÿÿÿÿ8ùýŠÏñ1J$a6cd2c08-4f27-401a-a19c-38944eda2b93
-}
-java:S1161":Add the "@Override" annotation above this method signature(¦×¡õ8ûýŠÏñ1J$efe0179f-2fcf-424b-a452-55c81a62b2c2
-f
-java:S21196"Save and re-use this "Random".(€ÏÅ£ýÿÿÿÿ8þýŠÏñ1J$39636488-122c-48a0-9ef3-62e8cbb822dd
-—
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8›åÖÑñ1J$48c30761-81de-446c-8a43-0f6550e562d3
-œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8›åÖÑñ1J$3a7d7b56-2b3e-428e-8370-8f9521d58335
-q
-java:S1128".Remove this unused import 'javax.naming.Name'.(ºÄä”8›åÖÑñ1J$bab9dd2c-c8b6-4e6b-bfe9-fda611f6ba0d
