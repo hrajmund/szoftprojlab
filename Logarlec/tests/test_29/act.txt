@@ -1,4 +1,4 @@
 random true
 init
-move Mask
+pickup Rongy
 save
