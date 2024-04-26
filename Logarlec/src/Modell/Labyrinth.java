@@ -67,7 +67,23 @@ public class Labyrinth implements IRound {
      * A kört lépteti.
      */
     public void tick(){
-
+        for(Person p: players){
+            if(p.getItems().isEmpty()){
+                continue;
+            }
+            for(BaseItem i:p.getItems()){
+                i.tick();
+            }
+        }
+        for(Room r: rooms){
+            if(r.getItems().isEmpty()){
+                continue;
+            }
+            for(BaseItem i:r.getItems()){
+                i.tick();
+            }
+            r.tick();
+        }
     }
 
     /**

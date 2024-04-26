@@ -1,4 +1,5 @@
 random false
 init
+next
 move R1
 save

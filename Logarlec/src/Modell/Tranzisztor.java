@@ -66,6 +66,7 @@ public class Tranzisztor extends BaseItem{
         return null;
     }
 
+
     /**
      * A tranzisztorok összekapcsolása
      */

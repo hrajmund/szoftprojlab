@@ -60,8 +60,10 @@ public class  Teacher extends Person{
         r.addPerson(this);
         r.increasePersonCounter();
         currentRoom = r;
-        for(Person p : r.getPeople()){
-            p.killed();
+        if(!this.stunned){
+            for(Person p : r.getPeople()){
+                p.killed();
+            }
         }
     }
 

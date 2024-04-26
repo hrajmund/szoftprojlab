@@ -22,6 +22,7 @@ public class Camembert extends BaseItem{
     public void effect() {
         holder.putDownItem(this);
         room.setGas(true);
+        room.removeItem(this);
         //room.removeItem(this);
         //room=null;
     }

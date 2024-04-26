@@ -3,3 +3,4 @@ student S1
 tranzi Tranz
 active Tranz
 additem_r R1 Tranz
+addperson R1 S1

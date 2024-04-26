@@ -4,7 +4,7 @@ R1
     [Capacity]
     [Incoming]
     [Outgoing]R2
-    [Item1] Tranz (Active) true (Connected)
+    [Item0] Tranz (Active) true (Connected) null
 S1
     [CurrentRoom] R2
     [Stun] false

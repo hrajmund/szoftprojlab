@@ -1,5 +1,7 @@
 random false
 init
+pickup 0
+pickup 0
 useitem 0
 move R2
 useitem 0

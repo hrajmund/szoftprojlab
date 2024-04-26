@@ -459,8 +459,8 @@ public class GameManager {
             if(random){
                 labyrinth.RandomGergQrva();
             }
+            labyrinth.tick();
 
-            //dolgok
 
 
         }

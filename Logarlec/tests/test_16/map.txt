@@ -7,4 +7,4 @@ door R2 R1
 tablatorlo Rongy
 additem_r R1 Rongy
 addperson R1 S
-addperson R1 T
+addperson R2 T

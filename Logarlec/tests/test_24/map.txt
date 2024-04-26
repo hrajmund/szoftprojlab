@@ -6,5 +6,5 @@ room R2
 door R1 R2
 door R2 R1
 addperson R1 S
-additem_p S Tranzi1
-additem_p S Tranzi2
+additem_r R1 Tranzi1
+additem_r R1 Tranzi2

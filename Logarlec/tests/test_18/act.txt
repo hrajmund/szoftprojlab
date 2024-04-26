@@ -1,4 +1,4 @@
 random false
 init
-pickup Mask
+pickup 0
 save
