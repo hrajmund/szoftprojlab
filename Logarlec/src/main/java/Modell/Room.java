@@ -380,6 +380,5 @@ public class Room implements IRound{
                 items.get(i).PrintOutItem(writer);
             }
         }
-        writer.println();
     }
 }

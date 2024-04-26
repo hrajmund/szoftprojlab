@@ -16,15 +16,15 @@ public class GameManager {
     public GameManager(String test) throws FileNotFoundException {
         String dir = System.getProperty("user.dir");
         System.out.println(dir);
-        String inputFilepath = ".\\Logarlec\\tests\\" + test + "\\" + "map.txt";
+        String inputFilepath = ".\\tests\\" + test + "\\" + "map.txt";
         ReadMap(inputFilepath);
-        String ActFilepath = ".\\Logarlec\\tests\\" + test + "\\" + "act.txt";
+        String ActFilepath = ".\\tests\\" + test + "\\" + "act.txt";
         File file = new File(ActFilepath);
         try {
             Scanner fileScanner = new Scanner(file);
             PlayGame(fileScanner);
             fileScanner.close();
-            FileWriter fileWriter = new FileWriter(".\\Logarlec\\tests\\" + test + "\\" + "out.txt");
+            FileWriter fileWriter = new FileWriter(".\\tests\\" + test + "\\" + "out.txt");
             PrintWriter filePrintWriter = new PrintWriter(fileWriter);
             labyrinth.PrintOut(filePrintWriter);
             filePrintWriter.flush();
