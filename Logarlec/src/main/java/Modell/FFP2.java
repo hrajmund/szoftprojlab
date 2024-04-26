@@ -48,7 +48,7 @@ public class FFP2 extends BaseItem implements IRound {
         if(active){
             if(timeUsage>0){
                 if(timeUsage==1){
-                    timeUsage-=1;
+                    timeUsage--;
                     holder.removeItem(this);
                     holder=null;
                 }else{

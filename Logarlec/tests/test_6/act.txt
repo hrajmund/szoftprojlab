@@ -1,4 +1,0 @@
-random false
-init
-pickup 0
-save

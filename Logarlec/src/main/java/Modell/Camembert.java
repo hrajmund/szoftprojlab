@@ -31,6 +31,8 @@ public class Camembert extends BaseItem{
         holder = null;
         room = r;
     }
+
+    @Override
     public void tick() {
     }
     @Override

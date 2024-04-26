@@ -95,5 +95,6 @@ public abstract class BaseItem implements IRound{
     public abstract void PrintOutItem(PrintWriter writer);
 
     public void setFake(Boolean b){}
+    public abstract void tick();
 
 }

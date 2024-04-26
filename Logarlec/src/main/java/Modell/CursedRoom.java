@@ -35,6 +35,8 @@ public class CursedRoom extends Room implements IRound {
     public void tick(){
         cursed();
     }
+
+
     /**
      * Ennek a függvénynek a határásra változnak meg az elátkozott ajtók
      */

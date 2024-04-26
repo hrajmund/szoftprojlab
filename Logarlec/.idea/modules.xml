@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Logarlec.iml" filepath="$PROJECT_DIR$/Logarlec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Logarlec.iml" filepath="$PROJECT_DIR$/.idea/Logarlec.iml" />
     </modules>
   </component>
 </project>

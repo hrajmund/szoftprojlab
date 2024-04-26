@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Személy ősosztály
  */
-public abstract class Person implements IRound{
+public abstract class Person {
     /**
      * A személy labirintusa
      */

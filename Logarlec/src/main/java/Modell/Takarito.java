@@ -64,10 +64,6 @@ public class Takarito extends Person{
     }
 
     @Override
-    public void tick() {
-
-    }
-    @Override
     public void PrintOutPerson(PrintWriter writer){
         writer.println("\t" + name +
                 "\n\t    [CurrentRoom] " + currentRoom +

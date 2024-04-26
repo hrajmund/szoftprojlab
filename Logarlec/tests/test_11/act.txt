@@ -1,5 +1,4 @@
-random true
-init
 random false
+init
 curse Cursed
 save

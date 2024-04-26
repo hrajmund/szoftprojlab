@@ -1,7 +1,0 @@
-room R1
-room R2
-door R1 R2
-student S1
-teacher T1
-addperson R1 S1
-addperson R2 T1

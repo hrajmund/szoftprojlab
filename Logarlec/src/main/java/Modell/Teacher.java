@@ -89,10 +89,6 @@ public class  Teacher extends Person{
     }
 
     @Override
-    public void tick() {
-
-    }
-    @Override
     public void PrintOutPerson(PrintWriter writer){
         writer.print("\t" + name +
                 "\n\t\t[CurrentRoom] " +currentRoom.getName() +

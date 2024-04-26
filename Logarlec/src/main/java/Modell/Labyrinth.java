@@ -71,9 +71,6 @@ public class Labyrinth implements IRound {
             if(p.getItems().isEmpty()){
                 continue;
             }
-            for(BaseItem i:p.getItems()){
-                i.tick();
-            }
         }
         for(Room r: rooms){
             if(r.getItems().isEmpty()){

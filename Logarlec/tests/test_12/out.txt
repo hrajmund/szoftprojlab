@@ -4,6 +4,7 @@ R1
 	[Capacity] 5
 	[Incoming] R2 
 	[Outgoing] R2 
+
 R2
 	[Gas] false
 	[Sticky] false

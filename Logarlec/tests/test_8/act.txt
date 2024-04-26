@@ -1,4 +1,0 @@
-random false
-init
-putdown 0
-save

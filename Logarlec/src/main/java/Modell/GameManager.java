@@ -35,7 +35,7 @@ public class GameManager {
     }
     public GameManager() throws IOException {
         //String inputFilepath = ".\\Logarlec\\tests\\game\\game_input.txt";
-        String inputFilepath = ".\\Logarlec\\tests\\test_1\\map.txt";
+        String inputFilepath = ".\\tests\\test_1\\map.txt";
         ReadMap(inputFilepath);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hány játékos legyen?");
