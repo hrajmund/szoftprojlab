@@ -1,5 +1,5 @@
 tvsz Tvsz
-rongy Nedv
+tablatorlo Nedv
 pohar Sorosp
 cam Cam
 mask Mask

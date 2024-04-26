@@ -4,3 +4,7 @@ java:S1066'"/Merge this if statement with the enclosing one.(±†øè8Íğö­ç1J$b2b5
 k
 java:S5411&"(Use a primitive boolean expression here.(•ëŞ‚8Šğè³ñ1J$2457b234-a39b-4ee7-b21e-e650a8540821
 ¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8öÍç¬ç1J$47bc835f-98a7-4e35-8a4a-baa304516261
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8Å„Ûñ1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8Å„Ûñ1

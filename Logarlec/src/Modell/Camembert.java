@@ -30,13 +30,7 @@ public class Camembert extends BaseItem{
         holder = null;
         room = r;
     }
-
-    @Override
     public void tick() {
-        room.getPeople().forEach(Person::stun);
-        room.removeItem(this);
-        room = null;
-
     }
     @Override
     public void PrintOutItem(PrintWriter writer){

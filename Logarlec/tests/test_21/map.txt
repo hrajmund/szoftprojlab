@@ -1,5 +1,5 @@
-rongy Nedv
+tablatorlo Rongy
 student S
 room R
 addperson R S
-additem_p S Nedv
+additem_p S Rongy

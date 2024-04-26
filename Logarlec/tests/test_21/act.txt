@@ -1,4 +1,4 @@
 random false
 init
-useitem 1
+useitem 0
 save

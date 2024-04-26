@@ -4,19 +4,21 @@ R1
 	[Capacity] 5
 	[Incoming] R2 
 	[Outgoing] R2 
+	[Item 0] Pohar (Active) false (TimeUsage) 10
+
 	S
 		[CurrentRoom] R1
 		[Stun] false
-		[TeacherProtected] true
+		[TeacherProtected] false
 		[GasProtected] false
-		[Item 0] Pohar (Active) true (TimeUsage) 10
 
+	T
+		[CurrentRoom] R1
+		[Stun] false
 R2
 	[Gas] false
 	[Sticky] false
 	[Capacity] 5
 	[Incoming] R1 
 	[Outgoing] R1 
-	T
-		[CurrentRoom] R2
-		[Stun] false
+

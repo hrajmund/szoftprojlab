@@ -41,16 +41,15 @@ public class Tranzisztor extends BaseItem{
      */
     @Override
     public void setHolder(Person holder){
-        if (holder == null) {
-            this.holder=holder;
-        }
-        else{
-            for(BaseItem item: holder.items){
-                if(item.isConnected()!=null){
-                    item.setConnected(this);
-                    setConnected(item);
-                    this.holder=holder;
-                    return;
+        this.holder=holder;
+        if (holder != null) {
+            if(!holder.items.isEmpty()){
+                for(BaseItem item: holder.items){
+                    if(item.isConnected()!=null){
+                        item.setConnected(this);
+                        setConnected(item);
+                        return;
+                    }
                 }
             }
         }

@@ -10,7 +10,6 @@ R1
 		[TeacherProtected] false
 		[GasProtected] false
 		[Item 0] Tvsz (Active) false (Fake) false (RemainingUsage) 2
-
 	T
 		[CurrentRoom] R1
 		[Stun] false

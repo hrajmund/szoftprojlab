@@ -1,6 +1,6 @@
 random false
 init
-useitem 0
-moev R2
+pickup 0
+pickup 0
 useitem 0
 save

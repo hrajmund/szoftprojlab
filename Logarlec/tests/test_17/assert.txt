@@ -5,7 +5,7 @@ R
     [Incoming]
     [Outgoing]
     S
-        [CurrentRoom] R1
+        [CurrentRoom] R
         [Stun] false
         [TeacherProtected] false
         [GasProtected] false

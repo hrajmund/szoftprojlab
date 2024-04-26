@@ -1,4 +1,5 @@
 random false
 init
-pickup Tranzi2
+pickup 0
+pickup 0
 save

@@ -330,3 +330,23 @@ N
 Logarlec/tests/test_13/out.txt,d\e\de853bd3b07f93f17592e4d4c421ac4b0c124ab7
 N
 Logarlec/tests/test_14/out.txt,6\2\6256cb82cb4e57d1073bcf643a61b505659eee5e
+N
+Logarlec/tests/test_15/out.txt,e\c\eca2af3d3f13da93194fe8a64083980de4f42060
+N
+Logarlec/tests/test_16/out.txt,0\a\0ad5eed3be51e99dd115cc3e83dd358fba53ae97
+N
+Logarlec/tests/test_17/out.txt,a\0\a0955d6a78b371715d57e1d1b6ff3620322b1ebb
+N
+Logarlec/tests/test_18/out.txt,5\5\55db551f235dd2daad30ffa1920e7509b6878553
+N
+Logarlec/tests/test_19/out.txt,6\9\69a1a3ceef92204bdc388223c321678b0226f5c0
+N
+Logarlec/tests/test_20/out.txt,e\d\ed3fc70feaa6e29d7d02542e897753644d47cb2c
+N
+Logarlec/tests/test_22/out.txt,d\0\d051b21294bef684205f0799d6ffe4a3e16cb3a5
+N
+Logarlec/tests/test_23/out.txt,3\6\36b316f6607ec6476ea86e3f4066dbeea0208db3
+N
+Logarlec/tests/test_25/out.txt,7\2\7214ee69755ccb0052daa36cd10fc4802996a38d
+N
+Logarlec/tests/test_26/out.txt,b\3\b3d5248485662bea8ccb23c86aa6f546b5d02157

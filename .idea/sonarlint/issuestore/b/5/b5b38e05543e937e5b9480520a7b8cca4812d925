@@ -1,8 +1,10 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8¤›­ñ1J$c8c3f496-6458-4230-93c1-594e18d8f61e
-É
-java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8§›­ñ1J$7a53eb2a-6ed2-410b-8b54-b715f4924e41
-}
-java:S1161@":Add the "@Override" annotation above this method signature(ìÍ÷ï8‘ó½´ñ1J$5c500e64-0ba2-48bb-9705-20fc7e11ecb7
-œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ŒşÙÏñ1J$9f83148e-a50e-4722-bfdf-908c105ec1cb
+L
+java:S1066."/Merge this if statement with the enclosing one.(¢ÌØ8ÃˆßŞñ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8­÷©Şñ1
+£
+java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8¨Ÿ¶Şñ1
+W
+java:S1161?":Add the "@Override" annotation above this method signature(ìÍ÷ï8³Ÿ¶Şñ1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ì¸ªŞñ1

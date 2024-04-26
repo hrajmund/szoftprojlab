@@ -3,5 +3,5 @@ tranzi Tranzi2
 student S
 room R
 addperson R S
-additem_p S Tranzi1
-additem_p S Tranzi2
+additem_r R Tranzi1
+additem_r R Tranzi2
