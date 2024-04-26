@@ -9,14 +9,15 @@ R1
 		[Stun] false
 		[TeacherProtected] false
 		[GasProtected] false
-		[Item 0] Tvsz (Active) false (Fake) false (RemainingUsage) 3
+		[Item 0] Tvsz (Active) false (Fake) false (RemainingUsage) 2
 
+	T
+		[CurrentRoom] R1
+		[Stun] false
 R2
 	[Gas] false
 	[Sticky] false
 	[Capacity] 5
 	[Incoming] R1 
 	[Outgoing] R1 
-	T
-		[CurrentRoom] R2
-		[Stun] false
+

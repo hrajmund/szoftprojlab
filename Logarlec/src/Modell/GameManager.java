@@ -351,7 +351,7 @@ public class GameManager {
                 do{
                     line=scanner.nextLine();
                     parts = line.split(" ");
-                    commandName_ = parts[0];
+                     commandName_ = parts[0];
                     switch (commandName_) {
                         case "neighbours":
                             for(Room r : p.getCurrentRoom().getOutgoingDoors()){
@@ -454,7 +454,7 @@ public class GameManager {
                             System.out.println("Unknown Command: " + line + "\n");
                     }
 
-                }while(!commandName_.equals("next") || !commandName_.equals("move"));
+                }while(!commandName_.equals("next") && !commandName_.equals("move"));
             }
             if(random){
                 labyrinth.RandomGergQrva();

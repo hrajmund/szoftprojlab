@@ -1,10 +1,9 @@
-teacher T
-student S
 room R1
 room R2
-tvsz TVSZ
+teacher T1
+student S1
+tvsz TVSZ 1
 door R1 R2
-door R2 R1
-addperson R1 S
-addperson R2 T
-additem_p S TVSZ
+addperson R1 S1
+addperson R2 T1
+additem_p S1 TVSZ

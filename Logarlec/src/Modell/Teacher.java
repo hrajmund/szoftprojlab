@@ -102,6 +102,5 @@ public class  Teacher extends Person{
                 items.get(i).PrintOutItem(writer);
             }
         }
-        writer.println();
     }
 }
