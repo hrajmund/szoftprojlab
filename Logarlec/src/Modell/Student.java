@@ -190,6 +190,8 @@ public class Student extends Person{
                 items.get(i).PrintOutItem(writer);
             }
         }
-        writer.println();
+        else {
+            writer.println();
+        }
     }
 }
