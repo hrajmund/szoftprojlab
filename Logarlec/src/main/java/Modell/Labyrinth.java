@@ -17,6 +17,8 @@ public class Labyrinth implements IRound {
 
     boolean Game_End = false;
 
+    public boolean random = true;
+
     /**
      * A labirintusban található szobák listája.
      */
@@ -84,6 +86,31 @@ public class Labyrinth implements IRound {
                 i.tick();
             }
         }
+        
+        if(random){
+            Random rand = new Random();
+            if(rand.nextInt(10) < 3){
+                int roomNumber = rand.nextInt(rooms.size());
+                while(!rooms.get(roomNumber).people.isEmpty()){
+                    roomNumber = (roomNumber+1) % rooms.size();
+                }
+                rooms.get(roomNumber).split();
+            }
+            //MERGE geci
+            if(rand.nextInt(10)<3){
+                int i = rand.nextInt(rooms.size());
+                //while()
+                
+            }
+        }
+    }
+    
+    private boolean hasEmptyNeighbour(Room r){
+        //for (Room room : r.
+             //) {
+            
+        //}
+        return false;
     }
 
     /**
@@ -217,6 +244,8 @@ public class Labyrinth implements IRound {
             }
         }
     }
+    
+
 
 }
 

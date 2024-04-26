@@ -34,7 +34,10 @@ public class Camembert extends BaseItem{
 
     @Override
     public void tick() {
+
+
     }
+
     @Override
     public void PrintOutItem(PrintWriter writer){
         writer.println(name + " (Active) " + active);

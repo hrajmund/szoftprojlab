@@ -28,12 +28,13 @@ public class CursedRoom extends Room implements IRound {
         super(cursedroomName);
     }
 
-
     /**
      * Ennek a függvénynek a határásra változnak meg az elátkozott ajtók
      */
     public void tick(){
-        cursed();
+        if(labyrinth.random){
+            cursed();
+        }
     }
 
 
@@ -41,36 +42,49 @@ public class CursedRoom extends Room implements IRound {
      * Ennek a függvénynek a határásra változnak meg az elátkozott ajtók
      */
     public void cursed(){
-        Random randomNum;
-        if (Szkeleton.DETERMINISTIC_MODE) {
-            randomNum = new Random(Szkeleton.RAND_INIT_WHEN_DETERMINISTIC); // A kezdőérték, ha determinisztikus módban vagyunk
-        } else {
-            randomNum = new Random(); // Normál, véletlenszerű módban
-        }
+        //Random randomNum;
+        //if (Szkeleton.DETERMINISTIC_MODE) {
+        //    randomNum = new Random(Szkeleton.RAND_INIT_WHEN_DETERMINISTIC); // A kezdőérték, ha determinisztikus módban vagyunk
+        //} else {
+        //    randomNum = new Random(); // Normál, véletlenszerű módban
+        //}
+//
+        //int rand1 = randomNum.nextInt(incomingDoors.size());
+        //for (int i = 0; i < rand1; i++) {
+        //    int rand2 = randomNum.nextInt(incomingDoors.size());
+        //    cursedIncomingDoors.add(incomingDoors.get(rand2));
+        //    removeIncomingDoor(incomingDoors.get(rand2));
+        //}
+        //int rand3 = randomNum.nextInt(outgoingDoors.size());
+        //for (int i = 0; i < rand3; i++) {
+        //    int rand4 = randomNum.nextInt(outgoingDoors.size());
+        //    cursedOutgoingDoors.add(outgoingDoors.get(rand4));
+        //    removeOutgoingDoor(outgoingDoors.get(rand4));
+        //}
+        //INNEN
+        if(outgoingDoors.isEmpty()){
+            outgoingDoors.addAll(cursedOutgoingDoors);
+            cursedIncomingDoors.clear();
 
-        int rand1 = randomNum.nextInt(incomingDoors.size());
-        for (int i = 0; i < rand1; i++) {
-            int rand2 = randomNum.nextInt(incomingDoors.size());
-            cursedIncomingDoors.add(incomingDoors.get(rand2));
-            removeIncomingDoor(incomingDoors.get(rand2));
+            incomingDoors.addAll(cursedIncomingDoors);
+            cursedIncomingDoors.clear();
         }
-        int rand3 = randomNum.nextInt(outgoingDoors.size());
-        for (int i = 0; i < rand3; i++) {
-            int rand4 = randomNum.nextInt(outgoingDoors.size());
-            cursedOutgoingDoors.add(outgoingDoors.get(rand4));
-            removeOutgoingDoor(outgoingDoors.get(rand4));
+        else{
+            cursedOutgoingDoors.addAll(outgoingDoors);
+            outgoingDoors.clear();
+
+            cursedIncomingDoors.addAll(incomingDoors);
+            incomingDoors.clear();
         }
-    }
+        }
 
     @Override
     public boolean isEnterable(Room r){
-        /* Ez a jó
-        if(!cursedIncomingDoors.contains(r) || people.size()<capacity){
+        if(!cursedIncomingDoors.contains(r) || people.size() < capacity){
             return true;
         }
-        return false;
-        */
-         return true;
+        else{
+            return false;}
     }
 
     @Override

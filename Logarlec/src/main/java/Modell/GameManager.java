@@ -331,9 +331,11 @@ public class GameManager {
             if(commandName.equals("random")){
                     if (parts[1].equals("true")) {
                         random = true;
+                        labyrinth.random = true;
 
                     } else if (parts[1].equals("false")) {
                         random = false;
+                        labyrinth.random = false;
                     }
             }
             line = scanner.nextLine();
@@ -456,6 +458,41 @@ public class GameManager {
                             break;
                         case "save":
                             return;
+                        case "merge":
+                            String room0Tomerge = parts[1];
+                            String room1ToMerge = parts[2];
+                            for (Room mRoom0 : labyrinth.getRooms()) {
+                                if (mRoom0.getName().equals(room0Tomerge)) {
+                                    for (Room mRoom1 : labyrinth.getRooms()) {
+                                        if (mRoom1.getName().equals(room0Tomerge)) {
+                                            mRoom0.merge(mRoom1);
+                                            break;
+                                        }
+                                    }
+                                    break;
+                                }
+                            }
+                            break;
+                        case "split":
+                            String roomToSplit = parts[1];
+                            for (Room croom : labyrinth.getRooms()) {
+                                if (croom.getName().equals(roomToSplit)) {
+                                    croom.split();
+                                    break;
+                                }
+                            }
+                            break;
+                        case "curse":
+                            if(!random) {
+                                String roomToCurse = parts[1];
+                                for (Room croom : labyrinth.getRooms()) {
+                                    if (croom.getName().equals(roomToCurse)) {
+                                        croom.cursed();
+                                        break;
+                                    }
+                                }
+                            }
+                            break;
                         default:
                             System.out.println("Unknown Command: " + line + "\n");
                     }

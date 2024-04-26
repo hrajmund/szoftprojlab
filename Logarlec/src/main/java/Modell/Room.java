@@ -51,6 +51,8 @@ public class Room implements IRound{
      * A szoba ragadós-e
      */
     protected Boolean sticky = false;
+    
+    protected void cursed(){}
 
     /**
      * A szobába hány ember járt a takarító után
@@ -312,16 +314,24 @@ public class Room implements IRound{
      * Szétosztja a szobát.
      */
     public void split(){
-
-        Room newroom = new Room("R"+labyrinth.getRooms().size()); //inkrementalis elnevezes
+        int number = labyrinth.getRooms().size()+1;
+        Room newroom = new Room("R"+number); //inkrementalis elnevezes
         labyrinth.addRoom(newroom);
 
         newroom.outgoingDoors = outgoingDoors;
+        for (Room r : outgoingDoors) {
+            r.addIncomingDoor(newroom);
+        }
         newroom.incomingDoors = incomingDoors;
+        for (Room r : incomingDoors) {
+            r.addOutgoingDoor(newroom);
+        }
+        
         for (int i = 0; i< items.size(); i++){ //RANDOM XD
             if(i%2 == 0)
                 newroom.addItem(items.get(i));
         }
+        
         newroom.gas = gas;
         newroom.capacity = capacity;
         newroom.personCounter = personCounter; //

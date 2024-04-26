@@ -1,7 +1,11 @@
 room R1
 room R2
+student S1
+addperson R1 S1
 cursedroom Cursed
+door R1 Cursed
 door Cursed R1
-door Cursed R1 / door R1 Cursed
-door R2 Cursed / door Cursed R2
-door Cursed R2 / door R2 Cursed
+door R2 Cursed
+door Cursed R2
+door R1 R2
+door R2 R1
