@@ -1,4 +1,5 @@
 package Modell;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -68,5 +69,19 @@ public class CursedRoom extends Room implements IRound {
         return false;
         */
          return true;
+    }
+
+    @Override
+    public void PrintOutRoom(PrintWriter writer){
+        writer.println(Name +
+                "\n\t [Gas] " + gas +
+                "\n\t [Sticky] " + sticky +
+                "\n\t [Capacity] " + capacity
+        );
+
+        writer.print("\t [Incoming] ");
+        this.getIncomingDoors().forEach(incoming -> writer.print(incoming.getName() + " "));
+        writer.print("\n\t [Outgoing] ");
+        this.getOutgoingDoors().forEach(outgoing -> writer.print(outgoing.getName() + " "));
     }
 }

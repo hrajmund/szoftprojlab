@@ -1,9 +1,8 @@
 
 p
-java:S5411-"(Use a primitive boolean expression here.(êÃ’ˆøÿÿÿÿ8«ËÝ¬ñ1J$c0541842-fbd4-4e9a-a04f-f64d1197e7fb
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8ÄÐÿ¬ç1J$775b74d1-0e6c-480f-9d3d-b055a7501bfa
+java:S54110"(Use a primitive boolean expression here.(êÃ’ˆøÿÿÿÿ8«ËÝ¬ñ1J$d80eb4ea-beba-47ff-ab3c-fd7689a45718
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8ÄÐÿ¬ç1J$65bd3b30-d26a-4362-b458-1456c0acf623
 É
-java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆðüÿÿÿÿ8ÞýÉ¬ñ1J$e0998460-b840-4ec3-abb7-79e25312a073
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆðüÿÿÿÿ8ÞýÉ¬ñ1J$f05a7900-e7dd-4b59-94f5-515ba6061a1e
 }
-java:S11615":Add the "@Override" annotation above this method signature(øÖÇ°8Ëó½´ñ1J$5552bde7-dfcc-421e-90b2-339608f26200
-m	java:S106?"+Replace this use of System.out by a logger.(¸ï˜ˆ8ÃµÞ°ñ1J$79eb8e82-dfa9-4c40-ac27-eb16f7a8aa90
+java:S11618":Add the "@Override" annotation above this method signature(øÖÇ°8Ëó½´ñ1J$d2187041-9a3e-4b21-a5bd-50adc60f1588

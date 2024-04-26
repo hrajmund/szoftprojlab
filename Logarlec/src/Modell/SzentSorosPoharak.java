@@ -2,6 +2,8 @@ package Modell;
 import Modell.IRound;
 import Modell.TestPrinter;
 
+import java.io.PrintWriter;
+
 public class SzentSorosPoharak extends BaseItem implements IRound {
     private int timeUsage=10;
 
@@ -53,9 +55,9 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
         }
     }
     @Override
-    public void PrintOutItem(){
-        System.out.print("\t\t\t"+name + " (Active) " +
+    public void PrintOutItem(PrintWriter writer){
+        writer.print(name + " (Active) " +
                 active +
-                " (TimeUsage) " + timeUsage+"\n");
+                " (TimeUsage) " + timeUsage);
     }
 }

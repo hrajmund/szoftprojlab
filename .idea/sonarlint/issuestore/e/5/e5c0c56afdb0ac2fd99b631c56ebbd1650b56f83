@@ -1,11 +1,10 @@
 
 r
-java:S1066$"/Merge this if statement with the enclosing one.(±†øè8Íðö­ç1J$9942f7f3-aeb9-4150-bdf9-23304b26d180
+java:S1066'"/Merge this if statement with the enclosing one.(±†øè8Íðö­ç1J$b2b5c0bf-a72e-48d8-bf37-52a3a4343000
 k
-java:S5411#"(Use a primitive boolean expression here.(•ëÞ‚8Šðè³ñ1J$8a2935b3-68ae-4138-97b5-7e2fde90d993
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8öÍç¬ç1J$0df5bf0c-b8d4-4aba-8458-68d1b11677c3
-m	java:S1069"+Replace this use of System.out by a logger.(ãçê×8»¤ó°ñ1J$7bbf728e-4854-46aa-be80-9a98681a0415
+java:S5411&"(Use a primitive boolean expression here.(•ëÞ‚8Šðè³ñ1J$2457b234-a39b-4ee7-b21e-e650a8540821
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8öÍç¬ç1J$47bc835f-98a7-4e35-8a4a-baa304516261
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8¤ðè³ñ1J$ed04b75a-0853-48f9-bdd0-af70ba0295f2
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8Å…áÏñ1J$6f98e666-8da7-4ae8-a591-6df257d94f47
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8¤ðè³ñ1J$97d2c0fd-cf63-4631-acbb-467ef1f48773
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8Å…áÏñ1J$28adbb41-2b0a-4486-a046-3e8d564fe870

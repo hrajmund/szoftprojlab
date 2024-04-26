@@ -1,6 +1,9 @@
 package Modell;
 import Modell.IRound;
 import Modell.TestPrinter;
+
+import java.io.PrintWriter;
+
 /**
  * A nedves táblatörlő tárgy
  */
@@ -53,8 +56,8 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
         return active;
     }
     @Override
-    public void PrintOutItem(){
-        System.out.print(name + " (Active) " +
+    public void PrintOutItem(PrintWriter writer){
+        writer.print(name + " (Active) " +
                 active +
                 " (TimeUsage) " + timeUsage);
     }

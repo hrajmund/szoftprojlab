@@ -1,18 +1,16 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8øçªÍñ1J$b4276ad0-b899-4c05-9f3c-9b171a4ed975
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ôıŠÏñ1J$ccffec87-65d1-4641-b3bc-da19779b1dcc
 Ä
-java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²8ÿçªÍñ1J$a3bdec0d-6a66-441b-8d95-37dc43061d22
+java:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²8ùıŠÏñ1J$9267045b-3cf1-402a-88e5-535508a485e8
 É
-java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8ÿçªÍñ1J$15977b16-f803-4d68-81c2-2c7024e9756a
+java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8ùıŠÏñ1J$a6cd2c08-4f27-401a-a19c-38944eda2b93
 }
-java:S1161":Add the "@Override" annotation above this method signature(¦×¡õ8èªÍñ1J$4b027477-b5fd-4922-9c18-22ac4969cd41
+java:S1161":Add the "@Override" annotation above this method signature(¦×¡õ8ûıŠÏñ1J$efe0179f-2fcf-424b-a452-55c81a62b2c2
 f
-java:S21195"Save and re-use this "Random".(€ÏÅ£ıÿÿÿÿ8…èªÍñ1J$01876eae-d3d0-4fe4-8f56-089f5e653ec9
-m	java:S106^"+Replace this use of System.out by a logger.(¶´¬8‡èªÍñ1J$75ac49a4-8dd9-406d-b00c-2ecaace2c33c
-m	java:S106c"+Replace this use of System.out by a logger.(ƒ¬ÿ§8ˆ¬Íñ1J$dbe20108-8a13-42c4-be1a-2e9b432fd9d6
+java:S21196"Save and re-use this "Random".(€ÏÅ£ıÿÿÿÿ8şıŠÏñ1J$39636488-122c-48a0-9ef3-62e8cbb822dd
 —
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8 î­Íñ1J$1bdcdea0-ab18-4841-be29-0328afb44896
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8›åÖÑñ1J$48c30761-81de-446c-8a43-0f6550e562d3
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8 î­Íñ1J$eaa86b60-4c5d-4a0c-96b9-0b11a8dadea2
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8›åÖÑñ1J$3a7d7b56-2b3e-428e-8370-8f9521d58335
 q
-java:S1128".Remove this unused import 'javax.naming.Name'.(ºÄä”8 î­Íñ1J$bd676595-203b-4e85-b4fd-4945f36c7bc2
+java:S1128".Remove this unused import 'javax.naming.Name'.(ºÄä”8›åÖÑñ1J$bab9dd2c-c8b6-4e6b-bfe9-fda611f6ba0d

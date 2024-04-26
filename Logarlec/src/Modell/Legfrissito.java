@@ -1,4 +1,7 @@
 package Modell;
+
+import java.io.PrintWriter;
+
 /**
  * MÓDOSÍTÁS: légfrissítő. Egyszerhasználatos tárgy. Gázos szobában lerakva semlegesíti a gázhatást.
  *A Légfrissítő tárgy
@@ -31,7 +34,7 @@ public class Legfrissito extends BaseItem{
     @Override
     public void tick() {}
     @Override
-    public void PrintOutItem(){
-        System.out.print(name + " (Active) " + active );
+    public void PrintOutItem(PrintWriter writer){
+        writer.print(name + " (Active) " + active );
     }
 }

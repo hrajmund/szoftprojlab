@@ -1,5 +1,7 @@
 package Modell;
 
+import java.io.PrintWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -361,16 +363,22 @@ public class Room implements IRound{
     public void tick(){
     }
 
-    public void PrintOutRoom(){
-        System.out.println(Name +
-                "\n\t [Gas] " + gas +
-                "\n\t [Sticky] " + sticky +
-                "\n\t [Capacity] " + capacity
+    public void PrintOutRoom(PrintWriter writer){
+        writer.print(Name +
+                "\n\t[Gas] " + gas +
+                "\n\t[Sticky] " + sticky +
+                "\n\t[Capacity] " + capacity
         );
 
-        System.out.print("\t [Incoming] ");
-        this.getIncomingDoors().forEach(incoming -> System.out.print(incoming.getName() + " "));
-        System.out.print("\n\t [Outgoing] ");
-        this.getOutgoingDoors().forEach(outgoing -> System.out.print(outgoing.getName() + " "));
+        writer.print("\n\t[Incoming] ");
+        this.getIncomingDoors().forEach(incoming -> writer.print(incoming.getName() + " "));
+        writer.print("\n\t[Outgoing] ");
+        this.getOutgoingDoors().forEach(outgoing -> writer.print(outgoing.getName() + " "));
+        if(!items.isEmpty()){
+            for(int i = 0; i < items.size(); i++){
+                writer.print(String.format("\n\t[Item %d] ", i));
+                items.get(i).PrintOutItem(writer);
+            }
+        }
     }
 }

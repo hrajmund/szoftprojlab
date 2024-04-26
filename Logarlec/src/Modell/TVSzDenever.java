@@ -1,4 +1,7 @@
 package Modell;
+
+import java.io.PrintWriter;
+
 /**
  * TVSZDenevér
  */
@@ -59,8 +62,8 @@ public class TVSzDenever extends BaseItem{
     }
 
     @Override
-    public void PrintOutItem(){
-        System.out.println(" " + name + " (Active) " +
+    public void PrintOutItem(PrintWriter writer){
+        writer.println(" " + name + " (Active) " +
                 active  +
                 " (Fake) " + fake + " (RemainingUsage) " + remainingUsage);
     }

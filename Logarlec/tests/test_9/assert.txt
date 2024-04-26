@@ -1,0 +1,12 @@
+R1
+	[Gas] true
+	[Sticky] false
+	[Capacity] 6
+	[Incoming] R3
+	[Outgoing] R3
+R3
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R1
+	[Outgoing] R1

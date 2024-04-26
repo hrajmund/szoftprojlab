@@ -1,0 +1,4 @@
+random false
+init
+merge R1 R2
+save

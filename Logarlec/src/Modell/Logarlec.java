@@ -1,4 +1,7 @@
 package Modell;
+
+import java.io.PrintWriter;
+
 /**
  * Logarlec tárgy
  */
@@ -48,8 +51,8 @@ public class Logarlec extends BaseItem{
     @Override
     public void tick() {}
     @Override
-    public void PrintOutItem(PrintWriter wr){
-        System.out.print(name + " (Active) " +
+    public void PrintOutItem(PrintWriter writer){
+        writer.print(name + " (Active) " +
                 active +
                 " (Fake) " + fake);
 

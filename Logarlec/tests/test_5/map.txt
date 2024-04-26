@@ -1,0 +1,9 @@
+room R1
+room R2
+door R1 R2
+teacher T1
+student S1
+addperson R2 T1
+addperson R1 S1
+pohar Po1 5
+additem_p S1 Po1

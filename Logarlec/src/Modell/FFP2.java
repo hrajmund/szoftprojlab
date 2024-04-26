@@ -2,6 +2,8 @@ package Modell;
 import Modell.IRound;
 import Modell.TestPrinter;
 
+import java.io.PrintWriter;
+
 /**
  * FFP2 maszk tárgy
  */
@@ -68,8 +70,8 @@ public class FFP2 extends BaseItem implements IRound {
         fake= b;
     }
     @Override
-    public void PrintOutItem(){
-        System.out.print(name + " (Active) " +
+    public void PrintOutItem(PrintWriter writer){
+        writer.print(name + " (Active) " +
                 active  +
                 " (Fake) " + fake + " (TimeUsage) " + timeUsage);
     }

@@ -1,5 +1,8 @@
 package Modell;
 import Modell.TestPrinter;
+
+import java.io.PrintWriter;
+
 /**
  * Tranzisztor tárgy
  */
@@ -90,8 +93,8 @@ public class Tranzisztor extends BaseItem{
     }
 
     @Override
-    public void PrintOutItem(){
-        System.out.print(name + " (Active) " +
+    public void PrintOutItem(PrintWriter writer){
+        writer.print(name + " (Active) " +
                 active +
                 " (Connected) " + connected.name);
     }

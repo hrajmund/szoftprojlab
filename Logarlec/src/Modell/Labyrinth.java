@@ -8,6 +8,7 @@ import java.io.PrintWriter;
 import java.io.Writer;
 import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * A labririntust reprezentáló játék.
@@ -58,7 +59,7 @@ public class Labyrinth implements IRound {
     public void removeStudent(Student s) {
         players.remove(s);
         if(players.isEmpty()){
-            GM.gameEnd();
+            Game_End = true;
         }
     }
 
@@ -74,7 +75,7 @@ public class Labyrinth implements IRound {
      */
     public void newRound(){
         if(players.isEmpty()){
-            GM.gameEnd();
+            Game_End = true;
         }
     }
 
@@ -121,7 +122,7 @@ public class Labyrinth implements IRound {
      * Befejezi a játékot.
      */
     public void endGame(){
-        GM.gameEnd();
+        Game_End = true;
     }
 
     /**
@@ -152,18 +153,51 @@ public class Labyrinth implements IRound {
             writer.println("GAME_END");
         }else {
             for (Room r : this.getRooms()) {
-                r.PrintOutRoom();
+                r.PrintOutRoom(writer);
                 if(!r.getPeople().isEmpty()){
                     for (Person person : r.getPeople()) {
-                        person.PrintOutPerson();
+                        person.PrintOutPerson(writer);
                     }
                 }else{
                     writer.println();
                     for (Person person : r.getPeople()) {
-                        person.PrintOutPerson();
+                        person.PrintOutPerson(writer);
                     }
                 }
+            }
+        }
+    }
 
+    public void RandomGergQrva(){
+        Random rand= new Random();
+        if(!cleaner.isEmpty()){
+            for(Person c: cleaner){
+                int percent=rand.nextInt(2);
+                if(percent==0){
+                    int roomNumber=rand.nextInt(c.getCurrentRoom().movePossibilities().size());
+                    c.move(c.getCurrentRoom().movePossibilities().get(roomNumber));
+                }
+            }
+        }
+        //same for teacher
+        if(!teachers.isEmpty()){
+            for(Person t: teachers){
+                int percent=rand.nextInt(10);
+                if(percent<3){
+                    int doingthing=rand.nextInt(2);
+                    if(doingthing==0){
+                        percent= rand.nextInt(t.getCurrentRoom().getItems().size());
+                        t.pickUpItem(t.getCurrentRoom().getItems().get(percent));
+                    }else{
+                        percent=rand.nextInt(t.getItems().size());
+                        t.putDownItem(t.getItems().get(percent));
+                    }
+                }
+                percent=rand.nextInt(10);
+                if(percent<4){
+                    int roomNumber=rand.nextInt(t.getCurrentRoom().movePossibilities().size());
+                    t.move(t.getCurrentRoom().movePossibilities().get(roomNumber));
+                }
             }
         }
     }

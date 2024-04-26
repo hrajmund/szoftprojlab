@@ -1,0 +1,17 @@
+mask M
+tranzi Tr
+cam C
+log L
+tvsz T
+rongy Nedv
+pohar P
+room R
+additem_r R M
+additem_r R Tr
+additem_r R C
+additem_r R L
+additem_r R T
+additem_r R Nedv
+additem_r R P
+student S
+addperson R S

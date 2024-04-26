@@ -4,6 +4,7 @@ import Modell.TestPrinter;
 import Szkeleton.Szkeleton;
 
 import javax.naming.Name;
+import java.io.PrintWriter;
 import java.util.Random;
 
 /**
@@ -90,14 +91,16 @@ public class  Teacher extends Person{
 
     }
     @Override
-    public void PrintOutPerson(){
-        System.out.println("\n\t" + this.getName() +
-                "\n\t    [CurrentRoom] " + this.getCurrentRoom().Name +
-                "\n\t    [Stun] " + this.getStun()
+    public void PrintOutPerson(PrintWriter writer){
+        writer.println("\n\t" + name +
+                "\n\t\t[CurrentRoom] " +currentRoom.getName() +
+                "\n\t\t[Stun] " + stunned
         );
-        for(int i = 0; i < this.items.size(); i++) {
-            System.out.print(String.format("\t\t[Item %d]", i));
-            this.items.get(i).PrintOutItem();
+        if(!items.isEmpty()){
+            for(int i = 0; i < items.size(); i++) {
+                writer.print(String.format("\t\t[Item %d]", i));
+                items.get(i).PrintOutItem(writer);
+            }
         }
     }
 }

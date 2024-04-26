@@ -1,0 +1,9 @@
+room R1 10
+room R2
+door R1 R2
+door R2 R1
+gas R1
+tvsz TVSZ
+tranzi Tran
+additem_r R1 TVSZ
+additem_r R1 Tran

@@ -977,7 +977,7 @@ public class Szkeleton {
         functions.add(szkeleton::StudentTriesToUseFakeTVSZ); tesztek.add("StudentTriesToUseFakeTVSZ");
 */
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         /*
         for (int i = 0; i < tesztek.size(); i++) {
             System.out.println((i+1)+ ". "+ tesztek.get(i));
@@ -1006,16 +1006,17 @@ public class Szkeleton {
 
         if (valasz.equalsIgnoreCase("test")) {
 
-            while(!valasz.equalsIgnoreCase("exit")){
+            while(true){
                 System.out.println("Which test would you like to run? (test_0):");
-                valasz = scanner.nextLine();
-                GameManager gameManager = new GameManager(valasz);
+                String testReply = scanner.nextLine();
+                if(testReply.equalsIgnoreCase("exit"))
+                    return;
+                GameManager gameManager = new GameManager(testReply);
             }
 
         } else {
 
             GameManager gameManager = new GameManager();
         }
-
     }
 }

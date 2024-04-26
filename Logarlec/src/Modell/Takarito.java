@@ -1,6 +1,7 @@
 package Modell;
 
 import javax.lang.model.element.Name;
+import java.io.PrintWriter;
 import java.util.Random;
 
 public class Takarito extends Person{
@@ -67,8 +68,8 @@ public class Takarito extends Person{
 
     }
     @Override
-    public void PrintOutPerson(){
-        System.out.println("\t" + name +
+    public void PrintOutPerson(PrintWriter writer){
+        writer.println("\t" + name +
                 "\n\t    [CurrentRoom] " + currentRoom +
                 "\n\t    [Stun] " + stunned
         );

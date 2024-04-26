@@ -1,6 +1,9 @@
 package Modell;
 import Modell.Room;
 import Modell.TestPrinter;
+
+import java.io.PrintWriter;
+
 /**
  * Student osztály
  */
@@ -174,16 +177,18 @@ public class Student extends Person{
     }
 
     @Override
-    public void PrintOutPerson(){
-        System.out.println("\t" + name +
-                "\n\t    [CurrentRoom] " + currentRoom.Name +
-                "\n\t    [Stun] " + stunned +
-                "\n\t    [GasProtected] " + gasProtected +
-                "\n\t    [TeacherProtected] " + teacherProtected
+    public void PrintOutPerson(PrintWriter writer){
+        writer.println("\t" + name +
+                "\n\t\t[CurrentRoom] " + currentRoom.Name +
+                "\n\t\t[Stun] " + stunned +
+                "\n\t\t[GasProtected] " + gasProtected +
+                "\n\t\t[TeacherProtected] " + teacherProtected
         );
-        for(int i = 0; i < this.items.size(); i++){
-            System.out.print(String.format("\t\t[Item %d]", i));
-            this.items.get(i).PrintOutItem();
+        if(!items.isEmpty()){
+            for(int i = 0; i < this.items.size(); i++){
+                writer.print(String.format("\t\t[Item %d]", i));
+                this.items.get(i).PrintOutItem(writer);
+            }
         }
     }
 }

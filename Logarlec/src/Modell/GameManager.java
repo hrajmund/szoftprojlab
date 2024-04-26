@@ -12,32 +12,28 @@ public class GameManager {
      * Játékhoz tartozó labirintus
      */
     Labyrinth labyrinth;
-    /**
-     * Játék vége
-     */
-    public void gameEnd(){
-    }
 
     public GameManager(String test) throws FileNotFoundException {
         String dir = System.getProperty("user.dir");
         System.out.println(dir);
         String inputFilepath = ".\\Logarlec\\tests\\" + test + "\\" + "map.txt";
         ReadMap(inputFilepath);
-        labyrinth.PrintOut();
-        System.out.println("The input has been loaded.");
         String ActFilepath = ".\\Logarlec\\tests\\" + test + "\\" + "act.txt";
         File file = new File(ActFilepath);
         try {
             Scanner fileScanner = new Scanner(file);
             PlayGame(fileScanner);
             fileScanner.close();
-        } catch (FileNotFoundException e) {
+            FileWriter fileWriter = new FileWriter(".\\Logarlec\\tests\\" + test + "\\" + "out.txt");
+            PrintWriter filePrintWriter = new PrintWriter(fileWriter);
+            labyrinth.PrintOut(filePrintWriter);
+            filePrintWriter.flush();
+            filePrintWriter.close();
+        } catch (IOException e) {
             System.out.println("A fájl nem található: " + e.getMessage());
         }
     }
-
-
-    public GameManager() throws FileNotFoundException {
+    public GameManager() throws IOException {
         //String inputFilepath = ".\\Logarlec\\tests\\game\\game_input.txt";
         String inputFilepath = ".\\Logarlec\\tests\\test_1\\map.txt";
         ReadMap(inputFilepath);
@@ -319,6 +315,7 @@ public class GameManager {
             throw new RuntimeException(e);
         }
     }
+
     public void PlayGame(Scanner scanner) throws IOException {
         String line = scanner.nextLine();
         Boolean random= false;
@@ -328,6 +325,7 @@ public class GameManager {
             if(commandName.equals("random")){
                     if (parts[1].equals("true")) {
                         random = true;
+
                     } else if (parts[1].equals("false")) {
                         random = false;
                     }
@@ -336,7 +334,7 @@ public class GameManager {
         }
         ArrayList<Person> people;
         if(random){
-            people=labyrinth.getPeople(); // ITT HA GLOBÁLIS LESZ A RANDOM AKKOR NEM MINDENKIT AD VISSZA HANEM CSAK A PLAYEREKET
+            //people=labyrinth.getPeople(); // ITT HA GLOBÁLIS LESZ A RANDOM AKKOR NEM MINDENKIT AD VISSZA HANEM CSAK A PLAYEREKET
             people=labyrinth.getStudents();
         }else{
             people=labyrinth.getPeople();
@@ -345,17 +343,20 @@ public class GameManager {
         while (!labyrinth.Game_End) {
             ArrayList<Person> peopleCopy = new ArrayList<>(people);
             for(Person p: peopleCopy){
-                if(!labyrinth.getPeople().contains((p))){
+                if(!labyrinth.getPeople().contains((p)) || p.getStun()){
+                    p.setStun(false);
                     continue;
                 }
                 do{
                     line=scanner.nextLine();
                     parts = line.split(" ");
                     String commandName_ = parts[0];
+
+
                     switch (commandName_) {
                         case "neighbours":
                             for(Room r : p.getCurrentRoom().getOutgoingDoors()){
-                                r.PrintOutRoom();
+                                r.PrintOutRoom(new PrintWriter(System.out));
                             }
                             break;
                         case "move":
@@ -381,13 +382,11 @@ public class GameManager {
                             }else{
                                 System.out.println("Unknown Command: " + line + "\n");
                             }
-
-
                             break;
                         case "roomitems":
                             if(p.getCurrentRoom().getItems()!=null){
                                 for(BaseItem v: p.getCurrentRoom().getItems()){
-                                    v.PrintOutItem();
+                                    v.PrintOutItem(new PrintWriter(System.out));
                                 }
                             }else{
                                 System.out.println("Nincs Item\n");
@@ -397,8 +396,9 @@ public class GameManager {
                         case "pickup":
                             String pickupItemName=parts[1];
                             BaseItem pickupItem=null;
-                            if(p.getCurrentRoom().getItems().size()<=Integer.parseInt(pickupItemName)) {
-                                pickupItem = p.getCurrentRoom().getItems().get(Integer.parseInt(useitemName));
+                            int parsed = Integer.parseInt(pickupItemName);
+                            if(p.getCurrentRoom().getItems().size()>=parsed) {
+                                pickupItem = p.getCurrentRoom().getItems().get(parsed);
                             }
                             if(pickupItem!=null){
                                 p.pickUpItem(pickupItem);
@@ -410,7 +410,7 @@ public class GameManager {
                         case "ownitems":
                             if(p.getItems()!=null){
                                 for(BaseItem v: p.getItems()){
-                                    v.PrintOutItem();
+                                    v.PrintOutItem(new PrintWriter(System.out));
                                 }
                             }else{
                                 System.out.println("Nincs Item\n");
@@ -420,7 +420,7 @@ public class GameManager {
                         case "useitem":
                             BaseItem useItem= null;
                             String useitemName=parts[1];
-                            if(p.getItems().size()<=Integer.parseInt(useitemName)) {
+                            if(p.getItems().size()>=Integer.parseInt(useitemName)) {
                                 useItem = p.getItems().get(Integer.parseInt(useitemName));
                             }
                             if(useItem!=null){
@@ -432,7 +432,7 @@ public class GameManager {
                         case "putdown":
                             String putdownItemName=parts[1];
                             BaseItem putdownItem=null;
-                            if(p.getItems().size()<=Integer.parseInt(putdownItemName)) {
+                            if(p.getItems().size()>=Integer.parseInt(putdownItemName)) {
                                 putdownItem = p.getItems().get(Integer.parseInt(putdownItemName));
                             }
                             if(putdownItem!=null){
@@ -446,17 +446,23 @@ public class GameManager {
                         case "list":
                             PrintWriter consoleWriter = new PrintWriter(System.out);
                             labyrinth.PrintOut(consoleWriter);
+                            consoleWriter.flush();
+                            consoleWriter.close();
                             break;
                         case "save":
-                            FileWriter fileWriter = new FileWriter("testoutput.txt");
-                            PrintWriter filePrintWriter = new PrintWriter(fileWriter);
-                            labyrinth.PrintOut(filePrintWriter);
-                            break;
+                            return;
                         default:
                             System.out.println("Unknown Command: " + line + "\n");
                     }
                 }while(!parts[0].equals("next") || !parts[0].equals("move"));
             }
+            if(random){
+                labyrinth.RandomGergQrva();
+            }
+
+            //dolgok
+
+
         }
     }
 }

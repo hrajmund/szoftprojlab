@@ -202,4 +202,8 @@ public abstract class Person implements IRound{
     public abstract void PrintOutPerson(PrintWriter writer);
 
     public void UseItem(int i){}
+
+    public void setStun(boolean b) {
+        stunned=b;
+    }
 }
