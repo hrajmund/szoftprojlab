@@ -16,12 +16,12 @@ java:S5411Ë"(Use a primitive boolean expression here.(ó„„ğûÿÿÿÿ8í»„Óñ1J$76efc
 ¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ğ»„Óñ1J$bd2dbb6a-b349-48ab-b0be-14fa95aca5a6
 ˆ
 java:S2259°"DA "NullPointerException" could be thrown; "active" is nullable here.(şê§Ä8¹½„Óñ1J$bce45092-51f0-479a-8531-7503ad9ef867
+”
+java:S2259Ÿ"KA "NullPointerException" could be thrown; "roomAddPerson" is nullable here.(Î¼Ù…ÿÿÿÿÿ8¼½„Óñ1J$efb51579-1933-4c43-9f40-ff16acf870fb
 †
 java:S2259¦"BA "NullPointerException" could be thrown; "fake" is nullable here.(‘¤Á›8³½„Óñ1J$7e97bf0d-4b33-4e63-b6da-b72c9e4fc8ed
 
 java:S2259ı"IA "NullPointerException" could be thrown; "additemroom" is nullable here.(Ø’­«8¼½„Óñ1J$25aa5638-d8b7-42bd-8cc1-a4a8cdf341a7
-”
-java:S2259Ÿ"KA "NullPointerException" could be thrown; "roomAddPerson" is nullable here.(Î¼Ù…ÿÿÿÿÿ8¼½„Óñ1J$efb51579-1933-4c43-9f40-ff16acf870fb
 ƒ
 java:S2259 "?A "NullPointerException" could be thrown; "p" is nullable here.(ÜÚ‘¸8¼½„Óñ1J$2b96037d-81d1-40d7-819f-d0a971c6f5ee
 r	java:S106"+Replace this use of System.out by a logger.(Âº™êúÿÿÿÿ8À½„Óñ1J$deb981f1-1fce-4a1c-b539-6855773fa392
@@ -68,4 +68,4 @@ java:S1128"0Remove this unused import 'Szkeleton.Szkeleton'.(¦€¤‰şÿÿÿÿ8‘ŸİÕñ1
 
 java:S65419"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 259 to 64, Complexity from 60 to 14, Nesting Level from 5 to 2, Number of Variables from 79 to 6.(Ûñæ±üÿÿÿÿ8è½„Óñ1J$76427a48-c781-48a1-9a12-f1cc23f904e8
 
-java:S6541¿"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 129 to 64, Complexity from 37 to 14, Nesting Level from 6 to 2, Number of Variables from 23 to 6.(îÂ÷şÿÿÿÿ8è½„Óñ1J$a9cc809a-952f-46c7-81d3-dbb925fe20d2
+java:S6541¿"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 130 to 64, Complexity from 37 to 14, Nesting Level from 6 to 2, Number of Variables from 23 to 6.(îÂ÷şÿÿÿÿ8è½„Óñ1J$a9cc809a-952f-46c7-81d3-dbb925fe20d2
