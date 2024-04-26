@@ -4,7 +4,7 @@ R1
 	[Capacity] 5
 	[Incoming]
 	[Outgoing]
-	[Item1] TVSZ (Active) false (Fake) false (TimeUsage) 3
+	[Item 0] TVSZ (Active) false (Fake) false (RemainingUsage) 3
 	S1
 		[CurrentRoom] R1
 		[Stun] false

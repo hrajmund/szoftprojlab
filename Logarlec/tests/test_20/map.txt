@@ -1,10 +1,5 @@
-teacher T
+pohar Sorosp
 student S
-room R1
-room R2
-tvsz TVSZ
-door R1 R2
-door R2 R1
-addperson R1 S
-addperson R2 T
-additem_p S TVSZ
+room R
+addperson R S
+additem_p S Sorosp

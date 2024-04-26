@@ -1,71 +1,75 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡‹­‰8ÂÚ‹Ğñ1J$8b251cdd-4a3e-4b20-b5ae-96c655eec62b
-~	java:S125%"<This block of commented-out lines of code should be removed.(¦Û²š8ÊÚ‹Ğñ1J$63d93114-616d-4199-8451-870adca08042
-ƒ
-java:S1854ö"?Remove this useless assignment to local variable "gameManager".(¸Æ‹È8ÊÚ‹Ğñ1J$7672e3f0-37fe-4e44-b4a8-d727de0483f7
-ˆ
-java:S1854û"?Remove this useless assignment to local variable "gameManager".(Ğ…Ã ûÿÿÿÿ8ÊÚ‹Ğñ1J$8454cd8a-d618-4cc1-9d19-67d512e3887f
-	java:S125ë"<This block of commented-out lines of code should be removed.(Å­Êİ8ËÚ‹Ğñ1J$97eec870-4bcb-4131-ac6a-fc26aa651f5c
-„	java:S125¤"<This block of commented-out lines of code should be removed.(â¦À›ûÿÿÿÿ8ËÚ‹Ğñ1J$8107a52a-336d-4260-8a29-77a852e3f70d
-n	java:S106ç"+Replace this use of System.out by a logger.(—Ù±ˆ8ÌÚ‹Ğñ1J$98a2e70d-96c7-4294-b163-34865ceed8bd
-„	java:S125Ö"<This block of commented-out lines of code should be removed.(Ó¬øúÿÿÿÿ8ÌÚ‹Ğñ1J$524d1cc8-be83-4c6a-aa6d-e561bcbe21a3
-s	java:S106è"+Replace this use of System.out by a logger.(µØº¸úÿÿÿÿ8ÌÚ‹Ğñ1J$6ab57acb-6191-45dd-a800-fbbbcdf6c9b7
-s	java:S106ë"+Replace this use of System.out by a logger.(¼¤›ÿÿÿÿÿ8ÏÚ‹Ğñ1J$6c422f54-43fe-4fec-8561-468c4d9a21c4
-n	java:S106ò"+Replace this use of System.out by a logger.(ÏÕÂº8ÏÚ‹Ğñ1J$d8111ee9-50ec-4d45-8fa6-90506c87d58b
-t
-java:S1481ö"0Remove this unused "gameManager" local variable.(¸Æ‹È8ĞÚ‹Ğñ1J$c0d3b959-5e3b-452c-bc7d-e0d91c5f22a9
-y
-java:S1481û"0Remove this unused "gameManager" local variable.(Ğ…Ã ûÿÿÿÿ8ĞÚ‹Ğñ1J$7c07ad94-6944-4bc8-afaf-c7db6b0f3cf4
-f
-java:S1128"#Remove this unused import 'Modell'.(‡‹­‰8ĞÚ‹Ğñ1J$b0966722-73e3-406a-b9dc-9c299a8f1d1f
-q
-java:S1128".Remove this unused import 'Modell.CursedRoom'.(‡‹­‰8ĞÚ‹Ğñ1J$697e9860-8403-49e2-bd35-777760b90751
-r
-java:S1128"/Remove this unused import 'Modell.TVSzDenever'.(‡‹­‰8ĞÚ‹Ğñ1J$ba2e8363-b6f0-4bbf-a948-e53541c11949
-i
-java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8ĞÚ‹Ğñ1J$38ec88c2-e373-4e69-8e37-b970209f1a65
-’
-java:S1128"JRemove this unused import 'org.junit.jupiter.api.Assertions.assertEquals'.(ÚÈˆòÿÿÿÿÿ8ĞÚ‹Ğñ1J$a0c69d16-0b2b-4fa0-a32d-31a00f7d0399
-Š
-java:S1128"GRemove this unused import 'org.junit.jupiter.params.ParameterizedTest'.(…²üî8ĞÚ‹Ğñ1J$b17e8ecc-8170-4efa-ab25-93537357b518
-‹
-java:S1128"HRemove this unused import 'org.junit.jupiter.params.provider.Arguments'.(Ç†¯š8ĞÚ‹Ğñ1J$1982812a-727e-431c-939b-6dd1451b46ed
-“
-java:S1128	"KRemove this unused import 'org.junit.jupiter.params.provider.MethodSource'.(èÖêşÿÿÿÿ8ĞÚ‹Ğñ1J$7484e667-74c3-4af3-9fec-6c4e1749004b
-
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡‹­‰8—¸½Øñ1
+X	java:S125%"<This block of commented-out lines of code should be removed.(¦Û²š8«¸½Øñ1
+]
+java:S1854"?Remove this useless assignment to local variable "gameManager".(¸Æ‹È8­¸½Øñ1
+b
+java:S1854†"?Remove this useless assignment to local variable "gameManager".(Ğ…Ã ûÿÿÿÿ8­¸½Øñ1
+Y	java:S125ë"<This block of commented-out lines of code should be removed.(Å­Êİ8°¸½Øñ1
+^	java:S125¤"<This block of commented-out lines of code should be removed.(â¦À›ûÿÿÿÿ8±¸½Øñ1
+H	java:S106ç"+Replace this use of System.out by a logger.(—Ù±ˆ8²¸½Øñ1
+^	java:S125Ö"<This block of commented-out lines of code should be removed.(Ó¬øúÿÿÿÿ8²¸½Øñ1
+M	java:S106è"+Replace this use of System.out by a logger.(µØº¸úÿÿÿÿ8²¸½Øñ1
+M	java:S106ë"+Replace this use of System.out by a logger.(¼¤›ÿÿÿÿÿ8µ¸½Øñ1
+O
+java:S1481î",Remove this unused "correct" local variable.(‚Âúüÿÿÿÿ8¶¸½Øñ1
+^	java:S125ï"<This block of commented-out lines of code should be removed.(½ƒÈÖüÿÿÿÿ8¶¸½Øñ1
+^	java:S125ö"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8¶¸½Øñ1
+H	java:S106ı"+Replace this use of System.out by a logger.(ÏÕÂº8¶¸½Øñ1
+N
+java:S1481"0Remove this unused "gameManager" local variable.(¸Æ‹È8¸¸½Øñ1
+S
+java:S1481†"0Remove this unused "gameManager" local variable.(Ğ…Ã ûÿÿÿÿ8¸¸½Øñ1
+@
+java:S1128"#Remove this unused import 'Modell'.(‡‹­‰8¹¸½Øñ1
+K
+java:S1128".Remove this unused import 'Modell.CursedRoom'.(‡‹­‰8¹¸½Øñ1
+L
+java:S1128"/Remove this unused import 'Modell.TVSzDenever'.(‡‹­‰8¹¸½Øñ1
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8¹¸½Øñ1
+l
+java:S1128"JRemove this unused import 'org.junit.jupiter.api.Assertions.assertEquals'.(ÚÈˆòÿÿÿÿÿ8¹¸½Øñ1
+d
+java:S1128"GRemove this unused import 'org.junit.jupiter.params.ParameterizedTest'.(…²üî8¹¸½Øñ1
+e
+java:S1128"HRemove this unused import 'org.junit.jupiter.params.provider.Arguments'.(Ç†¯š8¹¸½Øñ1
+m
+java:S1128	"KRemove this unused import 'org.junit.jupiter.params.provider.MethodSource'.(èÖêşÿÿÿÿ8¹¸½Øñ1
+[
 java:S1128
-">Remove this unused import 'org.junit.jupiter.api.Assumptions'.(ÑŞ¬ğ8ĞÚ‹Ğñ1J$94f87966-5573-4178-abb2-9c93909694b8
-
-java:S1128">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ŞÛ8ĞÚ‹Ğñ1J$ce8f1db9-d8c6-4f9c-9502-48f5ddcfb9df
-y
-java:S1128"6Remove this unused import 'java.nio.file.FileSystems'.(Ş¢˜ß8ĞÚ‹Ğñ1J$49328ef0-17f8-471e-9d8c-89801f4d0c3f
-}
-java:S1128":Remove this unused import 'java.nio.file.FileVisitResult'.(ğ‘Â¹8ÑÚ‹Ğñ1J$996ac101-0b81-4db5-8095-e047bad6387a
-s
-java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8ÑÚ‹Ğñ1J$9ac76c06-55ae-4da6-8949-5c41f5a037a2
-r
-java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8ÑÚ‹Ğñ1J$ec7d1651-72b0-4b0c-8360-97fad93cdf7d
-y
-java:S1128"6Remove this unused import 'java.nio.file.PathMatcher'.(¨½Â†8ÑÚ‹Ğñ1J$ddd73c98-aebf-46a4-a321-3372ee3cf56e
-s
-java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8ÑÚ‹Ğñ1J$bc1fa4db-80bc-4c99-93db-204bfa8bfbf3
-
-java:S1128"<Remove this unused import 'java.nio.file.SimpleFileVisitor'.(¹ĞïÍ8ÑÚ‹Ğñ1J$d53df652-d367-45bd-933f-b339bbbd0c90
-
-java:S1128"HRemove this unused import 'java.nio.file.attribute.BasicFileAttributes'.(“ããÿÿÿÿÿ8ÑÚ‹Ğñ1J$70344b8c-2375-4b13-adde-89c933e6105d
-v
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ÑÚ‹Ğñ1J$fef3fb25-33b1-4f16-a8bf-a15f2a9e91a8
-f
-java:S1128"Remove this duplicated import.(¼è½Òşÿÿÿÿ8ÑÚ‹Ğñ1J$ddb1682c-4668-4bfd-bf8d-4b86a5cd196d
-w
-java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8ÑÚ‹Ğñ1J$5587863d-1bed-40db-933b-1c4d30e762c3
-s
-java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º8ÑÚ‹Ğñ1J$08745940-79a0-443b-94bc-f47ae664fc35
-y
-java:S1128"1Remove this unused import 'java.io.OutputStream'.(Ó ³ÿÿÿÿÿ8ÑÚ‹Ğñ1J$b675d8e9-0225-455d-8498-6bada7b09065
-f
-java:S1128"Remove this duplicated import.(¼è½Òşÿÿÿÿ8ÑÚ‹Ğñ1J$c204a4c6-58ef-448d-b8ea-b925d35a80bc
-…
-java:S1128"=Remove this unused import 'java.util.NoSuchElementException'.(®“ÿéúÿÿÿÿ8ÑÚ‹Ğñ1J$a387c9df-3e07-41e0-a0e4-60c5c141a804
-}
-java:S1128":Remove this unused import 'java.util.function.BiFunction'.(ô¿°×8ÑÚ‹Ğñ1J$5dd30fda-2f31-4f07-bfab-c959210c63a1
+">Remove this unused import 'org.junit.jupiter.api.Assumptions'.(ÑŞ¬ğ8¹¸½Øñ1
+[
+java:S1128">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ŞÛ8¹¸½Øñ1
+S
+java:S1128"6Remove this unused import 'java.nio.file.FileSystems'.(Ş¢˜ß8¹¸½Øñ1
+W
+java:S1128":Remove this unused import 'java.nio.file.FileVisitResult'.(ğ‘Â¹8¹¸½Øñ1
+M
+java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8¹¸½Øñ1
+L
+java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8¹¸½Øñ1
+S
+java:S1128"6Remove this unused import 'java.nio.file.PathMatcher'.(¨½Â†8¹¸½Øñ1
+M
+java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8¹¸½Øñ1
+Y
+java:S1128"<Remove this unused import 'java.nio.file.SimpleFileVisitor'.(¹ĞïÍ8¹¸½Øñ1
+j
+java:S1128"HRemove this unused import 'java.nio.file.attribute.BasicFileAttributes'.(“ããÿÿÿÿÿ8¹¸½Øñ1
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8¹¸½Øñ1
+@
+java:S1128"Remove this duplicated import.(¼è½Òşÿÿÿÿ8¹¸½Øñ1
+Q
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8¹¸½Øñ1
+M
+java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º8¹¸½Øñ1
+S
+java:S1128"1Remove this unused import 'java.io.OutputStream'.(Ó ³ÿÿÿÿÿ8¹¸½Øñ1
+@
+java:S1128"Remove this duplicated import.(¼è½Òşÿÿÿÿ8¹¸½Øñ1
+_
+java:S1128"=Remove this unused import 'java.util.NoSuchElementException'.(®“ÿéúÿÿÿÿ8¹¸½Øñ1
+W
+java:S1128":Remove this unused import 'java.util.function.BiFunction'.(ô¿°×8¹¸½Øñ1

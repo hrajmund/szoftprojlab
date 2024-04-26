@@ -1,4 +1,5 @@
-random true
+random false
 init
-move R2
+next
+move R1
 save

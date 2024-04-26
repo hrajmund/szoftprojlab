@@ -1,10 +1,15 @@
-teacher T
+tvsz Tvsz
+rongy Nedv
+pohar Sorosp
+cam Cam
+mask Mask
+tranzi Tranzisztor
 student S
-room R1
-room R2
-tvsz TVSZ
-door R1 R2
-door R2 R1
-addperson R1 S
-addperson R2 T
-additem_p S TVSZ
+room R
+addperson R S
+additem_r R Mask
+additem_p S Tvsz
+additem_p S Nedv
+additem_p S Cam
+additem_p S Sorosp
+additem_p S Tranzisztor

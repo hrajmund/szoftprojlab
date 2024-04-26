@@ -1,0 +1,22 @@
+R1
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R2 
+	[Outgoing] R2 
+	S
+		[CurrentRoom] R1
+		[Stun] false
+		[TeacherProtected] true
+		[GasProtected] false
+		[Item 0] Pohar (Active) true (TimeUsage) 10
+
+R2
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R1 
+	[Outgoing] R1 
+	T
+		[CurrentRoom] R2
+		[Stun] false

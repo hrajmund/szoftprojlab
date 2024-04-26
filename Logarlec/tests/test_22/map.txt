@@ -1,10 +1,7 @@
-teacher T
+tranzi Tranzi1
+tranzi Tranzi2
 student S
-room R1
-room R2
-tvsz TVSZ
-door R1 R2
-door R2 R1
-addperson R1 S
-addperson R2 T
-additem_p S TVSZ
+room R
+addperson R S
+additem_p S Tranzi1
+additem_p S Tranzi2

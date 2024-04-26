@@ -1,5 +1,4 @@
 random false
 init
 move R2
-list
 save

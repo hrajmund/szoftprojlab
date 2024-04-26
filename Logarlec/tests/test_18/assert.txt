@@ -1,0 +1,17 @@
+R
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming]
+    [Outgoing]
+    [Item1] Mask (Active) false (TimeUsage) 5
+    S
+        [CurrentRoom] R1
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
+        [Item1] TVSZDenever (Active) false (Fake) false (RemainingUsage) 3
+        [Item2] Tranzisztor (Active) false (Connected)
+        [Item3] NedvesTablatorlo (Active) false (TimeUsage) 10
+        [Item4] SzentSorosPoharak (Active) false (TimeUsage) 5
+        [Item5] Camembert (Active) false

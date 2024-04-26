@@ -347,12 +347,11 @@ public class GameManager {
                     p.setStun(false);
                     continue;
                 }
+                String commandName_;
                 do{
                     line=scanner.nextLine();
                     parts = line.split(" ");
-                    String commandName_ = parts[0];
-
-
+                    commandName_ = parts[0];
                     switch (commandName_) {
                         case "neighbours":
                             for(Room r : p.getCurrentRoom().getOutgoingDoors()){
@@ -454,7 +453,8 @@ public class GameManager {
                         default:
                             System.out.println("Unknown Command: " + line + "\n");
                     }
-                }while(!parts[0].equals("next") || !parts[0].equals("move"));
+
+                }while(!commandName_.equals("next") || !commandName_.equals("move"));
             }
             if(random){
                 labyrinth.RandomGergQrva();

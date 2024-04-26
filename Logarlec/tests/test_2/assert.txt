@@ -10,11 +10,11 @@ R2
 	[Capacity] 5
 	[Incoming] R1
 	[Outgoing]
-	[Item1]Cam1,(Active)false
-	[Item2]Tvsz1,(Active)false,(Fake)false,(RemainingUsage)3
-	[Item3]Tvsz2,(Active)false,(Fake)false,(RemainingUsage)3
+	[Item 0] Tvsz2 (Active) false (Fake) false (RemainingUsage) 3
+	[Item 1] Cam1 (Active) false
+	[Item 2] Tvsz1 (Active) false (Fake) false (RemainingUsage) 3
 	S1
 		[CurrentRoom] R2
 		[Stun] true
 		[TeacherProtected] false
-	    [GasProtected] false
+		[GasProtected] false

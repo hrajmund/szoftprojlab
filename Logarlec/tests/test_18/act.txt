@@ -1,4 +1,4 @@
-random true
+random false
 init
-move R2
+pickup Mask
 save

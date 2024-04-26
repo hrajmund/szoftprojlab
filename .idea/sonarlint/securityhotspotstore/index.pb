@@ -316,3 +316,17 @@ N
 Logarlec/tests/test_35/act.txt,8\c\8c52456e4845f62158f4567b3393a94bb2481451
 N
 Logarlec/tests/test_35/map.txt,e\7\e762915db548da8b60bb749ad47033dc9b774fa9
+M
+Logarlec/tests/test_5/out.txt,4\7\472f9d2bf6c7a45ba6658f8f0e1c4f1c534155c7
+M
+Logarlec/tests/test_1/out.txt,4\0\401c60475166b30de3332002346a291ba006e4ac
+M
+Logarlec/tests/test_4/out.txt,0\2\02092b0ec2fea14458f829e7249ee0784c99c5f7
+M
+Logarlec/tests/test_7/out.txt,5\f\5f324544d5dc5620ecd025eddb5a03f205398e50
+N
+Logarlec/tests/test_12/out.txt,0\8\0817ee20b17edc051e8598a82e8c0c3cdf715393
+N
+Logarlec/tests/test_13/out.txt,d\e\de853bd3b07f93f17592e4d4c421ac4b0c124ab7
+N
+Logarlec/tests/test_14/out.txt,6\2\6256cb82cb4e57d1073bcf643a61b505659eee5e

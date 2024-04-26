@@ -3,15 +3,17 @@ tranzi Tr
 cam C
 log L
 tvsz T
-rongy Nedv
+tablatorlo Nedv
 pohar P
+fresh F
 room R
 additem_r R M
 additem_r R Tr
 additem_r R C
-additem_r R L
 additem_r R T
 additem_r R Nedv
 additem_r R P
+additem_r R L
+additem_r R F
 student S
 addperson R S

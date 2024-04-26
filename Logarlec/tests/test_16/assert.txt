@@ -1,0 +1,21 @@
+R1
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R2
+    [Outgoing] R2
+    [Item1] Rongy (Active) true (TimeUsage) 9
+    S
+    [CurrentRoom] R1
+    [Stun] false
+    [TeacherProtected] false
+    [GasProtected] false
+    T
+    [CurrentRoom] R1
+    [Stun] true
+R2
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1
+    [Outgoing] R1

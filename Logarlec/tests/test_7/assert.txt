@@ -4,16 +4,15 @@ R
 	[Capacity] 5
 	[Incoming]
 	[Outgoing]
+	[Item 0] P (Active) false (TimeUsage) 10
+	[Item 1] L (Active) false (Fake) false
 	S
-		[CurrentRoom] R1
+		[CurrentRoom] R
 		[Stun] false
 		[TeacherProtected] false
 		[GasProtected] false
-		[Item 0] M (Active) false (Fake) false
-		[Item 1] Tr (Active) false (Fake) false
-		[Item 2] C (Active) false (Fake) false
-		[Item 3] L (Active) false (Fake) false
-		[Item 4] T (Active) false (Fake) false
-		[Item 5] Nedv (Active) false (Fake) false
-		[Item 6] P (Active) false (Fake) false
-		[Item 7] F (Active) false (Fake) false
+		[Item 0] M (Active) false (Fake) false (TimeUsage) 5
+		[Item 1] Tr (Active) false (Connected) null
+		[Item 2] C (Active) false
+		[Item 3] T (Active) false (Fake) false (RemainingUsage) 3
+		[Item 4] Nedv (Active) false (TimeUsage) 10

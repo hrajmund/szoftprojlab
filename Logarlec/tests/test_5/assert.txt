@@ -10,12 +10,12 @@ R2
 	[Capacity] 5
 	[Incoming] R1
 	[Outgoing]
+	[Item 0] Po1 (Active) false (TimeUsage) 5
 	T1
 		[CurrentRoom] R2
 		[Stun] false
-    S1
-        [CurrentRoom] R2
-        [Stun] false
-        [TeacherProtected] true
-        [GasProtected] false
-        [Item1]Po1,(Active)true,(TimeUsage)4
+	S1
+		[CurrentRoom] R2
+		[Stun] false
+		[GasProtected] false
+		[TeacherProtected] false

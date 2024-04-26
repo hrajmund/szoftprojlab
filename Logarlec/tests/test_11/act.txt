@@ -1,4 +1,5 @@
 random true
 init
-move R2
+random false
+curse Cursed
 save

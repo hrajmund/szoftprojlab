@@ -1,0 +1,18 @@
+R1
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] Cursed / none
+    [Outgoing] none / Cursed
+R2
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] Cursed / none
+    [Outgoing] none / Cursed
+Cursed
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] none / R1, R2
+    [Outgoing] R1, R2 / none
