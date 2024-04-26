@@ -362,15 +362,15 @@ public class Room implements IRound{
     }
 
     public void PrintOutRoom(){
-        System.out.print(Name +
+        System.out.println(Name +
                 "\n\t [Gas] " + gas +
                 "\n\t [Sticky] " + sticky +
                 "\n\t [Capacity] " + capacity
         );
 
-        System.out.print("\n\t [Incoming] ");
-        this.getIncomingDoors().forEach(incoming -> System.out.println(incoming.getName() + " "));
+        System.out.print("\t [Incoming] ");
+        this.getIncomingDoors().forEach(incoming -> System.out.print(incoming.getName() + " "));
         System.out.print("\n\t [Outgoing] ");
-        this.getOutgoingDoors().forEach(outgoing -> System.out.println(outgoing.getName() + " "));
+        this.getOutgoingDoors().forEach(outgoing -> System.out.print(outgoing.getName() + " "));
     }
 }

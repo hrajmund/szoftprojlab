@@ -1,29 +1,29 @@
 
 ¹
-java:S1319†"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(†İÂ˜üÿÿÿÿ8å–¹´ñ1J$fe2d774d-3acd-4c35-b93f-92e8fd21de02
+java:S1319ˆ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(†İÂ˜üÿÿÿÿ8–õÍñ1J$37e1452c-837b-4345-98b9-c5b9beae4307
 ´
-java:S1319‰"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8å–¹´ñ1J$b0a50d42-1d9c-47b3-bdd9-a0cadeb52b0d
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8æ–¹´ñ1J$e7fa8d28-0c7e-4507-92ed-79e432b9fb91
-•	java:S116"SRename this field "Game_End" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‹¿ø8ï–¹´ñ1J$16dc1d40-72e4-4033-b369-c9467542f047
-”	java:S116("MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÄİ‰üÿÿÿÿ8ï–¹´ñ1J$56438618-48d4-4d31-929c-cd4a91d62d45
+java:S1319‹"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8–õÍñ1J$ecc591f0-afe2-4cfb-9c81-44ea2a00c56d
+¹
+java:S1319’"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òç¡•ùÿÿÿÿ8–õÍñ1J$a4e888dd-9281-42b5-8bb1-bc5a7b719a01
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8—õÍñ1J$2a1afb0d-26dc-4e21-a0dd-be70c01045a7
+•	java:S116"SRename this field "Game_End" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‹¿ø8›õÍñ1J$5abf572b-49d4-4f92-a3b7-94d3d45da835
+”	java:S116*"MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÄİ‰üÿÿÿÿ8›õÍñ1J$cfb5264a-5818-4aeb-bbc4-2511ff8f9787
 É
-java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(à€¢ğüÿÿÿÿ8ï–¹´ñ1J$fd4f13dd-9ebb-4f15-b380-257accf70f88
+java:S11861"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(à€¢ğüÿÿÿÿ8›õÍñ1J$a0367622-75e0-47c3-a371-2bda80a41bb3
 É
-java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8ï–¹´ñ1J$bee5fbf2-884a-46e5-b0e9-485d76056baf
-–	java:S100‘"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¢¨³üÿÿÿÿ8÷–¹´ñ1J$0e056f0b-8106-4b60-a4f4-6de6359916cb
-s	java:S106“"+Replace this use of System.out by a logger.(Ã÷Îßûÿÿÿÿ8ø–¹´ñ1J$3ae3e13f-0d39-4eeb-b617-438545463728
-n	java:S106–"+Replace this use of System.out by a logger.(ÏéíÃ8ø–¹´ñ1J$b6f259f4-3af2-43a6-8707-8a74f80427a0
-s	java:S106œ"+Replace this use of System.out by a logger.(«‡‡úşÿÿÿÿ8ø–¹´ñ1J$3a2b2c8b-e435-44c6-b63d-fb1098fd04c3
-n	java:S106"+Replace this use of System.out by a logger.(¥Úò8ù–¹´ñ1J$b356810f-c36f-4443-88fc-5b4603b0d5c5
-s	java:S106"+Replace this use of System.out by a logger.(ˆË¾·úÿÿÿÿ8ù–¹´ñ1J$d7b2a050-2ac8-4d52-9c71-ae1533fbbdf0
-n	java:S106Ÿ"+Replace this use of System.out by a logger.(®÷ˆ¥8ú–¹´ñ1J$1f35a6c7-7321-4356-b762-49ed158f18ac
+java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8›õÍñ1J$f43dc661-0ea1-484d-833f-712d07568ea8
+–	java:S100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÕàŞÿÿÿÿÿ8¡õÍñ1J$939a2cf4-8f77-4403-beb7-23bb9f336253
+›
+java:S3776–"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ºÕàŞÿÿÿÿÿ8¢õÍñ1J$ad27cfcc-2eaf-4720-9911-fcd6ab0227a3
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¥Ó˜Ëıÿÿÿÿ8ú–¹´ñ1J$8016c749-c2ee-47b0-bb5c-1dafd6f7925c
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¥Ó˜Ëıÿÿÿÿ8ÔöÍñ1J$5a8895a2-b08a-4115-b494-02184a3983ce
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8ú–¹´ñ1J$7f32e672-ddbc-420c-9e07-f588d62573a2
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8ÔöÍñ1J$eceaaf1c-4b83-473c-9263-59f9563db10c
 —
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ú–¹´ñ1J$1ec09e84-05a0-4395-a81e-64bcfad13540
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ÔöÍñ1J$4a6964ac-81f2-4d83-9420-412732f03335
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ú–¹´ñ1J$7d09ca28-a933-437e-b4e8-6b8886d9d709
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ÔöÍñ1J$63d51f80-1652-4077-8f7c-92798ff7e919
+s
+java:S1128"+Remove this unused import 'java.io.Writer'.(Î”øÿÿÿÿ8Š¢æÎñ1J$67ba79a8-82c8-4ef3-9242-ec253edf4799
 v
-java:S1128"3Remove this unused import 'java.math.RoundingMode'.(¿ì†‹8ú–¹´ñ1J$c7dbf321-1cce-4e5f-b743-7e85ab200e89
+java:S1128	"3Remove this unused import 'java.math.RoundingMode'.(¿ì†‹8ÔöÍñ1J$96ebbe25-9eca-4059-95b0-b696ea4e2e83

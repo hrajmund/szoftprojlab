@@ -1,27 +1,26 @@
 
 k
-java:S5411p"(Use a primitive boolean expression here.(Şí…¤8Ü¶·´ñ1J$543c5405-ae34-4b60-a26d-795f68c904f1
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8Ş¶·´ñ1J$efec222a-902f-4aa3-bdf1-9ae41c16e933
+java:S5411q"(Use a primitive boolean expression here.(Şí…¤8Ü¶·´ñ1J$aede1888-5914-45d0-9185-f4af27bf009f
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8Ş¶·´ñ1J$61629085-2c49-4d36-b484-4274700077d5
 Å
-java:S1186™"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°8ç¶·´ñ1J$e25fd797-b932-4041-b250-b05174f106d6
+java:S1186š"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°8ç¶·´ñ1J$d6c08ddb-60b9-4d7b-a592-e8d54e6a3d7b
 Å
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Û•ª8ç¶·´ñ1J$babeea9e-c6ea-4e56-ad2d-71cd32abd5b6
+java:S1186¡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Û•ª8ç¶·´ñ1J$07794cb3-f3a9-403f-a2d5-da50ebd8c0cc
 Ê
-java:S1186«"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8ç¶·´ñ1J$4391d312-4869-4b17-b3ce-a4dbf6612a5a
+java:S1186¬"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8ç¶·´ñ1J$f099886b-280c-4c43-b856-a9c752e0c49c
 }
-java:S1161.":Add the "@Override" annotation above this method signature(´Ñ¸8ë¶·´ñ1J$cbdf4801-7785-4f52-b69c-03094c8e47d9
+java:S1161.":Add the "@Override" annotation above this method signature(´Ñ¸8ë¶·´ñ1J$0447d08f-894f-41ab-9b30-9b623cb2c2ff
 ‚
-java:S1161@":Add the "@Override" annotation above this method signature(®Á»úÿÿÿÿ8ì¶·´ñ1J$b538c8b6-d654-4e3d-bdf5-f8724673b88a
-	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¾ë°8ì¶·´ñ1J$7b437978-b923-47c8-b942-6838bb618a4d
+java:S1161@":Add the "@Override" annotation above this method signature(®Á»úÿÿÿÿ8ì¶·´ñ1J$b646ecb0-2e6c-4ea0-8299-5704345ac28f
 }
-java:S1161]":Add the "@Override" annotation above this method signature(¦×¡õ8î¶·´ñ1J$f75c1866-61b7-4ebd-9986-284f0e80506b
+java:S1161^":Add the "@Override" annotation above this method signature(¦×¡õ8î¶·´ñ1J$c3410b45-0469-4f73-b305-59d9ca2c57cd
 }
-java:S1161~":Add the "@Override" annotation above this method signature(ºå±8ğ¶·´ñ1J$1cbb9ec6-6d0a-49ee-be82-d1089e6b45c1
+java:S1161":Add the "@Override" annotation above this method signature(ºå±8ğ¶·´ñ1J$9c02cedb-f7aa-42ea-aa94-a45ab311bec7
 ƒ
-java:S1161¦":Add the "@Override" annotation above this method signature(‘¹÷Üùÿÿÿÿ8ñ¶·´ñ1J$8e72d7f8-e0ed-4a4f-a5ec-d100e0c23450
-s	java:S106±"+Replace this use of System.out by a logger.(Ã…ˆïüÿÿÿÿ8ò¶·´ñ1J$5d671f40-20d1-4513-ba70-cc690b35f793
-s	java:S106¸"+Replace this use of System.out by a logger.(öŒ¥µşÿÿÿÿ8ò¶·´ñ1J$5afbb637-c4cf-4f2e-bc76-d4a8077e5d18
+java:S1161§":Add the "@Override" annotation above this method signature(‘¹÷Üùÿÿÿÿ8ñ¶·´ñ1J$5d64aaa1-57bd-4f80-89b6-cb2e4b405c75
+s	java:S106²"+Replace this use of System.out by a logger.(ßå®ìûÿÿÿÿ8ò¶·´ñ1J$87c44fc9-312b-4bb2-94df-07ce8e9b1c13
+n	java:S106¹"+Replace this use of System.out by a logger.(ƒ¬ÿ§8ò¶·´ñ1J$e21fb548-642b-48c4-9104-e526b9685b60
 —
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ó¶·´ñ1J$54b912b2-33f8-4362-bf2d-b3902bd818fe
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ŞÍñ1J$f83d65d4-8b18-4dad-ab6e-b8edfdec3f35
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ó¶·´ñ1J$02127c4e-ea07-4eb3-8ba9-c5eab23b3d58
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8ŞÍñ1J$63cad82b-a4dd-4f15-a6b7-1c2c494820f3

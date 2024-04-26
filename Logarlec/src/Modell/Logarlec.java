@@ -48,9 +48,10 @@ public class Logarlec extends BaseItem{
     @Override
     public void tick() {}
     @Override
-    public void PrintOutItem(){
-        System.out.print(this.getName() + " (Active) " +
-                this.getActive() + " (Holder) " + this.getHolder() +
-                " (Fake) " + this.fake);
+    public void PrintOutItem(PrintWriter wr){
+        System.out.print(name + " (Active) " +
+                active +
+                " (Fake) " + fake);
+
     }
 }

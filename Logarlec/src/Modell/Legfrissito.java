@@ -32,6 +32,6 @@ public class Legfrissito extends BaseItem{
     public void tick() {}
     @Override
     public void PrintOutItem(){
-        System.out.print(this.getName() + " (Active) " + this.getActive() + " (Holder) " + this.getHolder());
+        System.out.print(name + " (Active) " + active );
     }
 }

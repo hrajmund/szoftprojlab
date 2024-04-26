@@ -54,8 +54,8 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
     }
     @Override
     public void PrintOutItem(){
-        System.out.print("\t\t\t"+this.getName() + " (Active) " +
-                this.getActive() + " (Holder) " + this.getHolder().getName() +
-                " (TimeUsage) " + this.timeUsage+"\n");
+        System.out.print("\t\t\t"+name + " (Active) " +
+                active +
+                " (TimeUsage) " + timeUsage+"\n");
     }
 }

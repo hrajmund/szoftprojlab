@@ -82,8 +82,6 @@ E
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-C
-test/test_1/map.txt,d\a\daf1fe479e3e1dc116fa89aceecdb9d45dfa476d
 w
 G.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,e\d\ed67eb178d523a4b3f117dcbe0eda5196367ceec
 Å
@@ -106,3 +104,40 @@ w
 G.idea/sonarlint/issuestore/e/4/e4d8ad5024656401a46b90c76f622baffa7d8ecb,a\c\ac052061a33c6ae5debad8e5923861f145bf969f
 w
 G.idea/sonarlint/issuestore/a/5/a56417f44ecd9709e79632881745916be2ccabbd,2\4\24baf993056030d31a0dd443dcdbfaa79e2381da
+M
+Logarlec/tests/test_1/act.txt,3\9\39599b61de3bb94fb6911768f54f72d76b4eb7c3
+:
+
+output.txt,a\d\adbe6c7d3c0d8b19ecd492bec9532c13a6e1c9ad
+P
+ Logarlec/tests/test_1/assert.txt,4\8\48210c0cebc8bec2f674cdb8f8cc1b564b8f87f8
+M
+Logarlec/tests/test_2/act.txt,6\c\6cd10dc0b63128681162059255dd7027480b349f
+M
+Logarlec/tests/test_2/map.txt,9\b\9be676e389138347d347d937283c0b2472ea06fc
+P
+ Logarlec/tests/test_2/assert.txt,e\4\e4553ff21c4d4563df2606d3f5993e13cc820149
+M
+Logarlec/tests/test_3/map.txt,e\d\edabd67ff9d6fc17f1e8ebb14f0f1ec774216bdd
+M
+Logarlec/tests/test_3/act.txt,7\3\73a3846b10575e0733959f82882da84c05fc5c37
+P
+ Logarlec/tests/test_3/assert.txt,5\7\57ae53c8ef51838777822730df553cc039d1f793
+M
+Logarlec/tests/test_4/map.txt,3\8\3876c4ae7ebffbf98a7df171263037f428740074
+P
+ Logarlec/tests/test_4/assert.txt,7\a\7a9bfcd7074663f2822d39233f92795f46192ee7
+M
+Logarlec/tests/test_4/act.txt,a\a\aa9dc1bc855c9d70540a8182d5c2555750a5bae3
+M
+Logarlec/tests/test_5/map.txt,0\e\0e15c8c83a673895f7118de2a2d114f3efdb20e9
+M
+Logarlec/tests/test_5/act.txt,2\3\23fb9967ab716262d247a683ddbf85f5deba5c53
+P
+ Logarlec/tests/test_5/assert.txt,8\0\80153bf4895f0664f013e3c6b625d34db3b7f026
+M
+Logarlec/tests/test_6/act.txt,6\6\66fe572d8d85bd91eb26faa04a74c8a96ef13d3d
+P
+ Logarlec/tests/test_6/assert.txt,5\5\557d93b67e3acad373b5adfb1b89dfe330f318cc
+M
+Logarlec/tests/test_6/map.txt,6\4\64b7823b000c7089328309db3ea3797eaf6a96e5

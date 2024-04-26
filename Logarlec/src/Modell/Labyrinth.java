@@ -4,6 +4,8 @@ import Modell.IRound;
 import Modell.Room;
 import Modell.TestPrinter;
 
+import java.io.PrintWriter;
+import java.io.Writer;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 
@@ -22,17 +24,17 @@ public class Labyrinth implements IRound {
     /**
      * A labirintusban található diákok listája.
      */
-    private ArrayList<Student> players = new ArrayList<>();
+    private ArrayList<Person> players = new ArrayList<>();
 
     /**
      * A labirintusban található tanárok listája.
      */
-    private ArrayList<Teacher> teachers = new ArrayList<>();
+    private ArrayList<Person> teachers = new ArrayList<>();
 
     /**
      * A labirintusban található tanárok listája.
      */
-    private ArrayList<Takarito> cleaner= new ArrayList<>();
+    private ArrayList<Person> cleaner= new ArrayList<>();
 
     /**
      * A játékmenedzser, amely felelős a játék kezeléséért.
@@ -136,21 +138,32 @@ public class Labyrinth implements IRound {
     }
     public ArrayList<Person>getPeople(){
         ArrayList<Person> people= new ArrayList<>();
-        people.addAll(this.cleaner);
         people.addAll(this.players);
+        people.addAll(this.cleaner);
         people.addAll(this.teachers);
         return people;
     }
+    public ArrayList<Person>getStudents(){
+        return players;
+    }
 
-    public void PrintOut(){
+    public void PrintOut(PrintWriter writer){
         if(Game_End){
-            System.out.println("GAME_END");
+            writer.println("GAME_END");
         }else {
             for (Room r : this.getRooms()) {
                 r.PrintOutRoom();
-                for (Person person : r.getPeople()) {
-                    person.PrintOutPerson();
+                if(!r.getPeople().isEmpty()){
+                    for (Person person : r.getPeople()) {
+                        person.PrintOutPerson();
+                    }
+                }else{
+                    writer.println();
+                    for (Person person : r.getPeople()) {
+                        person.PrintOutPerson();
+                    }
                 }
+
             }
         }
     }

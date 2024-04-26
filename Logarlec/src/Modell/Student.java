@@ -175,14 +175,14 @@ public class Student extends Person{
 
     @Override
     public void PrintOutPerson(){
-        System.out.print("\t" + this.getName() +
-                "\n\t    [CurrentRoom] " + this.getCurrentRoom().Name +
-                "\n\t    [Stun] " + this.getStun() +
-                "\n\t    [GasProtected] " + this.isGasProtected() +
-                "\n\t    [TeacherProtected] " + this.isTeacherProtected()
+        System.out.println("\t" + name +
+                "\n\t    [CurrentRoom] " + currentRoom.Name +
+                "\n\t    [Stun] " + stunned +
+                "\n\t    [GasProtected] " + gasProtected +
+                "\n\t    [TeacherProtected] " + teacherProtected
         );
         for(int i = 0; i < this.items.size(); i++){
-            System.out.print(String.format("[Item %d]", i));
+            System.out.print(String.format("\t\t[Item %d]", i));
             this.items.get(i).PrintOutItem();
         }
     }

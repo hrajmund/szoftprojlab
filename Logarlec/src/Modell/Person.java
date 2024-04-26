@@ -2,6 +2,7 @@ package Modell;
 import Modell.Room;
 import Modell.TestPrinter;
 
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 /**
@@ -198,7 +199,7 @@ public abstract class Person implements IRound{
      */
     public boolean getStun(){return stunned;}
 
-    public abstract void PrintOutPerson();
+    public abstract void PrintOutPerson(PrintWriter writer);
 
     public void UseItem(int i){}
 }

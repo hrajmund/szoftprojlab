@@ -60,8 +60,8 @@ public class TVSzDenever extends BaseItem{
 
     @Override
     public void PrintOutItem(){
-        System.out.print(this.getName() + " (Active) " +
-                this.getActive() + " (Holder) " + this.getHolder() +
-                " (Fake) " + this.fake + " (RemainingUsage) " + this.remainingUsage);
+        System.out.println(" " + name + " (Active) " +
+                active  +
+                " (Fake) " + fake + " (RemainingUsage) " + remainingUsage);
     }
 }

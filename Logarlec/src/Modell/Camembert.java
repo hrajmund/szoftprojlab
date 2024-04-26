@@ -1,4 +1,7 @@
 package Modell;
+
+import java.io.PrintWriter;
+
 /**
  * Camambert tárgy
  */
@@ -36,7 +39,7 @@ public class Camembert extends BaseItem{
 
     }
     @Override
-    public void PrintOutItem(){
-        System.out.print(this.getName() + " (Active) " + this.getActive() + " " + this.getHolder());
+    public void PrintOutItem(PrintWriter writerPrintWriter writerPrintWriter writer){
+        System.out.print(name + " (Active) " + active);
     }
 }

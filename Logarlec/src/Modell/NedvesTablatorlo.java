@@ -54,9 +54,9 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
     }
     @Override
     public void PrintOutItem(){
-        System.out.print(this.getName() + " (Active) " +
-                this.getActive() + " (Holder) " + this.getHolder() +
-                " (TimeUsage) " + this.timeUsage);
+        System.out.print(name + " (Active) " +
+                active +
+                " (TimeUsage) " + timeUsage);
     }
 
 }

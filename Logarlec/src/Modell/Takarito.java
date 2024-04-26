@@ -1,5 +1,6 @@
 package Modell;
 
+import javax.lang.model.element.Name;
 import java.util.Random;
 
 public class Takarito extends Person{
@@ -67,9 +68,9 @@ public class Takarito extends Person{
     }
     @Override
     public void PrintOutPerson(){
-        System.out.println("\t" + this.getName() +
-                "\n\t    [CurrentRoom] " + this.getCurrentRoom() +
-                "\n\t    [Stun] " + this.getStun()
+        System.out.println("\t" + name +
+                "\n\t    [CurrentRoom] " + currentRoom +
+                "\n\t    [Stun] " + stunned
         );
     }
 }

@@ -91,8 +91,8 @@ public class Tranzisztor extends BaseItem{
 
     @Override
     public void PrintOutItem(){
-        System.out.print(this.getName() + " (Active) " +
-                this.getActive() + " (Holder) " + this.getHolder() +
-                " (Connected) " + this.connected.name);
+        System.out.print(name + " (Active) " +
+                active +
+                " (Connected) " + connected.name);
     }
 }

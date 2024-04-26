@@ -1,4 +1,7 @@
 package Modell;
+
+import java.io.PrintWriter;
+
 /**
  *A játékban használt tárgyak ősosztálya
  */
@@ -89,7 +92,7 @@ public abstract class BaseItem implements IRound{
     public String getName(){
         return name;
     }
-    public abstract void PrintOutItem();
+    public abstract void PrintOutItem(PrintWriter writer);
 
     public void setFake(Boolean b){}
 }

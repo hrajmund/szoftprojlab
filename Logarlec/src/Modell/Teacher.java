@@ -95,8 +95,8 @@ public class  Teacher extends Person{
                 "\n\t    [CurrentRoom] " + this.getCurrentRoom().Name +
                 "\n\t    [Stun] " + this.getStun()
         );
-        for(int i = 0; i < this.items.size(); i++){
-            System.out.println(String.format("[Item %d]", i));
+        for(int i = 0; i < this.items.size(); i++) {
+            System.out.print(String.format("\t\t[Item %d]", i));
             this.items.get(i).PrintOutItem();
         }
     }

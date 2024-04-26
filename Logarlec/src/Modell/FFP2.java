@@ -69,8 +69,8 @@ public class FFP2 extends BaseItem implements IRound {
     }
     @Override
     public void PrintOutItem(){
-        System.out.print(this.getName() + " (Active) " +
-                this.getActive() + " (Holder) " + this.getHolder() +
-                " (Fake) " + this.fake + " (TimeUsage) " + this.timeUsage);
+        System.out.print(name + " (Active) " +
+                active  +
+                " (Fake) " + fake + " (TimeUsage) " + timeUsage);
     }
 }
