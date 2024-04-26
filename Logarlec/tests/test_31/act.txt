@@ -1,4 +1,6 @@
-random true
+random false
 init
 move R2
+pickup 0
+useitem 0
 save

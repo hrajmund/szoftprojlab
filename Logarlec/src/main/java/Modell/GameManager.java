@@ -156,8 +156,8 @@ public class GameManager {
                                 break;
                             }
                         }
-                        roomAddPerson.addPerson(p);
                         p.setCurrentRoom(roomAddPerson);
+                        roomAddPerson.addPerson(p);
                         break;
                     case "stun":
                         String stunPlayerName= parts[1];
@@ -213,8 +213,14 @@ public class GameManager {
                         break;
                     case "tablatorlo":
                         String tablatorloName= parts[1];
-                        NedvesTablatorlo tablatorlo= new NedvesTablatorlo(tablatorloName);
-                        Items.add(tablatorlo);
+                        if(parts.length>2){
+                            String tablatorRem= parts[2];
+                            NedvesTablatorlo tablatorlo= new NedvesTablatorlo(tablatorloName, Integer.parseInt(tablatorRem));
+                            Items.add(tablatorlo);
+                        }else{
+                            NedvesTablatorlo tablatorlo= new NedvesTablatorlo(tablatorloName);
+                            Items.add(tablatorlo);
+                        }
                         break;
                     case "pohar":
                         String poharName= parts[1];

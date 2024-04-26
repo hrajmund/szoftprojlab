@@ -1,4 +1,5 @@
 random false
 init
-move R2
+move R1
+move R1
 save

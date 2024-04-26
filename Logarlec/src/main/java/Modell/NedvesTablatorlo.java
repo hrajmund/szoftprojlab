@@ -22,6 +22,11 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
         name=n;
     }
 
+    public NedvesTablatorlo(String n, int i){
+        name=n;
+        timeUsage=i;
+    }
+
     /**
      * A tárgy hatását végrehajtó metódus
      */

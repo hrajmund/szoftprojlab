@@ -1,10 +1,11 @@
-teacher T
-student S
 room R1
 room R2
-tvsz TVSZ
+gas R1
 door R1 R2
 door R2 R1
-addperson R1 S
-addperson R2 T
-additem_p S TVSZ
+student AlreadyStunned
+student NotStunned
+cleaner C
+addperson R2 C
+addperson R2 AlreadyStunned
+addperson R1 NotStunned

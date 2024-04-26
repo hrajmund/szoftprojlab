@@ -2,3 +2,4 @@ tablatorlo T 2
 room R
 student S
 additem_p S T
+addperson R S

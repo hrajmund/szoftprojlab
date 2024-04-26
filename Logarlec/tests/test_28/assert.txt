@@ -4,7 +4,7 @@ R
     [Capacity] 5
     [Incoming]
     [Outgoing]
-    S1
+    S
         [CurrentRoom] R
         [Stun] false
         [TeacherProtected] false
