@@ -52,7 +52,7 @@ public class Logarlec extends BaseItem{
     public void tick() {}
     @Override
     public void PrintOutItem(PrintWriter writer){
-        writer.println(name + " (Active) " +
+        writer.print(name + " (Active) " +
                 active +
                 " (Fake) " + fake);
 

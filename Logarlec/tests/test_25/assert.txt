@@ -1,12 +1,12 @@
 R1
-    [Gas] false
-    [Sticky] false
-    [Capacity]
-    [Incoming]
-    [Outgoing]R2
-    [Item0] Tranz (Active) true (Connected) null
+	[Gas] false
+	[Sticky] false
+	[Capacity]
+	[Incoming]
+	[Outgoing]R2
+	[Item0] Tranz (Active) true (Connected) null
 S1
-    [CurrentRoom] R2
-    [Stun] false
-    [TeacherProtected] false
-    [GasProtected] false
+	[CurrentRoom] R2
+	[Stun] false
+	[TeacherProtected] false
+	[GasProtected] false

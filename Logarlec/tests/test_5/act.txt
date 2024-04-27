@@ -1,0 +1,5 @@
+random false
+init
+useitem 0
+move R2
+save

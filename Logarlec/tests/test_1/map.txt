@@ -1,0 +1,5 @@
+room R1
+room R2
+door R1 R2
+student S1
+addperson R1 S1

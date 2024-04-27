@@ -5,13 +5,11 @@ R1
 	[Incoming] R2 
 	[Outgoing] R2 
 	[Item 0] Pohar (Active) false (TimeUsage) 10
-
 	S
 		[CurrentRoom] R1
 		[Stun] false
 		[TeacherProtected] false
 		[GasProtected] false
-
 	T
 		[CurrentRoom] R1
 		[Stun] false
@@ -21,4 +19,3 @@ R2
 	[Capacity] 5
 	[Incoming] R1 
 	[Outgoing] R1 
-

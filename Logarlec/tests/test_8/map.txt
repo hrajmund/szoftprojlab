@@ -1,0 +1,5 @@
+room R1
+student S1
+tvsz TVSZ
+additem_p S1 TVSZ
+addperson R1 S1

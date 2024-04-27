@@ -1,32 +1,7 @@
 package Szkeleton; import Modell.*; import Modell.CursedRoom; import Modell.GameManager; import Modell.TVSzDenever;
 
 import java.io.*;
-import java.util.*;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.api.Assumptions;
-
-import java.nio.charset.StandardCharsets;
-import java.nio.file.FileSystems;
-import java.nio.file.FileVisitResult;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.PathMatcher;
-import java.nio.file.Paths;
-import java.nio.file.SimpleFileVisitor;
-import java.nio.file.attribute.BasicFileAttributes;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Stream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Map;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
-import java.util.function.BiFunction;
 
 public class Szkeleton {
     public static final boolean DETERMINISTIC_MODE = true; // True, ha determinisztikus módban akarjuk futtatni
@@ -1027,7 +1002,7 @@ public class Szkeleton {
 
         } else {
 
-            GameManager gameManager = new GameManager();
+            GameManager gameManager = new GameManager(0);
         }
     }
 }

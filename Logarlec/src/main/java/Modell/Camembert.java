@@ -40,6 +40,6 @@ public class Camembert extends BaseItem{
 
     @Override
     public void PrintOutItem(PrintWriter writer){
-        writer.println(name + " (Active) " + active);
+        writer.print(name + " (Active) " + active);
     }
 }

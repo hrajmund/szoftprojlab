@@ -1,0 +1,11 @@
+random false
+init
+pickup 0
+pickup 0
+pickup 0
+pickup 0
+pickup 0
+pickup 0
+pickup 0
+pickup 0
+save

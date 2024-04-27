@@ -1,0 +1,28 @@
+R1
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R2 R3 R1 
+	[Outgoing] R2 R3 R1 
+
+R2
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R1 R3 
+	[Outgoing] R1 R3 
+	T
+		[CurrentRoom] R2
+		[Stun] false
+	S
+		[CurrentRoom] R2
+		[Stun] false
+		[TeacherProtected] false
+		[GasProtected] false
+		[Item 0] TVSZ (Active) false (Fake) false (RemainingUsage) 2
+R3
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R2 R3 R1 
+	[Outgoing] R2 R3 R1 

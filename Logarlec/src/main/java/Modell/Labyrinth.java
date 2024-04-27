@@ -78,13 +78,13 @@ public class Labyrinth implements IRound {
             }
         }
         for(Room r: rooms){
-            if(r.getItems().isEmpty()){
+            if(r.getItems().isEmpty()) {
                 continue;
             }
-            ArrayList<BaseItem> roomitems= new ArrayList<>(r.getItems());
-            for(BaseItem i: roomitems){
-                i.tick();
-            }
+                ArrayList<BaseItem> roomitems = new ArrayList<>(r.getItems());
+                for (BaseItem i : roomitems) {
+                    i.tick();
+                }
         }
         
         if(random){
@@ -192,10 +192,14 @@ public class Labyrinth implements IRound {
     }
 
     public void PrintOut(PrintWriter writer){
+        boolean isFirstRoom = true;
         if(Game_End){
             writer.println("GAME_END");
         }else {
             for (Room r : this.getRooms()) {
+                if(!isFirstRoom)
+                    writer.print("\n"); //ha nem első szoba, tegyen sortötést (azért, hogy a txt ne kezdődjön üres sorral
+                isFirstRoom = false;
                 r.PrintOutRoom(writer);
                 if(!r.getPeople().isEmpty()){
                     for (Person person : r.getPeople()) {

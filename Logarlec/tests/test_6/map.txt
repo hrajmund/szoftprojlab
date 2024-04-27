@@ -1,0 +1,5 @@
+room R1
+student S1
+log L1
+addperson R1 S1
+additem_r R1 L1

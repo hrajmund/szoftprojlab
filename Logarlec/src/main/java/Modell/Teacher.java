@@ -90,7 +90,7 @@ public class  Teacher extends Person{
 
     @Override
     public void PrintOutPerson(PrintWriter writer){
-        writer.print("\t" + name +
+        writer.print("\n\t" + name +
                 "\n\t\t[CurrentRoom] " +currentRoom.getName() +
                 "\n\t\t[Stun] " + stunned
         );
@@ -99,9 +99,6 @@ public class  Teacher extends Person{
                 writer.print(String.format("\t\t[Item %d]", i));
                 items.get(i).PrintOutItem(writer);
             }
-        }
-        else {
-            writer.println();
         }
     }
 }

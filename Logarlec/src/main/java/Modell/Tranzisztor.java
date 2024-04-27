@@ -94,7 +94,7 @@ public class Tranzisztor extends BaseItem{
 
     @Override
     public void PrintOutItem(PrintWriter writer){
-        writer.println(name + " (Active) " +
+        writer.print(name + " (Active) " +
                 active +
                 " (Connected) " + ((connected == null) ? "null" : connected.name));
     }

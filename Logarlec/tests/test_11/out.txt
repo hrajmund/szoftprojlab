@@ -1,0 +1,25 @@
+R1
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] Cursed R2 
+	[Outgoing] Cursed R2 
+	S1
+		[CurrentRoom] R1
+		[Stun] false
+		[TeacherProtected] false
+		[GasProtected] false
+R2
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] Cursed R1 
+	[Outgoing] Cursed R1 
+
+Cursed
+	 [Gas] false
+	 [Sticky] false
+	 [Capacity] 5
+	 [Incoming] 
+	 [Outgoing] 
+

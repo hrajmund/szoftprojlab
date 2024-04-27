@@ -56,7 +56,7 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
     }
     @Override
     public void PrintOutItem(PrintWriter writer){
-        writer.println(name + " (Active) " +
+        writer.print(name + " (Active) " +
                 active +
                 " (TimeUsage) " + timeUsage);
     }

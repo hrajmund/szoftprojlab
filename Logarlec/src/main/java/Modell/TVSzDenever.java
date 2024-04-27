@@ -63,7 +63,7 @@ public class TVSzDenever extends BaseItem{
 
     @Override
     public void PrintOutItem(PrintWriter writer){
-        writer.println(name +
+        writer.print(name +
                 " (Active) " + active  +
                 " (Fake) " + fake + " (RemainingUsage) " + remainingUsage);
     }

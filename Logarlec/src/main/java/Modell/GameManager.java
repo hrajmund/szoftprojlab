@@ -11,9 +11,13 @@ public class GameManager {
     /**
      * Játékhoz tartozó labirintus
      */
-    Labyrinth labyrinth;
+    public Labyrinth labyrinth;
+    public GameManager() {}
 
     public GameManager(String test) throws FileNotFoundException {
+        runtest(test);
+    }
+    public void runtest(String test){
         String dir = System.getProperty("user.dir");
         System.out.println(dir);
         String inputFilepath = ".\\tests\\" + test + "\\" + "map.txt";
@@ -33,7 +37,7 @@ public class GameManager {
             System.out.println("A fájl nem található: " + e.getMessage());
         }
     }
-    public GameManager() throws IOException {
+    public GameManager(int a) throws IOException {
         //String inputFilepath = ".\\Logarlec\\tests\\game\\game_input.txt";
         String inputFilepath = ".\\tests\\test_1\\map.txt";
         ReadMap(inputFilepath);
@@ -500,12 +504,11 @@ public class GameManager {
                 }while(!commandName_.equals("next") && !commandName_.equals("move"));
             }
             if(random){
-                labyrinth.RandomGergQrva();
+               // labyrinth.RandomGergQrva();
             }
             labyrinth.tick();
-
-
-
+            //ezzel vmit kezdeni kell mert igy nemjo, itt a 9-es tesztnél végtelen ciklusba kerül,
+            //(és ez nem a randomgergqrva függvény miatt, azelőtt is fennállt a hiba)
         }
     }
 }

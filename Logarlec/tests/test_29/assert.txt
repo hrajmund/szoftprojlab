@@ -1,10 +1,10 @@
 R
-    [Gas] false
-    [Sticky] false
-    [Capacity] 5
-    [Incoming]
-    [Outgoing]
-    S
-        [CurrentRoom] R1
-        [Stun] false
-        [Item1] Rongy (Active) true (TimeUsage) 9
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming]
+	[Outgoing]
+	S
+		[CurrentRoom] R1
+		[Stun] false
+		[Item1] Rongy (Active) true (TimeUsage) 9

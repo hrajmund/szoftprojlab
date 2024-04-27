@@ -1,0 +1,16 @@
+R1
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R2 
+	[Outgoing] R2 
+	C
+	    [CurrentRoom] Modell.Room@4313f5bc
+	    [Stun] false
+
+R2
+	[Gas] false
+	[Sticky] false
+	[Capacity] 5
+	[Incoming] R1 
+	[Outgoing] R1 
