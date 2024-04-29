@@ -3,7 +3,9 @@ room R2
 gas R2
 door R1 R2
 student S1
+student S2
 addperson R1 S1
+addperson R1 S2
 cam Cam1
 tvsz Tvsz1
 tvsz Tvsz2

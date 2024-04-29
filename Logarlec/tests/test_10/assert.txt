@@ -1,20 +1,26 @@
 R1
-	[Gas] true
-	[Sticky] false
-	[Capacity] 10
-	[Incoming] R2 R3
-	[Outgoing] R2 R3
-	[Item0] TVSZ (Active) false (Fake) false (TimeUsage) 3
+    [Gas] true
+    [Sticky] false
+    [Capacity] 69
+    [Incoming] R2 R3 R1 
+    [Outgoing] R2 R3 R1 
+    S
+        [CurrentRoom] R1
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
+    T
+        [CurrentRoom] R1
+        [Stun] false
 R2
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] R1 R3
-	[Outgoing] R1 R3
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1 R3 
+    [Outgoing] R1 R3 
 R3
-	[Gas] true
-	[Sticky] false
-	[Capacity] 10
-	[Incoming] R1 R2
-	[Outgoing] R1 R2
-	[Item0] Tran (Active) false (Connected)
+    [Gas] true
+    [Sticky] false
+    [Capacity] 69
+    [Incoming] R2 R3 R1 
+    [Outgoing] R2 R3 R1 

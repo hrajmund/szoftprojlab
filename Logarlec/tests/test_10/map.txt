@@ -1,7 +1,9 @@
-student S
-teacher T
 room R1
 room R2
+capacity R1 69
+gas R1
+student S
+teacher T
 tvsz TVSZ
 door R1 R2
 door R2 R1

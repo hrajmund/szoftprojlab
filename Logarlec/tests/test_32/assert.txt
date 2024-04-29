@@ -1,0 +1,15 @@
+R1
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] R2 
+R2
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1 
+    [Outgoing] 
+    C
+        [CurrentRoom] R2
+        [Stun] false

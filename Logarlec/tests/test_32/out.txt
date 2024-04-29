@@ -10,7 +10,6 @@ R2
     [Capacity] 5
     [Incoming] R1 
     [Outgoing] 
-
     C
-        [CurrentRoom] Modell.Room@48fa0f47
+        [CurrentRoom] R2
         [Stun] false

@@ -4,6 +4,11 @@ R1
     [Capacity] 5
     [Incoming] 
     [Outgoing] R2 
+    S2
+        [CurrentRoom] R1
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
 R2
     [Gas] true
     [Sticky] false

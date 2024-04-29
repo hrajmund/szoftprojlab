@@ -12,18 +12,20 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 public class FileComparatorTest {
-    static int i = 10;
+    static int i = 1; //hanyas teszttol induljon
     static GameManager gm = new GameManager();
 
     @ParameterizedTest
     @MethodSource("provideTestFilePaths")
     public void testCompareFiles(String file1Path, String file2Path) {
-        try {
-            String content1 = readFileContent(file1Path);
-            String content2 = readFileContent(file2Path);
-            assertEquals(content1, content2, "A két fájl tartalma nem egyezik meg. test: " + file1Path );
-        } catch (IOException e) {
-            e.printStackTrace();
+        if(i>1) {
+            try {
+                String content1 = readFileContent(file1Path);
+                String content2 = readFileContent(file2Path);
+                assertEquals(content1, content2, "A két fájl tartalma nem egyezik meg. test: " + file1Path);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -47,7 +49,8 @@ public class FileComparatorTest {
                 String folderName = folderPath.getFileName().toString();
                 final String[] assrt = {null};
                 final String[] out = {null};
-                while(folderName.equals("test_"+i)) {
+                while(folderName.equals("test_"+ String.format("%02d", i))) // i kétjegyűvé konvertálása
+                {
                     try {
                         Files.walk(folderPath).forEach(filePath -> {
                             String fileName = filePath.getFileName().toString();
@@ -62,7 +65,7 @@ public class FileComparatorTest {
                     catch (IOException e) {
                         e.printStackTrace();
                     }
-                    gm.runtest("test_"+i);
+                    gm.runtest("test_"+ String.format("%02d", i));
                     filePaths.put(assrt[0], out[0]);
                     i++;
                 }

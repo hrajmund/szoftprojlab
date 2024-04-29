@@ -1,0 +1,12 @@
+R3
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1R2merged 
+    [Outgoing] R1R2merged 
+R1R2merged
+    [Gas] true
+    [Sticky] false
+    [Capacity] 6
+    [Incoming] R3 
+    [Outgoing] R3 

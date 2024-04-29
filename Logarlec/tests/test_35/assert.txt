@@ -1,0 +1,13 @@
+R1
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] 
+    S1
+        [CurrentRoom] R1
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
+        [Item 0] M1 (Active) true (Fake) true (TimeUsage) 5
+        [Item 1] L1 (Active) false (Fake) true

@@ -1,7 +1,7 @@
 R1
-    [Gas] false
+    [Gas] true
     [Sticky] false
-    [Capacity] 5
+    [Capacity] 69
     [Incoming] R2 R3 R1 
     [Outgoing] R2 R3 R1 
     S
@@ -19,8 +19,8 @@ R2
     [Incoming] R1 R3 
     [Outgoing] R1 R3 
 R3
-    [Gas] false
+    [Gas] true
     [Sticky] false
-    [Capacity] 5
+    [Capacity] 69
     [Incoming] R2 R3 R1 
     [Outgoing] R2 R3 R1 

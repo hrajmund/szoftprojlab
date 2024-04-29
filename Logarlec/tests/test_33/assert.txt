@@ -1,19 +1,25 @@
 R1
-    [Gas]false
+    [Gas] false
     [Sticky] false
     [Capacity] 5
-    [Incoming]R2
-    [Outgoing] R2
+    [Incoming] R2 
+    [Outgoing] R2 
     AlreadyStunned
         [CurrentRoom] R1
-        [Stunned] true
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
     C
         [CurrentRoom] R1
         [Stun] false
 R2
     [Gas] false
     [Sticky] false
-[Capacity] 5
-[Incoming] R1
-[Outgoing] R1
-NotStunned
+    [Capacity] 5
+    [Incoming] R1 
+    [Outgoing] R1 
+    NotStunned
+        [CurrentRoom] R2
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false

@@ -23,7 +23,7 @@ public class Student extends Person{
      */
     @Override
     public int getCapacity(){
-        return 0;
+        return capacity;
     }
 
     public Student(){

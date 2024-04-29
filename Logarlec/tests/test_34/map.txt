@@ -8,8 +8,8 @@ door R3 R2
 tvsz Tvsz
 additem_r R2 Tvsz
 cleaner C
-addperson R1 C
 student S1
 student S2
+addperson R1 C
 addperson R1 S1
 addperson R1 S2

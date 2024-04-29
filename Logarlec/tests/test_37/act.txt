@@ -1,0 +1,13 @@
+random false
+init
+next (Studentet lepteti elsonek de a teachert kell szoval skip) S
+move R2 T
+next (tanarnak fel kell venni a maszkot) S
+pickup 0 T
+next (tanar felvette a maszkot majd atadja a lepest a studentnek) T
+move R2 (student belep tanarhoz es az levesz 1 tvsz eletet) S
+next (tanar skip) T
+move R3 (student atlep 3-as szoba) S
+next T
+pickup 0 S (gyozelem)
+save

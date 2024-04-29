@@ -50,6 +50,7 @@ public class GameManager {
             Student player = new Student(playerName);
             labyrinth.addStudent(player);
             player.setLabyrinth(labyrinth);
+            //BELE KELL RAKNI A IZEBA, na szobaba
         }
 
         PlayGame(scanner);
@@ -319,7 +320,7 @@ public class GameManager {
                 }
             }
             scanner.close();
-            System.out.println("The input has been loaded.");
+            System.out.println("The input has been loaded. "+filename);
             this.labyrinth = l;
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
@@ -464,11 +465,11 @@ public class GameManager {
                             return;
                         case "merge":
                             String room0Tomerge = parts[1];
-                            String room1ToMerge = parts[2];
+                            String room1Tomerge = parts[2];
                             for (Room mRoom0 : labyrinth.getRooms()) {
                                 if (mRoom0.getName().equals(room0Tomerge)) {
                                     for (Room mRoom1 : labyrinth.getRooms()) {
-                                        if (mRoom1.getName().equals(room0Tomerge)) {
+                                        if (mRoom1.getName().equals(room1Tomerge)) {
                                             mRoom0.merge(mRoom1);
                                             break;
                                         }

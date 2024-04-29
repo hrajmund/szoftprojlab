@@ -2,8 +2,7 @@ package Modell;
 
 import java.io.PrintWriter;
 import java.io.Writer;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * A szoba osztály reprezentál egy labirintus szobát.
@@ -295,53 +294,64 @@ public class Room implements IRound{
      *
      * @param r Az összefésülendő szoba.
      */
-    public void merge(Room r){
-        
-        for (Room r_og : r.outgoingDoors) {
-            r_og.removeIncomingDoor(r);
-            r_og.addIncomingDoor(this);
-        }
-        
-        for (Room r_ic : r.incomingDoors) {
-            r_ic.removeOutgoingDoor(r);
-            r_ic.addOutgoingDoor(this);
-        }
-        
-        
-        if(!r.incomingDoors.isEmpty()){
-            for(Room ic : r.incomingDoors){
-                if(ic != this){
-                    incomingDoors.add(ic);
-                    ic.removeOutgoingDoor(r);
-                    ic.addOutgoingDoor(this);
-                }
-            }
-        }
-        
+public void merge(Room r){
+    
+    Room newRoom = new Room (this.Name+r.getName()+"merged");
+    labyrinth.addRoom(newRoom);
+    newRoom.gas = this.gas || r.gas;
+    newRoom.capacity = Math.max(this.capacity, r.capacity);
+    newRoom.sticky = this.sticky || r.sticky;
+    newRoom.personCounter = Math.min(this.personCounter, r.personCounter);
+    
+    List<BaseItem> mergedItems = new ArrayList<>();
+    mergedItems.addAll(this.items);
+    mergedItems.addAll(r.items);
 
-        if(!r.outgoingDoors.isEmpty()){
-            for(Room og : r.outgoingDoors){
-                if(og != this){
-                    outgoingDoors.add(og);
-                    og.removeIncomingDoor(r);
-                    og.addIncomingDoor(this);
-                }
-            }
+    for (BaseItem item : mergedItems) {
+        item.room = newRoom;
+        newRoom.addItem(item);
+    }
+    
+    
+    Set<Room> mergedOutgoingDoors = new HashSet<>();
+    mergedOutgoingDoors.addAll(this.outgoingDoors);
+    mergedOutgoingDoors.addAll(r.outgoingDoors);
+    
+    
+    Set<Room> mergedIncomingDoors = new HashSet<>();
+    mergedIncomingDoors.addAll(this.incomingDoors);
+    mergedIncomingDoors.addAll(r.incomingDoors);
+    
+    for (Room og : mergedOutgoingDoors) {
+        if (og.incomingDoors.contains(this)) {
+            og.removeIncomingDoor(this);
+            og.addIncomingDoor(newRoom);
         }
-
-        
-        for(BaseItem it : r.items){
-            it.setRoom(this);
+        if (og.incomingDoors.contains(r)) {
+            og.removeIncomingDoor(r);
+            og.addIncomingDoor(newRoom);
         }
-        items.addAll(r.items);
-        r.items.clear();
-        
-        gas = gas || r.gas;
-        capacity = Math.max(capacity, r.capacity);
-        
-        personCounter = Math.min(personCounter, r.personCounter); //
-        
-        labyrinth.removeRoom(r);
+    }
+    for (Room ic : mergedIncomingDoors) {
+        if(ic.outgoingDoors.contains(this)){
+            ic.removeOutgoingDoor(this);
+            ic.addOutgoingDoor(newRoom);
+        }
+        if(ic.outgoingDoors.contains(r)) {
+            ic.removeOutgoingDoor(r);
+            ic.addOutgoingDoor(newRoom);
+        }
+    }
+    newRoom.incomingDoors.addAll(mergedIncomingDoors);
+    newRoom.outgoingDoors.addAll(mergedOutgoingDoors);
+    
+    newRoom.incomingDoors.remove(r);
+    newRoom.outgoingDoors.remove(r);
+    newRoom.incomingDoors.remove(this);
+    newRoom.outgoingDoors.remove(this);
+    
+    labyrinth.getRooms().remove(r);
+    labyrinth.getRooms().remove(this);
     }
 
     /**

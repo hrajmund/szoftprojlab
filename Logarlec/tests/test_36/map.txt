@@ -1,0 +1,10 @@
+room R1
+room R2
+student S1
+teacher T1
+door R1 R2
+tvsz TVSZ
+fake TVSZ
+additem_p S1 TVSZ
+addperson R1 S1
+addperson R2 T1

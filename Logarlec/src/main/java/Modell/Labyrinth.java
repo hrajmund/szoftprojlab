@@ -247,6 +247,7 @@ public class Labyrinth implements IRound {
                 }
             }
         }
+        
     }
     
 

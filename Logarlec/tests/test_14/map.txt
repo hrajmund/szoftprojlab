@@ -3,8 +3,10 @@ teacher T
 room R1
 room R2
 pohar Pohar
+tvsz TVSZ
 door R1 R2
 door R2 R1
+additem_p S TVSZ
 additem_p S Pohar
 addperson R1 S
 addperson R2 T

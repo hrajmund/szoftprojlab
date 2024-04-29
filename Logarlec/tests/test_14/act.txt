@@ -1,6 +1,6 @@
 random false
 init
-useitem 0
+useitem 1
 next
 move R1
 save

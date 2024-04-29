@@ -2,6 +2,7 @@ package Modell;
 
 import javax.lang.model.element.Name;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Takarito extends Person{
@@ -28,16 +29,21 @@ public class Takarito extends Person{
         currentRoom = r;
         currentRoom.gas = false; //"kiszellőztet"
         currentRoom.personCounter = 0; //"kitakarit"
+        ArrayList<Person>peoplemove= new ArrayList<>();
         for (Person p : currentRoom.getPeople()) //"kitessekel"
         {
-            if(!p.stunned && p != this){
+            if((!p.stunned) && p != this){
+                getCurrentRoom().outgoingDoors.get(0).addPerson(p);
+                p.setCurrentRoom(getCurrentRoom().outgoingDoors.get(0));
+                peoplemove.add(p);
                 //Random rnd = new Random();
                 //int whichRoom = rnd.nextInt(0, getCurrentRoom().outgoingDoors.size());
                 //getCurrentRoom().outgoingDoors.get(whichRoom).addPerson(p);
                 //p.setCurrentRoom(getCurrentRoom().outgoingDoors.get(whichRoom)); //mindenkit ugyanabba a szobába küld, a capacityvel nem foglalkozik, mivel ez elvi síkon is problémát okozna
-            } //TODO: RANDOMIZÁCIÓ AZ ELHELYEZÉSRE
+            }
+            //TODO: RANDOMIZÁCIÓ AZ ELHELYEZÉSRE
         }
-        currentRoom.people.clear();// EZ AZÉRT ITT VAN MIVEL NEM LEHET ELŐTTE BELERAKNI MIVEL A FOREACHNÉL HA KIVENNÉNK EGY EMBERT AKKOR MÁR BORUL A FOREACH
+        currentRoom.getPeople().removeAll(peoplemove);
         r.addPerson(this); //Emiatt van csak itt hozzáadva
     }
 
@@ -66,7 +72,7 @@ public class Takarito extends Person{
     @Override
     public void PrintOutPerson(PrintWriter writer){
         writer.println("    " + name +
-                "\n        [CurrentRoom] " + currentRoom +
+                "\n        [CurrentRoom] " + currentRoom.getName() +
                 "\n        [Stun] " + stunned
         );
     }

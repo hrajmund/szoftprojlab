@@ -4,9 +4,13 @@ R1
     [Capacity] 5
     [Incoming] R2 
     [Outgoing] R2 
-
+    AlreadyStunned
+        [CurrentRoom] R1
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
     C
-        [CurrentRoom] Modell.Room@6ac13091
+        [CurrentRoom] R1
         [Stun] false
 R2
     [Gas] false
@@ -14,3 +18,8 @@ R2
     [Capacity] 5
     [Incoming] R1 
     [Outgoing] R1 
+    NotStunned
+        [CurrentRoom] R2
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
