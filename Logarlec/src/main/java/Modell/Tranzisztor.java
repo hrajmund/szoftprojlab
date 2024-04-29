@@ -45,7 +45,7 @@ public class Tranzisztor extends BaseItem{
         if (holder != null) {
             if(!holder.items.isEmpty()){
                 for(BaseItem item: holder.items){
-                    if(item.isConnected()!=null){
+                    if(item.isConnected()!=null && item != this){
                         item.setConnected(this);
                         setConnected(item);
                         return;
@@ -84,11 +84,13 @@ public class Tranzisztor extends BaseItem{
         active=false;
         connected=null;
     }
+
     @Override
     public void putDown(Room r){
         holder = null;
         room = r;
     }
+
     public void tick(){
     }
 
@@ -96,6 +98,6 @@ public class Tranzisztor extends BaseItem{
     public void PrintOutItem(PrintWriter writer){
         writer.print(name + " (Active) " +
                 active +
-                " (Connected) " + ((connected == null) ? "null" : connected.name));
+                " (Connected) " + ((connected == null) ? "null" : connected.name) + '\n');
     }
 }

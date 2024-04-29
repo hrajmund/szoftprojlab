@@ -1,16 +1,16 @@
 R1
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] 
-	[Outgoing] R2 
-
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] R2 
 R2
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] R1 
-	[Outgoing] 
-	C
-	    [CurrentRoom] Modell.Room@161479c6
-	    [Stun] false
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1 
+    [Outgoing] 
+
+    C
+        [CurrentRoom] Modell.Room@48fa0f47
+        [Stun] false

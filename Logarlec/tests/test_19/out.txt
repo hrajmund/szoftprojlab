@@ -1,12 +1,12 @@
 R
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] 
-	[Outgoing] 
-	S
-		[CurrentRoom] R
-		[Stun] false
-		[TeacherProtected] false
-		[GasProtected] true
-		[Item 0] Mask (Active) true (Fake) false (TimeUsage) 5
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] 
+    S
+        [CurrentRoom] R
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] true
+        [Item 0] Mask (Active) true (Fake) false (TimeUsage) 5

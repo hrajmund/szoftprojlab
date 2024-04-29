@@ -192,21 +192,21 @@ public class Labyrinth implements IRound {
     }
 
     public void PrintOut(PrintWriter writer){
-        boolean isFirstRoom = true;
+        //boolean isFirstRoom = true;
         if(Game_End){
             writer.println("GAME_END");
         }else {
             for (Room r : this.getRooms()) {
-                if(!isFirstRoom)
-                    writer.print("\n"); //ha nem első szoba, tegyen sortötést (azért, hogy a txt ne kezdődjön üres sorral
-                isFirstRoom = false;
+//                if(!isFirstRoom)
+//                    writer.print("\n"); //ha nem első szoba, tegyen sortötést (azért, hogy a txt ne kezdődjön üres sorral
+//                isFirstRoom = false;
                 r.PrintOutRoom(writer);
                 if(!r.getPeople().isEmpty()){
                     for (Person person : r.getPeople()) {
                         person.PrintOutPerson(writer);
                     }
                 }else{
-                    writer.println();
+                    //writer.println();
                     for (Person person : r.getPeople()) {
                         person.PrintOutPerson(writer);
                     }

@@ -73,6 +73,6 @@ public class FFP2 extends BaseItem implements IRound {
     public void PrintOutItem(PrintWriter writer){
         writer.print(name + " (Active) " +
                 active  +
-                " (Fake) " + fake + " (TimeUsage) " + timeUsage);
+                " (Fake) " + fake + " (TimeUsage) " + timeUsage + '\n');
     }
 }

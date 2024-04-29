@@ -65,6 +65,6 @@ public class TVSzDenever extends BaseItem{
     public void PrintOutItem(PrintWriter writer){
         writer.print(name +
                 " (Active) " + active  +
-                " (Fake) " + fake + " (RemainingUsage) " + remainingUsage);
+                " (Fake) " + fake + " (RemainingUsage) " + remainingUsage + '\n');
     }
 }

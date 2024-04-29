@@ -1,17 +1,17 @@
 R
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] 
-	[Outgoing] 
-	[Item 0] Mask (Active) false (Fake) false (TimeUsage) 5
-	S
-		[CurrentRoom] R
-		[Stun] false
-		[TeacherProtected] false
-		[GasProtected] false
-		[Item 0] Tvsz (Active) false (Fake) false (RemainingUsage) 3
-		[Item 1] Nedv (Active) false (TimeUsage) 10
-		[Item 2] Cam (Active) false
-		[Item 3] Sorosp (Active) false (TimeUsage) 10
-		[Item 4] Tranzisztor (Active) false (Connected) Tranzisztor
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] 
+    [Item 0] Mask (Active) false (Fake) false (TimeUsage) 5
+    S
+        [CurrentRoom] R
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
+        [Item 0] Tvsz (Active) false (Fake) false (RemainingUsage) 3
+        [Item 1] Nedv (Active) false (TimeUsage) 10
+        [Item 2] Cam (Active) false
+        [Item 3] Sorosp (Active) false (TimeUsage) 10
+        [Item 4] Tranzisztor (Active) false (Connected) null

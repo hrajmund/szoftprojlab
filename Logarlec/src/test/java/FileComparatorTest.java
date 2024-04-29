@@ -21,7 +21,7 @@ public class FileComparatorTest {
         try {
             String content1 = readFileContent(file1Path);
             String content2 = readFileContent(file2Path);
-            assertEquals(content1, content2, "A két fájl tartalma nem egyezik meg.");
+            assertEquals(content1, content2, "A két fájl tartalma nem egyezik meg. test: ");
         } catch (IOException e) {
             e.printStackTrace();
         }

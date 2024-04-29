@@ -90,13 +90,13 @@ public class  Teacher extends Person{
 
     @Override
     public void PrintOutPerson(PrintWriter writer){
-        writer.print("\n\t" + name +
-                "\n\t\t[CurrentRoom] " +currentRoom.getName() +
-                "\n\t\t[Stun] " + stunned
+        writer.print("    " + name +
+                "\n        [CurrentRoom] " +currentRoom.getName() +
+                "\n        [Stun] " + stunned + '\n'
         );
         if(!items.isEmpty()){
             for(int i = 0; i < items.size(); i++) {
-                writer.print(String.format("\t\t[Item %d]", i));
+                writer.print(String.format("        [Item %d] ", i));
                 items.get(i).PrintOutItem(writer);
             }
         }

@@ -35,6 +35,6 @@ public class Legfrissito extends BaseItem{
     public void tick() {}
     @Override
     public void PrintOutItem(PrintWriter writer){
-        writer.print(name + " (Active) " + active );
+        writer.print(name + " (Active) " + active + '\n');
     }
 }

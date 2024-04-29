@@ -1,12 +1,12 @@
 R
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming]
-	[Outgoing]
-	S
-		[CurrentRoom] R1
-	[Stun] false
-	[TeacherProtected] true
-	[GasProtected] false
-	[Item1] SzentSorosPoharak (Active) true (TimeUsage) 4
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] 
+    S
+        [CurrentRoom] R
+        [Stun] false
+        [TeacherProtected] true
+        [GasProtected] false
+        [Item 0] Sorosp (Active) true (TimeUsage) 10

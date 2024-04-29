@@ -1,13 +1,13 @@
 R
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] 
-	[Outgoing] 
-	S
-		[CurrentRoom] R
-		[Stun] false
-		[TeacherProtected] false
-		[GasProtected] false
-		[Item 0] Tranzi1 (Active) false (Connected) Tranzi2
-		[Item 1] Tranzi2 (Active) false (Connected) Tranzi1
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] 
+    S
+        [CurrentRoom] R
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
+        [Item 0] Tranzi1 (Active) false (Connected) Tranzi2
+        [Item 1] Tranzi2 (Active) false (Connected) Tranzi1

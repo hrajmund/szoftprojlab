@@ -1,22 +1,21 @@
 R1
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] 
-	[Outgoing] R2 
-
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] R2 
 R2
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] R1 
-	[Outgoing] 
-	T1
-		[CurrentRoom] R2
-		[Stun] false
-	S1
-		[CurrentRoom] R2
-		[Stun] false
-		[TeacherProtected] false
-		[GasProtected] false
-		[Item 0] TVSZ (Active) false (Fake) false (RemainingUsage) 2
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1 
+    [Outgoing] 
+    T1
+        [CurrentRoom] R2
+        [Stun] false
+    S1
+        [CurrentRoom] R2
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
+        [Item 0] TVSZ (Active) false (Fake) false (RemainingUsage) 2

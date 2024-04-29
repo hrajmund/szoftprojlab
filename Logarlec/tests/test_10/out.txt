@@ -1,27 +1,26 @@
 R1
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] R2 R3 R1 
-	[Outgoing] R2 R3 R1 
-	S
-		[CurrentRoom] R1
-		[Stun] false
-		[TeacherProtected] false
-		[GasProtected] false
-	T
-		[CurrentRoom] R1
-		[Stun] false
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R2 R3 R1 
+    [Outgoing] R2 R3 R1 
+    S
+        [CurrentRoom] R1
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false
+    T
+        [CurrentRoom] R1
+        [Stun] false
 R2
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] R1 R3 
-	[Outgoing] R1 R3 
-
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1 R3 
+    [Outgoing] R1 R3 
 R3
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] R2 R3 R1 
-	[Outgoing] R2 R3 R1 
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R2 R3 R1 
+    [Outgoing] R2 R3 R1 

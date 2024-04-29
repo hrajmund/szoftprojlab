@@ -1,18 +1,17 @@
 R1
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] 
-	[Outgoing] R2 
-
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] 
+    [Outgoing] R2 
 R2
-	[Gas] false
-	[Sticky] false
-	[Capacity] 5
-	[Incoming] R1 
-	[Outgoing] 
-	S1
-		[CurrentRoom] R2
-		[Stun] false
-		[TeacherProtected] false
-		[GasProtected] false
+    [Gas] false
+    [Sticky] false
+    [Capacity] 5
+    [Incoming] R1 
+    [Outgoing] 
+    S1
+        [CurrentRoom] R2
+        [Stun] false
+        [TeacherProtected] false
+        [GasProtected] false

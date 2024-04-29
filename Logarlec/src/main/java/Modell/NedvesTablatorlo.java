@@ -64,7 +64,7 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
     public void PrintOutItem(PrintWriter writer){
         writer.print(name + " (Active) " +
                 active +
-                " (TimeUsage) " + timeUsage);
+                " (TimeUsage) " + timeUsage + '\n');
     }
 
 }

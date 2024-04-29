@@ -89,16 +89,22 @@ public class CursedRoom extends Room implements IRound {
 
     @Override
     public void PrintOutRoom(PrintWriter writer){
-        writer.println(Name +
-                "\n\t [Gas] " + gas +
-                "\n\t [Sticky] " + sticky +
-                "\n\t [Capacity] " + capacity
+        writer.print(Name +
+                "\n    [Gas] " + gas +
+                "\n    [Sticky] " + sticky +
+                "\n    [Capacity] " + capacity
         );
 
-        writer.print("\t [Incoming] ");
+        writer.print("\n    [Incoming] ");
         this.getIncomingDoors().forEach(incoming -> writer.print(incoming.getName() + " "));
-        writer.print("\n\t [Outgoing] ");
+        writer.print("\n    [Outgoing] ");
         this.getOutgoingDoors().forEach(outgoing -> writer.print(outgoing.getName() + " "));
-        writer.println();
+        writer.print('\n');
+        if(!items.isEmpty()){
+            for(int i = 0; i < items.size(); i++){
+                writer.print(String.format("    [Item %d] ", i));
+                items.get(i).PrintOutItem(writer);
+            }
+        }
     }
 }

@@ -1,0 +1,28 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡‹­‰J$f394c4cb-ffde-456c-bbe8-c54e65de4feb
+w	java:S125"<This block of commented-out lines of code should be removed.(¦Û²šJ$20ea2b28-9bd4-45de-af8b-4a41f750ae34
+|
+java:S1854è"?Remove this useless assignment to local variable "gameManager".(¸Æ‹ÈJ$e20e0e6e-6c79-4275-9c00-34751fdd2223
+|
+java:S1854í"?Remove this useless assignment to local variable "gameManager".(Û®ä‹J$cdfd0c4d-3cc2-4f85-b3f4-ef67e9542b81
+x	java:S125Ò"<This block of commented-out lines of code should be removed.(Å­ÊÝJ$f3d9648c-632f-4b88-b360-40d0b229013c
+}	java:S125‹"<This block of commented-out lines of code should be removed.(â¦À›ûÿÿÿÿJ$a6da4f83-b29e-4ec7-967d-96350ae33358
+g	java:S106Î"+Replace this use of System.out by a logger.(—Ù±ˆJ$d3ea6369-d9b6-4c97-8175-d75767953682
+}	java:S125½"<This block of commented-out lines of code should be removed.(žÓ¬øúÿÿÿÿJ$c34f3fd6-ca39-4214-bfb4-ea76caca59eb
+l	java:S106Ï"+Replace this use of System.out by a logger.(µØº¸úÿÿÿÿJ$0d69f864-9e4f-42e7-acb7-4b252f2ac303
+l	java:S106Ò"+Replace this use of System.out by a logger.(¼¤›ÿÿÿÿÿJ$6a165f1e-e642-4bef-ade0-faf403751adb
+n
+java:S1481Õ",Remove this unused "correct" local variable.(‚ÂŽúüÿÿÿÿJ$7af6e638-cc31-4b6d-881d-fc35157cce0e
+}	java:S125Ö"<This block of commented-out lines of code should be removed.(½ƒÈÖüÿÿÿÿJ$319e9f1d-be08-4186-954b-abc1beff2cb2
+}	java:S125Ý"<This block of commented-out lines of code should be removed.(éØ»ÚûÿÿÿÿJ$bc9d0475-dadb-4a4c-9e1b-7299ec4f004e
+g	java:S106ä"+Replace this use of System.out by a logger.(ÏÕÂºJ$62338460-3de0-469d-8880-131ccafcb7c9
+m
+java:S1481è"0Remove this unused "gameManager" local variable.(¸Æ‹ÈJ$56ae1822-c9c9-4bf4-8ea2-8801133a6476
+m
+java:S1481í"0Remove this unused "gameManager" local variable.(Û®ä‹J$cade0483-7d54-4ae2-a54a-26645de5ce62
+@
+java:S1128"#Remove this unused import 'Modell'.(‡‹­‰8±ÈÑò1
+K
+java:S1128".Remove this unused import 'Modell.CursedRoom'.(‡‹­‰8±ÈÑò1
+L
+java:S1128"/Remove this unused import 'Modell.TVSzDenever'.(‡‹­‰8±ÈÑò1

@@ -173,15 +173,15 @@ public class Student extends Person{
 
     @Override
     public void PrintOutPerson(PrintWriter writer){
-        writer.print("\n\t" + name +
-                "\n\t\t[CurrentRoom] " + currentRoom.Name +
-                "\n\t\t[Stun] " + stunned +
-                "\n\t\t[TeacherProtected] " + teacherProtected +
-                "\n\t\t[GasProtected] " + gasProtected
+        writer.print("    " + name +
+                "\n        [CurrentRoom] " + currentRoom.Name +
+                "\n        [Stun] " + stunned +
+                "\n        [TeacherProtected] " + teacherProtected +
+                "\n        [GasProtected] " + gasProtected + '\n'
         );
         if(!items.isEmpty()){
             for(int i = 0; i < this.items.size(); i++){
-                writer.print(String.format("\n\t\t[Item %d] ", i));
+                writer.print(String.format("        [Item %d] ", i));
                 items.get(i).PrintOutItem(writer);
             }
         }

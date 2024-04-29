@@ -54,7 +54,7 @@ public class Logarlec extends BaseItem{
     public void PrintOutItem(PrintWriter writer){
         writer.print(name + " (Active) " +
                 active +
-                " (Fake) " + fake);
+                " (Fake) " + fake + '\n');
 
     }
 }
