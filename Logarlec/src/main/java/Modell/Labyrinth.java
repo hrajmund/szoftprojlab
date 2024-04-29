@@ -1,13 +1,9 @@
 package Modell;
-import Modell.GameManager;
-import Modell.IRound;
-import Modell.Room;
-import Modell.TestPrinter;
 
 import java.io.PrintWriter;
-import java.io.Writer;
-import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Random;
 
 /**
@@ -96,11 +92,31 @@ public class Labyrinth implements IRound {
                 }
                 rooms.get(roomNumber).split();
             }
-            //MERGE geci
             if(rand.nextInt(10)<3){
-                int i = rand.nextInt(rooms.size());
-                //while()
-                
+                boolean merged = false;
+                int randomINT = rand.nextInt(rooms.size());
+                for(int i = 0; i < rooms.size(); i++){
+                    int actRand = i+randomINT% rooms.size();
+                    if(rooms.get(actRand).getPeople().isEmpty()){
+                        HashSet<Room> neighbours = new HashSet<>();
+                        neighbours.addAll(rooms.get(actRand).outgoingDoors);
+                        neighbours.addAll(rooms.get(actRand).incomingDoors);
+                        
+                        for (int j = 0; j < neighbours.size(); j++) {
+                            for(Room tomergewith : neighbours){
+                                if(tomergewith.getPeople().isEmpty()){
+                                    rooms.get(actRand).merge(tomergewith);
+                                    merged = true;
+                                    break;
+                                }
+                            }
+                        }
+                        
+                    }
+                    if(merged){
+                        break;
+                    }
+                }   
             }
         }
     }
@@ -215,7 +231,7 @@ public class Labyrinth implements IRound {
         }
     }
 
-    public void RandomGergQrva(){
+    public void Randomizer(){
         Random rand= new Random();
         if(!cleaner.isEmpty()){
             for(Person c: cleaner){

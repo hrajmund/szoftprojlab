@@ -505,7 +505,7 @@ public class GameManager {
                 }while(!commandName_.equals("next") && !commandName_.equals("move"));
             }
             if(random){
-               // labyrinth.RandomGergQrva();
+               // labyrinth.Randomizer();
             }
             labyrinth.tick();
             //ezzel vmit kezdeni kell mert igy nemjo, itt a 9-es tesztnél végtelen ciklusba kerül,

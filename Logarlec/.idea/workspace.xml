@@ -5,98 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="rovidke kis codeWithMe">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e66d0566f4471e3eb3fb0d8787b17e9461c4f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e66d0566f4471e3eb3fb0d8787b17e9461c4f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FileComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FileComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_10/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_10/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_10/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_10/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_11/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_11/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_12/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_12/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_13/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_13/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_14/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_14/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_2/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_2/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_23/act.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_23/act.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_23/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_23/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_3/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_3/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_3/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_3/out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_16/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_16/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_17/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_17/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_18/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_18/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_19/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_19/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_20/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_20/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_21/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_21/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_22/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_22/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_23/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_23/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_24/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_24/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_25/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_25/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_26/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_26/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_27/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_27/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_28/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_28/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_29/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_29/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_30/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_30/out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_31/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_31/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_32/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_32/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_33/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_33/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_34/act.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/act.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_34/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_34/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/map.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_34/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_35/act.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_35/act.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_35/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_35/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_35/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_35/map.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_35/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_35/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_4/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_4/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_4/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_4/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_5/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_5/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_5/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_5/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_6/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_6/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_6/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_6/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_7/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_7/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_7/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_7/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_8/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_8/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_8/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_8/out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_9/act.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_9/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_9/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_9/out.txt" beforeDir="false" />
     </list>
     <list id="66715bec-53ca-4ce4-97b1-b9eac75b8e5c" name="Changes by András" comment="Changes by András" />
-    <list id="c4a8eba8-952f-4013-af81-dc5fd25833ca" name="Changes by matef" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_32/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_32/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_34/act.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/act.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_34/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/assert.txt" afterDir="false" />
-    </list>
-    <list id="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" name="Changes by rayy04" comment="Changes by rayy04">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_14/act.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_14/act.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_14/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_14/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_14/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_14/map.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_31/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_31/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_33/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_33/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_35/act.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_35/act.txt" afterDir="false" />
-    </list>
-    <list id="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" name="Changes by svajc" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FileComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FileComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_10/assert.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_10/assert.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_2/assert.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_2/map.txt" beforeDir="false" />
-    </list>
+    <list id="c4a8eba8-952f-4013-af81-dc5fd25833ca" name="Changes by matef" comment="" />
+    <list id="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" name="Changes by rayy04" comment="Changes by rayy04" />
+    <list id="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" name="Changes by svajc" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="9171" />
+    <option name="totalTimeSeconds" value="10258" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -120,68 +77,6 @@
     &quot;accountId&quot;: &quot;4a677e5a-b7fb-4f23-8e45-3d6b48620790&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/tests/test_35/act.txt">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="2" end1="3" start2="2" end2="4" changelist="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Modell/Room.java">
-      <ranges>
-        <range start1="4" end1="6" start2="4" end2="5" changelist="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" />
-        <range start1="297" end1="302" start2="296" end2="328" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="303" end1="307" start2="329" end2="332" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="308" end1="344" start2="333" end2="354" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/tests/test_34/assert.txt">
-      <ranges>
-        <range start1="1" end1="2" start2="1" end2="2" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="12" end1="13" start2="12" end2="13" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="24" end1="25" start2="24" end2="25" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="30" end1="32" start2="30" end2="33" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Modell/GameManager.java">
-      <ranges>
-        <range start1="52" end1="52" start2="52" end2="53" changelist="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" />
-        <range start1="321" end1="322" start2="322" end2="323" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="466" end1="467" start2="467" end2="468" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="470" end1="471" start2="471" end2="472" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/test/java/FileComparatorTest.java">
-      <ranges>
-        <range start1="14" end1="15" start2="14" end2="15" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="20" end1="26" start2="20" end2="28" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="49" end1="50" start2="51" end2="53" changelist="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" />
-        <range start1="64" end1="65" start2="67" end2="68" changelist="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/tests/test_34/act.txt">
-      <ranges>
-        <range start1="2" end1="3" start2="2" end2="3" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="5" end1="6" start2="5" end2="7" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="8" end1="9" start2="9" end2="11" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="12" end1="12" start2="14" end2="15" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-        <range start1="15" end1="15" start2="18" end2="19" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-        <range start1="18" end1="18" start2="22" end2="23" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-        <range start1="20" end1="22" start2="25" end2="27" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-        <range start1="23" end1="23" start2="28" end2="29" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/Modell/Takarito.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="5" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-        <range start1="30" end1="30" start2="31" end2="32" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-        <range start1="32" end1="33" start2="34" end2="38" changelist="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" />
-        <range start1="37" end1="38" start2="42" end2="44" changelist="c4a8eba8-952f-4013-af81-dc5fd25833ca" />
-        <range start1="39" end1="40" start2="45" end2="46" changelist="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" />
-        <range start1="68" end1="69" start2="74" end2="75" changelist="b340102d-29b7-4799-88c0-7b388a05e747" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -190,29 +85,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Szkeleton.executor": "Run",
-    "JUnit.FileComparatorTest.executor": "Run",
-    "JUnit.FileComparatorTest.testCompareFiles.[3] tests\\test_20\\assert.txt, tests\\test_20\\out.txt.executor": "Run",
-    "JUnit.[engine:junit-jupiter]/[class:FileComparatorTest]/[test-template:testCompareFiles(java.lang.String, java.lang.String)]/[test-template-invocation:#3].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Szkeleton.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FileComparatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FileComparatorTest.testCompareFiles.[3] tests\\test_20\\assert.txt, tests\\test_20\\out.txt.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.[engine:junit-jupiter]/[class:FileComparatorTest]/[test-template:testCompareFiles(java.lang.String, java.lang.String)]/[test-template-invocation:#3].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="FileComparatorTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Logarlec" />
@@ -246,6 +141,7 @@
       <workItem from="1714226491935" duration="3108000" />
       <workItem from="1714398458100" duration="9314000" />
       <workItem from="1714408018127" duration="10759000" />
+      <workItem from="1714419231396" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
