@@ -25,6 +25,7 @@ public class Tranzisztor extends BaseItem{
         if(holder.items.contains(this.connected)){
             active=true;
             holder.putDownItem(this);
+            this.connected.active = true;
             room.capacity--;
         }else{
             active=true;

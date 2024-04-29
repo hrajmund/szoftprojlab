@@ -1,0 +1,14 @@
+
+k
+java:S10661"/Merge this if statement with the enclosing one.(±†øèJ$50792b25-3061-4203-9665-b2473b6bbae7
+i
+java:S5411'"(Use a primitive boolean expression here.(êÃ’ˆøÿÿÿÿJ$ad2f8441-29cc-467f-a3d1-2d879b3d8804
+d
+java:S54110"(Use a primitive boolean expression here.(•ëÞ‚J$3ade3f69-ade9-4d78-9832-7e2c3ccff8a8
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿJ$d00432be-fe9d-4958-b92b-2f0d8069e0f7
+v
+java:S1161E":Add the "@Override" annotation above this method signature(øÖÇ°J$41c97b03-6450-411b-a238-a52303047a3e
+•
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿJ$d1de9912-7acc-42b4-8951-4274e7081844
+•
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿJ$f5ce7c16-58e8-43bc-953b-0b4af3bd8506

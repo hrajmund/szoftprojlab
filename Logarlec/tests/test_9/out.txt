@@ -3,7 +3,7 @@ R1
     [Sticky] false
     [Capacity] 5
     [Incoming] 
-    [Outgoing] R2 
+    [Outgoing] R2 R2 
     S1
         [CurrentRoom] R1
         [Stun] false
@@ -13,7 +13,7 @@ R2
     [Gas] true
     [Sticky] false
     [Capacity] 6
-    [Incoming] R1 R3 
+    [Incoming] R3 R1 
     [Outgoing] R3 
 R3
     [Gas] false

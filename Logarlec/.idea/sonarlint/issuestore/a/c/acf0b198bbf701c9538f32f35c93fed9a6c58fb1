@@ -1,0 +1,19 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿJ$2c502811-0338-4a26-b826-d8e6161d883c
+½
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…â™J$031302f0-a476-495d-a2a5-3a04aba37ea3
+Â
+java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Æ¤Æ­şÿÿÿÿJ$492febea-e102-4b4c-afcd-63d90616c93c
+½
+java:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°J$46ae9a50-ec78-49ee-990d-88aa2d3204b8
+½
+java:S1186;"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²J$76776111-de31-47fc-9570-c4edd6e529da
+½
+java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‘‡ÙJ$09200dd9-1618-48ff-aafb-31fa874e89a4
+w	java:S125""<This block of commented-out lines of code should be removed.(¿ª¸¦J$a7691f97-673e-42f6-96c4-48ea7a6efc76
+m
+java:S1135&"2Complete the task associated to this TODO comment.(È…‡JJ$1b513ec5-33d2-4100-abbb-a2ed0833f764
+v
+java:S1128":Remove this unused import 'javax.lang.model.element.Name'.(°¦£ÂJ$e3b9c887-60bb-4053-bcc7-36a49a5066dc
+n
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿJ$fadb77ee-f2df-4bab-81d8-c2bf08de33a0

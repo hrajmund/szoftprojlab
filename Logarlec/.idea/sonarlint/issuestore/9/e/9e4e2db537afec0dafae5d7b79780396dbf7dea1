@@ -1,0 +1,14 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8Ôë¶Óò1J$795cd232-f43b-4ea0-93fa-bc864d316dbf
+Ä
+java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ÿªø²8Üë¶Óò1J$8f6a87e1-ff05-441a-b2ed-616c6fca3a03
+}
+java:S1161":Add the "@Override" annotation above this method signature(¦×¡õ8Şë¶Óò1J$dbf8fb0e-6df4-4387-b92e-91f8178abb35
+f
+java:S21196"Save and re-use this "Random".(€ÏÅ£ıÿÿÿÿ8áë¶Óò1J$f268bed2-5080-4367-acdc-dd587ac9893b
+—
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8æë¶Óò1J$1de61c1d-dd58-491e-a521-058e17104219
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8æë¶Óò1J$c0a11814-c6bd-4dd3-a53b-1b54c5750a82
+q
+java:S1128".Remove this unused import 'javax.naming.Name'.(ºÄä”8æë¶Óò1J$6c476f61-f725-45b9-8f0e-418c790d787d

@@ -296,17 +296,51 @@ public class Room implements IRound{
      * @param r Az összefésülendő szoba.
      */
     public void merge(Room r){
+        
+        for (Room r_og : r.outgoingDoors) {
+            r_og.removeIncomingDoor(r);
+            r_og.addIncomingDoor(this);
+        }
+        
+        for (Room r_ic : r.incomingDoors) {
+            r_ic.removeOutgoingDoor(r);
+            r_ic.addOutgoingDoor(this);
+        }
+        
+        
+        if(!r.incomingDoors.isEmpty()){
+            for(Room ic : r.incomingDoors){
+                if(ic != this){
+                    incomingDoors.add(ic);
+                    ic.removeOutgoingDoor(r);
+                    ic.addOutgoingDoor(this);
+                }
+            }
+        }
+        
 
-        addDoors(r.outgoingDoors,outgoingDoors);
-        addDoors(r.incomingDoors,incomingDoors);
-        for(Room neighbours : r.incomingDoors){
-            neighbours.removeOutgoingDoor(r);
-            neighbours.addOutgoingDoor(this);
+        if(!r.outgoingDoors.isEmpty()){
+            for(Room og : r.outgoingDoors){
+                if(og != this){
+                    outgoingDoors.add(og);
+                    og.removeIncomingDoor(r);
+                    og.addIncomingDoor(this);
+                }
+            }
+        }
+
+        
+        for(BaseItem it : r.items){
+            it.setRoom(this);
         }
         items.addAll(r.items);
+        r.items.clear();
+        
         gas = gas || r.gas;
         capacity = Math.max(capacity, r.capacity);
+        
         personCounter = Math.min(personCounter, r.personCounter); //
+        
         labyrinth.removeRoom(r);
     }
 

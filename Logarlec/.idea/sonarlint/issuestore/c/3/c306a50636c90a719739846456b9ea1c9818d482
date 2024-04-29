@@ -1,0 +1,8 @@
+
+i
+java:S54110"(Use a primitive boolean expression here.(êÃ’ˆøÿÿÿÿJ$0f77852a-63fe-4936-b537-111773d8859a
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿJ$5a9f7732-303c-4482-933c-d31be783bd38
+Â
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆðüÿÿÿÿJ$10d53206-8a68-4ba3-8848-d30668e86668
+v
+java:S11618":Add the "@Override" annotation above this method signature(øÖÇ°J$98218cbe-35a7-4e73-9db8-5475420d16fa

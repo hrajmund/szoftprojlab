@@ -1,0 +1,17 @@
+
+š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ò¤ªÃúÿÿÿÿJ$8fa9e1e4-d984-4cac-8d8f-6be4c1517a46
+š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸ÆçàÿÿÿÿÿJ$0ef28fa8-0d7e-4bab-ab32-8710f2969b54
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿJ$023723c7-e812-45ea-ac4e-529af724b805
+{
+java:S1161"":Add the "@Override" annotation above this method signature(íÌÆðüÿÿÿÿJ$b02fec1a-cb56-4464-81aa-9d4d9ed3f451
+{
+java:S1161,":Add the "@Override" annotation above this method signature(©Ïœ¦úÿÿÿÿJ$2084b3e7-7157-46e9-8a71-f7b218e0c969
+w	java:S125-"<This block of commented-out lines of code should be removed.(½®ÛšJ$83c79232-fa6f-4fb5-8606-56f2209c3872
+}
+java:S1126S"AReplace this if-then-else statement by a single return statement.(©œ‹J$560ee828-93ec-4d9a-91f2-1d3cb4645387
+n
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿJ$3120b556-a25c-4598-852f-d7d0bed8f93e
+q
+java:S1128"0Remove this unused import 'Szkeleton.Szkeleton'.(¦€¤‰þÿÿÿÿJ$32f3e7ad-d23e-4002-b49a-911a609a7c11

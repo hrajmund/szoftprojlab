@@ -1,0 +1,60 @@
+
+²
+java:S1319´"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(†İÂ˜üÿÿÿÿJ$75c7f3eb-1822-4101-a6ef-ac617425439d
+­
+java:S1319·"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”ŞJ$c6336ab1-6bf7-4509-a6a0-35e7472125c7
+²
+java:S1319¾"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òç¡•ùÿÿÿÿJ$f08b916f-4768-4653-bfaa-aee5e751cca1
+
+java:S1104"RMake random a static final constant or non-public and provide accessors if needed.(æÖÿÅJ$6774803b-3202-42f0-8cd0-9d44b9ed4945
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿJ$35c15845-7cad-47a9-94ee-e1450abd7071
+	java:S116"SRename this field "Game_End" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‹¿øJ$29a48803-6fdd-45c5-bff9-a4d45834a6bd
+	java:S116-"MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÄİ‰üÿÿÿÿJ$5033370b-b7f5-4b09-b32a-a34c30b4a767
+Â
+java:S11864"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(à€¢ğüÿÿÿÿJ$ca0f95f9-ef83-4365-a853-c953f806a0bf
+’
+java:S1450-"QRemove the "GM" field and declare it as a local variable in the relevant methods.(ĞÄİ‰üÿÿÿÿJ$8b43ed48-378e-4d4e-bab7-867049bcae14
+“
+java:S3776G"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(íÌÆğüÿÿÿÿJ$458b4693-b380-40cb-8970-b2ed3a7a28ae
+q
+java:S1854e"5Remove this useless assignment to local variable "i".(»Ÿ‘¶J$8d7da5d6-ff53-44c3-9a43-690de12529ef
+_
+java:S2119["Save and re-use this "Random".(šŸ«íøÿÿÿÿJ$dcc979c1-22ce-4887-9ccb-bdec500cd543
+b
+java:S1481e"&Remove this unused "i" local variable.(»Ÿ‘¶J$3d248029-1140-46b2-bc4f-7f0ac21d24a1
+|	java:S125f"<This block of commented-out lines of code should be removed.(öğ§ÇùÿÿÿÿJ$eb78708d-2c15-4bc6-8dd2-77fc35dfb355
+t
+java:S3400q"9Remove this method and declare a constant for this value.(¸®Ã'J$4efc49a8-6f82-49e0-b31f-9b4e1a9f2fcc
+i
+java:S1172l"(Remove this unused method parameter "r".(Â‰¤ÊşÿÿÿÿJ$6fc26b8a-5af9-473e-a076-c8d7daf2d497
+w	java:S125m"<This block of commented-out lines of code should be removed.(ìî¦ÉJ$98091811-ad9f-4174-816c-12b630b82eff
+|	java:S125p"<This block of commented-out lines of code should be removed.(éØ»ÚûÿÿÿÿJ$5512dd15-f5b2-4734-ac0f-ee61cab20cbb
+	java:S100Â"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÕàŞÿÿÿÿÿJ$5582b471-bc81-40d1-86ba-7c2c0f86d9e8
+”
+java:S3776Â"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ºÕàŞÿÿÿÿÿJ$266d0628-0760-4cfa-ad33-1f4e770e4b37
+„	java:S125Ã"<This block of commented-out lines of code should be removed.(¬±Š®ÿÿÿÿÿ8¶âÍÒò1J$c69b839f-f6d6-4029-bf88-44f1e13ab8cc
+~	java:S125È"<This block of commented-out lines of code should be removed.(âó”8‡…ÎÒò1J$963c306d-cb1a-458c-924a-5e46f74c4df0
+¤
+java:S3923Ì"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Şş¾µüÿÿÿÿ8ö‰¤Óò1J$118ae32d-5a3f-435a-9b1f-159c2d8ebfe6
+„	java:S125Ñ"<This block of commented-out lines of code should be removed.(¡ÖÃÇøÿÿÿÿ8÷‰¤Óò1J$a408bf67-3fb4-4baa-b3bf-b80341265c63
+Š	java:S100Ú"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ³Š¨J$b005600c-7bc9-492f-9d30-765429a81d25
+
+java:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ƒ³Š¨J$72ac447c-9803-4581-8a49-df3a2d9b7b11
+`
+java:S2119Û"Save and re-use this "Random".(šŸ«íøÿÿÿÿJ$84b30ca2-a5dd-41c6-a391-9e0aa1beec7e
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¥Ó˜Ëıÿÿÿÿ8…ÎÒò1J$5d62c8dd-7a86-43c5-9891-21ba2370137f
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿ8…ÎÒò1J$2033dd29-a8b1-4d3b-89b2-086cf4c8e4f3
+—
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8…ÎÒò1J$8545b5ef-60f9-45b6-81ca-1cf823333edc
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8…ÎÒò1J$9772b2b8-45ab-4dd6-a846-8512765328df
+s
+java:S1128"+Remove this unused import 'java.io.Writer'.(Î”øÿÿÿÿ8…ÎÒò1J$6e66003f-b67c-47fe-b23e-fb2951e7a9f8
+v
+java:S1128	"3Remove this unused import 'java.math.RoundingMode'.(¿ì†‹8…ÎÒò1J$e9512853-b70e-42b8-ad1e-9b3e68713ab2
+g
+java:S1068-"&Remove this unused "GM" private field.(ĞÄİ‰üÿÿÿÿJ$25641973-eefe-4daa-ac7b-dab73c2a628d
+w
+java:S1144l"6Remove this unused private "hasEmptyNeighbour" method.(Â‰¤ÊşÿÿÿÿJ$b6b4c5c5-ca77-4634-8ae2-02998d743e2c

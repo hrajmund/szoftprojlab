@@ -65,7 +65,7 @@ public class Takarito extends Person{
 
     @Override
     public void PrintOutPerson(PrintWriter writer){
-        writer.println("\n    " + name +
+        writer.println("    " + name +
                 "\n        [CurrentRoom] " + currentRoom +
                 "\n        [Stun] " + stunned
         );

@@ -1,0 +1,38 @@
+
+³
+java:S1319J"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8§éûÔò1J$f199cd5a-9a16-45df-bb3b-7b6ce45df088
+¤
+java:S1319n"aThe type of "n" should be an interface such as "List" rather than the implementation "ArrayList".(üƒæÉ8§éûÔò1J$6b35ffbb-ab54-42d9-953b-43c949520195
+°
+java:S1319w"mThe type of "outgoingDoors" should be an interface such as "List" rather than the implementation "ArrayList".(´™±×8§éûÔò1J$0d4f64fe-cdaf-4483-98d2-e0a7aa495779
+¹
+java:S1319’"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡„‰õúÿÿÿÿ8§éûÔò1J$02c8c869-c4bd-4a51-a414-930d032dd7d4
+¹
+java:S1319›"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(İŠ¹ğüÿÿÿÿ8§éûÔò1J$f58554d3-ea5f-4e15-a603-7fd3b248bae9
+±
+java:S1319¢"hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8§éûÔò1J$205d04a0-8c78-4441-a9e8-52582dc5e28d
+­
+java:S1319¢"dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8§éûÔò1J$c5ae4461-a3f7-47be-b960-b0593a8dd3a5
+™	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÛ×½ûÿÿÿÿ8§éûÔò1J$cfd1a517-72ff-4d1d-ac28-1defb808ba8a
+q
+java:S5411å"(Use a primitive boolean expression here.(êìâ’ùÿÿÿÿ8¨éûÔò1J$cf66754e-190b-40a0-be82-3a0c2e046c66
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ªéûÔò1J$ceea2a42-b661-4e7f-9f9e-024737feb70f
+‘	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê°ñä8ÆêûÔò1J$dfd00409-c90a-4548-8746-b5334a9f195e
+Ä
+java:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…—½8ÆêûÔò1J$5c4eb04a-adfc-417e-a7f2-73c1db129bb3
+Ê
+java:S1186¢"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜ ö²üÿÿÿÿ8ÆêûÔò1J$6f2727ec-2728-47cb-b6c6-b48284780b02
+Ê
+java:S1186—"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8â³ıÔò1J$fb780188-c3e4-43cb-9c5a-a4bd899574ca
+u
+java:S1905“",Remove this unnecessary cast to "ArrayList".(–ø™ºûÿÿÿÿ8ÌêûÔò1J$b93e0dfe-7356-4849-9eae-054d37a7216a
+p
+java:S1905œ",Remove this unnecessary cast to "ArrayList".(ŒæÆ”8ÍêûÔò1J$70da0bfb-a858-4e9a-96e4-0a7873365e3b
+	java:S125£"<This block of commented-out lines of code should be removed.(†Áˆ8ÍêûÔò1J$5d996c56-1428-4333-be86-21d4a7a96677
+l
+java:S1172—"(Remove this unused method parameter "r".(˜ÒÔ¥8ÑêûÔò1J$0c6e996b-f850-408e-a7ff-16cb46de547f
+–
+java:S3776ª"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(õ«€À8ÓêûÔò1J$69753892-543b-43d7-a648-8698902334b9
+–	java:S100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é±äùÿÿÿÿ8ò³ıÔò1J$14cac501-38fa-49ae-b148-696bb9154999
+s
+java:S1128"+Remove this unused import 'java.io.Writer'.(Î”øÿÿÿÿ8İêûÔò1J$479c72c0-8a49-48a8-ba4e-7a207b3e33ef

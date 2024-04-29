@@ -1,84 +1,84 @@
 
-‡	java:S112Å"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$a3b4e760-09d5-40ab-8aa0-2c1f93ca94ce
+‡	java:S112Å"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$262aa601-cb05-4067-9403-8ce276b32fc5
 “
-java:S1192m"RDefine a constant instead of duplicating this literal "Unknown Command: " 9 times.(¹×Û´úÿÿÿÿJ$bd5fd131-3957-402f-be4b-b4c4364aad11
+java:S1192m"RDefine a constant instead of duplicating this literal "Unknown Command: " 9 times.(¹×Û´úÿÿÿÿJ$0f8f3bb6-8673-486e-a32f-ead9b0b6dc39
 ‡
-java:S1192"KDefine a constant instead of duplicating this literal ".\\tests\\" 3 times.(°ÂÔ®J$a46967e8-b9bf-4f21-8a8f-60a6af27259a
-Œ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÉ¯‡J$5e239a10-f6c9-4577-92fa-ad0a41c2fb37
-‘	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò®…³úÿÿÿÿJ$a5c9c31d-28cd-4d01-9a80-b13637566174
-’	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïöœşÿÿÿÿJ$25487ddc-47ee-4eb1-a8aa-a789fed39f7a
+java:S1192"KDefine a constant instead of duplicating this literal ".\\tests\\" 3 times.(°ÂÔ®J$3bab6d79-f34d-432c-8b4c-48ed0089dfcb
+Œ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÉ¯‡J$7a886756-476b-431f-ba3b-ee83e5fd64df
+‘	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò®…³úÿÿÿÿJ$a306b2bb-5a72-4b62-947c-f948e1893e48
+’	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïöœşÿÿÿÿJ$f0b3f8b9-e45b-48fc-86a4-664aa120adb6
 –
-java:S1104"UMake labyrinth a static final constant or non-public and provide accessors if needed.(ˆÿ¦ıÿÿÿÿJ$d966ca74-68ab-494b-8267-a6ba27942b42
+java:S1104"UMake labyrinth a static final constant or non-public and provide accessors if needed.(ˆÿ¦ıÿÿÿÿJ$f7c97df0-815e-4ef5-a170-0a9123613935
 d
-java:S5411|"(Use a primitive boolean expression here.(ûş©èJ$ae8613b8-8db4-4057-944f-5ea0d22e8ab6
+java:S5411|"(Use a primitive boolean expression here.(ûş©èJ$4b43ccd3-f64b-4e2f-aef6-b2d523e7e22c
 j
-java:S5411Ü"(Use a primitive boolean expression here.(ó„„ğûÿÿÿÿJ$ae18871d-ae59-4f62-afa0-23b016590a42
+java:S5411Ü"(Use a primitive boolean expression here.(ó„„ğûÿÿÿÿJ$a562c57b-4390-4234-b3ec-8f03359357fc
 e
-java:S5411ê"(Use a primitive boolean expression here.(ûœÒ¬J$6e7c67ea-1d1c-4bb2-8ca0-0fae65a867df
+java:S5411ê"(Use a primitive boolean expression here.(ûœÒ¬J$cfa81f9e-e0b3-4f2a-88d2-2f170f71029a
 j
-java:S5411ú"(Use a primitive boolean expression here.(ó„„ğûÿÿÿÿJ$becd4e99-0bb0-4b31-ac86-088ed863175f
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿJ$2e688835-1588-4c52-b2fe-85eba6b0abf2
-g
-java:S2259‡"IA "NullPointerException" could be thrown; "additemroom" is nullable here.(Ø’­«8¨ÕÑò1
-n
-java:S2259¤"KA "NullPointerException" could be thrown; "roomAddPerson" is nullable here.(Î¼Ù…ÿÿÿÿÿ8¨ÕÑò1
-`
-java:S2259°"BA "NullPointerException" could be thrown; "fake" is nullable here.(‘¤Á›8¨ÕÑò1
-]
-java:S2259£"?A "NullPointerException" could be thrown; "p" is nullable here.(ÜÚ‘¸8¨ÕÑò1
-b
-java:S2259º"DA "NullPointerException" could be thrown; "active" is nullable here.(şê§Ä8©ÕÑò1
-·
-java:S1130"{Remove the declaration of thrown exception 'java.io.FileNotFoundException', as it cannot be thrown from constructor's body.(âÉÿüJ$8c690183-c3b0-42ac-b188-63a60dd963e3
-k	java:S106"+Replace this use of System.out by a logger.(Âº™êúÿÿÿÿJ$f344f7fa-d2a4-48aa-8ebd-573bd0a29f91
-b
-java:S1075"&Remove this hard-coded path-delimiter.(°ÂÔ®J$d3e0b376-6a34-45f4-a6a4-b3fbcd7f9533
-b
-java:S1075"&Remove this hard-coded path-delimiter.(àÉ¯‡J$ce4cb9df-4d4d-462f-b79a-688577d8dfe1
-k	java:S106%"+Replace this use of System.out by a logger.(“å³ñüÿÿÿÿJ$5ad78ab5-a543-4870-9f8c-0d78977d9587
-i
-java:S1172("(Remove this unused method parameter "a".(Ìß«çøÿÿÿÿJ$6303573e-aab2-4b24-afae-cc6ebac81236
-|	java:S125)"<This block of commented-out lines of code should be removed.(Ì›©ûÿÿÿÿJ$86e77ca2-9de5-46e3-91b0-0be385940918
-f	java:S106-"+Replace this use of System.out by a logger.(Îú€J$032a3f0f-3ce2-4666-8c44-ec36e98a1dbb
-k	java:S1060"+Replace this use of System.out by a logger.(÷õŸŠúÿÿÿÿJ$4a12f535-50cb-49b8-baa5-f5451a022967
-	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûñæ±üÿÿÿÿJ$470d3d9d-ac7f-41f0-8df9-54046995de00
-”
-java:S3776="SRefactor this method to reduce its Cognitive Complexity from 129 to the 15 allowed.(Ûñæ±üÿÿÿÿJ$a5165b59-b015-4b93-983d-54446c50d20a
-k	java:S106m"+Replace this use of System.out by a logger.(¹×Û´úÿÿÿÿJ$ef67d01b-aa94-47c0-8359-6cf4c1e9dce1
-k	java:S106}"+Replace this use of System.out by a logger.(ò”ï²ıÿÿÿÿJ$4a21ed74-41a7-4cff-ae48-f833e10eaf0a
-l	java:S106²"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$a3e53e1f-36ee-436f-a072-f845c6284b43
+java:S5411ú"(Use a primitive boolean expression here.(ó„„ğûÿÿÿÿJ$d700c1a5-2d2f-4eeb-a2cc-005e9f1ab81a
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿJ$95e8e0dc-176f-4d02-9b70-2e3c6eb5db33
+†
+java:S2259°"BA "NullPointerException" could be thrown; "fake" is nullable here.(‘¤Á›8¨ÕÑò1J$042afb82-f121-49ae-abae-0de7338e290c
 
-java:S1764†"KCorrect one of the identical sub-expressions on both sides of operator "&&"(Û§î¶üÿÿÿÿJ$d2c414aa-923b-426e-b1f1-a6092fb50152
-l	java:S106‹"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$6dd19ea2-5dae-4af7-8e33-c4b45b740cc7
-l	java:S106¤"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$5613d99a-31d4-4a19-9974-6d5bb8bd0f0d
-l	java:S106¾"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$a2f2b96d-8b82-4854-95e2-1848e6298434
-g	java:S106Â"+Replace this use of System.out by a logger.(«‘ÙJ$746f5526-66ce-4f92-92a1-6a1438f371f2
-	java:S100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÂ÷şÿÿÿÿJ$c2b7d48d-7775-48ab-8afe-6f44f83e74ee
+java:S2259‡"IA "NullPointerException" could be thrown; "additemroom" is nullable here.(Ø’­«8¨ÕÑò1J$12b16449-663f-4f42-86b7-e428e1df080a
+ƒ
+java:S2259£"?A "NullPointerException" could be thrown; "p" is nullable here.(ÜÚ‘¸8¨ÕÑò1J$84ac6db5-bc15-4296-8571-188dcaee49d5
+”
+java:S2259¤"KA "NullPointerException" could be thrown; "roomAddPerson" is nullable here.(Î¼Ù…ÿÿÿÿÿ8¨ÕÑò1J$74fa1f5f-78e5-49c3-86e5-67b69ca1c23b
+ˆ
+java:S2259º"DA "NullPointerException" could be thrown; "active" is nullable here.(şê§Ä8©ÕÑò1J$f662fdaa-fbea-4227-947e-67166af9836b
+·
+java:S1130"{Remove the declaration of thrown exception 'java.io.FileNotFoundException', as it cannot be thrown from constructor's body.(âÉÿüJ$08078c9f-63de-427d-9228-1c98af69b260
+k	java:S106"+Replace this use of System.out by a logger.(Âº™êúÿÿÿÿJ$0dd67a2d-11b4-451f-b765-781e52ff3ce8
+b
+java:S1075"&Remove this hard-coded path-delimiter.(°ÂÔ®J$79698b1e-1e49-42e8-b150-790e0d6ff1e6
+b
+java:S1075"&Remove this hard-coded path-delimiter.(àÉ¯‡J$ab9937a4-b09f-4a9d-8857-0cd23542cdc3
+k	java:S106%"+Replace this use of System.out by a logger.(“å³ñüÿÿÿÿJ$4396c5fc-5eac-430b-809e-ae83f4db0543
+i
+java:S1172("(Remove this unused method parameter "a".(Ìß«çøÿÿÿÿJ$ce47d0a7-2ca9-4651-b61e-46084b3a9b2f
+|	java:S125)"<This block of commented-out lines of code should be removed.(Ì›©ûÿÿÿÿJ$db3b25be-5806-464e-a875-ab75d820b6d7
+f	java:S106-"+Replace this use of System.out by a logger.(Îú€J$149a1361-4483-4c2a-a095-57b26fe0d9bd
+k	java:S1060"+Replace this use of System.out by a logger.(÷õŸŠúÿÿÿÿJ$8bddc843-6a16-4431-8d76-abf7f71d8155
+	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûñæ±üÿÿÿÿJ$9d6f96ad-080b-476e-85c0-b0ea9e178931
+”
+java:S3776="SRefactor this method to reduce its Cognitive Complexity from 129 to the 15 allowed.(Ûñæ±üÿÿÿÿJ$4c62faae-168d-4d3a-91a7-957297a4193f
+k	java:S106m"+Replace this use of System.out by a logger.(¹×Û´úÿÿÿÿJ$a308e0c3-6f99-46f5-b87f-9f71b72380bc
+k	java:S106}"+Replace this use of System.out by a logger.(ò”ï²ıÿÿÿÿJ$4ed0a391-afc1-4c26-b334-72438031fb7f
+l	java:S106²"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$eff8072d-4a8f-43c2-b41d-2f39a4521603
+
+java:S1764†"KCorrect one of the identical sub-expressions on both sides of operator "&&"(Û§î¶üÿÿÿÿJ$da743b1e-e6da-4497-bbd4-9d7688476294
+l	java:S106‹"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$3fae39be-1e3b-4b67-9674-b8499c5ecc63
+l	java:S106¤"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$dde89d8a-133a-4a1a-b6eb-3cf0ec5470d4
+l	java:S106¾"+Replace this use of System.out by a logger.(â–Ä€ùÿÿÿÿJ$c21af7e9-f513-463f-b5e8-7ae7e05db4d2
+g	java:S106Â"+Replace this use of System.out by a logger.(«‘ÙJ$ed0a6307-838a-4f53-a06a-f80cf75cbf70
+	java:S100É"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÂ÷şÿÿÿÿJ$fdf79286-233d-483b-9e65-9d7c8b4dd457
 •
-java:S3776É"SRefactor this method to reduce its Cognitive Complexity from 160 to the 15 allowed.(îÂ÷şÿÿÿÿJ$d58f13e2-b77b-43c3-be59-7f14ae9190ee
+java:S3776É"SRefactor this method to reduce its Cognitive Complexity from 160 to the 15 allowed.(îÂ÷şÿÿÿÿJ$96712047-1c69-4900-9aa7-f32405c2287c
 ‚
-java:S1854Ó"@Remove this useless assignment to local variable "room1ToMerge".(×ğèßùÿÿÿÿJ$81564fac-02d7-4d0c-9d5e-256786b9dbbc
-
-java:S1130É"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(îÂ÷şÿÿÿÿ8–ÕÑò1
-g	java:S106ò"+Replace this use of System.out by a logger.(‘ÊìåJ$c3428295-ed9a-4802-bf33-fabc12b98ce7
-x	java:S125÷"<This block of commented-out lines of code should be removed.(æ‘Ì±J$50cdec56-a386-4e38-a73c-8197b0c6a84d
-x	java:S125"<This block of commented-out lines of code should be removed.(á½è…J$181f4eed-27ba-4ae4-a8ac-dd4ec741e4ce
-g	java:S106Š"+Replace this use of System.out by a logger.(Ñº™ØJ$cb31bc88-2729-4596-be9f-1641557c070d
-l	java:S106"+Replace this use of System.out by a logger.(¹ „ÉùÿÿÿÿJ$39894ca4-6dcf-4320-bba4-4b53f565a2a0
-g	java:S106“"+Replace this use of System.out by a logger.(³‡J$4e0cb712-cbbd-48bf-a9dc-c719ac075bb0
-g	java:S106¡"+Replace this use of System.out by a logger.(Ñº™ØJ$16299382-646c-43de-babf-d78a519fad46
-l	java:S106¨"+Replace this use of System.out by a logger.(¹ „ÉùÿÿÿÿJ$1952b2a3-6536-4ec0-a9a2-86c3f1aecc49
-g	java:S106«"+Replace this use of System.out by a logger.(³‡J$d6650a66-4bfe-495f-ba80-798cfb044cd7
-l	java:S106¸"+Replace this use of System.out by a logger.(ïõ³ÆÿÿÿÿÿJ$f5ea52a7-313a-43b4-acd4-ed9ddfa36c19
-g	java:S106Ä"+Replace this use of System.out by a logger.(Ñº™ØJ$67886445-b89c-4371-ad47-b8a921ea2cd0
-l	java:S106Ê"+Replace this use of System.out by a logger.(·¶µÅıÿÿÿÿJ$b8a80e0c-50f3-4cd3-81cf-c96c6b204e87
+java:S1854Ó"@Remove this useless assignment to local variable "room1ToMerge".(×ğèßùÿÿÿÿJ$d06fdd30-4245-445c-a779-9435816f84dd
+µ
+java:S1130É"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(îÂ÷şÿÿÿÿ8–ÕÑò1J$d291f326-448c-4b12-b9e5-ca45269ed06f
+g	java:S106ò"+Replace this use of System.out by a logger.(‘ÊìåJ$8007a8de-83e0-4b8b-8b4e-db7853992a8e
+x	java:S125÷"<This block of commented-out lines of code should be removed.(æ‘Ì±J$044a391a-e377-4df7-afa8-d6476a39d1d5
+x	java:S125"<This block of commented-out lines of code should be removed.(á½è…J$94fd7325-f6e3-4108-8147-c62e68921076
+g	java:S106Š"+Replace this use of System.out by a logger.(Ñº™ØJ$ce20922b-b3bb-4be3-9698-344342ec79fa
+l	java:S106"+Replace this use of System.out by a logger.(¹ „ÉùÿÿÿÿJ$57a596ba-c9ed-4264-a378-bd07d42017c7
+g	java:S106“"+Replace this use of System.out by a logger.(³‡J$cacb5aee-6e2d-4a91-a0b9-c12f8d261ce6
+g	java:S106¡"+Replace this use of System.out by a logger.(Ñº™ØJ$fb4bd059-f400-421d-a935-b8233d327083
+l	java:S106¨"+Replace this use of System.out by a logger.(¹ „ÉùÿÿÿÿJ$cd55b185-4170-4b61-b648-20a7bd5dc6dd
+g	java:S106«"+Replace this use of System.out by a logger.(³‡J$f6f5e26c-5dd5-4257-85d6-b017e0d3b0c3
+l	java:S106¸"+Replace this use of System.out by a logger.(ïõ³ÆÿÿÿÿÿJ$db2ab44c-a8b7-47fb-bffa-f17bdf33f791
+g	java:S106Ä"+Replace this use of System.out by a logger.(Ñº™ØJ$19d9fea5-75b0-4cef-bbb0-7d180b445fac
+l	java:S106Ê"+Replace this use of System.out by a logger.(·¶µÅıÿÿÿÿJ$dd7e2fba-2a85-4dfc-9855-ef729f275f95
 s
-java:S1481Ó"1Remove this unused "room1ToMerge" local variable.(×ğèßùÿÿÿÿJ$d79af71d-4e69-4861-a4d2-e721e20e0db8
-g	java:S106õ"+Replace this use of System.out by a logger.(Ñº™ØJ$c3ce96d9-8697-4b59-9f44-bdc7eb26e776
-x	java:S125û"<This block of commented-out lines of code should be removed.(Äè„ÃJ$a39d18d7-cbe7-41f3-b8be-03d54e2897da
-R
-java:S1128"0Remove this unused import 'Szkeleton.Szkeleton'.(¦€¤‰şÿÿÿÿ8§ÕÑò1
+java:S1481Ó"1Remove this unused "room1ToMerge" local variable.(×ğèßùÿÿÿÿJ$3ed74b32-790e-4b51-8805-09c6e0299314
+g	java:S106õ"+Replace this use of System.out by a logger.(Ñº™ØJ$930c1d3c-375c-4270-b9d5-ea03fe38b692
+x	java:S125û"<This block of commented-out lines of code should be removed.(Äè„ÃJ$52e2ab91-4b54-47b6-94ce-04a776cdbebc
+x
+java:S1128"0Remove this unused import 'Szkeleton.Szkeleton'.(¦€¤‰şÿÿÿÿ8§ÕÑò1J$535bbe2b-f8de-416a-be4a-dbabd1aca9e7
 ˆ
-java:S6541="ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 265 to 64, Complexity from 61 to 14, Nesting Level from 5 to 2, Number of Variables from 81 to 6.(Ûñæ±üÿÿÿÿJ$b55e2d97-6cfa-4c09-aad2-9d7d1a75557d
+java:S6541="ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 265 to 64, Complexity from 61 to 14, Nesting Level from 5 to 2, Number of Variables from 81 to 6.(Ûñæ±üÿÿÿÿJ$5416d882-6250-410d-b14f-b344889bbbc7
 ‰
-java:S6541É"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 166 to 64, Complexity from 49 to 14, Nesting Level from 8 to 2, Number of Variables from 31 to 6.(îÂ÷şÿÿÿÿJ$fac1f9f5-639a-489c-b310-4b89fefbd5e9
+java:S6541É"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 166 to 64, Complexity from 49 to 14, Nesting Level from 8 to 2, Number of Variables from 31 to 6.(îÂ÷şÿÿÿÿJ$9b106efb-16dc-4875-8f11-bd8bff6d1c84

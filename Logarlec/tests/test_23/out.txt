@@ -10,7 +10,7 @@ R1
         [Stun] false
         [TeacherProtected] false
         [GasProtected] false
-        [Item 0] Tranzi2 (Active) false (Connected) Tranzi1
+        [Item 0] Tranzi2 (Active) true (Connected) Tranzi1
 R2
     [Gas] false
     [Sticky] false

@@ -1,6 +1,11 @@
-random false
-init
-pickup 0
-pickup 0
-useitem 0
-save
+room R1
+room R2
+door R1 R2
+door R2 R1
+student AlreadyStunned
+student NotStunned
+cleaner C
+addperson R1 AlreadyStunned
+stun AlreadyStunned
+addperson R1 NotStunned
+addperson R2 C

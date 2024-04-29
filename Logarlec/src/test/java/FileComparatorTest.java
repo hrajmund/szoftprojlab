@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 public class FileComparatorTest {
-    static int i = 1;
+    static int i = 10;
     static GameManager gm = new GameManager();
 
     @ParameterizedTest
@@ -21,7 +21,7 @@ public class FileComparatorTest {
         try {
             String content1 = readFileContent(file1Path);
             String content2 = readFileContent(file2Path);
-            assertEquals(content1, content2, "A két fájl tartalma nem egyezik meg. test: ");
+            assertEquals(content1, content2, "A két fájl tartalma nem egyezik meg. test: " + file1Path );
         } catch (IOException e) {
             e.printStackTrace();
         }
