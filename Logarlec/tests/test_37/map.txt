@@ -33,6 +33,6 @@ log Logarlec
 tvsz Tvsz 1
 addperson R1 T1
 addperson R7 S1
-additem_p S Tvsz
+additem_p S1 Tvsz
 additem_r R2 Mask
 additem_r R3 Logarlec

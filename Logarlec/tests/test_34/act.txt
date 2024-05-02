@@ -1,30 +1,22 @@
 random false
 init
-//
 next
 next
 move R2
-//
 move R2
 move R2
 move R3
-//
 move R1
 move R1
 next
-//
 move R2
 move R2
 next
-//
 move R1
 move R1
 next
-//
 move R2
 move R2
 next
-//
 pickup 0
-//
 save
