@@ -4,45 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="rovidke kis codeWithMe">
-      <change beforePath="$PROJECT_DIR$/.idea/Logarlec.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Logarlec.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0cd7f6248f8c5595f55bd21ceed6c729a71c196b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1cad6a45f35317edd722db94c16bd92d453e6a7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d817ce72de6011f771a7c2ce0648b5c40230afe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31e5a3b9397b99f4f5c2a2433a04de6d4d538b4c" beforeDir="false" />
+    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="Schweitzee csinal pontok es vonal ugabuga">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e08896ac81709de8734733de9f0afea9e5da733" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fd7e0e5b9fe82bdea8b92d5475b5899e8deae47" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b6b00d0ee2e6c0f8305f23eedbca137e34a2ab3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b6b00d0ee2e6c0f8305f23eedbca137e34a2ab3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76cc0a4d27f51e22440c64fa7afd8f6b4b12ae21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a30cde3386cc0536245710ddc216d2519c4041c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a7b8cfb97cfa0731fa73a9de9e223f95ec30abd7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba2f47d99272918f911777aefd8caf53a62ebefb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be762abbfd4bc8d3149955ab9245be0c01f50ce5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c927d7b175bee4902d8980f6eb8d2d8239116f7e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d64ed52e21da26a460000eed579b6e8e768b1b21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e50322aff00223e26842985dc34b5a516e8b0bc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0831e65bed637c33ac310f7fb2fdac42cf3fa45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e66d0566f4471e3eb3fb0d8787b17e9461c4f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e66d0566f4471e3eb3fb0d8787b17e9461c4f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9bc6fb2807add5ecf9742f68d7cd3bc6344ec4c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9bc6fb2807add5ecf9742f68d7cd3bc6344ec4c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0cd7f6248f8c5595f55bd21ceed6c729a71c196b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/c/1cad6a45f35317edd722db94c16bd92d453e6a7a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/d/2d817ce72de6011f771a7c2ce0648b5c40230afe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/1/31e5a3b9397b99f4f5c2a2433a04de6d4d538b4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/e/3e08896ac81709de8734733de9f0afea9e5da733" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/f/3fd7e0e5b9fe82bdea8b92d5475b5899e8deae47" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/6/76cc0a4d27f51e22440c64fa7afd8f6b4b12ae21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/3/a30cde3386cc0536245710ddc216d2519c4041c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/7/a7b8cfb97cfa0731fa73a9de9e223f95ec30abd7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/a/ba2f47d99272918f911777aefd8caf53a62ebefb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/be762abbfd4bc8d3149955ab9245be0c01f50ce5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/9/c927d7b175bee4902d8980f6eb8d2d8239116f7e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/6/d64ed52e21da26a460000eed579b6e8e768b1b21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/5/e50322aff00223e26842985dc34b5a516e8b0bc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/0/f0831e65bed637c33ac310f7fb2fdac42cf3fa45" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/CustomNodeGraphExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/CustomNodeGraphExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_10/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_10/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_11/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_11/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_12/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_12/out.txt" afterDir="false" />
@@ -66,10 +42,8 @@
       <change beforePath="$PROJECT_DIR$/tests/test_31/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_31/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_32/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_32/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_33/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_33/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_34/act.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/act.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_34/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_34/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_35/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_35/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_37/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_37/map.txt" afterDir="false" />
     </list>
     <list id="66715bec-53ca-4ce4-97b1-b9eac75b8e5c" name="Changes by András" comment="Changes by András" />
     <list id="c4a8eba8-952f-4013-af81-dc5fd25833ca" name="Changes by matef" comment="" />
@@ -81,7 +55,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="10258" />
+    <option name="totalTimeSeconds" value="27612" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,7 +92,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CustomNodeGraphExample.executor": "Run",
+    "Application.GraphSwing.executor": "Run",
     "Application.Szkeleton.executor": "Run",
+    "Application.proba.executor": "Run",
     "JUnit.FileComparatorTest.executor": "Run",
     "JUnit.FileComparatorTest.testCompareFiles.[3] tests\\test_20\\assert.txt, tests\\test_20\\out.txt.executor": "Run",
     "JUnit.[engine:junit-jupiter]/[class:FileComparatorTest]/[test-template:testCompareFiles(java.lang.String, java.lang.String)]/[test-template-invocation:#3].executor": "Run",
@@ -133,12 +110,15 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/szoftprojlab/Logarlec",
+    "last_opened_file_path": "D:/targyak_kesz/Prog3/NHF_prog3/Hexa_LifeGame",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
@@ -158,8 +138,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -179,6 +159,11 @@
       <workItem from="1714419231396" duration="1093000" />
       <workItem from="1714471843034" duration="18000" />
       <workItem from="1714472319317" duration="2740000" />
+      <workItem from="1714684012212" duration="4620000" />
+      <workItem from="1714689841166" duration="395000" />
+      <workItem from="1714726796729" duration="5831000" />
+      <workItem from="1714738652049" duration="3283000" />
+      <workItem from="1714755685806" duration="10958000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
@@ -188,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714405014780</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Schweitzee csinal pontok es vonal ugabuga">
+      <option name="closed" value="true" />
+      <created>1714690235517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714690235517</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,13 +203,23 @@
     <MESSAGE value="Changes by András" />
     <MESSAGE value="Changes by rayy04" />
     <MESSAGE value="rovidke kis codeWithMe" />
-    <option name="LAST_COMMIT_MESSAGE" value="rovidke kis codeWithMe" />
+    <MESSAGE value="Schweitzee csinal pontok es vonal ugabuga" />
+    <option name="LAST_COMMIT_MESSAGE" value="Schweitzee csinal pontok es vonal ugabuga" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../gs-algo-2.0.jar!/com/keypoint/PngEncoder.class</url>
+          <line>348</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Modell.Room" memberName="items" />

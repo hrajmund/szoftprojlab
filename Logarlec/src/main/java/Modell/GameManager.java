@@ -357,7 +357,10 @@ public class GameManager {
             ArrayList<Person> peopleCopy = new ArrayList<>(people);
             for(Person p: peopleCopy){
                 if(!labyrinth.getPeople().contains((p)) || p.getStun()){
-                    p.setStun(false);
+                    if(p.getStun()){
+                        p.setStun(false);
+                        //pop_UP_WINDOW
+                    }
                     continue;
                 }
                 String commandName_;

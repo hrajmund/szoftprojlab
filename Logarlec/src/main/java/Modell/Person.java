@@ -70,7 +70,7 @@ public abstract class Person {
      * A személy nevének beállítása
      */
     public void setName(String s) {
-
+        name = s;
     }
     /**
      * A személy tárgyainak lekérdezése
