@@ -35,43 +35,44 @@ import org.graphstream.ui.view.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class CustomNodeGraphExample {
 
     public static class NodeData {
         
+        public NodeData(Node nnode,String label, Room room){
+            this.label = label;
+            this.node = node;
+            node.setAttribute("ui.label", label);
+            node.setAttribute("Room", room);
+        } 
+        
+        public Node node;
+        
         public Object Room;
         
-        private String label;
-
-        public NodeData(String label) {
-            this.label = label;
-        }
-
-        public String getLabel() {
-            return label;
-        }
+        public String label;
     }
     
-    private static String css = 
-            "node.default { fill-color: gray; size: 45px; text-size: 20;} " +
-            "node.gas { fill-color: rgb(0,100,0); size: 45px; text-size: 20;} " + 
-            "node.student { fill-color: grey; stroke-color: green; stroke-mode: plain; stroke-width: 5px; size: 45px; text-size: 20;}" +
-            "node.student_gas { fill-color: rgb(0,100,0); stroke-color: green; stroke-mode: plain; stroke-width: 5px; size: 45px; text-size: 20;}" +
-            
-            "edge.default { fill-color: black; size: 5px;} " +
-            "edge.coming { fill-color: red; size: 5px;}" +
-            "edge.going { fill-color: blue; size: 5px;}" +
-            "edge.two_way { fill-color: purple; size: 5px;}";
 
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, FileNotFoundException {
         // Új gráf létrehozása
         Graph graph = new SingleGraph("CustomNodeGraph");
 
         // Csúcsok hozzáadása a gráfhoz
+        File cssPath = new File("src/main/java/Grafikus/graphStyle.css");
+        StringBuilder css = new StringBuilder();
+        Scanner sc = new Scanner(cssPath);
+        while(sc.hasNextLine()) {
+            css.append(sc.nextLine());
+        }
+        sc.close();
         
-        graph.setAttribute("ui.stylesheet", css);
+        graph.setAttribute("ui.stylesheet", css.toString());
 
         Node nodeR1 = graph.addNode("R1");
         nodeR1.setAttribute("ui.class", "default");
@@ -139,7 +140,7 @@ public class CustomNodeGraphExample {
         DefaultView view = (DefaultView) v.getDefaultView();
         view.enableMouseOptions();
         
-        JPanel layout = new JPanel(new BorderLayout());
+        JPanel basePanel = new JPanel(new BorderLayout());
         JPanel top = new JPanel(new GridLayout(2,2));
         JPanel bottom = new JPanel(new GridLayout(2,1));
         
@@ -150,13 +151,26 @@ public class CustomNodeGraphExample {
         
         
         view.setMaximumSize(new Dimension(800, 400));
-        layout.add(top, BorderLayout.NORTH);
-        layout.add(view, BorderLayout.CENTER);
-        layout.updateUI();
-        frame.add(layout);
+        basePanel.add(top, BorderLayout.NORTH);
+        basePanel.add(view, BorderLayout.CENTER);
+        basePanel.updateUI();
+        frame.add(basePanel);
         frame.setSize(800, 800);
         frame.setVisible(true);
         
+        Thread.currentThread().sleep(3000);
+        
+        graph.addNode("test");
+        graph.addEdge("testR4", "test", "R4");
+        
+        Node testNode2 = graph.addNode("test2");
+        testNode2.setAttribute("ui.size", "45px");
+        testNode2.setAttribute("ui.color", 0.5);
+        
+        graph.addEdge("test2R4", "test2", "R4");
+        
+        Thread.currentThread().sleep(3000);
+        testNode2.setAttribute("ui.class", "student_gas");
     }
     
 }

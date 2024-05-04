@@ -1,0 +1,61 @@
+node{
+    fill-color: grey;
+    size: 45px;
+    text-size: 20;
+}
+
+node.default {
+    fill-color: grey;
+    size: 45px;
+    text-size: 20;
+}
+
+node.gas {
+    fill-color: rgb(0,100,0);
+    size: 45px;
+    text-size: 20;
+}
+
+node.student {
+    fill-color: grey;
+    stroke-color: rgb(30,255,30);
+    stroke-mode: plain;
+    stroke-width: 5px;
+    size: 45px;
+    text-size: 20;
+}
+
+node.student_gas {
+    fill-color: rgb(0,100,0);
+    stroke-color: rgb(30,255,30);
+    stroke-mode: plain;
+    stroke-width: 5px;
+    size: 45px;
+    text-size: 20;
+}
+
+
+edge{
+    fill-color: black;
+    size: 5px;
+}
+
+edge.default {
+    fill-color: black;
+    size: 5px;
+}
+
+edge.coming {
+    fill-color: red;
+    size: 5px;
+}
+
+edge.going {
+    fill-color: blue;
+    size: 5px;
+}
+
+edge.two_way {
+    fill-color: purple;
+    size: 5px;
+}
