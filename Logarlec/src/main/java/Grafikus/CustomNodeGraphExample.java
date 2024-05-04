@@ -20,9 +20,18 @@ import org.graphstream.ui.layout.Layouts;
 import org.graphstream.algorithm.*;
 import org.graphstream.algorithm.*;
 import org.graphstream.ui.swing_viewer.DefaultView;
+import org.graphstream.ui.swing_viewer.ViewPanel;
 import org.graphstream.ui.view.GraphRenderer;
 import org.graphstream.ui.view.View;
 import org.graphstream.ui.view.Viewer;
+import org.graphstream.ui.swing.*;
+import org.graphstream.ui.swing_viewer.*;
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.border.*;
+import org.graphstream.graph.*;
+import org.graphstream.graph.implementations.*;
+import org.graphstream.ui.view.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -109,7 +118,7 @@ public class CustomNodeGraphExample {
         
 
         
-       System.setProperty("org.graphstream.ui", "swing");
+       //System.setProperty("org.graphstream.ui", "swing");
 
         graph.setAttribute("ui.quality");
         graph.setAttribute("ui.antialias");
@@ -117,9 +126,11 @@ public class CustomNodeGraphExample {
 
         //Viewer viewer = new Viewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
         //viewer.enableAutoLayout(); // Itt engedélyezd az autolayoutot
+
+        Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
+        ViewPanel viewPanel = (ViewPanel) v.addDefaultView(false);
         
-        
-        Viewer v = graph.display();
+        //Viewer v = graph.display();
         
         v.enableAutoLayout();
 
@@ -140,7 +151,7 @@ public class CustomNodeGraphExample {
         
         view.setMaximumSize(new Dimension(800, 400));
         layout.add(top, BorderLayout.NORTH);
-        frame.add(view, BorderLayout.CENTER);
+        layout.add(view, BorderLayout.CENTER);
         layout.updateUI();
         frame.add(layout);
         frame.setSize(800, 800);
