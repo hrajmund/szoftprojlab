@@ -1,5 +1,6 @@
 package Modell;
 
+import Grafikus.GamePanel;
 import Szkeleton.Szkeleton;
 import java.io.*;
 import java.util.*;
@@ -12,11 +13,36 @@ public class GameManager {
      * Játékhoz tartozó labirintus
      */
     public Labyrinth labyrinth;
-    public GameManager() {}
+    
+    ///* változók amik a grafikus futtatáshoz kellenek*///
+    
+    private GamePanel gamePanel = null;
+    public GamePanel getGamePanel() {
+        return gamePanel;
+    }
+    private ArrayList<Person> studentProxyList = new ArrayList<>();
+    private int roundCounter = 0;
+    
+    public int getRoundCounter() {
+        return roundCounter;
+    }
+    
+    private int currentPlayerIndex = 0;
 
+    ///* változók amik a grafikus futtatáshoz kellenek VÉGE*///
+    
+    /**
+     * Üres konstruktor
+     */
+    public GameManager() {}
+    
+    /**
+     * Test futtatáshoz szükséges konstruktor
+     */
     public GameManager(String test) throws FileNotFoundException {
         runtest(test);
     }
+    
     public void runtest(String test){
         String inputFilepath = ".\\tests\\" + test + "\\" + "map.txt";
         ReadMap(inputFilepath);
@@ -35,6 +61,10 @@ public class GameManager {
             System.out.println("A fájl nem található: " + e.getMessage());
         }
     }
+    
+    /**
+     * Játék inicializálása, csak manuális teszt és cmd futtatáshoz
+     */
     public GameManager(int a) throws IOException {
         //String inputFilepath = ".\\Logarlec\\tests\\game\\game_input.txt";
         String inputFilepath = ".\\game\\map.txt";
@@ -52,13 +82,14 @@ public class GameManager {
             labyrinth.getRooms().get(0).addPerson(player);
             player.setCurrentRoom(labyrinth.getRooms().get(0));
         }
-
         PlayGame(scanner);
         scanner.close();
     }
-
-
-    //MÁR CSINÁLJA BARACZK berecki
+    
+    
+    /**
+     * A játék térkép inicializálása
+     */
     public void ReadMap(String filename) {
         Labyrinth l = new Labyrinth();
         l.setGameManager(this);
@@ -327,6 +358,10 @@ public class GameManager {
         }
     }
 
+    
+    /**
+     * Játék futtatása, csak manuális teszt és cmd futtatáshoz
+     */ 
     public void PlayGame(Scanner scanner) throws IOException {
         String line = scanner.nextLine();
         Boolean random= false;
@@ -521,4 +556,82 @@ public class GameManager {
             //(és ez nem a randomgergqrva függvény miatt, azelőtt is fennállt a hiba)
         }
     }
+    
+    /**
+     * Játék inicializálása grafikus futtatáshoz
+     */
+    public void GameManager(GamePanel gp, List<String> playerNames){
+        this.gamePanel = gp;
+        ReadMap(".\\game\\map.txt");
+        labyrinth.setGameManager(this);
+        ArrayList<BaseItem>Items= new ArrayList<>();
+        for(String playerName : playerNames){
+            Student player = new Student(playerName);
+            labyrinth.addStudent(player);
+            player.setLabyrinth(labyrinth);
+            labyrinth.getRooms().get(0).addPerson(player);
+            player.setCurrentRoom(labyrinth.getRooms().get(0));
+        }
+        studentProxyList = labyrinth.getStudents();
+        currentPlayerIndex = 0;
+        gamePanel.setCurrentStudent(studentProxyList.get(currentPlayerIndex));
+    }
+    
+    public void movePlayer(Student player, Room room){
+        //mozgás xd
+        player.move(room);
+        this.next();
+    }
+    
+    public void next(){
+        
+        if(labyrinth.getStudents().isEmpty() || labyrinth.Game_End){
+            gamePanel.GameEndPopUp();
+            return;
+        }
+        
+        currentPlayerIndex++;
+        if(currentPlayerIndex >= studentProxyList.size()){
+            currentPlayerIndex = 0;
+            labyrinth.Randomizer();
+            labyrinth.tick();
+            roundCounter++;
+        }
+        
+        while(!labyrinth.getStudents().contains(studentProxyList.get(currentPlayerIndex)) && studentProxyList.get(currentPlayerIndex).getStun()){
+               
+            if (studentProxyList.get(currentPlayerIndex).getStun()){
+                gamePanel.StunnedPopUp(studentProxyList.get(currentPlayerIndex));
+                studentProxyList.get(currentPlayerIndex).setStun(false);
+            }
+            
+            if(!labyrinth.getStudents().contains(studentProxyList.get(currentPlayerIndex))) {
+                studentProxyList.remove(currentPlayerIndex);
+            }
+            currentPlayerIndex++;
+            if(currentPlayerIndex >= studentProxyList.size()){
+                currentPlayerIndex = 0;
+                labyrinth.Randomizer();
+                labyrinth.tick();
+                roundCounter++;
+            }
+        }
+        gamePanel.setCurrentStudent(studentProxyList.get(currentPlayerIndex));
+    }
+    
+    public void pickUpItem(Student player, int itemRoomIndex){
+        player.pickUpItem(player.getCurrentRoom().getItems().get(itemRoomIndex));
+    }
+    
+    public void putDownItem(Student player, int itemIndex){
+        player.putDownItem(player.getItems().get(itemIndex));
+    }
+    
+    public void useItem(Student player, int itemIndex){
+        player.UseItem(itemIndex);
+    }
+    
+
+
+
 }

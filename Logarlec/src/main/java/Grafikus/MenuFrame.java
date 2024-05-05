@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MenuFrame {
-    JTextField nameField = new JTextField();
-    DefaultListModel<String> listModel = new DefaultListModel<>();
-    JList<String> nameList = new JList<>(listModel);
+    protected JTextField nameField = new JTextField();
+    protected DefaultListModel<String> listModel = new DefaultListModel<>();
+    protected JList<String> nameList = new JList<>(listModel);
     
     public MenuFrame() {
         JFrame frame = new JFrame("Menü");

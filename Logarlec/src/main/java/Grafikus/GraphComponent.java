@@ -6,13 +6,13 @@ import org.graphstream.graph.Graph;
 
 public class GraphComponent {
     
-    private Graph graph;
+    protected Graph graph;
     
     public Graph getGraph() {
         return graph;
     }
     
-    public void CurrStudentChangered(Student OLD, Student NEW){
+    public void CurrStudentChanged(Student OLD, Student NEW){
         
     }
     

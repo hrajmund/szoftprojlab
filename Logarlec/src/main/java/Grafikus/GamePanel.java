@@ -7,21 +7,22 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GamePanel {
-    
-    static private GraphComponent graph = null;
+
+    protected static GraphComponent graph = null;
     GameManager gameManager = null;
-    Student currentStudent = null;
+    Person currentStudent = null;
     BaseItem pickedInventoryItem = null;
     BaseItem pickedRoomItem = null;
     Room pickedRoom = null;
     
-    JButton pickUpButton = new JButton("Felvesz");
-    JButton putDownButton = new JButton("Letesz");
-    JButton useButton = new JButton("Használ");
-    JButton moveButton = new JButton("Mozog");
-    JButton nextButton = new JButton("Következő");
+    protected JButton pickUpButton = new JButton("Felvesz");
+    protected JButton putDownButton = new JButton("Letesz");
+    protected JButton useButton = new JButton("Használ");
+    protected JButton moveButton = new JButton("Mozog");
+    protected JButton nextButton = new JButton("Következő");
     
-    public void setCurrentStudent(Student student) {
+    
+    public void setCurrentStudent(Person student) {
         currentStudent = student;
     }
 
@@ -30,26 +31,60 @@ public class GamePanel {
     }
     
     
-    public void DeadPopUp(Student s){
+    public void DeadPopUp(Person s){
         JOptionPane.showMessageDialog(null, s.getName() + " meghalt!");
     }
     
-    public void StunnedPopUp(Student s){
+    public void StunnedPopUp(Person s){
         JOptionPane.showMessageDialog(null, s.getName() + " megbénult!");
     }
     
-    public void GameEndPopUp(Student s){
+    public void GameEndPopUp(){
         
+    }
+    
+    public void setPickedRoom(Room r){
+        pickedRoom = r;
     }
     
     
     
     
     
+    ///ITEM actionok///
+    
+    protected class inventoryButtonListener implements ActionListener {
+        
+        int invButtonIndex;
+        
+        public inventoryButtonListener(int itemIndex){
+            invButtonIndex = itemIndex;
+        }
+        
+        public void actionPerformed(ActionEvent e) {
+            if(currentStudent.getItems().size() >= invButtonIndex){
+                pickedInventoryItem = currentStudent.getItems().get(invButtonIndex);
+            }
+        }
+    }
+    
+    protected class roomItemButtonListener implements ActionListener {
+        
+        int roomButtonIndex;
+        
+        public roomItemButtonListener(int itemIndex){
+            roomButtonIndex = itemIndex;
+        }
+        
+        public void actionPerformed(ActionEvent e) {
+            pickedRoomItem = pickedRoom.getItems().get(roomButtonIndex);
+        }
+    }
+    
     
     ///GOMBOK ACTION LISTENERJEI///
-    
-    class pickUpButtonListener implements ActionListener {
+
+    protected class pickUpButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             if (pickedRoomItem != null) {
 
@@ -57,8 +92,8 @@ public class GamePanel {
             }
         }
     }
-    
-    class putDownButtonListener implements ActionListener {
+
+    protected class putDownButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             if (pickedInventoryItem != null) {
 
@@ -66,24 +101,24 @@ public class GamePanel {
             }
         }
     }
-    
-    class useButtonListener implements ActionListener {
+
+    protected class useButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             if (pickedInventoryItem != null) {
 
             }
         }
     }
-    
-    class moveButtonListener implements ActionListener {
+
+    protected class moveButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             if (pickedRoom != null) {
 
             }
         }
     }
-    
-    class nextButtonListener implements ActionListener {
+
+    protected class nextButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
 
         }
