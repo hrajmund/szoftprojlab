@@ -1,0 +1,21 @@
+
+r
+java:S1066q"/Merge this if statement with the enclosing one.(Óõå©8Œ±‡Ùó1J$f0dd1800-980e-43f1-a9af-533d1d7990e5
+w
+java:S1066r"/Merge this if statement with the enclosing one.(¦ƒ›¶şÿÿÿÿ8±‡Ùó1J$c2375e5f-54ce-4257-a89f-a3739e791f3d
+¸
+java:S1319N"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óşÿÿÿÿ8±‡Ùó1J$62f3a5eb-a722-4de0-81f5-3df04f2fd11b
+¨
+java:S1319U"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8±‡Ùó1J$bc8a22cd-0b8f-4a2c-bd00-ef59e2b80a38
+p
+java:S5411p"(Use a primitive boolean expression here.(§‰ÈÄûÿÿÿÿ8íÎïó1J$1b63d72a-6c3d-437f-aa8d-2360098a9242
+k
+java:S5411q"(Use a primitive boolean expression here.(Óõå©8íÎïó1J$b5ffe48e-2813-46f5-a2bf-6eca348664fe
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8‘±‡Ùó1J$cf73921a-7ee3-415c-a3cb-4d11a23b42c2
+	java:S125‚"<This block of commented-out lines of code should be removed.(ø¸Ó¡8£±‡Ùó1J$08e9a659-4ec6-4574-9c32-b832d0488dd3
+‘	java:S100Ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÎ¹Ğ8ª±‡Ùó1J$4f708c7a-3ae8-4650-9798-4435cd5833fa
+‘	java:S100Ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼·äö8¬±‡Ùó1J$6fe97e16-0589-41c9-9491-e8457fd2678d
+—
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ˆĞïó1J$22261bf6-f754-4a0d-b443-88c7aaaacbcd
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8˜Ğïó1J$582ab592-69a9-4cca-932b-60e78ef3a5bf

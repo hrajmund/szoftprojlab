@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="MEGVAN GECC JO A GRAF">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="extrazzuk a dolgokat he">
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b67c5f58abcd608afe7df88a23a0f2dd74cdbe3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a1234edcc5c375fcc86ac6b84e312e88369b468f" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/b/5b67c5f58abcd608afe7df88a23a0f2dd74cdbe3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a1234edcc5c375fcc86ac6b84e312e88369b468f" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Grafikus/graphStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Grafikus/MenuFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" afterDir="false" />
@@ -23,11 +22,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9bc6fb2807add5ecf9742f68d7cd3bc6344ec4c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9bc6fb2807add5ecf9742f68d7cd3bc6344ec4c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/CustomNodeGraphExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/CustomNodeGraphExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/BaseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/BaseItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_10/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_10/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_11/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_11/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_12/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_12/out.txt" afterDir="false" />
@@ -64,7 +65,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="31044" />
+    <option name="totalTimeSeconds" value="34244" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,7 +132,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -177,7 +178,8 @@
       <workItem from="1714738652049" duration="3283000" />
       <workItem from="1714755685806" duration="11035000" />
       <workItem from="1714818241634" duration="1197000" />
-      <workItem from="1714856017131" duration="2506000" />
+      <workItem from="1714856017131" duration="2598000" />
+      <workItem from="1714921056117" duration="3342000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
@@ -211,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714819440766</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="extrazzuk a dolgokat he">
+      <option name="closed" value="true" />
+      <created>1714858600108</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714858600108</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +246,8 @@
     <MESSAGE value="Schweitzee csinal pontok es vonal ugabuga" />
     <MESSAGE value="áááááááááá" />
     <MESSAGE value="MEGVAN GECC JO A GRAF" />
-    <option name="LAST_COMMIT_MESSAGE" value="MEGVAN GECC JO A GRAF" />
+    <MESSAGE value="extrazzuk a dolgokat he" />
+    <option name="LAST_COMMIT_MESSAGE" value="extrazzuk a dolgokat he" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
@@ -257,5 +268,9 @@
         <PinnedItemInfo parentTag="Modell.Room" memberName="items" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

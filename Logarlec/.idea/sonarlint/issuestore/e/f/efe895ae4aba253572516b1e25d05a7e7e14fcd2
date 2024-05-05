@@ -1,0 +1,87 @@
+
+
+java:S1192O"JDefine a constant instead of duplicating this literal "ui.class" 13 times.(™¼€Œ8ƒ·£¬ô1J$d2b0b461-aa49-4e08-9f18-6a03a25dde1a
+‹
+java:S11921"IDefine a constant instead of duplicating this literal "ui.label" 7 times.(“¯?8ƒ·£¬ô1J$71c7bbd5-b242-4d77-822f-39cd24dac2d9
+‹
+java:S1192O"HDefine a constant instead of duplicating this literal "default" 7 times.(™¼€Œ8ƒ·£¬ô1J$f6a4c666-916b-4d00-9113-6f8902b23f81
+“
+java:S11045"PMake node a static final constant or non-public and provide accessors if needed.(Ù‚é÷8„·£¬ô1J$966fb7a7-413e-4b13-a557-c5ae337c9567
+˜
+java:S11047"PMake Room a static final constant or non-public and provide accessors if needed.(®ëÆıúÿÿÿÿ8„·£¬ô1J$9c7b1a8f-03a1-4ab1-a893-9ef1191e31d3
+“
+java:S11049"QMake label a static final constant or non-public and provide accessors if needed.(¡ˆ8Ùã£¬ô1J$9803b28c-a515-4c75-90ca-96b1aab78521
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛİªÛøÿÿÿÿ8…·£¬ô1J$5e1c88cb-806f-4b8d-9755-bfb643d21b58
+ª
+java:S41650"bRemove this useless assignment; "node" already holds the assigned value along all execution paths.(›Çáıÿÿÿÿ8“·£¬ô1J$e09de575-67ba-4231-a5c8-e9925f0daf4f
+–	java:S1167"ORename this field "Room" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ëÆıúÿÿÿÿ8–·£¬ô1J$c3adac5c-3829-40e0-a49f-b5cab47b7341
+o
+java:S1172.",Remove this unused method parameter "nnode".(ğÌèû8—·£¬ô1J$9a6d324a-d070-4589-9758-f2a3a261c9e8
+~
+java:S1854’":Remove this useless assignment to local variable "bottom".(Ì¬ºº8˜·£¬ô1J$23fe9738-1f8d-4df3-98be-35675aee05fc
+
+java:S1854…"=Remove this useless assignment to local variable "viewPanel".(ìÍÇÁ8˜·£¬ô1J$0b973d72-9fed-4b3f-9c93-246775bebcc6
+~	java:S125{"<This block of commented-out lines of code should be removed.(…Šƒì8Ÿ·£¬ô1J$c8f45a2e-59b4-488a-a9b0-c9f03e18f862
+„	java:S125"<This block of commented-out lines of code should be removed.(ä‰‘¸øÿÿÿÿ8Ÿ·£¬ô1J$a199a7a3-8d73-4ac2-8ccc-1c0a47581eb2
+r
+java:S1481…".Remove this unused "viewPanel" local variable.(ìÍÇÁ8 ·£¬ô1J$713663d3-2154-4e9b-9180-99b216637133
+„	java:S125‡"<This block of commented-out lines of code should be removed.(äèÃéùÿÿÿÿ8 ·£¬ô1J$24daf8a5-5012-4f2a-a9ef-2949805fe74a
+
+java:S3252Œ"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8¡·£¬ô1J$91335924-bcee-489d-bb7e-9b7a64a98402
+o
+java:S1481’"+Remove this unused "bottom" local variable.(Ì¬ºº8¢·£¬ô1J$53d07c4a-ca41-4c75-9dd0-07927dc63472
+y
+java:S2209¢"5Change this instance-reference to a static reference.(ÔĞó8¤·£¬ô1J$c6e2d43d-4145-4b74-a04e-3bac403778d8
+y
+java:S2209­"5Change this instance-reference to a static reference.(ÔĞó8¤·£¬ô1J$320c9339-08d0-47a8-89af-246a69cc5ab9
+w
+java:S16560"/Remove or correct this useless self-assignment.(›Çáıÿÿÿÿ8¥·£¬ô1J$0b1c1c76-fc29-43f4-86b9-89e531ec90b4
+n
+java:S1128"+Remove this unused import 'Modell.Student'.(ûæ¹’8¥·£¬ô1J$55fdc65c-791f-45d6-a678-724667fe0a12
+x
+java:S1128"6Remove this unused import 'org.graphstream.algorithm'.(íŒğ8¥·£¬ô1J$3a06c9b4-87c4-4411-9fe1-70edcf9e2a21
+•
+java:S1128"MRemove this unused import 'org.graphstream.graph.implementations.MultiGraph'.(åµ­‘ÿÿÿÿÿ8¥·£¬ô1J$99a19cfe-d39c-4520-8ee6-098178a5555d
+‚
+java:S1128
+":Remove this unused import 'org.graphstream.graph.Element'.(™î°îøÿÿÿÿ8¥·£¬ô1J$61409035-48db-4576-9099-71ead155692e
+€
+java:S1128"=Remove this unused import 'org.graphstream.stream.ProxyPipe'.(™¤–Ê8¥·£¬ô1J$863de1eb-6e07-4e63-bdd5-0d7c95667a48
+‚
+java:S1128":Remove this unused import 'org.graphstream.stream.Source'.(ÆåËşÿÿÿÿ8¥·£¬ô1J$35ca3ef2-6c80-4121-a608-c1de5fe03968
+~
+java:S1128";Remove this unused import 'org.graphstream.ui.geom.Point3'.(Îé“ä8¥·£¬ô1J$c143264a-5be1-4fda-aa85-38db554a4dd6
+˜
+java:S1128"PRemove this unused import 'org.graphstream.ui.graphicGraph.GraphPosLengthUtils'.(Ö•Ñ±üÿÿÿÿ8¦·£¬ô1J$981787d2-e29e-4edf-b0d3-716ef1bc3929
+‘
+java:S1128"IRemove this unused import 'org.graphstream.ui.graphicGraph.GraphicGraph'.(ïÓ÷úÿÿÿÿ8¦·£¬ô1J$17fe7f76-8d97-4fc2-9fa1-1963eb74d585
+Š
+java:S1128"GRemove this unused import 'org.graphstream.ui.graphicGraph.StyleGroup'.(èÁ­ù8¦·£¬ô1J$e99d5bf9-8497-44f3-9bb1-c9747a1d2f38
+…
+java:S1128"=Remove this unused import 'org.graphstream.ui.layout.Layout'.(‘Í€ıÿÿÿÿ8¦·£¬ô1J$f32ac743-be28-46d9-92d5-df00ba6db0a0
+†
+java:S1128"CRemove this unused import 'org.graphstream.ui.layout.LayoutRunner'.(£Ä¡¿8¦·£¬ô1J$172943e1-2a64-441a-a511-a9cd991608e4
+
+java:S1128">Remove this unused import 'org.graphstream.ui.layout.Layouts'.(ê‰Î…8¦·£¬ô1J$24102347-7968-4676-9626-c499ecee6e69
+x
+java:S1128"6Remove this unused import 'org.graphstream.algorithm'.(íŒğ8¦·£¬ô1J$49661427-3bbe-418a-8ebb-6a6b79167427
+x
+java:S1128"6Remove this unused import 'org.graphstream.algorithm'.(íŒğ8¦·£¬ô1J$a8318a7d-d933-46a0-b5a7-746662c63101
+…
+java:S1128"BRemove this unused import 'org.graphstream.ui.view.GraphRenderer'.(·¸¼°8¦·£¬ô1J$2a5bcd80-4d9f-48c7-bbc1-f8fda0ea2540
+
+java:S1128"9Remove this unused import 'org.graphstream.ui.view.View'.(§¹™†ıÿÿÿÿ8¦·£¬ô1J$578966a3-14f4-4e6b-8d28-2d61e8f46c13
+x
+java:S1128"5Remove this unused import 'org.graphstream.ui.swing'.(îÚç8¦·£¬ô1J$9f22695f-e4d4-405a-877d-45e8336c7554
+w
+java:S1128"/Remove this unused import 'javax.swing.border'.(Õ˜ÀÆÿÿÿÿÿ8¦·£¬ô1J$f6c1cdec-2405-44ae-a659-d759e53c99ec
+u
+java:S1128 "2Remove this unused import 'org.graphstream.graph'.(«ë¡Ï8¦·£¬ô1J$ad8fd521-baa9-429d-b3bd-be9cdb411c0d
+…
+java:S1128!"BRemove this unused import 'org.graphstream.graph.implementations'.(éìÿ£8¦·£¬ô1J$377b5c2b-799e-470b-8542-b40dbabf97da
+|
+java:S1128""4Remove this unused import 'org.graphstream.ui.view'.(ªÒé™ıÿÿÿÿ8¦·£¬ô1J$3a530d6e-abc8-405b-a358-d6ddc5a3da84
+p
+java:S1128$"(Remove this unused import 'javax.swing'.(Ìí¿Üüÿÿÿÿ8¦·£¬ô1J$97fa5a78-2c1a-4704-8286-f136d81e1351
+h
+java:S1128%"%Remove this unused import 'java.awt'.(ï´µ©8¦·£¬ô1J$846918eb-68e6-404e-b052-c76f43c548a8

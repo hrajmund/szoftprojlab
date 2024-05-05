@@ -1,5 +1,6 @@
 package Modell;
 
+import java.io.File;
 import java.io.PrintWriter;
 
 /**
@@ -74,6 +75,13 @@ public abstract class BaseItem implements IRound{
     public Tranzisztor isConnected(){
         return null;
     }
+    
+    protected String path;
+    
+    public File getPath() {
+        return new File(path);
+    }
+    
     /**
      *A tárgy párjának beállítása, nem csinál semmit
      */

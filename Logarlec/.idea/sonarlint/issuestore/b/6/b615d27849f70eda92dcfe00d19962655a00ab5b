@@ -1,10 +1,4 @@
 
-¹
-java:S1319Ä"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(†İÂ˜üÿÿÿÿ8Ö—Ûò1J$1de4fabe-e076-464f-93e6-fcd69535f46b
-´
-java:S1319Ç"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8‚Ö—Ûò1J$e7802f1d-e23e-472f-af99-1ee7f34adc88
-¹
-java:S1319Î"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òç¡•ùÿÿÿÿ8‚Ö—Ûò1J$83fbf85f-2dc0-495f-b03c-4740c115463a
 •
 java:S1104"RMake random a static final constant or non-public and provide accessors if needed.(æÖÿÅ8‚Ö—Ûò1J$4737b254-03a6-4f0b-9f0b-c4b63469079c
 ¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8„Ö—Ûò1J$6812fac9-1831-4a1c-8614-01d43a724779
@@ -24,7 +18,6 @@ p
 java:S1172|"(Remove this unused method parameter "r".(Â‰¤Êşÿÿÿÿ8Ø×—Ûò1J$465668f2-f6b0-4829-bf9c-6d673406fd51
 ~	java:S125}"<This block of commented-out lines of code should be removed.(ìî¦É8Ø×—Ûò1J$48141c51-0718-4247-9bc1-3f5332deb014
 „	java:S125€"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ø×—Ûò1J$66ab99c0-1419-4b62-8556-31b9ddfbd4a1
-–	java:S100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÕàŞÿÿÿÿÿ8Ü×—Ûò1J$bb15d236-8c46-468a-8157-f4fab87c506a
 ›
 java:S3776Ò"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ºÕàŞÿÿÿÿÿ8İ×—Ûò1J$025607dc-dcc5-4969-9564-dc54be6f3bbf
 „	java:S125Ó"<This block of commented-out lines of code should be removed.(¬±Š®ÿÿÿÿÿ8İ×—Ûò1J$1195a26f-8571-4df5-a565-5ba5072a54cb
@@ -32,13 +25,10 @@ java:S3776Ò"RRefactor this method to reduce its Cognitive Complexity from 16 t
 ¤
 java:S3923Ü"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Şş¾µüÿÿÿÿ8Ş×—Ûò1J$84f663d5-f1f5-44ea-a216-fc8a5040e3b8
 „	java:S125á"<This block of commented-out lines of code should be removed.(¡ÖÃÇøÿÿÿÿ8Ş×—Ûò1J$2dcb1ba5-6e43-48b5-9d02-6a31a39503e0
-–	java:S100ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûû£”üÿÿÿÿ8ß×—Ûò1J$09e06fe2-e5da-42c7-87d4-a6dabf7c4d0a
 ›
 java:S3776ê"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ûû£”üÿÿÿÿ8ß×—Ûò1J$bd3da466-ea7a-4a8e-9b44-365598f79e21
 g
 java:S2119ë"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8ß×—Ûò1J$ef40c967-8744-4e6d-bcbb-f998c55a17e1
-v
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8³ÈÛò1J$da3d34b1-5afe-4a82-8487-c7290982d786
 n
 java:S1068)"&Remove this unused "GM" private field.(ĞÄİ‰üÿÿÿÿ8ä×—Ûò1J$3e6a765a-6ccb-452a-90b4-967bf462e104
 ~

@@ -57,7 +57,8 @@ public class CustomNodeGraphExample {
         public String label;
     }
     
-
+    
+    
 
     public static void main(String[] args) throws InterruptedException, FileNotFoundException {
         // Új gráf létrehozása
@@ -172,5 +173,7 @@ public class CustomNodeGraphExample {
         Thread.currentThread().sleep(3000);
         testNode2.setAttribute("ui.class", "student_gas");
     }
+    
+    
     
 }

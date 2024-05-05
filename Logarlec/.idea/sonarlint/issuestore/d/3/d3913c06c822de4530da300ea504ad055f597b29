@@ -1,5 +1,5 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿJ$76cc6e88-121e-4e05-9cd1-3982b7a3e0c5
-	java:S100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›à¶ôşÿÿÿÿJ$e68929ec-220d-4676-97f0-830047b400da
-
-java:S3038b"O"tick" is defined in the "IRound" interface and can be removed from this class.(üû¿ÇùÿÿÿÿJ$df82335a-6f63-4711-92dc-2a6f3c88eca4
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ïò–Ëô1J$86985d05-9f94-411d-a9df-02f8d99cb2a8
+•	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›à¶ôşÿÿÿÿ8øÍ˜Ëô1J$fc920fbc-a19c-43b1-8e90-20a7a18e05a3
+—
+java:S3038j"O"tick" is defined in the "IRound" interface and can be removed from this class.(üû¿Çùÿÿÿÿ8ùÍ˜Ëô1J$61b4d862-c186-4944-b5ad-d3059056f25c
