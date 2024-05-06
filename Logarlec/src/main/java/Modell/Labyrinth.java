@@ -245,6 +245,10 @@ public class Labyrinth implements IRound {
         //same for teacher
         if(!teachers.isEmpty()){
             for(Person t: teachers){
+                if(t.getStun()){
+                    t.setStun(false);
+                    continue;
+                }
                 int percent=rand.nextInt(10);
                 if(percent<3){
                     int doingthing=rand.nextInt(2);

@@ -21,7 +21,7 @@ public class GameManager {
         return gamePanel;
     }
     private ArrayList<Person> studentProxyList = new ArrayList<>();
-    private int roundCounter = 0;
+    private int roundCounter = 1;
     
     public int getRoundCounter() {
         return roundCounter;
@@ -564,7 +564,6 @@ public class GameManager {
         this.gamePanel = gp;
         ReadMap(".\\game\\map.txt");
         labyrinth.setGameManager(this);
-        ArrayList<BaseItem>Items= new ArrayList<>();
         for(String playerName : playerNames){
             Student player = new Student(playerName);
             labyrinth.addStudent(player);
