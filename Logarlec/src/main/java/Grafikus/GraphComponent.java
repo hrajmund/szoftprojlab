@@ -7,10 +7,9 @@ import org.graphstream.graph.Node;
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.implementations.SingleGraph;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
 
 public class GraphComponent {
     
@@ -19,10 +18,29 @@ public class GraphComponent {
     String style = "ui.style";
     
     GameManager gm;
+
+    File cssPath = new File("src/main/java/Grafikus/graphStyle.css");
+    
+    StringBuilder css = new StringBuilder();
+    
+    {
+        Scanner sc = null;
+        try {
+            sc = new Scanner(cssPath);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        while(sc.hasNextLine()) {
+            css.append(sc.nextLine());
+        }
+        sc.close();
+    }
+    
     
     public GraphComponent(GameManager gameManager){
         this.gm = gameManager;
         graph = new SingleGraph("GameGraph");
+        graph.setAttribute("ui.stylesheet", css.toString());
     }
     
     public Graph getGraph() {
