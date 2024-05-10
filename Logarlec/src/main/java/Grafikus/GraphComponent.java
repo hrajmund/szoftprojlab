@@ -9,6 +9,7 @@ import org.graphstream.graph.implementations.SingleGraph;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class GraphComponent {
@@ -65,15 +66,34 @@ public class GraphComponent {
     }
     
     public void CurseHappened(CursedRoom cr){
-        
+        Node n = graph.getNode(cr.getName());
+        ArrayList<Edge> edges = new ArrayList<>();
+
+        for (Edge edge : n) {
+            edges.add(edge);
+        }
+        for (Edge edge : edges) {
+            graph.removeEdge(edge);
+        }
+        cr.getOutgoingDoors().forEach(r -> addEdge(cr, r));
+        cr.getIncomingDoors().forEach(r -> addEdge(r, cr));
     }
     
-    public void RoomSplit(Room old1, Room old2, Room newRoom){
+    public void RoomSplit(Room originalRoom, Room newRoom){
+        originalRoom.getOutgoingDoors().forEach(r -> addEdge(originalRoom, r));
+        originalRoom.getIncomingDoors().forEach(r -> addEdge(r, originalRoom));
         
+        addNode(newRoom);
+        newRoom.getOutgoingDoors().forEach(r -> addEdge(newRoom, r));
+        newRoom.getIncomingDoors().forEach(r -> addEdge(r, newRoom));
     }
+    
     
     public void RoomMerged(Room stayingRoom, Room mergedRoom){
+        graph.removeNode(mergedRoom.getName());
         
+        stayingRoom.getOutgoingDoors().forEach(r -> addEdge(stayingRoom, r));
+        stayingRoom.getIncomingDoors().forEach(r -> addEdge(r, stayingRoom));
     }
     
     public void RoomGasUpdate(Room room){
