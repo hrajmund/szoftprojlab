@@ -6,6 +6,10 @@ import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.implementations.SingleGraph;
+import org.graphstream.ui.swing_viewer.DefaultView;
+import org.graphstream.ui.swing_viewer.SwingViewer;
+import org.graphstream.ui.swing_viewer.ViewPanel;
+import org.graphstream.ui.view.Viewer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -41,6 +45,17 @@ public class GraphComponent {
         this.gm = gameManager;
         graph = new SingleGraph("GameGraph");
         graph.setAttribute("ui.stylesheet", css.toString());
+        graph.setAttribute("ui.quality");
+        graph.setAttribute("ui.antialias");
+    }
+    
+    public DefaultView getView(){
+        Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
+        ViewPanel viewPanel = (ViewPanel) v.addDefaultView(false);
+        v.enableAutoLayout();
+        DefaultView view = (DefaultView) v.getDefaultView();
+        view.enableMouseOptions();
+        return view;
     }
     
     public Graph getGraph() {
