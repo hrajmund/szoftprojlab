@@ -30,3 +30,4 @@ bin/
 
 ### Tests ###
 **/out.txt
+/.idea/
