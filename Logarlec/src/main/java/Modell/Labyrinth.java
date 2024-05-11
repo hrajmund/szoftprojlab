@@ -39,6 +39,10 @@ public class Labyrinth implements IRound {
      * A játékmenedzser, amely felelős a játék kezeléséért.
      */
     private GameManager GM;
+    
+    public GameManager getGameManager(){
+        return GM;
+    }
 
     /**
      * Eltávolít egy szobát a labirintusból.

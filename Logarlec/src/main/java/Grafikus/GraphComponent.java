@@ -27,7 +27,7 @@ public class GraphComponent {
     
     StringBuilder css = new StringBuilder();
     
-    {
+    public GraphComponent(){
         Scanner sc = null;
         try {
             sc = new Scanner(cssPath);
@@ -38,15 +38,12 @@ public class GraphComponent {
             css.append(sc.nextLine());
         }
         sc.close();
+        
+        graph = new SingleGraph("GameGraph");
     }
     
-    
-    public GraphComponent(GameManager gameManager){
-        this.gm = gameManager;
-        graph = new SingleGraph("GameGraph");
-        graph.setAttribute("ui.stylesheet", css.toString());
-        graph.setAttribute("ui.quality");
-        graph.setAttribute("ui.antialias");
+    public void setGameManager(GameManager gm){
+        this.gm = gm;
     }
     
     public DefaultView getView(){
@@ -55,10 +52,13 @@ public class GraphComponent {
         v.enableAutoLayout();
         DefaultView view = (DefaultView) v.getDefaultView();
         view.enableMouseOptions();
+        graph.setAttribute("ui.stylesheet", css.toString());
+        graph.setAttribute("ui.quality");
+        graph.setAttribute("ui.antialias");
         return view;
     }
     
-    public Graph getGraph() {
+    protected Graph getGraph() {
         return graph;
     }
     
@@ -183,7 +183,7 @@ public class GraphComponent {
     public void addEdge(Room r1, Room r2){
         Node n1 = graph.getNode(r1.getName());
         Node n2 = graph.getNode(r2.getName());
-        Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
+        //Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
     }
     
     public void addStudent(Student s){

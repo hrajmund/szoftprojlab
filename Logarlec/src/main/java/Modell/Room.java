@@ -294,15 +294,15 @@ public class Room implements IRound{
      *
      * @param r Az összefésülendő szoba.
      */
-public void merge(Room r){
-    
-    Room newRoom = new Room (this.Name+r.getName()+"merged");
+public void merge(Room r) {
+
+    Room newRoom = new Room(this.Name + r.getName() + "merged");
     labyrinth.addRoom(newRoom);
     newRoom.gas = this.gas || r.gas;
     newRoom.capacity = Math.max(this.capacity, r.capacity);
     newRoom.sticky = this.sticky || r.sticky;
     newRoom.personCounter = Math.min(this.personCounter, r.personCounter);
-    
+
     List<BaseItem> mergedItems = new ArrayList<>();
     mergedItems.addAll(this.items);
     mergedItems.addAll(r.items);
@@ -311,17 +311,17 @@ public void merge(Room r){
         item.room = newRoom;
         newRoom.addItem(item);
     }
-    
-    
+
+
     Set<Room> mergedOutgoingDoors = new HashSet<>();
     mergedOutgoingDoors.addAll(this.outgoingDoors);
     mergedOutgoingDoors.addAll(r.outgoingDoors);
-    
-    
+
+
     Set<Room> mergedIncomingDoors = new HashSet<>();
     mergedIncomingDoors.addAll(this.incomingDoors);
     mergedIncomingDoors.addAll(r.incomingDoors);
-    
+
     for (Room og : mergedOutgoingDoors) {
         if (og.incomingDoors.contains(this)) {
             og.removeIncomingDoor(this);
@@ -333,27 +333,31 @@ public void merge(Room r){
         }
     }
     for (Room ic : mergedIncomingDoors) {
-        if(ic.outgoingDoors.contains(this)){
+        if (ic.outgoingDoors.contains(this)) {
             ic.removeOutgoingDoor(this);
             ic.addOutgoingDoor(newRoom);
         }
-        if(ic.outgoingDoors.contains(r)) {
+        if (ic.outgoingDoors.contains(r)) {
             ic.removeOutgoingDoor(r);
             ic.addOutgoingDoor(newRoom);
         }
     }
     newRoom.incomingDoors.addAll(mergedIncomingDoors);
     newRoom.outgoingDoors.addAll(mergedOutgoingDoors);
-    
+
     newRoom.incomingDoors.remove(r);
     newRoom.outgoingDoors.remove(r);
     newRoom.incomingDoors.remove(this);
     newRoom.outgoingDoors.remove(this);
-    
+
     labyrinth.getRooms().remove(r);
     labyrinth.getRooms().remove(this);
-    }
 
+    if (labyrinth.getGameManager().getGamePanel() != null) {
+        labyrinth.getGameManager().getGamePanel().getGraph().RoomMerged(this, r);
+    }
+    
+}
     /**
      * Szétosztja a szobát.
      */
@@ -383,6 +387,10 @@ public void merge(Room r){
         addIncomingDoor(newroom);
         newroom.addOutgoingDoor(this);
         newroom.addIncomingDoor(this);
+        
+        if(labyrinth.getGameManager().getGamePanel() != null){
+            labyrinth.getGameManager().getGamePanel().getGraph().RoomSplit(this, newroom);
+        }
     }
 
     /**

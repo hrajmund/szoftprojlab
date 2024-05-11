@@ -1,0 +1,38 @@
+room R1
+room R2
+room R3
+room R4
+room R5
+room R6
+room R7
+room R8
+door R8 R7
+door R7 R8
+door R1 R2
+door R2 R1
+door R7 R2
+door R2 R7
+door R2 R6
+door R6 R2
+door R2 R3
+door R3 R2
+door R2 R5
+door R5 R2
+door R5 R6
+door R6 R5
+door R3 R4
+door R4 R3
+door R4 R5
+door R5 R4
+door R4 R6
+door R6 R4
+teacher T1
+student S1
+mask Mask
+log Logarlec
+tvsz Tvsz 1
+addperson R1 T1
+addperson R7 S1
+additem_p S1 Tvsz
+additem_r R2 Mask
+additem_r R3 Logarlec

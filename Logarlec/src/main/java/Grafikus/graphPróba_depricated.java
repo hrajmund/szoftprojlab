@@ -1,60 +1,33 @@
 package Grafikus;
 
 import Modell.Room;
-import Modell.Student;
-import org.graphstream.algorithm.*;
 import org.graphstream.graph.*;
-import org.graphstream.graph.implementations.MultiGraph;
 import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.graph.Node;
-import org.graphstream.graph.Element;
-import org.graphstream.stream.ProxyPipe;
-import org.graphstream.stream.Source;
-import org.graphstream.ui.geom.Point3;
-import org.graphstream.ui.graphicGraph.GraphPosLengthUtils;
-import org.graphstream.ui.graphicGraph.GraphicGraph;
-import org.graphstream.ui.graphicGraph.StyleGroup;
-import org.graphstream.ui.layout.Layout;
-import org.graphstream.ui.layout.LayoutRunner;
-import org.graphstream.ui.layout.Layouts;
-import org.graphstream.algorithm.*;
-import org.graphstream.algorithm.*;
+
 import org.graphstream.ui.swing_viewer.DefaultView;
 import org.graphstream.ui.swing_viewer.ViewPanel;
-import org.graphstream.ui.view.GraphRenderer;
-import org.graphstream.ui.view.View;
 import org.graphstream.ui.view.Viewer;
-import org.graphstream.ui.swing.*;
 import org.graphstream.ui.swing_viewer.*;
 import java.awt.*;
 import javax.swing.*;
-import javax.swing.border.*;
-import org.graphstream.graph.*;
-import org.graphstream.graph.implementations.*;
-import org.graphstream.ui.view.*;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class CustomNodeGraphExample {
+public class graphPróba_depricated {
 
     public static class NodeData {
         
-        public NodeData(Node nnode,String label, Room room){
-            this.label = label;
-            this.node = node;
-            node.setAttribute("ui.label", label);
+        public Room Room;
+        
+        public NodeData(Node node,Room room){
+            node.setAttribute("ui.label", room.getName());
             node.setAttribute("Room", room);
-        } 
+        }
         
-        public Node node;
         
-        public Object Room;
-        
-        public String label;
     }
     
     
@@ -138,6 +111,7 @@ public class CustomNodeGraphExample {
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         DefaultView view = (DefaultView) v.getDefaultView();
         view.enableMouseOptions();
         

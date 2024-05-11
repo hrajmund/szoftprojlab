@@ -6,29 +6,29 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GamePanel {
+public class GameFrame_Depricated {
 
-    protected static GraphComponent graph = null;
+    //protected GraphComponent graph = null;
     GameManager gameManager = null;
     Person currentStudent = null;
     BaseItem pickedInventoryItem = null;
     BaseItem pickedRoomItem = null;
     Room pickedRoom = null;
     
-    protected JButton pickUpButton = new JButton("Felvesz");
-    protected JButton putDownButton = new JButton("Letesz");
-    protected JButton useButton = new JButton("Használ");
-    protected JButton moveButton = new JButton("Mozog");
-    protected JButton nextButton = new JButton("Következő");
+    protected JButton pickUpButton  = new JButton("Felvesz");   
+    protected JButton putDownButton = new JButton("Letesz");    
+    protected JButton useButton     = new JButton("Használ");   
+    protected JButton moveButton    = new JButton("Mozog");     
+    protected JButton nextButton    = new JButton("Következő"); 
     
     
     public void setCurrentStudent(Person student) {
         currentStudent = student;
     }
 
-    public static GraphComponent getGraph() {
-        return graph;
-    }
+    //public static GraphComponent getGraph() {
+        //eturn graph;
+    //}
     
     
     public void DeadPopUp(Person s){
@@ -46,6 +46,16 @@ public class GamePanel {
     public void setPickedRoom(Room r){
         pickedRoom = r;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

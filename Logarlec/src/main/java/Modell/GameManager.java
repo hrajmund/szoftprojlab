@@ -1,7 +1,7 @@
 package Modell;
 
-import Grafikus.GamePanel;
-import Szkeleton.Szkeleton;
+import Grafikus.GuiManager;
+
 import java.io.*;
 import java.util.*;
 
@@ -16,10 +16,11 @@ public class GameManager {
     
     ///* változók amik a grafikus futtatáshoz kellenek*///
     
-    private GamePanel gamePanel = null;
-    public GamePanel getGamePanel() {
-        return gamePanel;
+    private static GuiManager guiManager = null;
+    public GuiManager getGamePanel() {
+        return guiManager;
     }
+    
     private ArrayList<Person> studentProxyList = new ArrayList<>();
     private int roundCounter = 1;
     
@@ -107,12 +108,22 @@ public class GameManager {
                         Room r = new Room(roomName);
                         l.addRoom(r);
                         r.setLabyrinth(l);
+                        
+                        if(guiManager != null){
+                            guiManager.getGraph().addNode(r);
+                        }
+                        
                         break;
                     case "cursedroom":
                         String cursedroomName = parts[1];
                         CursedRoom cursedr = new CursedRoom(cursedroomName);
                         l.addRoom(cursedr);
                         cursedr.setLabyrinth(l);
+                        
+                        if(guiManager != null){
+                            guiManager.getGraph().addNode(cursedr);
+                        }
+                        
                         break;
                     case "capacity":
                         String roomNamec = parts[1];
@@ -143,6 +154,11 @@ public class GameManager {
                         }
                         r1.addOutgoingDoor(r2);
                         r2.addIncomingDoor(r1);
+                        
+                        if (guiManager != null){
+                            guiManager.getGraph().addEdge(r1, r2);
+                        }
+                        
                         break;
                     case "gas":
                         String roomNameg = parts[1];
@@ -151,11 +167,18 @@ public class GameManager {
                             if (v.Name.equals((roomNameg))) {
                                 v.setGas(true);
                                 siker = true;
+                                
+                                if(guiManager != null){
+                                    guiManager.getGraph().RoomGasUpdate(v);
+                                }
+                                
                             }
                         }
                         if (!siker) {
                             System.out.println("Nincs ilyen nevű szoba\n");
                         }
+                        
+                        
                         break;
                     case "teacher":
                         String teacherName = parts[1];
@@ -168,6 +191,7 @@ public class GameManager {
                         Student s = new Student(studentName);
                         l.addStudent(s);
                         s.setLabyrinth(l);
+                        
                         break;
                     case "cleaner":
                         String cleanerName = parts[1];
@@ -355,6 +379,12 @@ public class GameManager {
             this.labyrinth = l;
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
+        }
+        
+        if(guiManager != null){
+            for (Person p : l.getStudents()) {
+                guiManager.getGraph().addStudent((Student) p);
+            }
         }
     }
 
@@ -560,10 +590,11 @@ public class GameManager {
     /**
      * Játék inicializálása grafikus futtatáshoz
      */
-    public void GameManager(GamePanel gp, List<String> playerNames){
-        this.gamePanel = gp;
+    public GameManager(GuiManager gp, List<String> playerNames){
+        this.guiManager = gp;
+        
         ReadMap(".\\game\\map.txt");
-        labyrinth.setGameManager(this);
+        
         for(String playerName : playerNames){
             Student player = new Student(playerName);
             labyrinth.addStudent(player);
@@ -571,13 +602,19 @@ public class GameManager {
             labyrinth.getRooms().get(0).addPerson(player);
             player.setCurrentRoom(labyrinth.getRooms().get(0));
         }
+        
         studentProxyList = labyrinth.getStudents();
         currentPlayerIndex = 0;
-        gamePanel.setCurrentStudent(studentProxyList.get(currentPlayerIndex));
+        
+        gp.getGraph().setGameManager(this);
+        guiManager.setCurrentStudent((Student) studentProxyList.get(currentPlayerIndex));
+    }
+    
+    public static GuiManager getGuiManager(){
+        return guiManager;
     }
     
     public void movePlayer(Student player, Room room){
-        //mozgás xd
         player.move(room);
         this.next();
     }
@@ -585,7 +622,7 @@ public class GameManager {
     public void next(){
         
         if(labyrinth.getStudents().isEmpty() || labyrinth.Game_End){
-            gamePanel.GameEndPopUp();
+            guiManager.GameEndPopUp();
             return;
         }
         
@@ -595,12 +632,13 @@ public class GameManager {
             labyrinth.Randomizer();
             labyrinth.tick();
             roundCounter++;
+            guiManager.updateRoundCount(roundCounter);
         }
         
         while(!labyrinth.getStudents().contains(studentProxyList.get(currentPlayerIndex)) && studentProxyList.get(currentPlayerIndex).getStun()){
                
             if (studentProxyList.get(currentPlayerIndex).getStun()){
-                gamePanel.StunnedPopUp(studentProxyList.get(currentPlayerIndex));
+                guiManager.StunnedPopUp(studentProxyList.get(currentPlayerIndex));
                 studentProxyList.get(currentPlayerIndex).setStun(false);
             }
             
@@ -613,9 +651,10 @@ public class GameManager {
                 labyrinth.Randomizer();
                 labyrinth.tick();
                 roundCounter++;
+                guiManager.updateRoundCount(roundCounter);
             }
         }
-        gamePanel.setCurrentStudent(studentProxyList.get(currentPlayerIndex));
+        guiManager.setCurrentStudent((Student) studentProxyList.get(currentPlayerIndex));
     }
     
     public void pickUpItem(Student player, int itemRoomIndex){

@@ -1,3 +1,5 @@
+package Grafikus;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -5,14 +7,14 @@ import java.net.URL;
 
 public class GameEndPopup extends JFrame implements ActionListener {
 
-    private GameMenu gameMenu; // Reference to the GameMenu
+    private MenuFrame menuFrame; // Reference to the GameMenu
     private JLabel resultLabel; // Label for game result (Victory/Game Over)
     private JButton backButton; // "Back" button to return to the GameMenu
     private boolean isGameOver; // Flag indicating game over or victory
 
     // Constructor
-    public GameEndPopup(GameMenu gameMenu, boolean isGameOver) {
-        this.gameMenu = gameMenu;
+    public GameEndPopup(MenuFrame menuFrame, boolean isGameOver) {
+        this.menuFrame = menuFrame;
         this.isGameOver = isGameOver;
 
         // Frame setup
@@ -62,7 +64,7 @@ public class GameEndPopup extends JFrame implements ActionListener {
         if (e.getSource() == backButton) {
             // Dispose of this window and return to GameMenu
             dispose();
-            gameMenu.setVisible(true); // Make GameMenu visible again
+            menuFrame.setVisible(true); // Make GameMenu visible again
         }
     }
 }

@@ -4,63 +4,134 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MenuFrame {
-    protected JTextField nameField = new JTextField();
-    protected DefaultListModel<String> listModel = new DefaultListModel<>();
-    protected JList<String> nameList = new JList<>(listModel);
+import java.awt.*;
+import java.util.ArrayList;
+
+public class MenuFrame extends JFrame{
+
+    MenuFrame menuFrame = this;
+    // Components
+    private JLabel gameNameLabel;
+    private JList<String> playerList;
+    private JScrollPane playerListScrollPane;
+    private DefaultListModel<String> playerListModel;
+    private JTextField playerNameField;
     
+    private JButton addButton;
+    private JButton startButton;
+    private JButton exitButton;
+
+    // Data
+    private ArrayList<String> players;
+
     public MenuFrame() {
-        JFrame frame = new JFrame("Menü");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300, 300);
-        frame.setLayout(null);
-        
-        JLabel nameLabel = new JLabel("Név:");
-        nameLabel.setBounds(10, 10, 50, 20);
-        frame.add(nameLabel);
-        
-        nameField.setBounds(60, 10, 100, 20);
-        frame.add(nameField);
-        
-        JButton addName = new JButton("Név hozzáadása");
-        addName.setBounds(10, 40, 150, 20);
-        addName.addActionListener(new addNameListener());
-        frame.add(addName);
-        
-        nameList.setBounds(10, 70, 150, 150);
-        frame.add(nameList);
-        
-        JButton gameStart = new JButton("Játék indítása");
-        gameStart.setBounds(10, 230, 150, 20);
-        gameStart.addActionListener(new gameStartListener());
-        frame.add(gameStart);
-        
-        frame.setVisible(true);
+        // Frame setup
+        setTitle("Logarléc");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 400); // Updated frame size
+        setResizable(false);
+        setLayout(null);
+        setBackground(Color.BLACK);
+
+        // Create components
+        gameNameLabel = new JLabel("LOGARLÉC", SwingConstants.CENTER);
+        gameNameLabel.setBounds(45, 5, 300, 50);
+        gameNameLabel.setFont(new Font(Font.MONOSPACED,  Font.BOLD, 50));
+        add(gameNameLabel);
+
+        playerListModel = new DefaultListModel<>();
+        playerList = new JList<>(playerListModel);
+        playerListScrollPane = new JScrollPane(playerList);
+        playerListScrollPane.setBounds(45, 60, 300, 120);
+        add(playerListScrollPane);
+
+        JLabel nameText = new JLabel("Name: ");
+        nameText.setBounds(45, 220, 40, 20);
+        add(nameText);
+        playerNameField = new JTextField();
+        playerNameField.setBounds(95, 220, 200, 20);
+        add(playerNameField);
+
+        addButton = new JButton("+");
+        addButton.setBounds(295, 220, 50, 20);
+        addButton.addActionListener(new AddNameListener());
+        add(addButton);
+
+        startButton = new JButton("START");
+        startButton.setBounds(140, 270, 120, 30); // Adjusted Y position
+        startButton.setEnabled(false);
+        startButton.addActionListener(new GameStartListener());
+        add(startButton);
+
+        exitButton = new JButton("EXIT");
+        exitButton.setBounds( 140, 310, 120, 30); // Adjusted Y position
+        //lambda function to leaving the game
+        exitButton.addActionListener(e -> System.exit(0));
+        add(exitButton);
+
+        // Initialization
+        players = new ArrayList<>();
+        updatePlayerList();
+
+        //Képernyő közepén nyíljon meg az ablak
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int x = (screenSize.width - getWidth()) / 2;
+        int y = (screenSize.height - getHeight()) / 2;
+        setLocation(x, y);
+
+        //háttér beállítása
+        this.getContentPane().setBackground(Color.LIGHT_GRAY);
     }
+
+    private void updatePlayerList() {
+        playerListModel.clear();
+        for (int i = 0; i < players.size(); i++) {
+            playerListModel.addElement((i + 1) + ". Player: " + players.get(i));
+        }
+    }
+
     
-    class gameStartListener implements ActionListener {
+    class GameStartListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            if (nameField.getText().equals("")) {
+            System.out.println("Starting game with the following players:");
+            for (String player : players) {
+                System.out.println("- " + player);
+            }
+            ImageIcon icon = null;
+            if(players.get(0).equals("0")){
+                icon = new ImageIcon("game_over.png"); // Kép elérési útjának megadása
+            }
+            if(players.size()>1&& players.get(1).equals("1")){
+                icon = new ImageIcon("victory.png"); // Kép elérési útjának megadása
+            }
+            
+            menuFrame.setVisible(false);
+            
+            GuiManager gm = new GuiManager(players);
+            
+            JOptionPane.showMessageDialog(null, null ,"GAME END", JOptionPane.INFORMATION_MESSAGE, icon);
+            playerListModel.clear();
+            players.clear();
+            updatePlayerList();
+        }
+    }
+
+    class AddNameListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            if (playerNameField.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Nem adtál meg nevet!");
             } else {
-                String name = nameField.getText();
-                listModel.addElement(name);
-                nameList.setModel(listModel);
-                new GamePanel();
+                String playerName = playerNameField.getText().trim();
+                players.add(playerName);
+                updatePlayerList();
+                playerNameField.setText("");
+                startButton.setEnabled(!players.isEmpty());
             }
         }
     }
-    
-    class addNameListener implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            if (nameField.getText().equals("")) {
-                JOptionPane.showMessageDialog(null, "Nem adtál meg nevet!");
-            } else {
-                String name = nameField.getText();
-                listModel.addElement(name);
-                nameList.setModel(listModel);
-            }
-        }
+
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new MenuFrame().setVisible(true));
     }
-    
 }

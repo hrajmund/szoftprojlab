@@ -1,11 +1,9 @@
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
 import java.util.ArrayList;
 
-public class GameMenu extends JFrame implements ActionListener {
+public class MenuFrame extends JFrame implements ActionListener {
 
     // Components
     private JLabel gameNameLabel;
@@ -20,7 +18,7 @@ public class GameMenu extends JFrame implements ActionListener {
     // Data
     private ArrayList<String> players;
 
-    public GameMenu() {
+    public MenuFrame() {
         // Frame setup
         setTitle("Logarléc");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -105,7 +103,7 @@ public class GameMenu extends JFrame implements ActionListener {
             if(players.get(0).equals("0")){
                 icon = new ImageIcon("game_over.png"); // Kép elérési útjának megadása
             }
-            if(players.size()>1&& players.get(1).equals("1")){
+            if(players.size()>1 && players.get(1).equals("1")){
                 icon = new ImageIcon("victory.png"); // Kép elérési útjának megadása
             }
 
@@ -120,6 +118,6 @@ public class GameMenu extends JFrame implements ActionListener {
     
     
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GameMenu().setVisible(true));
+        SwingUtilities.invokeLater(() -> new MenuFrame().setVisible(true));
     }
 }
