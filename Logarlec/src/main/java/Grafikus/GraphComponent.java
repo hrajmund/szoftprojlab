@@ -184,6 +184,12 @@ public class GraphComponent {
         Node n1 = graph.getNode(r1.getName());
         Node n2 = graph.getNode(r2.getName());
         //Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
+        for(Edge e : n1){
+            if(e.getNode0().equals(n2) || e.getNode1().equals(n2)){
+                return;
+            }
+        }
+        Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
     }
     
     public void addStudent(Student s){
