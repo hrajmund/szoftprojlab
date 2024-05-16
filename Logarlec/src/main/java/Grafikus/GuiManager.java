@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
 import java.util.List;
 
 public class GuiManager extends JFrame{
@@ -74,16 +75,21 @@ public class GuiManager extends JFrame{
         InvItemButton5.addActionListener(new inventoryButtonListener(4));
     }
     
-    public GuiManager(List<String> playerNames){
+    public GuiManager(List<String> playerNames) throws FileNotFoundException {
         graph = new GraphComponent();
         
         gameManager = new GameManager(this, playerNames);
-        GraphPanel.add(graph.getView());
+        
+        GraphPanel.setLayout(new BorderLayout());
+        
+        GraphPanel.add(graph.getViewPanel(), BorderLayout.CENTER);
+        GraphPanel.setMinimumSize(new Dimension(800, 600));
+                
         
         setContentPane(BasePanel);
         setTitle("Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 600);
+        setSize(1200, 900);
         setLocationRelativeTo(null);
         setVisible(true);
     }
@@ -99,7 +105,7 @@ public class GuiManager extends JFrame{
                     case 0:
 
                         InvItemButton1.setEnabled(true);
-                        InvItemButton1.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
+                        //InvItemButton1.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
                         if (Boolean.TRUE.equals(student.getItems().get(i).getActive()))
                             InvItemButton1.setBackground(Color.RED);
                         else
@@ -108,7 +114,7 @@ public class GuiManager extends JFrame{
                     case 1:
 
                         InvItemButton2.setEnabled(true);
-                        InvItemButton2.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
+                        //InvItemButton2.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
                         if (Boolean.TRUE.equals(student.getItems().get(i).getActive()))
                             InvItemButton2.setBackground(Color.RED);
                         else
@@ -117,7 +123,7 @@ public class GuiManager extends JFrame{
                     case 2:
 
                         InvItemButton3.setEnabled(true);
-                        InvItemButton3.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
+                        //InvItemButton3.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
                         if (Boolean.TRUE.equals(student.getItems().get(i).getActive()))
                             InvItemButton3.setBackground(Color.RED);
                         else
@@ -126,7 +132,7 @@ public class GuiManager extends JFrame{
                     case 3:
 
                         InvItemButton4.setEnabled(true);
-                        InvItemButton4.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
+                        //InvItemButton4.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
                         if (Boolean.TRUE.equals(student.getItems().get(i).getActive()))
                             InvItemButton4.setBackground(Color.RED);
                         else
@@ -134,7 +140,7 @@ public class GuiManager extends JFrame{
                         break;
                     case 4:
                         InvItemButton5.setEnabled(true);
-                        InvItemButton5.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
+                        //InvItemButton5.setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
                         if (Boolean.TRUE.equals(student.getItems().get(i).getActive()))
                             InvItemButton5.setBackground(Color.RED);
                         else

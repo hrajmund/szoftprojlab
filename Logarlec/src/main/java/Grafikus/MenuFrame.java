@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import java.awt.*;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class MenuFrame extends JFrame{
@@ -106,10 +107,14 @@ public class MenuFrame extends JFrame{
             }
             
             menuFrame.setVisible(false);
-            
-            GuiManager gm = new GuiManager(players);
-            
-            JOptionPane.showMessageDialog(null, null ,"GAME END", JOptionPane.INFORMATION_MESSAGE, icon);
+
+            try {
+                GuiManager gm = new GuiManager(players);
+            } catch (FileNotFoundException ex) {
+                throw new RuntimeException(ex);
+            }
+
+            //JOptionPane.showMessageDialog(null, null ,"GAME END", JOptionPane.INFORMATION_MESSAGE, icon);
             playerListModel.clear();
             players.clear();
             updatePlayerList();

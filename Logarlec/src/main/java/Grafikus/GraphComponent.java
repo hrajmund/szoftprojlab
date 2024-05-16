@@ -15,48 +15,50 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class GraphComponent {
+public class GraphComponent{
     
     protected Graph graph;
 
-    String style = "ui.style";
+    String style = "ui.class";
     
     GameManager gm;
+    
+    DefaultView view;
 
     File cssPath = new File("src/main/java/Grafikus/graphStyle.css");
     
     StringBuilder css = new StringBuilder();
     
-    public GraphComponent(){
-        Scanner sc = null;
-        try {
-            sc = new Scanner(cssPath);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+    public GraphComponent() throws FileNotFoundException {
+        graph = new SingleGraph("GameGraph");
+        
+        Scanner sc = new Scanner(cssPath);
         while(sc.hasNextLine()) {
             css.append(sc.nextLine());
         }
         sc.close();
         
-        graph = new SingleGraph("GameGraph");
+        graph.setAttribute("ui.stylesheet", css.toString());
     }
     
     public void setGameManager(GameManager gm){
         this.gm = gm;
     }
-    
-    public DefaultView getView(){
+
+    public ViewPanel getViewPanel(){
         Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
         ViewPanel viewPanel = (ViewPanel) v.addDefaultView(false);
         v.enableAutoLayout();
-        DefaultView view = (DefaultView) v.getDefaultView();
-        view.enableMouseOptions();
-        graph.setAttribute("ui.stylesheet", css.toString());
+        view = (DefaultView) v.getDefaultView();
+        
         graph.setAttribute("ui.quality");
         graph.setAttribute("ui.antialias");
+        
+        view.enableMouseOptions();
+        
         return view;
     }
+    
     
     protected Graph getGraph() {
         return graph;
@@ -83,17 +85,17 @@ public class GraphComponent {
             }
             if(relevantRoom != null){
                 if(newOutgoing.contains(relevantRoom) && newIncoming.contains(relevantRoom)){
-                    e.setAttribute(style, "edge.two_way");
+                    e.setAttribute(style, "two_way");
                 }
                 else if(newOutgoing.contains(relevantRoom)){
-                    e.setAttribute(style, "edge.going");
+                    e.setAttribute(style, "going");
                 }
                 else if(newIncoming.contains(relevantRoom)){
-                    e.setAttribute(style, "edge.coming");
+                    e.setAttribute(style, "coming");
                 }
             }
             else{
-                e.setAttribute(style, "edge.default");
+                e.setAttribute(style, "default");
             }
         }
     }
@@ -141,19 +143,19 @@ public class GraphComponent {
         //gázos lett
         if(room.getGas()){
             if(hasStudent){
-                n.setAttribute(style, "node.student_gas");
+                n.setAttribute(style, "student_gas");
             }
             else{
-                n.setAttribute(style, "node.gas");
+                n.setAttribute(style, "gas");
             }
         }
         //gáztalan lett
         else{
             if(hasStudent){
-                n.setAttribute(style, "node.student");
+                n.setAttribute(style, "student");
             }
             else{
-                n.setAttribute(style, "node.default");
+                n.setAttribute(style, "default");
             }
         }
     }
@@ -173,17 +175,16 @@ public class GraphComponent {
         n.setAttribute("ui.label", r.getName());
         n.setAttribute("room", r);
         if(r.getGas()){
-            n.setAttribute(style, "node.gas");
+            n.setAttribute(style, "gas");
         }
         else{
-            n.setAttribute(style, "node.default");
+            n.setAttribute(style, "default");
         }
     }
     
     public void addEdge(Room r1, Room r2){
         Node n1 = graph.getNode(r1.getName());
         Node n2 = graph.getNode(r2.getName());
-        //Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
         for(Edge e : n1){
             if(e.getNode0().equals(n2) || e.getNode1().equals(n2)){
                 return;
@@ -195,10 +196,10 @@ public class GraphComponent {
     public void addStudent(Student s){
         Node n = graph.getNode(s.getCurrentRoom().getName());
         if(s.getCurrentRoom().getGas()){
-            n.setAttribute(style, "node.student_gas");
+            n.setAttribute(style, "student_gas");
         }
         else{
-            n.setAttribute(style, "node.student");
+            n.setAttribute(style, "student");
         }
     }
     
@@ -206,20 +207,17 @@ public class GraphComponent {
         Node oldN = graph.getNode(oldR.getName());
         Node newN = graph.getNode(newR.getName());
         if(oldR.getGas()){
-            oldN.setAttribute(style, "node.gas");
+            oldN.setAttribute(style, "gas");
         }
         else{
-            oldN.setAttribute(style, "node.default");
+            oldN.setAttribute(style, "default");
         }
         if(newR.getGas()){
-            newN.setAttribute(style, "node.student_gas");
+            newN.setAttribute(style, "student_gas");
         }
         else{
-            newN.setAttribute(style, "node.student");
+            newN.setAttribute(style, "student");
         }
     }
-    
-    
-    
-    
+
 }
