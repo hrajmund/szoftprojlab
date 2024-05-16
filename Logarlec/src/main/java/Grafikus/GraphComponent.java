@@ -65,36 +65,36 @@ public class GraphComponent{
     }
     
     public void CurrStudentChanged(Student NEW){
-        Set<Room> allNewEdges = new HashSet<>();
-        allNewEdges.addAll(NEW.getCurrentRoom().getOutgoingDoors());
+        ArrayList<Room> allNewEdges = new ArrayList<>(NEW.getCurrentRoom().getOutgoingDoors());
         allNewEdges.addAll(NEW.getCurrentRoom().getIncomingDoors());
 
-        ArrayList<Room> newOutgoing = new ArrayList<>(NEW.getCurrentRoom().getOutgoingDoors());
-        ArrayList<Room> newIncoming = new ArrayList<>(NEW.getCurrentRoom().getIncomingDoors());
-        
-
+        Room newRoom = NEW.getCurrentRoom();
             
         for(int i = 0; i < graph.getEdgeCount(); i++) {
             Edge e = graph.getEdge(i);
             Room relevantRoom = null;
-            if( allNewEdges.contains((Room) e.getNode0().getAttribute("room"))){
-                relevantRoom = (Room)e.getNode0().getAttribute("room");
+            if( allNewEdges.contains(e.getNode0().getAttribute("room")) && e.getNode1().getAttribute("room") == newRoom){
+                    relevantRoom = (Room)e.getNode0().getAttribute("room");
             }
-            if( allNewEdges.contains((Room) e.getNode1().getAttribute("room"))){
-                relevantRoom = (Room)e.getNode1().getAttribute("room");
+            if( allNewEdges.contains(e.getNode1().getAttribute("room")) && e.getNode0().getAttribute("room") == newRoom){
+                    relevantRoom = (Room)e.getNode1().getAttribute("room");
             }
             if(relevantRoom != null){
-                if(newOutgoing.contains(relevantRoom) && newIncoming.contains(relevantRoom)){
+                if(newRoom.getOutgoingDoors().contains(relevantRoom) && newRoom.getIncomingDoors().contains(relevantRoom)){
+                    e.removeAttribute(style);
                     e.setAttribute(style, "two_way");
                 }
-                else if(newOutgoing.contains(relevantRoom)){
+                else if(newRoom.getIncomingDoors().contains(relevantRoom)){
+                    e.removeAttribute(style);
                     e.setAttribute(style, "going");
                 }
-                else if(newIncoming.contains(relevantRoom)){
+                else if(newRoom.getOutgoingDoors().contains(relevantRoom)){
+                    e.removeAttribute(style);
                     e.setAttribute(style, "coming");
                 }
             }
             else{
+                e.removeAttribute(style);
                 e.setAttribute(style, "default");
             }
         }
@@ -118,14 +118,12 @@ public class GraphComponent{
         originalRoom.getOutgoingDoors().forEach(r -> addEdge(originalRoom, r));
         originalRoom.getIncomingDoors().forEach(r -> addEdge(r, originalRoom));
         
-        addNode(newRoom);
         newRoom.getOutgoingDoors().forEach(r -> addEdge(newRoom, r));
         newRoom.getIncomingDoors().forEach(r -> addEdge(r, newRoom));
     }
     
     
-    public void RoomMerged(Room stayingRoom, Room mergedRoom){
-        graph.removeNode(mergedRoom.getName());
+    public void RoomMerged(Room stayingRoom){
         
         stayingRoom.getOutgoingDoors().forEach(r -> addEdge(stayingRoom, r));
         stayingRoom.getIncomingDoors().forEach(r -> addEdge(r, stayingRoom));
@@ -163,9 +161,11 @@ public class GraphComponent{
     public void StudentDied(Room r){
         Node n = graph.getNode(r.getName());
         if(r.getGas()){
+            n.removeAttribute(style);
             n.setAttribute(style, "node.gas");
         }
         else{
+            n.removeAttribute(style);
             n.setAttribute(style, "node.default");
         }
     }
@@ -182,6 +182,11 @@ public class GraphComponent{
         }
     }
     
+    public void removeNode(Room r){
+        Node n = graph.getNode(r.getName());
+        graph.removeNode(n.getId());
+    }
+    
     public void addEdge(Room r1, Room r2){
         Node n1 = graph.getNode(r1.getName());
         Node n2 = graph.getNode(r2.getName());
@@ -196,9 +201,11 @@ public class GraphComponent{
     public void addStudent(Student s){
         Node n = graph.getNode(s.getCurrentRoom().getName());
         if(s.getCurrentRoom().getGas()){
+            n.removeAttribute(style);
             n.setAttribute(style, "student_gas");
         }
         else{
+            n.removeAttribute(style);
             n.setAttribute(style, "student");
         }
     }
@@ -207,15 +214,19 @@ public class GraphComponent{
         Node oldN = graph.getNode(oldR.getName());
         Node newN = graph.getNode(newR.getName());
         if(oldR.getGas()){
+            oldN.removeAttribute(style);
             oldN.setAttribute(style, "gas");
         }
         else{
+            oldN.removeAttribute(style);
             oldN.setAttribute(style, "default");
         }
         if(newR.getGas()){
+            newN.removeAttribute(style);
             newN.setAttribute(style, "student_gas");
         }
         else{
+            newN.removeAttribute(style);
             newN.setAttribute(style, "student");
         }
     }

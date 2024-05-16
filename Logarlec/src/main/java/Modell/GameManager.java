@@ -109,20 +109,12 @@ public class GameManager {
                         l.addRoom(r);
                         r.setLabyrinth(l);
                         
-                        if(guiManager != null){
-                            guiManager.getGraph().addNode(r);
-                        }
-                        
                         break;
                     case "cursedroom":
                         String cursedroomName = parts[1];
                         CursedRoom cursedr = new CursedRoom(cursedroomName);
                         l.addRoom(cursedr);
                         cursedr.setLabyrinth(l);
-                        
-                        if(guiManager != null){
-                            guiManager.getGraph().addNode(cursedr);
-                        }
                         
                         break;
                     case "capacity":
@@ -601,6 +593,7 @@ public class GameManager {
             player.setLabyrinth(labyrinth);
             labyrinth.getRooms().get(0).addPerson(player);
             player.setCurrentRoom(labyrinth.getRooms().get(0));
+            guiManager.getGraph().addStudent(player);
         }
         
         studentProxyList = labyrinth.getStudents();

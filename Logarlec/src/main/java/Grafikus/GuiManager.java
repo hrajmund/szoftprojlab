@@ -62,10 +62,18 @@ public class GuiManager extends JFrame{
     
     
     private void createUIComponents() {
+
+    }
+    
+    public GuiManager(List<String> playerNames) throws FileNotFoundException {
         PickUpButton.addActionListener(new pickUpButtonListener());
+        PickUpButton.setEnabled(false);
         PutDownButton.addActionListener(new putDownButtonListener());
+        PutDownButton.setEnabled(false);
         UseButton.addActionListener(new useButtonListener());
+        UseButton.setEnabled(false);
         MoveButton.addActionListener(new moveButtonListener());
+        MoveButton.setEnabled(false);
         NextButton.addActionListener(new nextButtonListener());
 
         InvItemButton1.addActionListener(new inventoryButtonListener(0));
@@ -73,9 +81,7 @@ public class GuiManager extends JFrame{
         InvItemButton3.addActionListener(new inventoryButtonListener(2));
         InvItemButton4.addActionListener(new inventoryButtonListener(3));
         InvItemButton5.addActionListener(new inventoryButtonListener(4));
-    }
-    
-    public GuiManager(List<String> playerNames) throws FileNotFoundException {
+        
         graph = new GraphComponent();
         
         gameManager = new GameManager(this, playerNames);
@@ -84,6 +90,7 @@ public class GuiManager extends JFrame{
         
         GraphPanel.add(graph.getViewPanel(), BorderLayout.CENTER);
         GraphPanel.setMinimumSize(new Dimension(800, 600));
+        
                 
         
         setContentPane(BasePanel);

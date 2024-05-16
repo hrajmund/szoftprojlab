@@ -102,20 +102,19 @@ public class Labyrinth implements IRound {
                 for(int i = 0; i < rooms.size(); i++){
                     int actRand = i+randomINT% rooms.size();
                     if(rooms.get(actRand).getPeople().isEmpty()){
+                        
                         HashSet<Room> neighbours = new HashSet<>();
                         neighbours.addAll(rooms.get(actRand).outgoingDoors);
                         neighbours.addAll(rooms.get(actRand).incomingDoors);
                         
-                        for (int j = 0; j < neighbours.size(); j++) {
-                            for(Room tomergewith : neighbours){
-                                if(tomergewith.getPeople().isEmpty()){
-                                    rooms.get(actRand).merge(tomergewith);
-                                    merged = true;
-                                    break;
-                                }
+                        for(Room tomergewith : neighbours){
+                            if(tomergewith.getPeople().isEmpty()){
+                                rooms.get(actRand).merge(tomergewith);
+                                
+                                merged = true;
+                                break;
                             }
                         }
-                        
                     }
                     if(merged){
                         break;
@@ -178,7 +177,10 @@ public class Labyrinth implements IRound {
      * @param r A hozzáadandó szoba.
      */
     public void addRoom(Room r) {
-        rooms.add(r);
+        rooms.add(r);                       
+        if(getGameManager().getGamePanel() != null){
+            getGameManager().getGamePanel().getGraph().addNode(r);
+        }
     }
 
     /**
@@ -256,10 +258,10 @@ public class Labyrinth implements IRound {
                 int percent=rand.nextInt(10);
                 if(percent<3){
                     int doingthing=rand.nextInt(2);
-                    if(doingthing==0){
+                    if(doingthing==0 && !t.getCurrentRoom().getItems().isEmpty()){
                         percent= rand.nextInt(t.getCurrentRoom().getItems().size());
                         t.pickUpItem(t.getCurrentRoom().getItems().get(percent));
-                    }else{
+                    }else if(!t.getItems().isEmpty()){
                         percent=rand.nextInt(t.getItems().size());
                         t.putDownItem(t.getItems().get(percent));
                     }

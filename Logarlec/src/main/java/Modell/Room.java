@@ -298,6 +298,7 @@ public void merge(Room r) {
 
     Room newRoom = new Room(this.Name + r.getName() + "merged");
     labyrinth.addRoom(newRoom);
+    newRoom.setLabyrinth(labyrinth);
     newRoom.gas = this.gas || r.gas;
     newRoom.capacity = Math.max(this.capacity, r.capacity);
     newRoom.sticky = this.sticky || r.sticky;
@@ -354,7 +355,9 @@ public void merge(Room r) {
     labyrinth.getRooms().remove(this);
 
     if (labyrinth.getGameManager().getGamePanel() != null) {
-        labyrinth.getGameManager().getGamePanel().getGraph().RoomMerged(this, r);
+        labyrinth.getGameManager().getGamePanel().getGraph().removeNode(r);
+        labyrinth.getGameManager().getGamePanel().getGraph().removeNode(this);
+        labyrinth.getGameManager().getGamePanel().getGraph().RoomMerged(newRoom);
     }
     
 }
@@ -364,7 +367,9 @@ public void merge(Room r) {
     public void split(){
         int number = labyrinth.getRooms().size()+1;
         Room newroom = new Room("R"+number); //inkrementalis elnevezes
+        
         labyrinth.addRoom(newroom);
+        newroom.setLabyrinth(labyrinth);
 
         newroom.outgoingDoors = outgoingDoors;
         for (Room r : outgoingDoors) {
