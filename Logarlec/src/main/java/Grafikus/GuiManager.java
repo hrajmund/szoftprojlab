@@ -62,7 +62,6 @@ public class GuiManager extends JFrame{
     
     
     private void createUIComponents() {
-
     }
     
     public GuiManager(List<String> playerNames) throws FileNotFoundException {
@@ -89,7 +88,7 @@ public class GuiManager extends JFrame{
         GraphPanel.setLayout(new BorderLayout());
         
         GraphPanel.add(graph.getViewPanel(), BorderLayout.CENTER);
-        GraphPanel.setMinimumSize(new Dimension(800, 600));
+        GraphPanel.setMinimumSize(new Dimension(400, 300));
         
                 
         

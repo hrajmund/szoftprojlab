@@ -114,12 +114,11 @@ public class GraphComponent{
         cr.getIncomingDoors().forEach(r -> addEdge(r, cr));
     }
     
-    public void RoomSplit(Room originalRoom, Room newRoom){
-        originalRoom.getOutgoingDoors().forEach(r -> addEdge(originalRoom, r));
-        originalRoom.getIncomingDoors().forEach(r -> addEdge(r, originalRoom));
+    public void RoomSplit(Room newRoom){
         
         newRoom.getOutgoingDoors().forEach(r -> addEdge(newRoom, r));
         newRoom.getIncomingDoors().forEach(r -> addEdge(r, newRoom));
+        
     }
     
     

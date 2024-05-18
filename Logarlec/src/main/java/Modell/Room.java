@@ -297,8 +297,8 @@ public class Room implements IRound{
 public void merge(Room r) {
 
     Room newRoom = new Room(this.Name + r.getName() + "merged");
-    labyrinth.addRoom(newRoom);
     newRoom.setLabyrinth(labyrinth);
+    labyrinth.addRoom(newRoom);
     newRoom.gas = this.gas || r.gas;
     newRoom.capacity = Math.max(this.capacity, r.capacity);
     newRoom.sticky = this.sticky || r.sticky;
@@ -309,7 +309,7 @@ public void merge(Room r) {
     mergedItems.addAll(r.items);
 
     for (BaseItem item : mergedItems) {
-        item.room = newRoom;
+        item.setRoom(newRoom);
         newRoom.addItem(item);
     }
 
@@ -324,30 +324,21 @@ public void merge(Room r) {
     mergedIncomingDoors.addAll(r.incomingDoors);
 
     for (Room og : mergedOutgoingDoors) {
-        if (og.incomingDoors.contains(this)) {
-            og.removeIncomingDoor(this);
-            og.addIncomingDoor(newRoom);
-        }
-        if (og.incomingDoors.contains(r)) {
-            og.removeIncomingDoor(r);
-            og.addIncomingDoor(newRoom);
-        }
+        og.addIncomingDoor(newRoom);
+        og.removeOutgoingDoor(this);
+        og.removeOutgoingDoor(r);
     }
     for (Room ic : mergedIncomingDoors) {
-        if (ic.outgoingDoors.contains(this)) {
-            ic.removeOutgoingDoor(this);
-            ic.addOutgoingDoor(newRoom);
-        }
-        if (ic.outgoingDoors.contains(r)) {
-            ic.removeOutgoingDoor(r);
-            ic.addOutgoingDoor(newRoom);
-        }
+        ic.addOutgoingDoor(newRoom);
+        ic.removeIncomingDoor(this);
+        ic.removeIncomingDoor(r);
     }
     newRoom.incomingDoors.addAll(mergedIncomingDoors);
     newRoom.outgoingDoors.addAll(mergedOutgoingDoors);
 
     newRoom.incomingDoors.remove(r);
     newRoom.outgoingDoors.remove(r);
+    
     newRoom.incomingDoors.remove(this);
     newRoom.outgoingDoors.remove(this);
 
@@ -365,36 +356,41 @@ public void merge(Room r) {
      * Szétosztja a szobát.
      */
     public void split(){
-        int number = labyrinth.getRooms().size()+1;
-        Room newroom = new Room("R"+number); //inkrementalis elnevezes
+        Room newroom = new Room("R"+labyrinth.getNextRoomNumber()); //inkrementalis elnevezes
         
-        labyrinth.addRoom(newroom);
         newroom.setLabyrinth(labyrinth);
+        labyrinth.addRoom(newroom);
 
-        newroom.outgoingDoors = outgoingDoors;
-        for (Room r : outgoingDoors) {
+        newroom.outgoingDoors.addAll(this.outgoingDoors);
+        for (Room r : newroom.outgoingDoors) {
             r.addIncomingDoor(newroom);
         }
-        newroom.incomingDoors = incomingDoors;
-        for (Room r : incomingDoors) {
+        newroom.incomingDoors.addAll(this.incomingDoors);
+        for (Room r : newroom.incomingDoors) {
             r.addOutgoingDoor(newroom);
         }
         
+        List <BaseItem> itemsToRemove = new ArrayList<>();
+        
         for (int i = 0; i< items.size(); i++){ //RANDOM XD
-            if(i%2 == 0)
+            if(i%2 == 0){
                 newroom.addItem(items.get(i));
+                items.get(i).setRoom(newroom);
+                itemsToRemove.add(items.get(i));
+            }
         }
+        items.removeAll(itemsToRemove);
         
         newroom.gas = gas;
         newroom.capacity = capacity;
         newroom.personCounter = personCounter; //
-        addOutgoingDoor(newroom);
-        addIncomingDoor(newroom);
-        newroom.addOutgoingDoor(this);
+        this.addOutgoingDoor(newroom);
         newroom.addIncomingDoor(this);
+        this.addIncomingDoor(newroom);
+        newroom.addOutgoingDoor(this);
         
         if(labyrinth.getGameManager().getGamePanel() != null){
-            labyrinth.getGameManager().getGamePanel().getGraph().RoomSplit(this, newroom);
+            labyrinth.getGameManager().getGamePanel().getGraph().RoomSplit(newroom);
         }
     }
 

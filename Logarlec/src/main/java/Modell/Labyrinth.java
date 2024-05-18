@@ -14,6 +14,8 @@ public class Labyrinth implements IRound {
     boolean Game_End = false;
 
     public boolean random = true;
+    
+    private int incrementRoomNumber = 1;
 
     /**
      * A labirintusban található szobák listája.
@@ -178,9 +180,14 @@ public class Labyrinth implements IRound {
      */
     public void addRoom(Room r) {
         rooms.add(r);                       
+        incrementRoomNumber++;
         if(getGameManager().getGamePanel() != null){
             getGameManager().getGamePanel().getGraph().addNode(r);
         }
+    }
+    
+    public int getNextRoomNumber(){
+        return incrementRoomNumber;
     }
 
     /**
