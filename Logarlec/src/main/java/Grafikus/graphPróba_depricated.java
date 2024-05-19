@@ -103,7 +103,7 @@ public class graphPróba_depricated {
         //viewer.enableAutoLayout(); // Itt engedélyezd az autolayoutot
         //Viewer v = graph.display();
 
-        Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
+        Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_ANOTHER_THREAD);
         v.addDefaultView(false);
         
         

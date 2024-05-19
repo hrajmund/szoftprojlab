@@ -21,7 +21,7 @@ public class GameManager {
         return guiManager;
     }
     
-    private ArrayList<Person> studentProxyList = new ArrayList<>();
+    
     private int roundCounter = 1;
     
     public int getRoundCounter() {
@@ -596,10 +596,9 @@ public class GameManager {
             guiManager.addStudent(player);
         }
         
-        studentProxyList = labyrinth.getStudents();
         currentPlayerIndex = 0;
         
-        guiManager.setCurrentStudent((Student) studentProxyList.get(currentPlayerIndex));
+        guiManager.setCurrentStudent((Student) labyrinth.getStudents().get(currentPlayerIndex));
     }
     
     public static GuiManager getGuiManager(){
@@ -617,9 +616,10 @@ public class GameManager {
             guiManager.GameEndPopUp();
             return;
         }
-        
-        currentPlayerIndex++;
-        if(currentPlayerIndex >= studentProxyList.size()){
+        if(labyrinth.getStudents().contains(guiManager.currentStudent)){ 
+            currentPlayerIndex++;
+        }
+        if(currentPlayerIndex >= labyrinth.getStudents().size()){
             currentPlayerIndex = 0;
             labyrinth.Randomizer();
             labyrinth.tick();
@@ -627,18 +627,15 @@ public class GameManager {
             guiManager.updateRoundCount(roundCounter);
         }
         
-        while(!labyrinth.getStudents().contains(studentProxyList.get(currentPlayerIndex)) && studentProxyList.get(currentPlayerIndex).getStun()){
+        while(labyrinth.getStudents().get(currentPlayerIndex).getStun()){
                
-            if (studentProxyList.get(currentPlayerIndex).getStun()){
-                guiManager.StunnedPopUp(studentProxyList.get(currentPlayerIndex));
-                studentProxyList.get(currentPlayerIndex).setStun(false);
+            if (labyrinth.getStudents().get(currentPlayerIndex).getStun()){
+                guiManager.StunnedPopUp(labyrinth.getStudents().get(currentPlayerIndex));
+                labyrinth.getStudents().get(currentPlayerIndex).setStun(false);
             }
             
-            if(!labyrinth.getStudents().contains(studentProxyList.get(currentPlayerIndex))) {
-                studentProxyList.remove(currentPlayerIndex);
-            }
             currentPlayerIndex++;
-            if(currentPlayerIndex >= studentProxyList.size()){
+            if(currentPlayerIndex >= labyrinth.getStudents().size()){
                 currentPlayerIndex = 0;
                 labyrinth.Randomizer();
                 labyrinth.tick();
@@ -646,7 +643,7 @@ public class GameManager {
                 guiManager.updateRoundCount(roundCounter);
             }
         }
-        guiManager.setCurrentStudent((Student) studentProxyList.get(currentPlayerIndex));
+        guiManager.setCurrentStudent((Student) labyrinth.getStudents().get(currentPlayerIndex));
     }
     
     public void pickUpItem(Student player, int itemRoomIndex){

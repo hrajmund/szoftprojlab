@@ -78,18 +78,20 @@ public class GuiManager extends JFrame{
 
     GameManager gameManager;
 
-    Student currentStudent;
+    public Student currentStudent;
     int pickedInventoryItemIndex = -1;
     int pickedRoomItemIndex = -1;
     Room pickedRoom;
     
     private void graphReDraw() {
         GraphPanel.removeAll();
-        v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
+        v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_ANOTHER_THREAD);
         v.addDefaultView(false);
         v.enableAutoLayout();
         GraphPanel.add((Component) v.getDefaultView(), BorderLayout.CENTER);
+        System.gc();
     }
+    
     ViewerPipe toViewer;
     
     
@@ -128,7 +130,7 @@ public class GuiManager extends JFrame{
         
         GraphPanel.setLayout(new BorderLayout());
 
-        System.setProperty("org.graphstream.ui", "swing");
+        //System.setProperty("org.graphstream.ui", "swing");
         
         v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_ANOTHER_THREAD);
         //toViewer = v.newViewerPipe();
@@ -246,6 +248,8 @@ public class GuiManager extends JFrame{
                 }
             }
         }
+        
+        
         CurrStudentChanged(student);
         
     }
@@ -408,22 +412,22 @@ public class GuiManager extends JFrame{
                 if(relevantRoom != null){
                     if(newRoom.getOutgoingDoors().contains(relevantRoom) && newRoom.getIncomingDoors().contains(relevantRoom)){
                         E.removeAttribute(style);
-                        graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"two_way");
+                        //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"two_way");
                         E.setAttribute(style, "two_way");
                     }
                     else if(newRoom.getIncomingDoors().contains(relevantRoom)){
                         E.removeAttribute(style);
-                        graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"coming");
+                        //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"coming");
                         E.setAttribute(style, "coming");
                     }
                     else if(newRoom.getOutgoingDoors().contains(relevantRoom)){
                         E.removeAttribute(style);
-                        graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"going");
+                        //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"going");
                         E.setAttribute(style, "going");
                     }
                 } else if (relevantRoom == null) {
                     E.removeAttribute(style);
-                    graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"default");
+                    //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"default");
                     E.setAttribute(style, "default");
                 }
             }

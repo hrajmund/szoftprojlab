@@ -295,7 +295,7 @@ public class Room implements IRound{
      */
 public void merge(Room r) {
 
-    Room newRoom = new Room(this.Name + r.getName() + "merged");
+    Room newRoom = new Room("R" + labyrinth.getNextRoomNumber());
     newRoom.setLabyrinth(labyrinth);
     labyrinth.addRoom(newRoom);
     newRoom.gas = this.gas || r.gas;
