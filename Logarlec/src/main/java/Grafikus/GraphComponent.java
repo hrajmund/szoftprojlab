@@ -6,11 +6,13 @@ import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.implementations.SingleGraph;
+import org.graphstream.ui.graphicGraph.GraphicGraph;
 import org.graphstream.ui.swing_viewer.DefaultView;
 import org.graphstream.ui.swing_viewer.SwingViewer;
 import org.graphstream.ui.swing_viewer.ViewPanel;
 import org.graphstream.ui.view.Viewer;
 
+import java.awt.font.GraphicAttribute;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -22,6 +24,10 @@ public class GraphComponent{
     String style = "ui.class";
     
     GameManager gm;
+    
+    Viewer v;
+    
+    private boolean displayable = false;
     
     DefaultView view;
 
@@ -39,28 +45,32 @@ public class GraphComponent{
         sc.close();
         
         graph.setAttribute("ui.stylesheet", css.toString());
+        
+        graph.setAttribute("layout.weight", 3);
+        graph.setAttribute("layout.quality", 4);
     }
     
     public void setGameManager(GameManager gm){
         this.gm = gm;
     }
 
-    public ViewPanel getViewPanel(){
-        Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
-        ViewPanel viewPanel = (ViewPanel) v.addDefaultView(false);
+    public ViewPanel getViewPanel() {
+        
+        
+        v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
         v.enableAutoLayout();
-        view = (DefaultView) v.getDefaultView();
+        view = (DefaultView) v.addDefaultView(false);
         
-        graph.setAttribute("ui.quality");
+        
         graph.setAttribute("ui.antialias");
-        
-        view.enableMouseOptions();
+        graph.setAttribute("ui.quality");
         
         return view;
     }
     
     
-    protected Graph getGraph() {
+    
+    public Graph getBaseGraph() {
         return graph;
     }
     
@@ -73,12 +83,13 @@ public class GraphComponent{
         for(int i = 0; i < graph.getEdgeCount(); i++) {
             Edge e = graph.getEdge(i);
             Room relevantRoom = null;
-            if( allNewEdges.contains(e.getNode0().getAttribute("room")) && e.getNode1().getAttribute("room") == newRoom){
+            if(Objects.equals(((Room) e.getNode1().getAttribute("room")).getName(), newRoom.getName())){
                     relevantRoom = (Room)e.getNode0().getAttribute("room");
             }
-            if( allNewEdges.contains(e.getNode1().getAttribute("room")) && e.getNode0().getAttribute("room") == newRoom){
+            else if(Objects.equals(((Room) e.getNode0().getAttribute("room")).getName(), newRoom.getName())){
                     relevantRoom = (Room)e.getNode1().getAttribute("room");
             }
+            
             if(relevantRoom != null){
                 if(newRoom.getOutgoingDoors().contains(relevantRoom) && newRoom.getIncomingDoors().contains(relevantRoom)){
                     e.removeAttribute(style);
@@ -86,14 +97,13 @@ public class GraphComponent{
                 }
                 else if(newRoom.getIncomingDoors().contains(relevantRoom)){
                     e.removeAttribute(style);
-                    e.setAttribute(style, "going");
+                    e.setAttribute(style, "coming");
                 }
                 else if(newRoom.getOutgoingDoors().contains(relevantRoom)){
                     e.removeAttribute(style);
-                    e.setAttribute(style, "coming");
+                    e.setAttribute(style, "going");
                 }
-            }
-            else{
+            } else if (relevantRoom == null) {
                 e.removeAttribute(style);
                 e.setAttribute(style, "default");
             }
@@ -112,13 +122,14 @@ public class GraphComponent{
         }
         cr.getOutgoingDoors().forEach(r -> addEdge(cr, r));
         cr.getIncomingDoors().forEach(r -> addEdge(r, cr));
+
     }
     
     public void RoomSplit(Room newRoom){
         
         newRoom.getOutgoingDoors().forEach(r -> addEdge(newRoom, r));
         newRoom.getIncomingDoors().forEach(r -> addEdge(r, newRoom));
-        
+
     }
     
     
@@ -126,6 +137,7 @@ public class GraphComponent{
         
         stayingRoom.getOutgoingDoors().forEach(r -> addEdge(stayingRoom, r));
         stayingRoom.getIncomingDoors().forEach(r -> addEdge(r, stayingRoom));
+
     }
     
     public void RoomGasUpdate(Room room){
@@ -155,6 +167,7 @@ public class GraphComponent{
                 n.setAttribute(style, "default");
             }
         }
+
     }
     
     public void StudentDied(Room r){
@@ -167,6 +180,7 @@ public class GraphComponent{
             n.removeAttribute(style);
             n.setAttribute(style, "node.default");
         }
+
     }
     
     public void addNode(Room r){
@@ -179,11 +193,15 @@ public class GraphComponent{
         else{
             n.setAttribute(style, "default");
         }
+
+        
     }
     
     public void removeNode(Room r){
         Node n = graph.getNode(r.getName());
-        graph.removeNode(n.getId());
+        graph.removeNode(n.getId());        
+
+        
     }
     
     public void addEdge(Room r1, Room r2){
@@ -195,6 +213,8 @@ public class GraphComponent{
             }
         }
         Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
+        e.setAttribute(style, "default");
+        e.setAttribute("layout.weight", 1.1);
     }
     
     public void addStudent(Student s){

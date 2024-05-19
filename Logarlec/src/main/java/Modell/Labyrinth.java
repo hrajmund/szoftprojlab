@@ -2,7 +2,6 @@ package Modell;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Random;
 
@@ -102,7 +101,7 @@ public class Labyrinth implements IRound {
                 boolean merged = false;
                 int randomINT = rand.nextInt(rooms.size());
                 for(int i = 0; i < rooms.size(); i++){
-                    int actRand = i+randomINT% rooms.size();
+                    int actRand = (i+randomINT) % rooms.size();
                     if(rooms.get(actRand).getPeople().isEmpty()){
                         
                         HashSet<Room> neighbours = new HashSet<>();
@@ -182,7 +181,7 @@ public class Labyrinth implements IRound {
         rooms.add(r);                       
         incrementRoomNumber++;
         if(getGameManager().getGamePanel() != null){
-            getGameManager().getGamePanel().getGraph().addNode(r);
+            getGameManager().getGamePanel().getGraphComponent().addNode(r);
         }
     }
     

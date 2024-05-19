@@ -1,6 +1,12 @@
 package Grafikus;
 
 import Modell.*;
+import org.graphstream.graph.Graph;
+import org.graphstream.ui.swing.SwingGraphRenderer;
+import org.graphstream.ui.swing_viewer.DefaultView;
+import org.graphstream.ui.swing_viewer.SwingViewer;
+import org.graphstream.ui.swing_viewer.ViewPanel;
+import org.graphstream.ui.view.Viewer;
 
 import javax.swing.*;
 import java.awt.*;
@@ -50,9 +56,15 @@ public class GuiManager extends JFrame{
     private JPanel RoomPeoplePanel;
     
     private JLabel RoundNumberLabel;
-    
 
-    protected GraphComponent graph;
+    ViewPanel viewPanel;
+    
+    protected GraphComponent graphComponent;
+    
+    Graph graph;
+
+    Viewer v;
+
     GameManager gameManager;
 
     Student currentStudent;
@@ -81,22 +93,34 @@ public class GuiManager extends JFrame{
         InvItemButton4.addActionListener(new inventoryButtonListener(3));
         InvItemButton5.addActionListener(new inventoryButtonListener(4));
         
-        graph = new GraphComponent();
+        graphComponent = new GraphComponent();
         
         gameManager = new GameManager(this, playerNames);
         
         GraphPanel.setLayout(new BorderLayout());
         
-        GraphPanel.add(graph.getViewPanel(), BorderLayout.CENTER);
-        GraphPanel.setMinimumSize(new Dimension(400, 300));
+        graph = graphComponent.getBaseGraph();
+
+        System.setProperty("org.graphstream.ui", "swing");
+        v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
+        v.enableAutoLayout();
         
-                
+        
+        viewPanel = new DefaultView(v, "view1", new SwingGraphRenderer());
+        viewPanel.enableMouseOptions();
+        //viewPanel.setMouseManager(new GraphMouseListener());
+        
+        GraphPanel.add(viewPanel, BorderLayout.CENTER);
+        
+        GraphPanel.setMinimumSize(new Dimension(400, 400));
+        
         
         setContentPane(BasePanel);
         setTitle("Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1200, 900);
         setLocationRelativeTo(null);
+        this.pack();
         setVisible(true);
     }
     
@@ -182,7 +206,7 @@ public class GuiManager extends JFrame{
                         break;
                 }
             }
-            graph.CurrStudentChanged(currentStudent);
+            graphComponent.CurrStudentChanged(student);
         }
         
         //MAYBE SZOBAPICKER GOMBOK BEÁLLÍTÁSA
@@ -190,8 +214,8 @@ public class GuiManager extends JFrame{
     
     
 
-    public GraphComponent getGraph() {
-        return graph;
+    public GraphComponent getGraphComponent() {
+        return graphComponent;
     }
 
     public void DeadPopUp(Person s)
@@ -310,7 +334,7 @@ public class GuiManager extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if (pickedRoom != null && pickedRoom != currentStudent.getCurrentRoom()){
                 
-                graph.studentMoved(currentStudent.getCurrentRoom(), pickedRoom);
+                graphComponent.studentMoved(currentStudent.getCurrentRoom(), pickedRoom);
                 
                 UseButton.setEnabled(false);
                 PutDownButton.setEnabled(false);
@@ -332,6 +356,8 @@ public class GuiManager extends JFrame{
             MoveButton.setEnabled(false);
             
             gameManager.next();
+            
+            viewPanel.update(GraphPanel.getGraphics());
         }
     }
 }

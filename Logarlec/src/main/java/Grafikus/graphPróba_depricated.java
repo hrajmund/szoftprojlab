@@ -103,7 +103,7 @@ public class graphPróba_depricated {
         //viewer.enableAutoLayout(); // Itt engedélyezd az autolayoutot
 
         Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
-        ViewPanel viewPanel = (ViewPanel) v.addDefaultView(false);
+        v.addDefaultView(false);
         
         //Viewer v = graph.display();
         
@@ -146,6 +146,20 @@ public class graphPróba_depricated {
         
         Thread.currentThread().sleep(3000);
         testNode2.setAttribute("ui.class", "student_gas");
+        
+        Thread.currentThread().sleep(3000);
+        testNode2.setAttribute("ui.class", "student");
+        
+        Thread.currentThread().sleep(3000);
+        testNode2.setAttribute("ui.class", "gas");
+        
+        Thread.currentThread().sleep(3000);
+        edgeR1R2.setAttribute("ui.class", "going");
+        edgeR1R3.setAttribute("ui.class", "going");
+        Thread.currentThread().sleep(3000);
+        edgeR3R4.setAttribute("ui.class", "coming");
+        edgeR4R5.setAttribute("ui.class", "two_way");
+        edgeR5R6.setAttribute("ui.class", "going");
     }
     
     

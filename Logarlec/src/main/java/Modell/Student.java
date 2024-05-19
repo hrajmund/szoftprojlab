@@ -1,6 +1,4 @@
 package Modell;
-import Modell.Room;
-import Modell.TestPrinter;
 
 import java.io.PrintWriter;
 
@@ -139,7 +137,7 @@ public class Student extends Person{
     @Override
     public void move(Room r) {
         if(currentRoom.movePossibilities().contains(r)){
-            labyrinth.getGameManager().getGamePanel().getGraph().studentMoved(currentRoom, r);
+            labyrinth.getGameManager().getGamePanel().getGraphComponent().studentMoved(currentRoom, r);
             currentRoom.removePerson(this);
             currentRoom = r;
             r.addPerson(this);

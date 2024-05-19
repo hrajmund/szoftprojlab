@@ -41,7 +41,7 @@ edge{
 }
 
 edge.default {
-    fill-color: black;
+    fill-color: grey;
     size: 5px;
 }
 

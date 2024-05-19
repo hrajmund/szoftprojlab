@@ -2,8 +2,6 @@ package Modell;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
-import Szkeleton.Szkeleton;
 
 /**
  * Elátkozott szoba
@@ -35,7 +33,7 @@ public class CursedRoom extends Room implements IRound {
         if(labyrinth.random){
             cursed();
             if(labyrinth.getGameManager().getGamePanel() != null){
-                labyrinth.getGameManager().getGamePanel().getGraph().CurseHappened(this);
+                labyrinth.getGameManager().getGamePanel().getGraphComponent().CurseHappened(this);
             }
         }
     }
