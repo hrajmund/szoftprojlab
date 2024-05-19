@@ -74,7 +74,7 @@ public class GuiManager extends JFrame{
     
     Graph graph;
 
-    Viewer v;
+     Viewer v;
 
     GameManager gameManager;
 
@@ -84,15 +84,19 @@ public class GuiManager extends JFrame{
     Room pickedRoom;
     
     private void graphReDraw() {
+        //graph.removeAttribute("ui.stylesheet");
+        //graph.setAttribute("ui.stylesheet", CssStyle);
         GraphPanel.removeAll();
         v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_ANOTHER_THREAD);
         v.addDefaultView(false);
         v.enableAutoLayout();
         GraphPanel.add((Component) v.getDefaultView(), BorderLayout.CENTER);
-        System.gc();
+        //System.gc();
     }
     
     ViewerPipe toViewer;
+    
+    String CssStyle;
     
     
     private void createUIComponents() {
@@ -121,9 +125,10 @@ public class GuiManager extends JFrame{
         while(sc.hasNextLine()) {
             css.append(sc.nextLine());
         }
+        CssStyle = css.toString();
         sc.close();
         
-        graph.setAttribute("ui.stylesheet", css.toString());
+        graph.setAttribute("ui.stylesheet", CssStyle);
         graph.setAttribute("layout.weight", 3);
         
         gameManager = new GameManager(this, playerNames);
@@ -133,6 +138,8 @@ public class GuiManager extends JFrame{
         //System.setProperty("org.graphstream.ui", "swing");
         
         v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_ANOTHER_THREAD);
+        //v = graph.display();
+        
         //toViewer = v.newViewerPipe();
         v.enableAutoLayout();
         v.addDefaultView(false);
@@ -427,8 +434,8 @@ public class GuiManager extends JFrame{
                     }
                 } else if (relevantRoom == null) {
                     E.removeAttribute(style);
-                    //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"default");
-                    E.setAttribute(style, "default");
+                    //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"basic");
+                    E.setAttribute(style, "basic");
                 }
             }
             graphReDraw();
@@ -462,7 +469,7 @@ public class GuiManager extends JFrame{
                     e.setAttribute(style, "going");
                 }
             } else if (relevantRoom == null) {
-                e.setAttribute(style, "default");
+                e.setAttribute(style, "basic");
             }
         }
     }
@@ -521,7 +528,7 @@ public class GuiManager extends JFrame{
                 n.setAttribute(style, "student");
             }
             else{
-                n.setAttribute(style, "default");
+                n.setAttribute(style, "basic");
             }
         }
         graphReDraw();
@@ -546,7 +553,7 @@ public class GuiManager extends JFrame{
             n.setAttribute(style, "student");
         }
         else if(!r.getGas() && !stillhasStudent){
-            n.setAttribute(style, "default");
+            n.setAttribute(style, "basic");
         }
         graphReDraw();
     }
@@ -559,7 +566,7 @@ public class GuiManager extends JFrame{
             n.setAttribute(style, "gas");
         }
         else{
-            n.setAttribute(style, "default");
+            n.setAttribute(style, "basic");
         }
     }
 
@@ -577,7 +584,7 @@ public class GuiManager extends JFrame{
             }
         }
         Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
-        e.setAttribute(style, "default");
+        e.setAttribute(style, "basic");
         e.setAttribute("layout.weight", 1.1);
     }
 
@@ -602,7 +609,7 @@ public class GuiManager extends JFrame{
         }
         else{
             oldN.removeAttribute(style);
-            oldN.setAttribute(style, "default");
+            oldN.setAttribute(style, "basic");
         }
         if(newR.getGas()){
             newN.removeAttribute(style);
