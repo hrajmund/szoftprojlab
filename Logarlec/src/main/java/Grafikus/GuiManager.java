@@ -427,7 +427,7 @@ public class GuiManager extends JFrame{
                     E.setAttribute(style, "default");
                 }
             }
-            //graphReDraw();
+            graphReDraw();
         }
     }
 
