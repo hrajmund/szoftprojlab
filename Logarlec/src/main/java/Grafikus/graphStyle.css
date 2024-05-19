@@ -1,18 +1,18 @@
 node{
     fill-color: grey;
-    size: 45px;
+    size: 20px;
     text-size: 20;
 }
 
 node.default {
     fill-color: grey;
-    size: 45px;
+    size: 20px;
     text-size: 20;
 }
 
 node.gas {
     fill-color: rgb(0,100,0);
-    size: 45px;
+    size: 20px;
     text-size: 20;
 }
 
@@ -21,7 +21,7 @@ node.student {
     stroke-color: rgb(30,255,30);
     stroke-mode: plain;
     stroke-width: 5px;
-    size: 45px;
+    size: 20px;
     text-size: 20;
 }
 
@@ -30,7 +30,7 @@ node.student_gas {
     stroke-color: rgb(30,255,30);
     stroke-mode: plain;
     stroke-width: 5px;
-    size: 45px;
+    size: 20px;
     text-size: 20;
 }
 

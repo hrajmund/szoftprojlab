@@ -119,6 +119,7 @@ public class Student extends Person{
         this.dropAllItems();
         currentRoom.removePerson(this);
         labyrinth.removeStudent(this);
+        labyrinth.getGameManager().getGamePanel().StudentDied(this.currentRoom);       
     }
     /**
      * Ellenőrzi, hogy a hallgató felvehette-e a Logarlec-et
@@ -137,7 +138,7 @@ public class Student extends Person{
     @Override
     public void move(Room r) {
         if(currentRoom.movePossibilities().contains(r)){
-            labyrinth.getGameManager().getGamePanel().getGraphComponent().studentMoved(currentRoom, r);
+            labyrinth.getGameManager().getGamePanel().studentMoved(currentRoom, r);
             currentRoom.removePerson(this);
             currentRoom = r;
             r.addPerson(this);

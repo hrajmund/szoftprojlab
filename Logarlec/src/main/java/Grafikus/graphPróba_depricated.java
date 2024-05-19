@@ -101,11 +101,11 @@ public class graphPróba_depricated {
 
         //Viewer viewer = new Viewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
         //viewer.enableAutoLayout(); // Itt engedélyezd az autolayoutot
+        //Viewer v = graph.display();
 
         Viewer v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
         v.addDefaultView(false);
         
-        //Viewer v = graph.display();
         
         v.enableAutoLayout();
 

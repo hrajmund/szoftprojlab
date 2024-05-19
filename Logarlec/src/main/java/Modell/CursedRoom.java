@@ -33,7 +33,7 @@ public class CursedRoom extends Room implements IRound {
         if(labyrinth.random){
             cursed();
             if(labyrinth.getGameManager().getGamePanel() != null){
-                labyrinth.getGameManager().getGamePanel().getGraphComponent().CurseHappened(this);
+                labyrinth.getGameManager().getGamePanel().CurseHappened(this);
             }
         }
     }

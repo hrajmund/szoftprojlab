@@ -47,7 +47,7 @@ public class GraphComponent{
         graph.setAttribute("ui.stylesheet", css.toString());
         
         graph.setAttribute("layout.weight", 3);
-        graph.setAttribute("layout.quality", 4);
+        //graph.setAttribute("layout.quality", 4);
     }
     
     public void setGameManager(GameManager gm){
@@ -63,7 +63,7 @@ public class GraphComponent{
         
         
         graph.setAttribute("ui.antialias");
-        graph.setAttribute("ui.quality");
+        //graph.setAttribute("ui.quality");
         
         return view;
     }

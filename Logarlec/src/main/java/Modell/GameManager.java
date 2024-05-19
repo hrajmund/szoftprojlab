@@ -148,7 +148,7 @@ public class GameManager {
                         r2.addIncomingDoor(r1);
                         
                         if (guiManager != null){
-                            guiManager.getGraphComponent().addEdge(r1, r2);
+                            guiManager.addEdge(r1, r2);
                         }
                         
                         break;
@@ -161,7 +161,7 @@ public class GameManager {
                                 siker = true;
                                 
                                 if(guiManager != null){
-                                    guiManager.getGraphComponent().RoomGasUpdate(v);
+                                    guiManager.RoomGasUpdate(v);
                                 }
                                 
                             }
@@ -375,7 +375,7 @@ public class GameManager {
         
         if(guiManager != null){
             for (Person p : l.getStudents()) {
-                guiManager.getGraphComponent().addStudent((Student) p);
+                guiManager.addStudent((Student) p);
             }
         }
     }
@@ -593,13 +593,12 @@ public class GameManager {
             player.setLabyrinth(labyrinth);
             labyrinth.getRooms().get(0).addPerson(player);
             player.setCurrentRoom(labyrinth.getRooms().get(0));
-            guiManager.getGraphComponent().addStudent(player);
+            guiManager.addStudent(player);
         }
         
         studentProxyList = labyrinth.getStudents();
         currentPlayerIndex = 0;
         
-        gp.getGraphComponent().setGameManager(this);
         guiManager.setCurrentStudent((Student) studentProxyList.get(currentPlayerIndex));
     }
     
