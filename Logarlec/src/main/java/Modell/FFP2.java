@@ -25,11 +25,13 @@ public class FFP2 extends BaseItem implements IRound {
 
     public FFP2(String n){
         name=n;
+        filename = "mask.png";
     }
 
     public FFP2(String n,int i){
         name=n;
         timeUsage=i;
+        filename = "mask.png";
     }
 
     /**

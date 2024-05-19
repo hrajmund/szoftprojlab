@@ -8,11 +8,12 @@ import java.io.PrintWriter;
 public class Camembert extends BaseItem{
     
     public Camembert(){
-        name="UnknownCamambert";
+        name="UnknownCamembert";
     }
 
     public Camembert(String n){
         name=n;
+        filename = "camembert.png";
     }
     
     /**

@@ -20,11 +20,13 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
 
     public NedvesTablatorlo(String n){
         name=n;
+        filename = "tablatorlo.png";
     }
 
     public NedvesTablatorlo(String n, int i){
         name=n;
         timeUsage=i;
+        filename = "tablatorlo.png";
     }
 
     /**

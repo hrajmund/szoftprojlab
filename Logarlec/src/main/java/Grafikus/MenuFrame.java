@@ -100,10 +100,10 @@ public class MenuFrame extends JFrame{
             }
             ImageIcon icon = null;
             if(players.get(0).equals("0")){
-                icon = new ImageIcon("game_over.png"); // Kép elérési útjának megadása
+                icon = new ImageIcon("src/main/java/icons/game_over.png"); // Kép elérési útjának megadása
             }
             if(players.size()>1&& players.get(1).equals("1")){
-                icon = new ImageIcon("victory.png"); // Kép elérési útjának megadása
+                icon = new ImageIcon("src/main/java/icons/victory.png"); // Kép elérési útjának megadása
             }
             
             menuFrame.setVisible(false);

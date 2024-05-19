@@ -15,6 +15,7 @@ public class Logarlec extends BaseItem{
 
     public Logarlec(String n){
         name=n;
+        filename = "logarlec.png";
     }
     
     /**

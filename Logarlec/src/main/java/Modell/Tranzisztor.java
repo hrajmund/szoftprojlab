@@ -11,10 +11,12 @@ public class Tranzisztor extends BaseItem{
 
     public Tranzisztor(){
         name="UnknownTranzisztor";
+        filename = "tranzisztor.png";
     }
 
     public Tranzisztor(String n){
         name=n;
+        filename = "tranzisztor.png";
     }
 
     /**

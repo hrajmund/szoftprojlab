@@ -12,15 +12,18 @@ public class TVSzDenever extends BaseItem{
     
     public TVSzDenever(){
         name= "UnknownTVSZ";
+        filename = "tvsz.png";
     }
 
     public TVSzDenever(String n){
         name= n;
+        filename = "tvsz.png";
     }
 
     public TVSzDenever(String n, int i){
         name= n;
         remainingUsage= i;
+        filename = "tvsz.png";
     }
 
     /**

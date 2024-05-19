@@ -75,11 +75,12 @@ public abstract class BaseItem implements IRound{
     public Tranzisztor isConnected(){
         return null;
     }
-    
-    protected String path;
+
+    protected final String path = "src/main/java/icons/";
+    protected String filename;
     
     public File getPath() {
-        return new File(path);
+        return new File(path + filename);
     }
     
     /**

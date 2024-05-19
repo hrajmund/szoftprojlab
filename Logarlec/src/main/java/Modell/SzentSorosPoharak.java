@@ -14,11 +14,13 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
 
     public SzentSorosPoharak(String n){
         name=n;
+        filename = "szentsorospoharak.png";
     }
 
     public SzentSorosPoharak(String n,int i){
         name=n;
         timeUsage=i;
+        filename = "szentsorospoharak.png";
     }
 
     /**
