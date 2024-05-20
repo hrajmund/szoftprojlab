@@ -156,12 +156,12 @@ public class GuiManager extends JFrame{
         //viewPanel = (DefaultView) v.getDefaultView();
         //graph.display();
         
-        BasePanel.setMinimumSize(new Dimension(800, 600));
-        GraphPanel.setMinimumSize(new Dimension(800, 400));
+        BasePanel.setMinimumSize(new Dimension(1000, 600));
+        GraphPanel.setMinimumSize(new Dimension(1000, 400));
 
-        ActualPlayerPanel.setMinimumSize(new Dimension(350,70));
-        RoomDetailPanel.setMinimumSize(new Dimension(350,70));
-        RoundPanel.setMaximumSize(new Dimension(100,70));
+        ActualPlayerPanel.setMinimumSize(new Dimension(450,90));
+        RoomDetailPanel.setMinimumSize(new Dimension(350,90));
+        RoundPanel.setMaximumSize(new Dimension(100,90));
         
         this.add(BasePanel);
         this.setTitle("Game");
@@ -178,11 +178,7 @@ public class GuiManager extends JFrame{
             if (i < student.getItems().size()) {
                 InvItemButtons[i].setEnabled(true);
                 InvItemButtons[i].setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
-                if (Boolean.TRUE.equals(student.getItems().get(i).canBeused())){
-                    InvItemButtons[i].setBackground(Color.RED);
-                }else{
-                    InvItemButtons[i].setBackground(Color.white);
-                }
+                InvItemButtons[i].setBackground(Color.WHITE);
             } else {
                 InvItemButtons[i].setIcon(null);
                 InvItemButtons[i].setBackground(Color.BLACK);
@@ -274,12 +270,13 @@ public class GuiManager extends JFrame{
     {
         pickedRoom = r;
         RoomNameLabel.setText(r.getName());
+        
         RoomItemsPanel.setLayout(new FlowLayout());
         RoomItemsPanel.removeAll();
+        reloadRoomItems();
+        
         RoomPeoplePanel.setLayout(new FlowLayout());
         RoomPeoplePanel.removeAll();
-        
-        reloadRoomItems();
         
         for(int i = 0; i < r.getPeople().size(); i++){
             JLabel roomPersonLabel = new JLabel(r.getPeople().get(i).getName());
@@ -290,6 +287,7 @@ public class GuiManager extends JFrame{
         }else if (currentStudent.getCurrentRoom() == r || (!currentStudent.getCurrentRoom().movePossibilities().contains(r))){
             MoveButton.setEnabled(false);
         }
+        
         RoomDetailPanel.repaint();
         
     }
@@ -388,6 +386,9 @@ public class GuiManager extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if (pickedInventoryItemIndex > -1) {
                 gameManager.useItem(currentStudent,pickedInventoryItemIndex );
+                if(!gameManager.labyrinth.getStudents().contains(currentStudent)) {
+                    gameManager.next();
+                }
                 reloadInventory();
                 reloadRoomItems();
                 pickedInventoryItemIndex = -1; 

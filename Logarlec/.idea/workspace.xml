@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="khm... Győztünk, de még a holdról is látszik!">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a284097c88186593890f7085142a68c950eb8b4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a284097c88186593890f7085142a68c950eb8b4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2ac8f63041aad578f57fa8efaa5cb3e8c1b383ea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2ac8f63041aad578f57fa8efaa5cb3e8c1b383ea" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/5088ecffb75407fa55f0170acb1b4dd454f388d4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/5088ecffb75407fa55f0170acb1b4dd454f388d4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72a7b1e132ad534d44c493e0d771ef29d7b00c52" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72a7b1e132ad534d44c493e0d771ef29d7b00c52" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72e5d07f9bb58121285a6efc2a82352390e408fc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72e5d07f9bb58121285a6efc2a82352390e408fc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e66d0566f4471e3eb3fb0d8787b17e9461c4f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e66d0566f4471e3eb3fb0d8787b17e9461c4f6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97d789923c83e8c63a2c22f4bfee8fa97d8c13d8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97d789923c83e8c63a2c22f4bfee8fa97d8c13d8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acf0b198bbf701c9538f32f35c93fed9a6c58fb1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acf0b198bbf701c9538f32f35c93fed9a6c58fb1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c2f04970d194b7936e53e1d7af50078ee156ac5f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c2f04970d194b7936e53e1d7af50078ee156ac5f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" afterDir="false" />
     </list>
     <list id="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" name="Changes by rayy04" comment="Changes by rayy04" />
     <list id="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" name="Changes by svajc" comment="" />
@@ -34,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="91530" />
+    <option name="totalTimeSeconds" value="92426" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -203,6 +186,7 @@
       <workItem from="1716221993766" duration="26000" />
       <workItem from="1716222030872" duration="9851000" />
       <workItem from="1716232023384" duration="1090000" />
+      <workItem from="1716235900620" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
