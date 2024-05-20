@@ -1,35 +1,40 @@
 
+¹
+java:S1319Õ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(†İÂ˜üÿÿÿÿ8ÁŠ£¯ù1J$705a1e75-6b8d-42e2-9831-741b7cee7a7d
+´
+java:S1319Ø"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Ş8ÁŠ£¯ù1J$77a1c362-c140-4db2-8093-45548efe45f8
+¹
+java:S1319ß"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Òç¡•ùÿÿÿÿ8ÁŠ£¯ù1J$9698f949-abe5-4a6c-8464-1d31cac5f922
 •
-java:S1104"RMake random a static final constant or non-public and provide accessors if needed.(æÖÿÅ8‚Ö—Ûò1J$4737b254-03a6-4f0b-9f0b-c4b63469079c
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8„Ö—Ûò1J$6812fac9-1831-4a1c-8614-01d43a724779
-•	java:S116"SRename this field "Game_End" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‹¿ø8É×—Ûò1J$0061c251-1f85-4005-8c96-51164d74c5ab
-”	java:S116)"MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÄİ‰üÿÿÿÿ8É×—Ûò1J$b31fa1ea-3264-4887-bc18-9a52c23b5c59
+java:S1104"RMake random a static final constant or non-public and provide accessors if needed.(æÖÿÅ8ÂŠ£¯ù1J$3c3cb3e1-023d-45ab-8015-98fb91d2ac63
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ÄŠ£¯ù1J$95b067c7-24b3-4888-9237-29f7d3ebdb56
+•	java:S116"SRename this field "Game_End" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á‹¿ø8ø£¯ù1J$34304899-a4e8-4b34-907f-6edb2110e257
+”	java:S116."MRename this field "GM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÄİ‰üÿÿÿÿ8ÎïÎ¯ù1J$3eff2412-515f-4471-8d27-ef3ffb841563
 É
-java:S11860"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(à€¢ğüÿÿÿÿ8Ê×—Ûò1J$9a0fc857-6170-4c6c-8a7c-09a87ddc2f25
-™
-java:S1450)"QRemove the "GM" field and declare it as a local variable in the relevant methods.(ĞÄİ‰üÿÿÿÿ8Ì×—Ûò1J$51616884-0eba-4876-b9c8-67d88a6ecea8
+java:S11869"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(à€¢ğüÿÿÿÿ8ÎïÎ¯ù1J$7245aeb3-eeac-45c0-915a-e5c5cfc7d83c
+•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û…ÿÿÿÿÿ8ÑïÎ¯ù1J$6730768b-560f-4647-8f09-9d3a64bdd224
 š
-java:S3776C"RRefactor this method to reduce its Cognitive Complexity from 48 to the 15 allowed.(íÌÆğüÿÿÿÿ8Ğ×—Ûò1J$e109f457-5fd6-461d-8244-72630eb6c531
+java:S3776L"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(íÌÆğüÿÿÿÿ8ÔïÎ¯ù1J$5886729f-d739-442f-b6b8-c5c0fee4e1e9
 f
-java:S2119W"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8Ó×—Ûò1J$cfbe4ab8-8f63-4401-baf6-929943c1a648
+java:S2119`"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8×ïÎ¯ù1J$b2b79c54-ab03-4bbe-ab8d-5aa8e3f139b7
 |
-java:S3400"9Remove this method and declare a constant for this value.(¸®Ã'8××—Ûò1J$afb183c0-017c-4dc3-a5c5-1eecc50d367c
-p
-java:S1172|"(Remove this unused method parameter "r".(Â‰¤Êşÿÿÿÿ8Ø×—Ûò1J$465668f2-f6b0-4829-bf9c-6d673406fd51
-~	java:S125}"<This block of commented-out lines of code should be removed.(ìî¦É8Ø×—Ûò1J$48141c51-0718-4247-9bc1-3f5332deb014
-„	java:S125€"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8Ø×—Ûò1J$66ab99c0-1419-4b62-8556-31b9ddfbd4a1
+java:S3400‰"9Remove this method and declare a constant for this value.(¸®Ã'8ÚïÎ¯ù1J$cfb245d0-b0d4-45f6-aa67-a0981f154da5
+q
+java:S1172„"(Remove this unused method parameter "r".(Â‰¤Êşÿÿÿÿ8ÚïÎ¯ù1J$c12bcd7a-ff4e-4314-80fa-f8629277a84a
+	java:S125…"<This block of commented-out lines of code should be removed.(ìî¦É8ÛïÎ¯ù1J$6f44cb2c-4395-4dac-8973-0476560757b0
+„	java:S125ˆ"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ÛïÎ¯ù1J$dec204d7-c7a0-49ce-8a52-81325376abd3
+–	java:S100ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÕàŞÿÿÿÿÿ8ßïÎ¯ù1J$54d9da8a-80f3-491b-b9b8-05ea1cf5081b
 ›
-java:S3776Ò"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ºÕàŞÿÿÿÿÿ8İ×—Ûò1J$025607dc-dcc5-4969-9564-dc54be6f3bbf
-„	java:S125Ó"<This block of commented-out lines of code should be removed.(¬±Š®ÿÿÿÿÿ8İ×—Ûò1J$1195a26f-8571-4df5-a565-5ba5072a54cb
-~	java:S125Ø"<This block of commented-out lines of code should be removed.(âó”8Ş×—Ûò1J$4f47a775-8596-48e6-9a1f-8bc8b7326df4
+java:S3776ã"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ºÕàŞÿÿÿÿÿ8àïÎ¯ù1J$b2a863d4-1c65-420b-98a7-fa41143d78b6
+„	java:S125ä"<This block of commented-out lines of code should be removed.(¬±Š®ÿÿÿÿÿ8àïÎ¯ù1J$abf0d6b4-5e18-4451-96b5-608549355156
+~	java:S125é"<This block of commented-out lines of code should be removed.(âó”8àïÎ¯ù1J$02c25507-8579-4694-9bd4-5ad43422f279
 ¤
-java:S3923Ü"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Şş¾µüÿÿÿÿ8Ş×—Ûò1J$84f663d5-f1f5-44ea-a216-fc8a5040e3b8
-„	java:S125á"<This block of commented-out lines of code should be removed.(¡ÖÃÇøÿÿÿÿ8Ş×—Ûò1J$2dcb1ba5-6e43-48b5-9d02-6a31a39503e0
+java:S3923í"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Şş¾µüÿÿÿÿ8áïÎ¯ù1J$ba58fc76-6bec-4e1a-ac6a-ac2a7d404d20
+„	java:S125ò"<This block of commented-out lines of code should be removed.(¡ÖÃÇøÿÿÿÿ8âïÎ¯ù1J$a10098e3-cbef-430e-901c-d814118fbb2c
+–	java:S100û"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûû£”üÿÿÿÿ8âïÎ¯ù1J$c47c8bbb-953a-4c52-af78-8614b68332c3
 ›
-java:S3776ê"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ûû£”üÿÿÿÿ8ß×—Ûò1J$bd3da466-ea7a-4a8e-9b44-365598f79e21
+java:S3776û"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Ûû£”üÿÿÿÿ8âïÎ¯ù1J$1b76f48a-3213-497e-b1c3-fc189e545847
 g
-java:S2119ë"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8ß×—Ûò1J$ef40c967-8744-4e6d-bcbb-f998c55a17e1
-n
-java:S1068)"&Remove this unused "GM" private field.(ĞÄİ‰üÿÿÿÿ8ä×—Ûò1J$3e6a765a-6ccb-452a-90b4-967bf462e104
-~
-java:S1144|"6Remove this unused private "hasEmptyNeighbour" method.(Â‰¤Êşÿÿÿÿ8ä×—Ûò1J$42db4147-03fa-429b-a227-20fdae9d03ba
+java:S2119ü"Save and re-use this "Random".(šŸ«íøÿÿÿÿ8âïÎ¯ù1J$302b2f43-81da-460e-bf42-643096cb9a19
+
+java:S1144„"6Remove this unused private "hasEmptyNeighbour" method.(Â‰¤Êşÿÿÿÿ8èïÎ¯ù1J$f827b8c0-6b6f-405e-a710-11739fe7f0da

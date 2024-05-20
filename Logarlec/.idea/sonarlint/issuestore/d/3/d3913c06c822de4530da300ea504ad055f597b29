@@ -1,5 +1,7 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8ïò–Ëô1J$86985d05-9f94-411d-a9df-02f8d99cb2a8
-•	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›à¶ôþÿÿÿÿ8øÍ˜Ëô1J$fc920fbc-a19c-43b1-8e90-20a7a18e05a3
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8¼ê¤µù1J$d16ae856-5ead-4a87-99d9-5ea11bea9e94
+d
+java:S1170O"!Make this final field static too.(‡ÿ³°8¾ê¤µù1J$66047211-b325-47cf-b1a3-5cf50004a514
+•	java:S100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›à¶ôþÿÿÿÿ8Ãê¤µù1J$aa4e4903-1b18-4247-a5cc-a441443ac528
 —
-java:S3038j"O"tick" is defined in the "IRound" interface and can be removed from this class.(üû¿Çùÿÿÿÿ8ùÍ˜Ëô1J$61b4d862-c186-4944-b5ad-d3059056f25c
+java:S3038p"O"tick" is defined in the "IRound" interface and can be removed from this class.(üû¿Çùÿÿÿÿ8Ãê¤µù1J$22a86cdb-2e26-4407-b771-014ed2499bde

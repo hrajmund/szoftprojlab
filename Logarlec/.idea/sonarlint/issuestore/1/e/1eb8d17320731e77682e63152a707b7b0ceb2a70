@@ -1,6 +1,13 @@
 
-L
-java:S1066/"/Merge this if statement with the enclosing one.(¢ÌØ8ˆ«‡Ùó1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8‰«‡Ùó1
-£
-java:S1186_"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8«‡Ùó1
+r
+java:S10664"/Merge this if statement with the enclosing one.(¢ÌØ8†Œ±¶ù1J$6348eb4d-fbaa-4705-915b-394ca7050dd5
+J
+java:S5411P"(Use a primitive boolean expression here.(õæıûÿÿÿÿ8È³¶ù1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8ˆŒ±¶ù1J$d149f397-64a2-45cd-98c3-12133f333890
+É
+java:S1186u"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆğüÿÿÿÿ8Œ±¶ù1J$4e4f7109-e477-4da3-a339-ca1c78c6a191
+~	java:S125"<This block of commented-out lines of code should be removed.(Ëõñí8‘Œ±¶ù1J$8075f4b5-e6ee-4f20-989a-3bee970f86db
+}
+java:S1161G":Add the "@Override" annotation above this method signature(ìÍ÷ï8›Œ±¶ù1J$b40eadf7-72aa-4300-8a17-c37e9196c8c9
+‰
+java:S1126P"AReplace this if-then-else statement by a single return statement.(õæıûÿÿÿÿ8œŒ±¶ù1J$ea39981b-bf7c-4d23-98d7-283526c48f81

@@ -1,10 +1,6 @@
 
 k
-java:S1066."/Merge this if statement with the enclosing one.(±†øèJ$148225c9-e979-411f-b327-c8c719de3950
+java:S10660"/Merge this if statement with the enclosing one.(±†øèJ$8a53e8d2-741d-4d87-a2c6-d283f8fc61ab
 d
-java:S5411-"(Use a primitive boolean expression here.(•ëÞ‚J$cc377aec-2abf-42b3-8470-2bb5d76140ce
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿJ$b3c6db6f-78df-488b-908d-4762e852b2b3
-•
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÛûÇûÿÿÿÿJ$2845731e-2275-49e7-8fdf-9d3e9746028e
-•
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿJ$cc95a7d0-d77c-4cc7-8cb6-29e15e6aa3f8
+java:S5411/"(Use a primitive boolean expression here.(•ëÞ‚J$8fbcae9b-c808-4431-9c3f-4c268b861ff3
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿJ$4b17b0e0-4a9a-49ce-8bcb-d593d04e8299

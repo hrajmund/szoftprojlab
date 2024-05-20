@@ -1,15 +1,34 @@
 
-s	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÛ×½ûÿÿÿÿ8—¶‡Ùó1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8›¶‡Ùó1
-k	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê°ñä8®¶‡Ùó1
-ž
-java:S11866"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…—½Ž8°¶‡Ùó1
+³
+java:S1319H"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(®Ù”Þ8´·±­ù1J$685ef5c6-c509-482d-aa74-211e12b9e0dc
 ¤
-java:S1186¡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜ ö²üÿÿÿÿ8°¶‡Ùó1
-¤
-java:S1186¡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆðüÿÿÿÿ8°¶‡Ùó1
-O
-java:S1905’",Remove this unnecessary cast to "ArrayList".(–ø™ºûÿÿÿÿ8º¶‡Ùó1
-J
-java:S1905›",Remove this unnecessary cast to "ArrayList".(ŒæÆ”8»¶‡Ùó1
-Y	java:S125¢"<This block of commented-out lines of code should be removed.(†Áˆž8¼¶‡Ùó1
+java:S1319l"aThe type of "n" should be an interface such as "List" rather than the implementation "ArrayList".(üƒæÉ8µ·±­ù1J$9858c251-64d1-4362-aea8-ba337de1ff3a
+°
+java:S1319u"mThe type of "outgoingDoors" should be an interface such as "List" rather than the implementation "ArrayList".(´™±×8µ·±­ù1J$18fac95f-a9da-47f6-9f5b-1e83513e5c4d
+¹
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¡„‰õúÿÿÿÿ8µ·±­ù1J$317a8823-0dd8-4bc2-ab48-0b214a4575ed
+¹
+java:S1319™"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÝŠ¹ðüÿÿÿÿ8µ·±­ù1J$a1064af7-2c25-4f0f-9f0b-0b93fd189167
+±
+java:S1319 "hThe type of "newDoors" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8¶·±­ù1J$6dfbeb6f-ce02-4f8e-8be4-99bbb88cd5a5
+­
+java:S1319 "dThe type of "room" should be an interface such as "List" rather than the implementation "ArrayList".(˜ ö²üÿÿÿÿ8¶·±­ù1J$b7649f96-18af-4e99-b8e1-e4aea578e4ae
+™	java:S117Š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÛ×½ûÿÿÿÿ8—¶‡Ùó1J$8a25a831-2cb9-4b5d-8f06-f4699da09bb1
+q
+java:S5411ã"(Use a primitive boolean expression here.(êìâ’ùÿÿÿÿ8¸·±­ù1J$df6efaf4-1658-4ac8-80c4-0fcf0c096226
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8›¶‡Ùó1J$f47ab1a4-cd74-405c-a88a-f12b71a5801c
+‘	java:S116"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê°ñä8®¶‡Ùó1J$e3aa0f99-c9d4-46b9-9a5a-a388bfbaf045
+Ä
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…—½Ž8°¶‡Ùó1J$e853728e-9834-4164-9fa2-338befa9d421
+Ê
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜ ö²üÿÿÿÿ8°¶‡Ùó1J$70917d0b-630a-4674-a4d6-717c37fcb42b
+Ê
+java:S1186©"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÌÆðüÿÿÿÿ8°¶‡Ùó1J$e7b607b2-2034-46a6-81ab-651b870ec8a1
+u
+java:S1905‘",Remove this unnecessary cast to "ArrayList".(–ø™ºûÿÿÿÿ8º¶‡Ùó1J$dba17922-8feb-4d53-a8e1-5697d633f424
+p
+java:S1905š",Remove this unnecessary cast to "ArrayList".(ŒæÆ”8»¶‡Ùó1J$63f8d617-b9b6-4e99-8778-584bb70a8d4e
+	java:S125¡"<This block of commented-out lines of code should be removed.(†Áˆž8¼¶‡Ùó1J$6397ab6b-34ec-46b3-b28c-b189bc6a6927
+l
+java:S1172•"(Remove this unused method parameter "r".(˜ÒÔ¥8÷·±­ù1J$57aba94f-5c0e-4d84-91ad-47301f3df504
+–	java:S100¬"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é±äùÿÿÿÿ8¸±­ù1J$b67ea0a6-ca1f-47d0-92dc-54dfc13bad46

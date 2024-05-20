@@ -1,9 +1,17 @@
 
-{
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ò¤ªÃúÿÿÿÿ8È£‡Ùó1
-{
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸Æçàÿÿÿÿÿ8É£‡Ùó1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8É£‡Ùó1
-X	java:S125-"<This block of commented-out lines of code should be removed.(½®Ûš8Ü£‡Ùó1
-^
-java:S1126S"AReplace this if-then-else statement by a single return statement.(©œ‹8â£‡Ùó1
+¡
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ò¤ªÃúÿÿÿÿ8Ô¬Ÿ±ù1J$efac49e2-f434-49bf-bd50-aba093522371
+¡
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸Æçàÿÿÿÿÿ8Ô¬Ÿ±ù1J$9ad4198e-4ce0-47b2-b31a-5ce4da2c5f83
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ýìúÿÿÿÿ8Õ¬Ÿ±ù1J$f0d40e11-7682-4f6a-b187-af5a55c726f3
+‚
+java:S1161#":Add the "@Override" annotation above this method signature(íÌÆðüÿÿÿÿ8ä¬Ÿ±ù1J$eea98869-827e-4c30-ae91-dcab5550d1f3
+f
+java:S2119%"Save and re-use this "Random".(€ÏÅ£ýÿÿÿÿ8å¬Ÿ±ù1J$f6966a4c-a4c0-4d4e-a35a-e7d26469aa73
+‚
+java:S1161C":Add the "@Override" annotation above this method signature(©Ïœ¦úÿÿÿÿ8ç¬Ÿ±ù1J$065e07de-f5eb-41fe-a891-89596ed1dea6
+~	java:S125D"<This block of commented-out lines of code should be removed.(½®Ûš8è¬Ÿ±ù1J$b898b639-ac6a-4d5f-99fd-a88547539d02
+f
+java:S2119Y"Save and re-use this "Random".(€ÏÅ£ýÿÿÿÿ8è¬Ÿ±ù1J$15992add-b151-44a2-9e32-a39444021aa3
+„
+java:S1126j"AReplace this if-then-else statement by a single return statement.(©œ‹8é¬Ÿ±ù1J$a7067a44-4e20-4413-a6ab-9a9cb9c53d9b

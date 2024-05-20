@@ -1,21 +1,21 @@
 
 r
-java:S1066q"/Merge this if statement with the enclosing one.(Óõå©8Œ±‡Ùó1J$f0dd1800-980e-43f1-a9af-533d1d7990e5
+java:S1066q"/Merge this if statement with the enclosing one.(Óõå©8Œ±‡Ùó1J$a5476109-f7b0-42e9-8d6f-b8c20b3d6ef6
 w
-java:S1066r"/Merge this if statement with the enclosing one.(¦ƒ›¶şÿÿÿÿ8±‡Ùó1J$c2375e5f-54ce-4257-a89f-a3739e791f3d
+java:S1066r"/Merge this if statement with the enclosing one.(¦ƒ›¶şÿÿÿÿ8±‡Ùó1J$91cc5d4a-3f37-421d-8d0e-3ae000a5fc2b
 ¸
-java:S1319N"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óşÿÿÿÿ8±‡Ùó1J$62f3a5eb-a722-4de0-81f5-3df04f2fd11b
+java:S1319N"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºË˜óşÿÿÿÿ8±‡Ùó1J$2a049169-4593-4f21-b250-e781add6a2f1
 ¨
-java:S1319U"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8±‡Ùó1J$bc8a22cd-0b8f-4a2c-bd00-ef59e2b80a38
+java:S1319U"eThe type of "items" should be an interface such as "List" rather than the implementation "ArrayList".(¢ªöù8±‡Ùó1J$cca278dd-769f-45a9-9cd1-ad9119ac85cd
 p
-java:S5411p"(Use a primitive boolean expression here.(§‰ÈÄûÿÿÿÿ8íÎïó1J$1b63d72a-6c3d-437f-aa8d-2360098a9242
+java:S5411p"(Use a primitive boolean expression here.(§‰ÈÄûÿÿÿÿ8íÎïó1J$68087f6c-54b2-42bc-abe9-a55beeb437fb
 k
-java:S5411q"(Use a primitive boolean expression here.(Óõå©8íÎïó1J$b5ffe48e-2813-46f5-a2bf-6eca348664fe
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8‘±‡Ùó1J$cf73921a-7ee3-415c-a3cb-4d11a23b42c2
-	java:S125‚"<This block of commented-out lines of code should be removed.(ø¸Ó¡8£±‡Ùó1J$08e9a659-4ec6-4574-9c32-b832d0488dd3
-‘	java:S100Ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÎ¹Ğ8ª±‡Ùó1J$4f708c7a-3ae8-4650-9798-4435cd5833fa
-‘	java:S100Ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼·äö8¬±‡Ùó1J$6fe97e16-0589-41c9-9491-e8457fd2678d
+java:S5411q"(Use a primitive boolean expression here.(Óõå©8íÎïó1J$4d437025-621d-401a-91bb-f548be223ba3
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿ8‘±‡Ùó1J$6d833aca-1167-449d-bc32-41a6b7cb0bf1
+	java:S125‚"<This block of commented-out lines of code should be removed.(ø¸Ó¡8£±‡Ùó1J$86df17ff-1d43-4ae1-92b0-a2fa74cbe7bd
+‘	java:S100Ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÎ¹Ğ8ª±‡Ùó1J$618f2e0e-5052-44b4-9616-8e7017a7fd9b
+‘	java:S100Ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼·äö8¬±‡Ùó1J$bdc4202c-1e85-4281-a511-59699d74d272
 —
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ˆĞïó1J$22261bf6-f754-4a0d-b443-88c7aaaacbcd
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤8ˆĞïó1J$4b044e6a-9536-434c-9231-86f3239bb5c3
 œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8˜Ğïó1J$582ab592-69a9-4cca-932b-60e78ef3a5bf
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿ8˜Ğïó1J$696b5077-a8ca-4715-a866-73c4c125d988

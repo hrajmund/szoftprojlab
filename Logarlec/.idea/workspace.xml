@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="ÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ MŰKÖDIIIIIIIIIIIIIIIIIIIIIIIIK">
+    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="khm... Győztünk, de még a holdról is látszik!">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a284097c88186593890f7085142a68c950eb8b4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a284097c88186593890f7085142a68c950eb8b4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" afterDir="false" />
@@ -23,30 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game/map.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/BaseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/BaseItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Camembert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Camembert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/CursedRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/CursedRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/FFP2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/FFP2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Legfrissito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Legfrissito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Logarlec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Logarlec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/NedvesTablatorlo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/NedvesTablatorlo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/SzentSorosPoharak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/SzentSorosPoharak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/TVSzDenever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/TVSzDenever.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Tranzisztor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Tranzisztor.java" afterDir="false" />
     </list>
     <list id="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" name="Changes by rayy04" comment="Changes by rayy04" />
     <list id="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" name="Changes by svajc" comment="" />
@@ -56,7 +34,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="91013" />
+    <option name="totalTimeSeconds" value="91530" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -223,7 +201,8 @@
       <workItem from="1716201089777" duration="2245000" />
       <workItem from="1716203968221" duration="15611000" />
       <workItem from="1716221993766" duration="26000" />
-      <workItem from="1716222030872" duration="9694000" />
+      <workItem from="1716222030872" duration="9851000" />
+      <workItem from="1716232023384" duration="1090000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
@@ -361,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716214493932</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="khm... Győztünk, de még a holdról is látszik!">
+      <option name="closed" value="true" />
+      <created>1716231896538</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716231896538</updated>
+    </task>
+    <task id="LOCAL-00019" summary="khm... Győztünk, de még a holdról is látszik!">
+      <option name="closed" value="true" />
+      <created>1716233443708</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716233443708</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +393,8 @@
     <MESSAGE value="van valami a levegoben" />
     <MESSAGE value="sticky set" />
     <MESSAGE value="ÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ MŰKÖDIIIIIIIIIIIIIIIIIIIIIIIIK" />
-    <option name="LAST_COMMIT_MESSAGE" value="ÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ MŰKÖDIIIIIIIIIIIIIIIIIIIIIIIIK" />
+    <MESSAGE value="khm... Győztünk, de még a holdról is látszik!" />
+    <option name="LAST_COMMIT_MESSAGE" value="khm... Győztünk, de még a holdról is látszik!" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

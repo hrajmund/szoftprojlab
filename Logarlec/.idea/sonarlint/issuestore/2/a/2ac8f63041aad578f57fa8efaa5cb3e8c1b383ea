@@ -1,20 +1,16 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿJ$6a7e9386-7658-4361-8fad-d91195d21879
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø—ıìúÿÿÿÿJ$3acbee46-6ba5-4534-b3a2-ac8893d453d2
 ¾
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°J$bf7f3110-69b2-4d51-9b82-80ee68e5ce39
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í°J$b9906e6d-f49b-4881-b7ba-a5a56aed1c61
 ¾
-java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Û•ªJ$0b45789d-f623-42f6-9618-f5178e59a0d8
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Û•ªJ$673f4d01-be22-4151-8512-22e9cbb8547c
 v
-java:S11611":Add the "@Override" annotation above this method signature(´Ñ¸J$95a3cc73-8631-4ba3-9bac-3766b0a1cc69
+java:S1161/":Add the "@Override" annotation above this method signature(´Ñ¸J$bbfbe563-f209-4357-aec6-f7a67d429a30
 {
-java:S1161C":Add the "@Override" annotation above this method signature(®Á»úÿÿÿÿJ$7e7ed52b-7343-4b6c-83cd-17ff999b7be2
+java:S1161A":Add the "@Override" annotation above this method signature(®Á»úÿÿÿÿJ$23ba071d-9206-48bc-8e19-b99f0e170b13
 v
-java:S1161a":Add the "@Override" annotation above this method signature(¦×¡õJ$422e2a79-7dab-46f6-8010-71b83f5230d3
+java:S1161_":Add the "@Override" annotation above this method signature(¦×¡õJ$a0ec88e8-656d-4579-b0e7-8784ae040e59
 w
-java:S1161‚":Add the "@Override" annotation above this method signature(ºå±J$9ec13e6a-11b4-46e8-bd60-56bdf52d4296
+java:S1161":Add the "@Override" annotation above this method signature(ºå±J$5fd28899-7125-40e8-aeea-cc24a28c358a
 |
-java:S1161ª":Add the "@Override" annotation above this method signature(‘¹÷ÜùÿÿÿÿJ$99b82081-8031-47d5-bbec-6426b819d127
-
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Õ§—¤J$59f4f6f7-8bf2-43ea-a228-9c52e719b32f
-•
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(çÄÁ”ÿÿÿÿÿJ$8fc707f9-0210-499c-9ee9-2942bbc5a28b
+java:S1161ª":Add the "@Override" annotation above this method signature(‘¹÷ÜùÿÿÿÿJ$2af8e56d-af51-449a-a2dd-e4d2e69353ee
