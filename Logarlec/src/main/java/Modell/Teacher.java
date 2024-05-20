@@ -38,6 +38,7 @@ public class  Teacher extends Person{
         stunned=true;
     }
 
+
     /**
      * Tanár felvesz egy tárgyat
      */

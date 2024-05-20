@@ -47,6 +47,17 @@ public class Logarlec extends BaseItem{
         room = r;
     }
 
+    @Override
+    public Boolean canBePickedUp()
+    {
+        return true;
+    }
+    @Override
+    public Boolean canBeused()
+    {
+        return false;
+    }
+
     public void setFake(Boolean b){
         fake= b;
     }

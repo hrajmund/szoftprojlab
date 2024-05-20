@@ -94,26 +94,26 @@ public class Labyrinth implements IRound {
         
         if(random){
             Random rand = new Random();
-            if(rand.nextInt(10) < 2){
+            if(rand.nextInt(100) < 15){
                 int roomNumber = rand.nextInt(rooms.size());
-                while(!rooms.get(roomNumber).people.isEmpty()){
+                while(!rooms.get(roomNumber).canBeMergedORSplit()){
                     roomNumber = (roomNumber+1) % rooms.size();
                 }
                 rooms.get(roomNumber).split();
             }
-            if(rand.nextInt(10)<2){
+            if(rand.nextInt(100) < 15){
                 boolean merged = false;
                 int randomINT = rand.nextInt(rooms.size());
                 for(int i = 0; i < rooms.size(); i++){
                     int actRand = (i+randomINT) % rooms.size();
-                    if(rooms.get(actRand).getPeople().isEmpty()){
+                    if(rooms.get(actRand).canBeMergedORSplit()){
                         
                         HashSet<Room> neighbours = new HashSet<>();
                         neighbours.addAll(rooms.get(actRand).outgoingDoors);
                         neighbours.addAll(rooms.get(actRand).incomingDoors);
                         
                         for(Room tomergewith : neighbours){
-                            if(tomergewith.getPeople().isEmpty()){
+                            if(tomergewith.canBeMergedORSplit()){
                                 rooms.get(actRand).merge(tomergewith);
                                 
                                 merged = true;

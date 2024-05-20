@@ -25,16 +25,19 @@ public class Tranzisztor extends BaseItem{
     @Override
     public void effect() {
         if(holder.items.contains(this.connected)){
-            active=true;
-            holder.putDownItem(this);
-            this.connected.active = true;
+            //holder.putDownItem(this);
+            holder.getCurrentRoom().addItem(this);
+            holder.getItems().remove(this);
+            this.room = holder.getCurrentRoom();
+            this.holder=null;
             room.capacity--;
         }else{
-            active=true;
-            Person teleportPerson= holder;
-            holder.putDownItem(this);
+            holder.currentRoom.addItem(this);
+            this.room = holder.getCurrentRoom();
+            holder.teleport(connected.room);
             connected.room.capacity++;
-            teleportPerson.teleport(connected.room);
+            holder.getItems().remove(this);
+            holder = null;
             resetTranzisztors();
         }
     }
@@ -51,6 +54,8 @@ public class Tranzisztor extends BaseItem{
                     if(item.isConnected()!=null && item != this){
                         item.setConnected(this);
                         setConnected(item);
+                        active=true;
+                        item.active=true;
                         return;
                     }
                 }
@@ -69,7 +74,21 @@ public class Tranzisztor extends BaseItem{
         return null;
     }
 
-
+    @Override
+    public Boolean canBePickedUp()
+    {
+        if(!active){
+            return true;
+        }    
+        return false;
+    }
+    
+    @Override
+    public Boolean canBeused()
+    {
+        return active;
+    }
+    
     /**
      * A tranzisztorok összekapcsolása
      */
@@ -82,8 +101,10 @@ public class Tranzisztor extends BaseItem{
      * Tranzisztorok alaphelyzetbe állítása
      */
     public void resetTranzisztors(){
-        connected.active=false;
-        connected.connected=null;
+        if(this.connected!=null){
+            connected.active=false;
+            connected.connected=null;
+        }
         active=false;
         connected=null;
     }
@@ -92,6 +113,7 @@ public class Tranzisztor extends BaseItem{
     public void putDown(Room r){
         holder = null;
         room = r;
+        resetTranzisztors();
     }
 
     public void tick(){

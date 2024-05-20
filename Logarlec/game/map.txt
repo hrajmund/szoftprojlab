@@ -1,35 +1,73 @@
 room R1
 room R2
 room R3
-room R4
+cursedroom R4
 room R5
+gas R5
 room R6
 room R7
 room R8
-door R7 R8
+room R9
+gas R9
+cursedroom R10
+room R11
+gas R11
+room R12
+room R13
+room R14
 door R1 R2
 door R2 R1
-door R7 R2
-door R2 R7
-door R2 R6
-door R6 R2
-door R2 R3
-door R3 R2
-door R2 R5
-door R5 R2
-door R5 R6
-door R6 R5
+door R1 R3
 door R3 R4
 door R4 R3
 door R4 R5
-door R5 R4
-door R4 R6
-door R6 R4
-student S1
-mask Mask
-log Logarlec
-tvsz Tvsz 3
-addperson R7 S1
-additem_p S1 Tvsz
-additem_r R2 Mask
-additem_r R3 Logarlec
+door R5 R6
+door R6 R5
+door R6 R7
+door R6 R9
+door R7 R5
+door R5 R7
+door R4 R8
+door R8 R9
+door R9 R10
+door R10 R8
+door R10 R3
+door R3 R10
+door R3 R11
+door R11 R12
+door R11 R13
+door R12 R13
+door R13 R12
+door R4 R14
+teacher Goldschmidt
+teacher Sujbert
+addperson R8 Sujbert
+addperson R13 Goldschmidt
+cleaner Marika
+addperson R7 Marika
+log log2
+fake log2
+additem_r R2 log2
+fresh frissito1
+additem_r R3 frissito1
+tranzi tranzi1
+additem_r R3 tranzi1
+pohar soros1
+additem_r R4 soros1
+tvsz tvsz1
+additem_r R4 tvsz1
+cam camambert1
+additem_r R4 camambert1
+tvsz tvsz2
+additem_r R5 tvsz2
+fresh frissito2
+additem_r R6 frissito2
+tranzi tranzi2
+additem_r R7 tranzi2
+tvsz tvsz3
+fake tvsz3
+additem_r R11 tvsz3
+tablatorlo tablatorlo1
+additem_r R12 tablatorlo1
+log logarlec1
+additem_r R14 logarlec1

@@ -80,4 +80,16 @@ public class TVSzDenever extends BaseItem{
         }
         return active;
     }
+
+    @Override
+    public Boolean canBePickedUp()
+    {
+        return true;
+    }
+
+    @Override
+    public Boolean canBeused()
+    {
+        return false;
+    }
 }

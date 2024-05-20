@@ -14,7 +14,7 @@ public class Legfrissito extends BaseItem{
 
     public Legfrissito(String n){
         name=n;
-        filename = "mask.png";
+        filename = "legfrissito.png";
         active = false;
     }
 
@@ -25,9 +25,23 @@ public class Legfrissito extends BaseItem{
     public void effect() {
         holder.putDownItem(this);
         room.setGas(false);
+        if(room.labyrinth.getGameManager().getGamePanel() != null)
+            room.labyrinth.getGameManager().getGamePanel().getGraphComponent().refreshNodes();
         room.removeItem(this);
         room=null;
     }
+
+    @Override
+    public Boolean canBePickedUp()
+    {
+        return true;
+    }
+    @Override
+    public Boolean canBeused()
+    {
+        return true;
+    }
+    
     @Override
     public void putDown(Room r){
         holder = null;

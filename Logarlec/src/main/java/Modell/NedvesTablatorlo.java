@@ -55,6 +55,21 @@ public class NedvesTablatorlo extends BaseItem implements IRound {
             }
         }
     }
+
+
+    @Override
+    public Boolean canBePickedUp()
+    {
+        return !active;
+    }
+    
+    @Override
+    public Boolean canBeused()
+    {
+        return true;
+    }
+    
+    
     /**
      * A tárgy tud-e elkábítani
      */

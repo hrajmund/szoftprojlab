@@ -18,7 +18,7 @@ public class Room implements IRound{
     /**
      * A szoba befogadóképessége.
      */
-    protected int capacity = 5;
+    protected int capacity = 3;
 
     /**
      * A szobából kimenő ajtók listája.
@@ -220,13 +220,13 @@ public class Room implements IRound{
      */
     public void addPerson(Person p){
         people.add(p);
-        if(gas) {
-            p.stun();
-        }
         for(BaseItem item : items){
             if(item.canStun()){
                 p.stunTeacher();
             }
+        }
+        if(gas) {
+            p.stun();
         }
     }
 
@@ -269,6 +269,10 @@ public class Room implements IRound{
                 MovePossibilities.add(r);
         }
         return MovePossibilities;
+    }
+    
+    public Boolean canBeMergedORSplit(){
+        return people.isEmpty();
     }
 
     /**
@@ -324,22 +328,22 @@ public void merge(Room r) {
 
     for (Room og : mergedOutgoingDoors) {
         og.addIncomingDoor(newRoom);
-        og.removeOutgoingDoor(this);
-        og.removeOutgoingDoor(r);
+        og.removeIncomingDoor(this);
+        og.removeIncomingDoor(r);
     }
     for (Room ic : mergedIncomingDoors) {
         ic.addOutgoingDoor(newRoom);
-        ic.removeIncomingDoor(this);
-        ic.removeIncomingDoor(r);
+        ic.removeOutgoingDoor(this);
+        ic.removeOutgoingDoor(r);
     }
+    
+    mergedIncomingDoors.remove(this);
+    mergedIncomingDoors.remove(r);
+    mergedOutgoingDoors.remove(this);
+    mergedOutgoingDoors.remove(r);
+    
     newRoom.incomingDoors.addAll(mergedIncomingDoors);
     newRoom.outgoingDoors.addAll(mergedOutgoingDoors);
-
-    newRoom.incomingDoors.remove(r);
-    newRoom.outgoingDoors.remove(r);
-    
-    newRoom.incomingDoors.remove(this);
-    newRoom.outgoingDoors.remove(this);
 
     labyrinth.getRooms().remove(r);
     labyrinth.getRooms().remove(this);
@@ -347,6 +351,7 @@ public void merge(Room r) {
     if (labyrinth.getGameManager().getGamePanel() != null) {
         labyrinth.getGameManager().getGamePanel().getGraphComponent().removeNode(r);
         labyrinth.getGameManager().getGamePanel().getGraphComponent().removeNode(this);
+        labyrinth.getGameManager().getGamePanel().getGraphComponent().RoomMerged(newRoom);
         labyrinth.getGameManager().getGamePanel().getGraphComponent().RoomMerged(newRoom);
     }
     
@@ -378,7 +383,7 @@ public void merge(Room r) {
                 itemsToRemove.add(items.get(i));
             }
         }
-        items.removeAll(itemsToRemove);
+        this.items.removeAll(itemsToRemove);
         
         newroom.gas = gas;
         newroom.capacity = capacity;
@@ -418,7 +423,7 @@ public void merge(Room r) {
 
     public void increasePersonCounter(){
         personCounter++;
-        if(personCounter==5){
+        if(personCounter==2){   
             sticky=true;
         }
     }

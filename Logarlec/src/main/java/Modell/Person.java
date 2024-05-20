@@ -186,6 +186,10 @@ public abstract class Person {
         for(Person p : r.getPeople()){
             p.kill(this);
         }
+        if(labyrinth.getGameManager().getGamePanel() != null){
+            labyrinth.getGameManager().getGamePanel().getGraphComponent().refreshNodes();
+            labyrinth.getGameManager().getGamePanel().setCurrentStudent((Student) this);
+        }
     }
 
     /**

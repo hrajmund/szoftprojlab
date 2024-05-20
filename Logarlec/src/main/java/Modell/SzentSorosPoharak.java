@@ -57,6 +57,18 @@ public class SzentSorosPoharak extends BaseItem implements IRound {
             }
         }
     }
+
+    @Override
+    public Boolean canBePickedUp()
+    {
+        return true;
+    }
+    @Override
+    public Boolean canBeused()
+    {
+        return !active;
+    }
+    
     @Override
     public void PrintOutItem(PrintWriter writer){
         writer.print(name + " (Active) " +

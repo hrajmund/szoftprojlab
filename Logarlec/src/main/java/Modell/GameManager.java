@@ -158,11 +158,6 @@ public class GameManager {
                             if (v.Name.equals((roomNameg))) {
                                 v.setGas(true);
                                 siker = true;
-                                
-                                if(guiManager != null){
-                                    guiManager.getGraphComponent().RoomGasUpdate(v);
-                                }
-                                
                             }
                         }
                         if (!siker) {
@@ -370,12 +365,6 @@ public class GameManager {
             this.labyrinth = l;
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-        }
-        
-        if(guiManager != null){
-            for (Person p : l.getStudents()) {
-                guiManager.getGraphComponent().addStudent((Student) p);
-            }
         }
     }
 
@@ -592,7 +581,6 @@ public class GameManager {
             player.setLabyrinth(labyrinth);
             labyrinth.getRooms().get(0).addPerson(player);
             player.setCurrentRoom(labyrinth.getRooms().get(0));
-            guiManager.getGraphComponent().addStudent(player);
         }
         
         currentPlayerIndex = 0;

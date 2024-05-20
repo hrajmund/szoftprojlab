@@ -28,13 +28,16 @@ public class Takarito extends Person{
         currentRoom.removePerson(this);
         currentRoom = r;
         currentRoom.gas = false; //"kiszellőztet"
+        
+        
+        
         currentRoom.personCounter = 0; //"kitakarit"
         ArrayList<Person>peoplemove= new ArrayList<>();
         for (Person p : currentRoom.getPeople()) //"kitessekel"
         {
             if((!p.stunned) && p != this){
                 if(labyrinth.getStudents().contains(p)){
-                    labyrinth.getGameManager().getGamePanel().getGraphComponent().studentMoved(currentRoom, currentRoom.outgoingDoors.get(0));
+                    labyrinth.getGameManager().getGamePanel().getGraphComponent().refreshNodes();
                 }
                 getCurrentRoom().outgoingDoors.get(0).addPerson(p);
                 p.setCurrentRoom(getCurrentRoom().outgoingDoors.get(0));
@@ -44,7 +47,6 @@ public class Takarito extends Person{
                 //getCurrentRoom().outgoingDoors.get(whichRoom).addPerson(p);
                 //p.setCurrentRoom(getCurrentRoom().outgoingDoors.get(whichRoom)); //mindenkit ugyanabba a szobába küld, a capacityvel nem foglalkozik, mivel ez elvi síkon is problémát okozna
             }
-            //TODO: RANDOMIZÁCIÓ AZ ELHELYEZÉSRE
         }
         currentRoom.getPeople().removeAll(peoplemove);
         r.addPerson(this); //Emiatt van csak itt hozzáadva

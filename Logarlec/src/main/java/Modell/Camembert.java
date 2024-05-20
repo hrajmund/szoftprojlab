@@ -24,6 +24,9 @@ public class Camembert extends BaseItem{
         holder.putDownItem(this);
         room.setGas(true);
         room.removeItem(this);
+        if(room.labyrinth.getGameManager().getGamePanel() != null)
+            room.labyrinth.getGameManager().getGamePanel().getGraphComponent().refreshNodes();
+        
         //room.removeItem(this);
         //room=null;
     }
@@ -32,11 +35,20 @@ public class Camembert extends BaseItem{
         holder = null;
         room = r;
     }
+    
+    @Override
+    public Boolean canBePickedUp()
+    {
+        return true;
+    }
+    @Override
+    public Boolean canBeused()
+    {
+        return false;
+    }
 
     @Override
     public void tick() {
-
-
     }
 
     @Override

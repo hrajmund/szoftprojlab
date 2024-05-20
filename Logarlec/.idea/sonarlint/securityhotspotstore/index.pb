@@ -306,3 +306,5 @@ V
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 b
 2src/main/java/Grafikus/graphPróba_depricated.java,5\7\5792e8f5680db10dbc5e0ce8342bddcef761a68e
+E
+tests/test_21/map.txt,9\5\951a55b40afc0fea28a186ccb05be2a65c921a8a

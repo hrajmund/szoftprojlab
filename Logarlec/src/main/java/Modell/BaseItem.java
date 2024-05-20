@@ -87,8 +87,13 @@ public abstract class BaseItem implements IRound{
      *A tárgy párjának beállítása, nem csinál semmit
      */
     public void setConnected(BaseItem t){
-
     }
+    
+    public Boolean canBePickedUp(){
+        return true;
+    }
+    
+    public Boolean canBeused(){return false;}
 
     /**
      *A tárgy lerakása

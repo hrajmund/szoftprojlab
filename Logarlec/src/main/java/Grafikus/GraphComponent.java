@@ -131,48 +131,6 @@ public class GraphComponent{
         
         stayingRoom.getOutgoingDoors().forEach(r -> addEdge(stayingRoom, r));
         stayingRoom.getIncomingDoors().forEach(r -> addEdge(r, stayingRoom));
-
-    }
-    
-    public void RoomGasUpdate(Room room){
-        boolean hasStudent = false;
-        for(Person s : room.getPeople()){
-            if(gm.labyrinth.getStudents().contains(s)) {
-                hasStudent = true;
-                break;
-            }
-        }
-        Node n = graph.getNode(room.getName());
-        //gázos lett
-        if(room.getGas()){
-            if(hasStudent){
-                n.setAttribute("ui.class","student_gas");
-            }
-            else{
-                n.setAttribute("ui.class", "gas");
-            }
-        }
-        //gáztalan lett
-        else{
-            if(hasStudent){
-                n.setAttribute("ui.class", "student");
-            }
-            else{
-                n.setAttribute("ui.class", "default");
-            }
-        }
-
-    }
-    
-    public void StudentDied(Room r){
-        Node n = graph.getNode(r.getName());
-        if(r.getGas()){
-            n.setAttribute("ui.class", "gas");
-        }
-        else{
-            n.setAttribute("ui.class", "default");
-        }
-
     }
     
     public void addNode(Room r){
@@ -207,31 +165,29 @@ public class GraphComponent{
         e.setAttribute("layout.weight", 1.1);
     }
     
-    public void addStudent(Student s){
-        Node n = graph.getNode(s.getCurrentRoom().getName());
-        if(s.getCurrentRoom().getGas()){
-            n.setAttribute("ui.class", "student_gas");
-        }
-        else{
-            n.setAttribute("ui.class", "student");
+    public void refreshNodes(){
+        for(Node n : graph){
+            Room r = (Room) n.getAttribute("room");
+            Boolean hasStudent = false;
+            for(Person s : r.getPeople()) {
+                if (gm.labyrinth.getStudents().contains(s)) {
+                    hasStudent = true;
+                    break;
+                }
+            }
+            if(r.getGas() && hasStudent){
+                n.setAttribute("ui.class", "student_gas");
+            }
+            else if(hasStudent){
+                n.setAttribute("ui.class", "student");
+            }
+            else if(r.getGas()){
+                n.setAttribute("ui.class", "gas");
+            }
+            else{
+                n.setAttribute("ui.class", "default");
+            }
         }
     }
     
-    public void studentMoved(Room oldR, Room newR){
-        Node oldN = graph.getNode(oldR.getName());
-        Node newN = graph.getNode(newR.getName());
-        if(oldR.getGas()){
-            oldN.setAttribute("ui.class", "gas");
-        }
-        else{
-            oldN.setAttribute("ui.class", "default");
-        }
-        if(newR.getGas()){
-            newN.setAttribute("ui.class", "student_gas");
-        }
-        else{
-            newN.setAttribute("ui.class", "student");
-        }
-    }
-
 }

@@ -134,6 +134,7 @@ public class GuiManager extends JFrame{
         
         GraphPanel.setLayout(new BorderLayout());
         graphComponent.setGameManager(gameManager);
+        graphComponent.refreshNodes();
         
         //System.setProperty("org.graphstream.ui", "swing");
         
@@ -177,15 +178,14 @@ public class GuiManager extends JFrame{
             if (i < student.getItems().size()) {
                 InvItemButtons[i].setEnabled(true);
                 InvItemButtons[i].setIcon(new ImageIcon(String.valueOf(student.getItems().get(i).getPath())));
-                if (Boolean.TRUE.equals(student.getItems().get(i).getActive())){
+                if (Boolean.TRUE.equals(student.getItems().get(i).canBeused())){
                     InvItemButtons[i].setBackground(Color.RED);
                 }else{
                     InvItemButtons[i].setBackground(Color.white);
                 }
-                student.getItems().get(i).getActive();
             } else {
                 InvItemButtons[i].setIcon(null);
-                InvItemButtons[i].setBackground(Color.white);
+                InvItemButtons[i].setBackground(Color.BLACK);
                 InvItemButtons[i].setEnabled(false);
             }
         }
@@ -196,10 +196,11 @@ public class GuiManager extends JFrame{
         RoomItemsPanel.setLayout(new FlowLayout());
         RoomItemsPanel.removeAll();
         for(int i = 0; i < room.getItems().size(); i++){
-            JButton roomItemButton = new JButton(room.getItems().get(i).getName());
+            JButton roomItemButton = new JButton();
+            roomItemButton.setIcon(new ImageIcon(String.valueOf(room.getItems().get(i).getPath())));
             roomItemButton.addActionListener(new roomItemButtonListener(i));
             RoomItemsPanel.add(roomItemButton);
-            if(room != currentStudent.getCurrentRoom() || Boolean.TRUE.equals(room.getSticky())){
+            if(room != currentStudent.getCurrentRoom()){
                 roomItemButton.setEnabled(false);
             }
         }
@@ -215,6 +216,7 @@ public class GuiManager extends JFrame{
         neighbours.add(currentStudent.getCurrentRoom());
         neighbours.addAll(currentStudent.getCurrentRoom().getOutgoingDoors());
         neighbours.addAll(currentStudent.getCurrentRoom().getIncomingDoors());
+        
         for (Room r : neighbours) {
             JButton roomButton = new JButton(r.getName());
             roomButton.addActionListener(new NeighbourButtonListener(r));
@@ -302,12 +304,13 @@ public class GuiManager extends JFrame{
         }
 
         public void actionPerformed(ActionEvent e) {
-            if(currentStudent.getItems().size() >= invButtonIndex){
+            if(currentStudent.getItems().size() > invButtonIndex){
                 pickedInventoryItemIndex = invButtonIndex;
-                if(currentStudent.getItems().get(pickedInventoryItemIndex).getActive() == true){
-                    UseButton.setEnabled(false);
-                } else {
+                if(currentStudent.getItems().get(pickedInventoryItemIndex).canBeused()){
                     UseButton.setEnabled(true);
+                }
+                else{
+                    UseButton.setEnabled(false);
                 }
                 PutDownButton.setEnabled(true);
             }
@@ -327,12 +330,12 @@ public class GuiManager extends JFrame{
             JButton pressedbutton = (JButton) e.getSource();
             pressedbutton.setBackground(Color.green);
             pickedRoomItemIndex = roomButtonIndex;
-            if(currentStudent.getCurrentRoom().getItems().get(pickedRoomItemIndex).getActive() == false){
+            if(currentStudent.getCurrentRoom().getItems().get(pickedRoomItemIndex).canBePickedUp()){
                 PickUpButton.setEnabled(true);
             }else{
                 PickUpButton.setEnabled(false);
             }
-        }   
+        }
     }
     
     protected class NeighbourButtonListener implements ActionListener{
@@ -385,6 +388,10 @@ public class GuiManager extends JFrame{
             if (pickedInventoryItemIndex > -1) {
                 gameManager.useItem(currentStudent,pickedInventoryItemIndex );
                 reloadInventory();
+                reloadRoomItems();
+                pickedInventoryItemIndex = -1; 
+                UseButton.setEnabled(false);
+                PutDownButton.setEnabled(false);
             }
         }
     }
@@ -393,16 +400,14 @@ public class GuiManager extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if (pickedRoom != null && pickedRoom != currentStudent.getCurrentRoom()){
                 
-               graphComponent.studentMoved(currentStudent.getCurrentRoom(), pickedRoom);
+                gameManager.movePlayer(currentStudent, pickedRoom);
                 
                 UseButton.setEnabled(false);
                 PutDownButton.setEnabled(false);
                 PickUpButton.setEnabled(false);
                 MoveButton.setEnabled(false);
                 
-                gameManager.movePlayer(currentStudent, pickedRoom);
-                
-                graphReDraw();
+                graphComponent.refreshNodes();
             }
         }
     }
@@ -417,7 +422,7 @@ public class GuiManager extends JFrame{
             gameManager.next();
 
             graphComponent.CurrStudentChanged(currentStudent);
-            graphReDraw();
+            graphComponent.refreshNodes();
         }
     }
     

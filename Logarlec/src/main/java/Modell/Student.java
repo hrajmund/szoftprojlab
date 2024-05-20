@@ -93,6 +93,9 @@ public class Student extends Person{
      * Minden tárgyat eldob a hallgató
      */
     public void dropAllItems(){
+        for(BaseItem i : items){
+            i.putDown(currentRoom);
+        }
         currentRoom.addItems(items);
         items.clear();
     }
@@ -119,7 +122,10 @@ public class Student extends Person{
         this.dropAllItems();
         currentRoom.removePerson(this);
         labyrinth.removeStudent(this);
-        labyrinth.getGameManager().getGamePanel().getGraphComponent().StudentDied(this.currentRoom);       
+        if(labyrinth.getGameManager().getGamePanel() != null) {
+            labyrinth.getGameManager().getGamePanel().DeadPopUp(this);
+            labyrinth.getGameManager().getGamePanel().getGraphComponent().refreshNodes();
+        }
     }
     /**
      * Ellenőrzi, hogy a hallgató felvehette-e a Logarlec-et
@@ -138,13 +144,17 @@ public class Student extends Person{
     @Override
     public void move(Room r) {
         if(currentRoom.movePossibilities().contains(r)){
-            labyrinth.getGameManager().getGamePanel().getGraphComponent().studentMoved(currentRoom, r);
+            if(labyrinth.getGameManager().getGamePanel() != null){
+                labyrinth.getGameManager().getGamePanel().getGraphComponent().refreshNodes();
+            }
             currentRoom.removePerson(this);
             currentRoom = r;
             r.addPerson(this);
             r.increasePersonCounter();
             for(Person p : r.getPeople()){
-                p.kill(this);
+                if(!p.stunned){
+                    p.kill(this);
+                }
             }
         }
     }

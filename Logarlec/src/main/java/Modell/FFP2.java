@@ -61,6 +61,18 @@ public class FFP2 extends BaseItem implements IRound {
     }
 
     @Override
+    public Boolean canBePickedUp()
+    {
+        return true;
+    }
+    
+    @Override
+    public Boolean canBeused()
+    {
+        return !active;
+    }
+
+    @Override
     public void putDown(Room r){
         holder.setGasProtection(false);
         active = false;
