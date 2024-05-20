@@ -290,7 +290,8 @@ public class GuiManager extends JFrame{
         }else if (currentStudent.getCurrentRoom() == r || (!currentStudent.getCurrentRoom().movePossibilities().contains(r))){
             MoveButton.setEnabled(false);
         }
-        pickedRoomItemIndex = -1;
+        RoomDetailPanel.repaint();
+        
     }
 
 
