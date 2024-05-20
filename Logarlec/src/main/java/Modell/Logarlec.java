@@ -16,6 +16,7 @@ public class Logarlec extends BaseItem{
     public Logarlec(String n){
         name=n;
         filename = "logarlec.png";
+        active = true;
     }
     
     /**
@@ -32,6 +33,7 @@ public class Logarlec extends BaseItem{
     public void setHolder(Person p) {
         if(p.canPickUpLogarlec()){
             if(!fake){
+                holder = p;
                 p.labyrinth.endGame();
             }else{
                 holder = p;
@@ -56,6 +58,13 @@ public class Logarlec extends BaseItem{
         writer.print(name + " (Active) " +
                 active +
                 " (Fake) " + fake + '\n');
+    }
 
+    @Override
+    public Boolean getActive(){
+        if(holder==null){
+            return false;
+        }
+        return active;
     }
 }

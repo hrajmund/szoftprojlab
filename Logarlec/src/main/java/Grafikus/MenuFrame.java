@@ -109,7 +109,7 @@ public class MenuFrame extends JFrame{
             menuFrame.setVisible(false);
 
             try {
-                GuiManager gm = new GuiManager(players);
+                GuiManager gm = new GuiManager(players, menuFrame);
             } catch (FileNotFoundException ex) {
                 throw new RuntimeException(ex);
             }

@@ -57,8 +57,7 @@ public class GraphComponent{
     }
 
     public Component getViewPanel() {
-
-
+        
         v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
         v.removeView("view1");
         v.addView("view1", new SwingGraphRenderer(), false);

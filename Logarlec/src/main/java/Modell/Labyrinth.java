@@ -11,6 +11,10 @@ import java.util.Random;
 public class Labyrinth implements IRound {
 
     boolean Game_End = false;
+    
+    public boolean isGame_End() {
+        return Game_End;
+    }
 
     public boolean random = true;
     
@@ -193,6 +197,7 @@ public class Labyrinth implements IRound {
      * Befejezi a játékot.
      */
     public void endGame(){
+        getGameManager();
         Game_End = true;
     }
 

@@ -98,11 +98,14 @@ public class GuiManager extends JFrame{
     
     String CssStyle;
     
+    MenuFrame _takony;
+    
     
     private void createUIComponents() {
     }
     
-    public GuiManager(List<String> playerNames) throws FileNotFoundException {
+    public GuiManager(List<String> playerNames,MenuFrame takony) throws FileNotFoundException {
+        _takony = takony;
         PickUpButton.addActionListener(new pickUpButtonListener());
         PickUpButton.setEnabled(false);
         PutDownButton.addActionListener(new putDownButtonListener());
@@ -179,6 +182,7 @@ public class GuiManager extends JFrame{
                 }else{
                     InvItemButtons[i].setBackground(Color.white);
                 }
+                student.getItems().get(i).getActive();
             } else {
                 InvItemButtons[i].setIcon(null);
                 InvItemButtons[i].setBackground(Color.white);
@@ -246,7 +250,17 @@ public class GuiManager extends JFrame{
 
     public void GameEndPopUp()
     {
-        
+        this.setVisible(false);
+
+        ImageIcon icon = null;
+        if(gameManager.labyrinth.getStudents().isEmpty()){
+            icon = new ImageIcon("game_over.png"); // Kép elérési útjának megadása
+        }
+        else{
+            icon = new ImageIcon("victory.png"); // Kép elérési útjának megadása
+        }
+        JOptionPane.showMessageDialog(null, null ,"GAME END", JOptionPane.INFORMATION_MESSAGE, icon);
+        _takony.setVisible(true);
     }
     
     public void updateRoundCount(int i)
@@ -290,8 +304,11 @@ public class GuiManager extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if(currentStudent.getItems().size() >= invButtonIndex){
                 pickedInventoryItemIndex = invButtonIndex;
-                
-                UseButton.setEnabled(true);
+                if(currentStudent.getItems().get(pickedInventoryItemIndex).getActive() == true){
+                    UseButton.setEnabled(false);
+                } else {
+                    UseButton.setEnabled(true);
+                }
                 PutDownButton.setEnabled(true);
             }
         }
@@ -306,16 +323,16 @@ public class GuiManager extends JFrame{
         }
 
         public void actionPerformed(ActionEvent e) {
-            if(pickedInventoryItemIndex > -1){
-                JButton formerButton = (JButton) RoomItemsPanel.getComponent(pickedRoomItemIndex);
-                formerButton.setBackground(Color.white);
-            }
+
             JButton pressedbutton = (JButton) e.getSource();
             pressedbutton.setBackground(Color.green);
             pickedRoomItemIndex = roomButtonIndex;
-            
-            PickUpButton.setEnabled(true);
-        }
+            if(currentStudent.getCurrentRoom().getItems().get(pickedRoomItemIndex).getActive() == false){
+                PickUpButton.setEnabled(true);
+            }else{
+                PickUpButton.setEnabled(false);
+            }
+        }   
     }
     
     protected class NeighbourButtonListener implements ActionListener{
@@ -343,6 +360,9 @@ public class GuiManager extends JFrame{
                 reloadRoomItems();
                 pickedRoomItemIndex = -1;
                 PickUpButton.setEnabled(false);
+                if(gameManager.labyrinth.isGame_End()) {
+                    GameEndPopUp();
+                }
             }
         }
     }
@@ -382,7 +402,7 @@ public class GuiManager extends JFrame{
                 
                 gameManager.movePlayer(currentStudent, pickedRoom);
                 
-                
+                graphReDraw();
             }
         }
     }

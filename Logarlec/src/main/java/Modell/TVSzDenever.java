@@ -10,6 +10,7 @@ public class TVSzDenever extends BaseItem{
     private Boolean fake = false;
     private int remainingUsage=3;
     
+    
     public TVSzDenever(){
         name= "UnknownTVSZ";
         filename = "tvsz.png";
@@ -24,6 +25,7 @@ public class TVSzDenever extends BaseItem{
         name= n;
         remainingUsage= i;
         filename = "tvsz.png";
+        active = true;
     }
 
     /**
@@ -69,5 +71,13 @@ public class TVSzDenever extends BaseItem{
         writer.print(name +
                 " (Active) " + active  +
                 " (Fake) " + fake + " (RemainingUsage) " + remainingUsage + '\n');
+    }
+    
+    @Override
+    public Boolean getActive(){
+        if(holder==null){
+            return false;
+        }
+        return active;
     }
 }

@@ -15,6 +15,7 @@ public class Legfrissito extends BaseItem{
     public Legfrissito(String n){
         name=n;
         filename = "mask.png";
+        active = false;
     }
 
     /**

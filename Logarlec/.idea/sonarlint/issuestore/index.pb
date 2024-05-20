@@ -279,16 +279,12 @@ E
 tests/test_35/out.txt,c\9\c927d7b175bee4902d8980f6eb8d2d8239116f7e
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-b
-2src/main/java/Grafikus/CustomNodeGraphExample.java,e\f\efe895ae4aba253572516b1e25d05a7e7e14fcd2
 U
 %src/main/java/Grafikus/graphStyle.css,a\1\a1234edcc5c375fcc86ac6b84e312e88369b468f
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 U
 %src/main/java/Grafikus/MenuFrame.java,f\6\f6e8611e9e4224db7caee938151c56f6f8d872a9
-U
-%src/main/java/Grafikus/GamePanel.java,9\d\9dd8852e84f38226bf6c805cb00fba2375e81f78
 Z
 *src/main/java/Grafikus/GraphComponent.java,1\f\1f5b0ebe493191fba92049c88385899de60778f5
 Å
@@ -299,7 +295,14 @@ G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\86
 Q.idea/sonarlint/securityhotspotstore/a/1/a1234edcc5c375fcc86ac6b84e312e88369b468f,d\8\d81ac38accbbc74b3b673859a19a4afc59f56550
 w
 G.idea/sonarlint/issuestore/a/1/a1234edcc5c375fcc86ac6b84e312e88369b468f,4\8\484aa53b1832e4e9b083fc0855d83d619a07da6a
-Å
-Q.idea/sonarlint/securityhotspotstore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2,f\9\f9b25a439ebe62b178b92d08f410316599639aa7
 <
 game/map.txt,4\9\491bdbb5f8d7ee4718efea9a802a6d509ed87a76
+V
+&src/main/java/Grafikus/GuiManager.java,8\9\89851d5e93c794fa087f809593d07a721b408194
+V
+&src/main/java/Grafikus/GuiManager.form,e\e\ee82247d689c10df91db61886a4196aa8cc5e1c4
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+b
+2src/main/java/Grafikus/graphPr√≥ba_depricated.java,5\7\5792e8f5680db10dbc5e0ce8342bddcef761a68e
