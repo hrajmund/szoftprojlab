@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="utalom az egeszet">
+    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="sticky set">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a284097c88186593890f7085142a68c950eb8b4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a284097c88186593890f7085142a68c950eb8b4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1eb8d17320731e77682e63152a707b7b0ceb2a70" afterDir="false" />
@@ -23,20 +23,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3913c06c822de4530da300ea504ad055f597b29" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/game/map.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/MenuFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/CursedRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/CursedRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Legfrissito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Legfrissito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Logarlec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Logarlec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modell/TVSzDenever.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/TVSzDenever.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/icons/game_over.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/icons/game_over.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../grafikus1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../grafikus1/.idea/misc.xml" afterDir="false" />
     </list>
     <list id="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" name="Changes by rayy04" comment="Changes by rayy04" />
     <list id="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" name="Changes by svajc" comment="" />
@@ -46,7 +40,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="73767" />
+    <option name="totalTimeSeconds" value="77478" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -211,7 +205,7 @@
       <workItem from="1716150871798" duration="3390000" />
       <workItem from="1716189527614" duration="5357000" />
       <workItem from="1716201089777" duration="2245000" />
-      <workItem from="1716203968221" duration="3676000" />
+      <workItem from="1716203968221" duration="8919000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
@@ -325,7 +319,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716203356215</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="van valami a levegoben">
+      <option name="closed" value="true" />
+      <created>1716207734991</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716207734991</updated>
+    </task>
+    <task id="LOCAL-00016" summary="sticky set">
+      <option name="closed" value="true" />
+      <created>1716208234694</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716208234694</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +369,9 @@
     <MESSAGE value="grap.getView() added" />
     <MESSAGE value="did some ez az xd" />
     <MESSAGE value="utalom az egeszet" />
-    <option name="LAST_COMMIT_MESSAGE" value="utalom az egeszet" />
+    <MESSAGE value="van valami a levegoben" />
+    <MESSAGE value="sticky set" />
+    <option name="LAST_COMMIT_MESSAGE" value="sticky set" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

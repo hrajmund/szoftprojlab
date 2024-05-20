@@ -22,8 +22,6 @@ import java.util.*;
 public class GraphComponent{
     
     protected Graph graph;
-
-    String style = "ui.class";
     
     GameManager gm;
     
@@ -92,21 +90,17 @@ public class GraphComponent{
             }
             
             if(relevantRoom != null){
-                if(newRoom.getOutgoingDoors().contains(relevantRoom) && newRoom.getIncomingDoors().contains(relevantRoom)){
-                    e.removeAttribute(style);
-                    e.setAttribute(style, "two_way");
+                if(newRoom.movePossibilities().contains(relevantRoom) && newRoom.getIncomingDoors().contains(relevantRoom)){
+                    e.setAttribute("ui.class", "two_way");
                 }
                 else if(newRoom.getIncomingDoors().contains(relevantRoom)){
-                    e.removeAttribute(style);
-                    e.setAttribute(style, "coming");
+                    e.setAttribute("ui.class", "coming");
                 }
-                else if(newRoom.getOutgoingDoors().contains(relevantRoom)){
-                    e.removeAttribute(style);
-                    e.setAttribute(style, "going");
+                else if(newRoom.movePossibilities().contains(relevantRoom)){
+                    e.setAttribute("ui.class", "going");
                 }
             } else if (relevantRoom == null) {
-                e.removeAttribute(style);
-                e.setAttribute(style, "default");
+                e.setAttribute("ui.class", "default");
             }
         }
     }
@@ -123,7 +117,6 @@ public class GraphComponent{
         }
         cr.getOutgoingDoors().forEach(r -> addEdge(cr, r));
         cr.getIncomingDoors().forEach(r -> addEdge(r, cr));
-
     }
     
     public void RoomSplit(Room newRoom){
@@ -153,19 +146,19 @@ public class GraphComponent{
         //gázos lett
         if(room.getGas()){
             if(hasStudent){
-                n.setAttribute(style, "student_gas");
+                n.setAttribute("ui.class","student_gas");
             }
             else{
-                n.setAttribute(style, "gas");
+                n.setAttribute("ui.class", "gas");
             }
         }
         //gáztalan lett
         else{
             if(hasStudent){
-                n.setAttribute(style, "student");
+                n.setAttribute("ui.class", "student");
             }
             else{
-                n.setAttribute(style, "default");
+                n.setAttribute("ui.class", "default");
             }
         }
 
@@ -174,12 +167,10 @@ public class GraphComponent{
     public void StudentDied(Room r){
         Node n = graph.getNode(r.getName());
         if(r.getGas()){
-            n.removeAttribute(style);
-            n.setAttribute(style, "node.gas");
+            n.setAttribute("ui.class", "gas");
         }
         else{
-            n.removeAttribute(style);
-            n.setAttribute(style, "node.default");
+            n.setAttribute("ui.class", "default");
         }
 
     }
@@ -189,10 +180,10 @@ public class GraphComponent{
         n.setAttribute("ui.label", r.getName());
         n.setAttribute("room", r);
         if(r.getGas()){
-            n.setAttribute(style, "gas");
+            n.setAttribute("ui.class", "gas");
         }
         else{
-            n.setAttribute(style, "default");
+            n.setAttribute("ui.class", "default");
         }
 
         
@@ -200,9 +191,7 @@ public class GraphComponent{
     
     public void removeNode(Room r){
         Node n = graph.getNode(r.getName());
-        graph.removeNode(n.getId());        
-
-        
+        graph.removeNode(n.getId());
     }
     
     public void addEdge(Room r1, Room r2){
@@ -214,19 +203,17 @@ public class GraphComponent{
             }
         }
         Edge e = graph.addEdge(r1.getName() + r2.getName(), n1, n2);
-        e.setAttribute(style, "default");
+        e.setAttribute("ui.class", "default");
         e.setAttribute("layout.weight", 1.1);
     }
     
     public void addStudent(Student s){
         Node n = graph.getNode(s.getCurrentRoom().getName());
         if(s.getCurrentRoom().getGas()){
-            n.removeAttribute(style);
-            n.setAttribute(style, "student_gas");
+            n.setAttribute("ui.class", "student_gas");
         }
         else{
-            n.removeAttribute(style);
-            n.setAttribute(style, "student");
+            n.setAttribute("ui.class", "student");
         }
     }
     
@@ -234,20 +221,16 @@ public class GraphComponent{
         Node oldN = graph.getNode(oldR.getName());
         Node newN = graph.getNode(newR.getName());
         if(oldR.getGas()){
-            oldN.removeAttribute(style);
-            oldN.setAttribute(style, "gas");
+            oldN.setAttribute("ui.class", "gas");
         }
         else{
-            oldN.removeAttribute(style);
-            oldN.setAttribute(style, "default");
+            oldN.setAttribute("ui.class", "default");
         }
         if(newR.getGas()){
-            newN.removeAttribute(style);
-            newN.setAttribute(style, "student_gas");
+            newN.setAttribute("ui.class", "student_gas");
         }
         else{
-            newN.removeAttribute(style);
-            newN.setAttribute(style, "student");
+            newN.setAttribute("ui.class", "student");
         }
     }
 

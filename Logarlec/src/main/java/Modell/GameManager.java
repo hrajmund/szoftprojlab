@@ -150,7 +150,6 @@ public class GameManager {
                         if (guiManager != null){
                             guiManager.getGraphComponent().addEdge(r1, r2);
                         }
-                        
                         break;
                     case "gas":
                         String roomNameg = parts[1];

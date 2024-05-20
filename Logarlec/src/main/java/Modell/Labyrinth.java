@@ -250,15 +250,6 @@ public class Labyrinth implements IRound {
 
     public void Randomizer(){
         Random rand= new Random();
-        if(!cleaner.isEmpty()){
-            for(Person c: cleaner){
-                int percent=rand.nextInt(2);
-                if(percent==0){
-                    int roomNumber=rand.nextInt(c.getCurrentRoom().movePossibilities().size());
-                    c.move(c.getCurrentRoom().movePossibilities().get(roomNumber));
-                }
-            }
-        }
         //same for teacher
         if(!teachers.isEmpty()){
             for(Person t: teachers){
@@ -281,6 +272,15 @@ public class Labyrinth implements IRound {
                 if(percent<4){
                     int roomNumber=rand.nextInt(t.getCurrentRoom().movePossibilities().size());
                     t.move(t.getCurrentRoom().movePossibilities().get(roomNumber));
+                }
+            }
+        }
+        if(!cleaner.isEmpty()){
+            for(Person c: cleaner){
+                int percent=rand.nextInt(2);
+                if(percent==0){
+                    int roomNumber=rand.nextInt(c.getCurrentRoom().movePossibilities().size());
+                    c.move(c.getCurrentRoom().movePossibilities().get(roomNumber));
                 }
             }
         }

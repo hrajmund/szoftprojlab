@@ -2,6 +2,7 @@ package Modell;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Elátkozott szoba
@@ -12,6 +13,8 @@ public class CursedRoom extends Room implements IRound {
      * Éppen elátkozva lévő bejövő ajtók
      */
     private List<Room> cursedIncomingDoors= new ArrayList<Room>();
+    
+    Boolean cursedBool = false;
 
     /**
      * Éppen elátkozva lévő kimenő ajtók
@@ -30,13 +33,32 @@ public class CursedRoom extends Room implements IRound {
      * Ennek a függvénynek a határásra változnak meg az elátkozott ajtók
      */
     public void tick(){
-        if(labyrinth.random){
-            cursed();
-            if(labyrinth.getGameManager().getGamePanel() != null){
-                labyrinth.getGameManager().getGamePanel().getGraphComponent().CurseHappened(this);
+        if(labyrinth.random) {
+            Random randomNum = new Random();
+            if (randomNum.nextInt(100) < 50 && Boolean.FALSE.equals(cursedBool)) {
+                cursed();
+                if (labyrinth.getGameManager().getGamePanel() != null)
+                {
+                    labyrinth.getGameManager().getGamePanel().getGraphComponent().CurseHappened(this);
+                }
+            } else if (Boolean.TRUE.equals(cursedBool)) {
+                cursedBool = false;
+
+                outgoingDoors.addAll(cursedOutgoingDoors);
+                cursedOutgoingDoors.clear();
+
+                incomingDoors.addAll(cursedIncomingDoors);
+                cursedIncomingDoors.clear();
+
+                if (labyrinth.getGameManager().getGamePanel() != null)
+                {
+                    labyrinth.getGameManager().getGamePanel().getGraphComponent().CurseHappened(this);
+                }
             }
         }
     }
+        
+    
 
 
     /**
@@ -63,21 +85,21 @@ public class CursedRoom extends Room implements IRound {
         //    removeOutgoingDoor(outgoingDoors.get(rand4));
         //}
         //INNEN
-        if(outgoingDoors.isEmpty()){
-            outgoingDoors.addAll(cursedOutgoingDoors);
-            cursedIncomingDoors.clear();
-
-            incomingDoors.addAll(cursedIncomingDoors);
-            cursedIncomingDoors.clear();
+        cursedBool = true;
+        Random randomNum = new Random();
+        int rand1 = randomNum.nextInt(incomingDoors.size());
+        for (int i = 0; i < rand1; i++) {
+            int rand2 = randomNum.nextInt(incomingDoors.size());
+            cursedIncomingDoors.add(incomingDoors.get(rand2));
+            removeIncomingDoor(incomingDoors.get(rand2));
         }
-        else{
-            cursedOutgoingDoors.addAll(outgoingDoors);
-            outgoingDoors.clear();
-
-            cursedIncomingDoors.addAll(incomingDoors);
-            incomingDoors.clear();
+        int rand3 = randomNum.nextInt(outgoingDoors.size());
+        for (int i = 0; i < rand3; i++) {
+            int rand4 = randomNum.nextInt(outgoingDoors.size());
+            cursedOutgoingDoors.add(outgoingDoors.get(rand4));
+            removeOutgoingDoor(outgoingDoors.get(rand4));
         }
-        }
+    }
 
     @Override
     public boolean isEnterable(Room r){

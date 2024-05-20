@@ -75,7 +75,7 @@ public class TVSzDenever extends BaseItem{
     
     @Override
     public Boolean getActive(){
-        if(holder==null){
+        if(holder==null || room != null){
             return false;
         }
         return active;

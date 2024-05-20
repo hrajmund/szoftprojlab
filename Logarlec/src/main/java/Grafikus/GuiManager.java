@@ -88,9 +88,9 @@ public class GuiManager extends JFrame{
     private void graphReDraw() {
         //graph.removeAttribute("ui.stylesheet");
         //graph.setAttribute("ui.stylesheet", CssStyle);
-        GraphPanel.removeAll();
+        //GraphPanel.removeAll();
         
-        GraphPanel.add(graphComponent.getViewPanel(), BorderLayout.CENTER);
+        //GraphPanel.add(graphComponent.getViewPanel(), BorderLayout.CENTER);
         //System.gc();
     }
     
@@ -199,7 +199,7 @@ public class GuiManager extends JFrame{
             JButton roomItemButton = new JButton(room.getItems().get(i).getName());
             roomItemButton.addActionListener(new roomItemButtonListener(i));
             RoomItemsPanel.add(roomItemButton);
-            if(room != currentStudent.getCurrentRoom() || Boolean.TRUE.equals(!room.getSticky())){
+            if(room != currentStudent.getCurrentRoom() || Boolean.TRUE.equals(room.getSticky())){
                 roomItemButton.setEnabled(false);
             }
         }
@@ -371,11 +371,11 @@ public class GuiManager extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if (pickedInventoryItemIndex > -1) {
                 gameManager.putDownItem(currentStudent, pickedInventoryItemIndex);
-                reloadInventory();
-                reloadRoomItems();
                 pickedInventoryItemIndex = -1;
                 PutDownButton.setEnabled(false);
                 UseButton.setEnabled(false);
+                reloadInventory();
+                reloadRoomItems();
             }
         }
     }
