@@ -345,9 +345,9 @@ public void merge(Room r) {
     labyrinth.getRooms().remove(this);
 
     if (labyrinth.getGameManager().getGamePanel() != null) {
-        labyrinth.getGameManager().getGamePanel().removeNode(r);
-        labyrinth.getGameManager().getGamePanel().removeNode(this);
-        labyrinth.getGameManager().getGamePanel().RoomMerged(newRoom);
+        labyrinth.getGameManager().getGamePanel().getGraphComponent().removeNode(r);
+        labyrinth.getGameManager().getGamePanel().getGraphComponent().removeNode(this);
+        labyrinth.getGameManager().getGamePanel().getGraphComponent().RoomMerged(newRoom);
     }
     
 }
@@ -389,7 +389,7 @@ public void merge(Room r) {
         newroom.addOutgoingDoor(this);
         
         if(labyrinth.getGameManager().getGamePanel() != null){
-            labyrinth.getGameManager().getGamePanel().RoomSplit(newroom);
+            labyrinth.getGameManager().getGamePanel().getGraphComponent().RoomSplit(newroom);
         }
     }
 

@@ -181,7 +181,7 @@ public class Labyrinth implements IRound {
         rooms.add(r);                       
         incrementRoomNumber++;
         if(getGameManager().getGamePanel() != null){
-            getGameManager().getGamePanel().addNode(r);
+            getGameManager().getGamePanel().getGraphComponent().addNode(r);
         }
     }
     

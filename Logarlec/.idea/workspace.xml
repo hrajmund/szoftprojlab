@@ -4,19 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="grap.getView() added">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="did some ez az xd">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2ac8f63041aad578f57fa8efaa5cb3e8c1b383ea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2ac8f63041aad578f57fa8efaa5cb3e8c1b383ea" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab2b789d5f2fb6d29e590a03ec20b85afc1283e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/951fe9d3196f9830134bdc1f72057a141fd6cd2a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a861858e34d4d260d4990bdfa52cee18fa35f24f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acf0b198bbf701c9538f32f35c93fed9a6c58fb1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acf0b198bbf701c9538f32f35c93fed9a6c58fb1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b615d27849f70eda92dcfe00d19962655a00ab5b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c306a50636c90a719739846456b9ea1c9818d482" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efe895ae4aba253572516b1e25d05a7e7e14fcd2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/graphPróba_depricated.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/graphPróba_depricated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/CursedRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/CursedRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Labyrinth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Takarito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Grafikus/graphStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Grafikus/graphStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/icons/game_over.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/icons/game_over.png" afterDir="false" />
     </list>
@@ -28,7 +38,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="67812" />
+    <option name="totalTimeSeconds" value="70108" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,6 +66,8 @@
     <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-core/2.0/gs-core-2.0-sources.jar!/org/graphstream/ui/view/Viewer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/graphstream/gs-ui-swing/2.0/gs-ui-swing-2.0.jar!/org/graphstream/ui/swing/SwingGraphRenderer.class" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -75,6 +87,7 @@
     "Application.GraphSwing.executor": "Run",
     "Application.MenuFrame.executor": "Run",
     "Application.Szkeleton.executor": "Run",
+    "Application.graphPróba_depricated.executor": "Run",
     "Application.proba.executor": "Run",
     "JUnit.FileComparatorTest.executor": "Run",
     "JUnit.FileComparatorTest.testCompareFiles.[3] tests\\test_20\\assert.txt, tests\\test_20\\out.txt.executor": "Run",
@@ -188,7 +201,8 @@
       <workItem from="1715431937264" duration="15001000" />
       <workItem from="1716114600237" duration="1034000" />
       <workItem from="1716150871798" duration="3390000" />
-      <workItem from="1716189527614" duration="5032000" />
+      <workItem from="1716189527614" duration="5357000" />
+      <workItem from="1716201089777" duration="2203000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
@@ -286,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715358210982</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="did some ez az xd">
+      <option name="closed" value="true" />
+      <created>1716194913521</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716194913521</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +340,8 @@
     <MESSAGE value="GraphComponent partially done" />
     <MESSAGE value="GraphComponent maybe done?" />
     <MESSAGE value="grap.getView() added" />
-    <option name="LAST_COMMIT_MESSAGE" value="grap.getView() added" />
+    <MESSAGE value="did some ez az xd" />
+    <option name="LAST_COMMIT_MESSAGE" value="did some ez az xd" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

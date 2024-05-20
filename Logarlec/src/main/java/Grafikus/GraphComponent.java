@@ -7,11 +7,13 @@ import org.graphstream.graph.Node;
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.ui.graphicGraph.GraphicGraph;
+import org.graphstream.ui.swing.SwingGraphRenderer;
 import org.graphstream.ui.swing_viewer.DefaultView;
 import org.graphstream.ui.swing_viewer.SwingViewer;
 import org.graphstream.ui.swing_viewer.ViewPanel;
 import org.graphstream.ui.view.Viewer;
 
+import java.awt.*;
 import java.awt.font.GraphicAttribute;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -54,18 +56,18 @@ public class GraphComponent{
         this.gm = gm;
     }
 
-    public ViewPanel getViewPanel() {
-        
-        
+    public Component getViewPanel() {
+
+
         v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
+        v.removeView("view1");
+        v.addView("view1", new SwingGraphRenderer(), false);
         v.enableAutoLayout();
-        view = (DefaultView) v.addDefaultView(false);
-        
         
         graph.setAttribute("ui.antialias");
         //graph.setAttribute("ui.quality");
         
-        return view;
+        return (Component) v.getView("view1");
     }
     
     

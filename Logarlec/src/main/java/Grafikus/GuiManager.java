@@ -74,9 +74,9 @@ public class GuiManager extends JFrame{
     
     protected GraphComponent graphComponent;
     
-    Graph graph;
-
-     Viewer v;
+    public GraphComponent getGraphComponent() {
+        return graphComponent;
+    }
 
     GameManager gameManager;
 
@@ -89,10 +89,8 @@ public class GuiManager extends JFrame{
         //graph.removeAttribute("ui.stylesheet");
         //graph.setAttribute("ui.stylesheet", CssStyle);
         GraphPanel.removeAll();
-        v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_ANOTHER_THREAD);
-        v.addDefaultView(false);
-        v.enableAutoLayout();
-        GraphPanel.add((Component) v.getDefaultView(), BorderLayout.CENTER);
+        
+        GraphPanel.add(graphComponent.getViewPanel(), BorderLayout.CENTER);
         //System.gc();
     }
     
@@ -127,31 +125,16 @@ public class GuiManager extends JFrame{
         RoundPanel.setBorder(border);
         
         
-
-        graph = new SingleGraph("GameGraph");
-        StringBuilder css = new StringBuilder();
-        Scanner sc = new Scanner(new File("src/main/java/Grafikus/graphStyle.css"));
-        while(sc.hasNextLine()) {
-            css.append(sc.nextLine());
-        }
-        CssStyle = css.toString();
-        sc.close();
-        
-        graph.setAttribute("ui.stylesheet", CssStyle);
-        graph.setAttribute("layout.weight", 3);
+        graphComponent = new GraphComponent();
         
         gameManager = new GameManager(this, playerNames);
         
         GraphPanel.setLayout(new BorderLayout());
-
+        graphComponent.setGameManager(gameManager);
+        
         //System.setProperty("org.graphstream.ui", "swing");
         
-        v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_ANOTHER_THREAD);
-        //v = graph.display();
-        
-        //toViewer = v.newViewerPipe();
-        v.enableAutoLayout();
-        v.addDefaultView(false);
+        GraphPanel.add(graphComponent.getViewPanel(), BorderLayout.CENTER);
         //v.addView("view1", new SwingGraphRenderer());
         //oViewer.addAttributeSink(graph);
         //toViewer.addViewerListener(this);
@@ -168,7 +151,7 @@ public class GuiManager extends JFrame{
         //viewPanel.setMouseManager(new GraphMouseListener());
         //viewPanel = (DefaultView) v.getDefaultView();
         //graph.display();
-        GraphPanel.add((Component) v.getDefaultView(), BorderLayout.CENTER);
+        
         BasePanel.setMinimumSize(new Dimension(800, 600));
         GraphPanel.setMinimumSize(new Dimension(800, 400));
 
@@ -234,7 +217,6 @@ public class GuiManager extends JFrame{
             RoomButtonPanel.add(roomButton);
         }
         
-        
         RoomButtonPanel.repaint();
     }
     
@@ -248,7 +230,7 @@ public class GuiManager extends JFrame{
         
         reloadNeighboursButton();
         
-        CurrStudentChanged(student);
+        graphComponent.CurrStudentChanged(student);
     }
     
 
@@ -391,7 +373,7 @@ public class GuiManager extends JFrame{
         public void actionPerformed(ActionEvent e) {
             if (pickedRoom != null && pickedRoom != currentStudent.getCurrentRoom()){
                 
-               studentMoved(currentStudent.getCurrentRoom(), pickedRoom);
+               graphComponent.studentMoved(currentStudent.getCurrentRoom(), pickedRoom);
                 
                 UseButton.setEnabled(false);
                 PutDownButton.setEnabled(false);
@@ -414,43 +396,7 @@ public class GuiManager extends JFrame{
             
             gameManager.next();
 
-            ArrayList<Room> allNewEdges = new ArrayList<>(currentStudent.getCurrentRoom().getOutgoingDoors());
-            allNewEdges.addAll(currentStudent.getCurrentRoom().getIncomingDoors());
-
-            Room newRoom = currentStudent.getCurrentRoom();
-
-            for(int i = 0; i < graph.getEdgeCount(); i++) {
-                Edge E = graph.getEdge(i);
-                Room relevantRoom = null;
-                if(Objects.equals(((Room) E.getNode1().getAttribute("room")).getName(), newRoom.getName())){
-                    relevantRoom = (Room)E.getNode0().getAttribute("room");
-                }
-                else if(Objects.equals(((Room) E.getNode0().getAttribute("room")).getName(), newRoom.getName())){
-                    relevantRoom = (Room)E.getNode1().getAttribute("room");
-                }
-
-                if(relevantRoom != null){
-                    if(newRoom.getOutgoingDoors().contains(relevantRoom) && newRoom.getIncomingDoors().contains(relevantRoom)){
-                        E.removeAttribute(style);
-                        //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"two_way");
-                        E.setAttribute(style, "two_way");
-                    }
-                    else if(newRoom.getIncomingDoors().contains(relevantRoom)){
-                        E.removeAttribute(style);
-                        //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"coming");
-                        E.setAttribute(style, "coming");
-                    }
-                    else if(newRoom.getOutgoingDoors().contains(relevantRoom)){
-                        E.removeAttribute(style);
-                        //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"going");
-                        E.setAttribute(style, "going");
-                    }
-                } else if (relevantRoom == null) {
-                    E.removeAttribute(style);
-                    //graph.edgeAttributeChanged(graph.getId(),0,E.getId(),style,E.getAttribute(style),"basic");
-                    E.setAttribute(style, "basic");
-                }
-            }
+            graphComponent.CurrStudentChanged(currentStudent);
             graphReDraw();
         }
     }
@@ -489,7 +435,7 @@ public class GuiManager extends JFrame{
     
     
     
-
+/*
     public void CurrStudentChanged(Student NEW){
         ArrayList<Room> allNewEdges = new ArrayList<>(NEW.getCurrentRoom().getOutgoingDoors());
         allNewEdges.addAll(NEW.getCurrentRoom().getIncomingDoors());
@@ -669,4 +615,5 @@ public class GuiManager extends JFrame{
         }
         graphReDraw();
     }
+*/
 }

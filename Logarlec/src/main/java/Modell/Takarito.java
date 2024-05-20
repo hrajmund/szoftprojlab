@@ -33,6 +33,9 @@ public class Takarito extends Person{
         for (Person p : currentRoom.getPeople()) //"kitessekel"
         {
             if((!p.stunned) && p != this){
+                if(labyrinth.getStudents().contains(p)){
+                    labyrinth.getGameManager().getGamePanel().getGraphComponent().studentMoved(currentRoom, currentRoom.outgoingDoors.get(0));
+                }
                 getCurrentRoom().outgoingDoors.get(0).addPerson(p);
                 p.setCurrentRoom(getCurrentRoom().outgoingDoors.get(0));
                 peoplemove.add(p);

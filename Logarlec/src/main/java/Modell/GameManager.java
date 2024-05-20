@@ -148,7 +148,7 @@ public class GameManager {
                         r2.addIncomingDoor(r1);
                         
                         if (guiManager != null){
-                            guiManager.addEdge(r1, r2);
+                            guiManager.getGraphComponent().addEdge(r1, r2);
                         }
                         
                         break;
@@ -161,7 +161,7 @@ public class GameManager {
                                 siker = true;
                                 
                                 if(guiManager != null){
-                                    guiManager.RoomGasUpdate(v);
+                                    guiManager.getGraphComponent().RoomGasUpdate(v);
                                 }
                                 
                             }
@@ -375,7 +375,7 @@ public class GameManager {
         
         if(guiManager != null){
             for (Person p : l.getStudents()) {
-                guiManager.addStudent((Student) p);
+                guiManager.getGraphComponent().addStudent((Student) p);
             }
         }
     }
@@ -593,7 +593,7 @@ public class GameManager {
             player.setLabyrinth(labyrinth);
             labyrinth.getRooms().get(0).addPerson(player);
             player.setCurrentRoom(labyrinth.getRooms().get(0));
-            guiManager.addStudent(player);
+            guiManager.getGraphComponent().addStudent(player);
         }
         
         currentPlayerIndex = 0;
