@@ -199,7 +199,7 @@ public class GuiManager extends JFrame{
             JButton roomItemButton = new JButton(room.getItems().get(i).getName());
             roomItemButton.addActionListener(new roomItemButtonListener(i));
             RoomItemsPanel.add(roomItemButton);
-            if(room != currentStudent.getCurrentRoom()){
+            if(room != currentStudent.getCurrentRoom() || Boolean.TRUE.equals(!room.getSticky())){
                 roomItemButton.setEnabled(false);
             }
         }

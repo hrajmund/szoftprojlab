@@ -94,14 +94,14 @@ public class Labyrinth implements IRound {
         
         if(random){
             Random rand = new Random();
-            if(rand.nextInt(10) < 3){
+            if(rand.nextInt(10) < 2){
                 int roomNumber = rand.nextInt(rooms.size());
                 while(!rooms.get(roomNumber).people.isEmpty()){
                     roomNumber = (roomNumber+1) % rooms.size();
                 }
                 rooms.get(roomNumber).split();
             }
-            if(rand.nextInt(10)<3){
+            if(rand.nextInt(10)<2){
                 boolean merged = false;
                 int randomINT = rand.nextInt(rooms.size());
                 for(int i = 0; i < rooms.size(); i++){
