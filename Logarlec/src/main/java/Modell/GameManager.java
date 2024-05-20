@@ -599,6 +599,7 @@ public class GameManager {
         currentPlayerIndex = 0;
         
         guiManager.setCurrentStudent((Student) labyrinth.getStudents().get(currentPlayerIndex));
+        guiManager.updateRoundCount(roundCounter);
     }
     
     public static GuiManager getGuiManager(){
