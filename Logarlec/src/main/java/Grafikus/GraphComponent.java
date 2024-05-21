@@ -61,6 +61,7 @@ public class GraphComponent{
         v.addView("view1", new SwingGraphRenderer(), false);
         v.enableAutoLayout();
         
+        v.getView("view1").enableMouseOptions();
         graph.setAttribute("ui.antialias");
         //graph.setAttribute("ui.quality");
         

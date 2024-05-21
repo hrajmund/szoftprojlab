@@ -44,7 +44,7 @@ public class Camembert extends BaseItem{
     @Override
     public Boolean canBeused()
     {
-        return false;
+        return true;
     }
 
     @Override

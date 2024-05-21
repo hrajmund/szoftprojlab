@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Logarlec:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="khm... Győztünk, de még a holdról is látszik!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/MenuFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/Camembert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/Camembert.java" afterDir="false" />
     </list>
     <list id="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" name="Changes by rayy04" comment="Changes by rayy04" />
     <list id="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" name="Changes by svajc" comment="" />
@@ -17,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="92426" />
+    <option name="totalTimeSeconds" value="94819" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,44 +67,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CustomNodeGraphExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GraphSwing.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MenuFrame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Szkeleton.executor&quot;: &quot;Run&quot;,
-    &quot;Application.graphPróba_depricated.executor&quot;: &quot;Run&quot;,
-    &quot;Application.proba.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FileComparatorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FileComparatorTest.testCompareFiles.[3] tests\\test_20\\assert.txt, tests\\test_20\\out.txt.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.[engine:junit-jupiter]/[class:FileComparatorTest]/[test-template:testCompareFiles(java.lang.String, java.lang.String)]/[test-template-invocation:#3].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;false&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;245&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;521&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projlab/szoftprojlab/grafikus1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CustomNodeGraphExample.executor": "Run",
+    "Application.GraphSwing.executor": "Run",
+    "Application.MenuFrame.executor": "Run",
+    "Application.Szkeleton.executor": "Run",
+    "Application.graphPróba_depricated.executor": "Run",
+    "Application.proba.executor": "Run",
+    "JUnit.FileComparatorTest.executor": "Run",
+    "JUnit.FileComparatorTest.testCompareFiles.[3] tests\\test_20\\assert.txt, tests\\test_20\\out.txt.executor": "Run",
+    "JUnit.[engine:junit-jupiter]/[class:FileComparatorTest]/[test-template:testCompareFiles(java.lang.String, java.lang.String)]/[test-template-invocation:#3].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "245",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "521",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/projlab/szoftprojlab/grafikus1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31350893",
+    "settings.editor.selected.configurable": "project.propGUI",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projlab\szoftprojlab\Logarlec\src\main\java\Grafikus" />
@@ -187,6 +194,7 @@
       <workItem from="1716222030872" duration="9851000" />
       <workItem from="1716232023384" duration="1090000" />
       <workItem from="1716235900620" duration="970000" />
+      <workItem from="1716282426241" duration="2614000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
