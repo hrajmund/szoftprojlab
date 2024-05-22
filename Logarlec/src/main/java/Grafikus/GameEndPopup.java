@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.*;
 import java.net.URL;
 
+/**
+ * A popup window that displays the result of the game (Victory or Game Over).
+ */
 public class GameEndPopup extends JFrame implements ActionListener {
 
     private MenuFrame menuFrame; // Reference to the GameMenu
@@ -12,7 +15,11 @@ public class GameEndPopup extends JFrame implements ActionListener {
     private JButton backButton; // "Back" button to return to the GameMenu
     private boolean isGameOver; // Flag indicating game over or victory
 
-    // Constructor
+    /**
+     * Constructor for GameEndPopup.
+     * @param menuFrame Reference to the GameMenu
+     * @param isGameOver Flag indicating game over or victory
+     */
     public GameEndPopup(MenuFrame menuFrame, boolean isGameOver) {
         this.menuFrame = menuFrame;
         this.isGameOver = isGameOver;
@@ -46,6 +53,10 @@ public class GameEndPopup extends JFrame implements ActionListener {
         }
     }
 
+    /**
+     * Loads an image from the resources folder and displays it as the background of the window.
+     * @param imageName Name of the image file in the resources folder
+     */
     private void loadImage(String imageName) {
         try {
             URL url = getClass().getResource("/" + imageName);
@@ -59,6 +70,10 @@ public class GameEndPopup extends JFrame implements ActionListener {
         }
     }
 
+    /**
+     * Handles button click events.
+     * @param e ActionEvent object representing the event
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == backButton) {

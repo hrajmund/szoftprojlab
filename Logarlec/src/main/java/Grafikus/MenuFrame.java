@@ -8,6 +8,9 @@ import java.awt.*;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
+/**
+ * A játékmenüt megvalósító osztály
+ */
 public class MenuFrame extends JFrame{
 
     MenuFrame menuFrame = this;
@@ -25,6 +28,9 @@ public class MenuFrame extends JFrame{
     // Data
     private ArrayList<String> players;
 
+    /**
+     * Konstruktor
+     */
     public MenuFrame() {
         // Frame setup
         setTitle("Logarléc");
@@ -84,6 +90,9 @@ public class MenuFrame extends JFrame{
         this.getContentPane().setBackground(Color.LIGHT_GRAY);
     }
 
+    /**
+     * Frissíti a játékosok listáját
+     */
     private void updatePlayerList() {
         playerListModel.clear();
         for (int i = 0; i < players.size(); i++) {
@@ -91,7 +100,9 @@ public class MenuFrame extends JFrame{
         }
     }
 
-    
+    /**
+     * A játék indítását kezelő osztály
+     */
     class GameStartListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             System.out.println("Starting game with the following players:");
@@ -112,6 +123,9 @@ public class MenuFrame extends JFrame{
         }
     }
 
+    /**
+     * A játékos hozzáadását kezelő osztály
+     */
     class AddNameListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             if (playerNameField.getText().isEmpty()) {
@@ -127,6 +141,9 @@ public class MenuFrame extends JFrame{
     }
 
 
+    /**
+     * Main függvény
+     */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MenuFrame().setVisible(true));
     }

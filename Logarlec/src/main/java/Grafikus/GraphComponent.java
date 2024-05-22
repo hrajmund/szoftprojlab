@@ -19,6 +19,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
+/**
+ * A játék grafikus megjelenítéséért felelős osztály.
+ */
 public class GraphComponent{
     
     protected Graph graph;
@@ -35,6 +38,10 @@ public class GraphComponent{
     
     StringBuilder css = new StringBuilder();
     
+    /**
+     * Konstruktor
+     * @throws FileNotFoundException
+     */
     public GraphComponent() throws FileNotFoundException {
         graph = new SingleGraph("GameGraph");
         
@@ -50,10 +57,18 @@ public class GraphComponent{
         //graph.setAttribute("layout.quality", 4);
     }
     
+    /**
+     * A játékmenedzser beállítása
+     * @param gm A játékmenedzser
+     */
     public void setGameManager(GameManager gm){
         this.gm = gm;
     }
 
+    /**
+     * A grafikus megjelenítés metódusa
+     * @return A grafikus megjelenítés panelje
+     */
     public Component getViewPanel() {
         
         v = new SwingViewer(graph, Viewer.ThreadingModel.GRAPH_IN_GUI_THREAD);
@@ -69,11 +84,16 @@ public class GraphComponent{
     }
     
     
-    
+    /**
+     * A visszaadja a gráfot
+     */
     public Graph getBaseGraph() {
         return graph;
     }
     
+    /**
+     * A gráf frissítése student changed esemény hatására
+     */
     public void CurrStudentChanged(Student NEW){
         ArrayList<Room> allNewEdges = new ArrayList<>(NEW.getCurrentRoom().getOutgoingDoors());
         allNewEdges.addAll(NEW.getCurrentRoom().getIncomingDoors());
@@ -106,6 +126,9 @@ public class GraphComponent{
         }
     }
     
+    /**
+     * A gráf frissítése curse happened esemény hatására
+     */
     public void CurseHappened(CursedRoom cr){
         Node n = graph.getNode(cr.getName());
         ArrayList<Edge> edges = new ArrayList<>();
@@ -119,7 +142,9 @@ public class GraphComponent{
         cr.getOutgoingDoors().forEach(r -> addEdge(cr, r));
         cr.getIncomingDoors().forEach(r -> addEdge(r, cr));
     }
-    
+    /*
+    * A gráf frissítése a RoomSplit esemény hatására
+     */
     public void RoomSplit(Room newRoom){
         
         newRoom.getOutgoingDoors().forEach(r -> addEdge(newRoom, r));
@@ -127,13 +152,18 @@ public class GraphComponent{
 
     }
     
-    
+    /*
+    * A gráf frissítése a RoomMerged esemény hatására
+     */
     public void RoomMerged(Room stayingRoom){
         
         stayingRoom.getOutgoingDoors().forEach(r -> addEdge(stayingRoom, r));
         stayingRoom.getIncomingDoors().forEach(r -> addEdge(r, stayingRoom));
     }
     
+    /**
+     * A gráf frissítése a RoomAdded esemény hatására
+     */
     public void addNode(Room r){
         Node n = graph.addNode(r.getName());
         n.setAttribute("ui.label", r.getName());
@@ -147,12 +177,18 @@ public class GraphComponent{
 
         
     }
+    /**
+     * A gráf frissítése a RoomRemoved esemény hatására
+     */
     
     public void removeNode(Room r){
         Node n = graph.getNode(r.getName());
         graph.removeNode(n.getId());
     }
     
+    /**
+     * A gráf frissítése a EdgeAdded esemény hatására
+     */
     public void addEdge(Room r1, Room r2){
         Node n1 = graph.getNode(r1.getName());
         Node n2 = graph.getNode(r2.getName());
@@ -166,6 +202,9 @@ public class GraphComponent{
         e.setAttribute("layout.weight", 1.1);
     }
     
+    /**
+     * A gráf frissítése, az összes node színének beállítása újra
+     */
     public void refreshNodes(){
         for(Node n : graph){
             Room r = (Room) n.getAttribute("room");

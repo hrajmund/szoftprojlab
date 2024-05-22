@@ -13,6 +13,9 @@ import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.List;
 
+/**
+ * A játék grafikus felületét megvalósító osztály
+ */
 public class GuiManager extends JFrame {
 
     private JPanel TopPanel;
@@ -74,9 +77,15 @@ public class GuiManager extends JFrame {
     MenuFrame _takony;
 
 
+    /**
+     * A GUI létrehozása
+     */
     private void createUIComponents() {
     }
 
+    /**
+     * A GUI inicializálása és indítása
+     */
     public GuiManager(List<String> playerNames, MenuFrame takony) throws FileNotFoundException {
         _takony = takony;
         PickUpButton.addActionListener(new pickUpButtonListener());
@@ -126,6 +135,9 @@ public class GuiManager extends JFrame {
         this.setVisible(true);
     }
 
+    /**
+     * Az inventory újratöltése
+     */
     protected void reloadInventory() {
         Student student = currentStudent;
         for (int i = 0; i < 5; i++) {
@@ -141,6 +153,9 @@ public class GuiManager extends JFrame {
         }
     }
 
+    /**
+     * A szobában található tárgyak újratöltése
+     */
     protected void reloadRoomItems() {
         Room room = pickedRoom;
         RoomItemsPanel.setLayout(new FlowLayout());
@@ -160,6 +175,9 @@ public class GuiManager extends JFrame {
         RoomItemsPanel.repaint();
     }
 
+    /**
+     * A szomszédos szobák gombjainak újratöltése
+     */
     protected void reloadNeighboursButton() {
         RoomButtonPanel.setLayout(new FlowLayout());
         RoomButtonPanel.removeAll();
@@ -181,6 +199,9 @@ public class GuiManager extends JFrame {
         RoomButtonPanel.repaint();
     }
 
+    /**
+     * A szobában található emberek újratöltése
+     */
     public void setCurrentStudent(Student student) {
         currentStudent = student;
         PlayerNameLabel.setText(student.getName());
@@ -193,15 +214,23 @@ public class GuiManager extends JFrame {
         graphComponent.CurrStudentChanged(student);
     }
 
-
+    /**
+     * A körök számának frissítése
+     */
     public void DeadPopUp(Person s) {
         JOptionPane.showMessageDialog(null, s.getName() + " meghalt!");
     }
-
+    
+    /**
+     * A körök számának frissítése
+     */
     public void StunnedPopUp(Person s) {
         JOptionPane.showMessageDialog(null, s.getName() + " megbénult!");
     }
 
+    /**
+     * A körök számának frissítése
+     */
     public void GameEndPopUp() {
         this.setVisible(false);
 
@@ -214,11 +243,17 @@ public class GuiManager extends JFrame {
         JOptionPane.showMessageDialog(null, null, "GAME END", JOptionPane.INFORMATION_MESSAGE, icon);
         _takony.setVisible(true);
     }
-
+    
+    /**
+     * A körök számának frissítése
+     */                                                                                                                                         
     public void updateRoundCount(int i) {
         RoundNumberLabel.setText(Integer.toString(i));
-    }
-
+    }                                                                       
+    
+    /**
+     * A kiválasztott szoba beállítása
+     */
     public void setPickedRoom(Room r) {
         pickedRoom = r;
         RoomNameLabel.setText(r.getName());
@@ -245,16 +280,24 @@ public class GuiManager extends JFrame {
         
 
     }
-
-
+    
+    /**
+     * A szobában található tárgyak újratöltése
+     */
     protected class inventoryButtonListener implements ActionListener {
 
         int invButtonIndex;
 
+        /**
+         * A kiválasztott tárgy beállítása a konstruktorban
+         */
         public inventoryButtonListener(int itemIndex) {
             invButtonIndex = itemIndex;
         }
 
+        /**
+         * A kiválasztott tárgy beállítása
+         */
         public void actionPerformed(ActionEvent e) {
             if (currentStudent.getItems().size() > invButtonIndex) {
                 pickedInventoryItemIndex = invButtonIndex;
@@ -275,14 +318,23 @@ public class GuiManager extends JFrame {
         }
     }
 
+    /**
+     * A kiválasztott tárgy beállítása
+     */
     protected class roomItemButtonListener implements ActionListener {
 
         int roomButtonIndex;
 
+        /**
+         * A kiválasztott tárgy beállítása a kosntruktorban
+         */
         public roomItemButtonListener(int itemIndex) {
             roomButtonIndex = itemIndex;
         }
 
+        /**
+         * A kiválasztott tárgy beállítása
+         */
         public void actionPerformed(ActionEvent e) {
             
             JButton pressedbutton = (JButton) e.getSource();
@@ -302,14 +354,23 @@ public class GuiManager extends JFrame {
         }
     }
 
+    /**
+     * A kiválasztott szoba beállítása
+     */
     protected class NeighbourButtonListener implements ActionListener {
 
         Room connectedRoom;
 
+        /**
+         * A hozzá tartozó szoba beállítása konsztruktorban
+         */
         public NeighbourButtonListener(Room room) {
             connectedRoom = room;
         }
 
+        /**
+         * A kiválasztott szoba beállítása
+         */
         @Override
         public void actionPerformed(ActionEvent e) {
             if(connectedRoom != pickedRoom){
@@ -326,10 +387,13 @@ public class GuiManager extends JFrame {
         }
     }
 
-
-    ///GOMBOK ACTION LISTENERJEI///
-
+    /**
+     * A kiválasztott tárgy felvétele
+     */
     protected class pickUpButtonListener implements ActionListener {
+        /**
+         * A kiválasztott tárgy felvétele
+         */
         public void actionPerformed(ActionEvent e) {
             if (pickedRoomItemIndex > -1 && currentStudent.getItems().size() < 5) {
                 gameManager.pickUpItem(currentStudent, pickedRoomItemIndex);
@@ -344,7 +408,13 @@ public class GuiManager extends JFrame {
         }
     }
 
+    /**
+     * A kiválasztott tárgy letétele
+     */
     protected class putDownButtonListener implements ActionListener {
+        /**
+         * A kiválasztott tárgy letétele
+         */
         public void actionPerformed(ActionEvent e) {
             if (pickedInventoryItemIndex > -1) {
                 gameManager.putDownItem(currentStudent, pickedInventoryItemIndex);
@@ -357,7 +427,13 @@ public class GuiManager extends JFrame {
         }
     }
 
+    /**
+     * A kiválasztott tárgy használata
+     */
     protected class useButtonListener implements ActionListener {
+        /**
+         * A kiválasztott tárgy használata
+         */
         public void actionPerformed(ActionEvent e) {
             if (pickedInventoryItemIndex > -1) {
                 gameManager.useItem(currentStudent, pickedInventoryItemIndex);
@@ -373,7 +449,13 @@ public class GuiManager extends JFrame {
         }
     }
 
+    /**
+     * A játékos mozgatása
+     */
     protected class moveButtonListener implements ActionListener {
+        /**
+         * A játékos mozgatása
+         */
         public void actionPerformed(ActionEvent e) {
             if (pickedRoom != null && pickedRoom != currentStudent.getCurrentRoom()) {
 
@@ -389,7 +471,13 @@ public class GuiManager extends JFrame {
         }
     }
 
+    /**
+     * A következő játékosra váltás
+     */
     protected class nextButtonListener implements ActionListener {
+        /**
+         * A következő játékosra váltás
+         */
         public void actionPerformed(ActionEvent e) {
             UseButton.setEnabled(false);
             PutDownButton.setEnabled(false);

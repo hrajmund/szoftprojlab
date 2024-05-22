@@ -89,10 +89,16 @@ public abstract class BaseItem implements IRound{
     public void setConnected(BaseItem t){
     }
     
+    /**
+     *A tárgy felvétére vonatkozó szabályok szerinti vizsgálat
+     */
     public Boolean canBePickedUp(){
         return true;
     }
     
+    /**
+     *A tárgy használatára vonatkozó szabályok szerinti vizsgálat
+     */
     public Boolean canBeused(){return false;}
 
     /**
