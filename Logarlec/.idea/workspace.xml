@@ -11,13 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b340102d-29b7-4799-88c0-7b388a05e747" name="Changes" comment="khm... Győztünk, de még a holdról is látszik!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GameEndPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GameEndPopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GameFrame_Depricated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GraphComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/GuiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/MenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grafikus/MenuFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Grafikus/graphPróba_depricated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modell/BaseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modell/BaseItem.java" afterDir="false" />
     </list>
     <list id="eba0b715-1ef4-4c32-a7b5-34d61b5cab8b" name="Changes by rayy04" comment="Changes by rayy04" />
     <list id="1e7cb347-0d18-4322-b7e6-3f7ebae4e089" name="Changes by svajc" comment="" />
@@ -27,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="95491" />
+    <option name="totalTimeSeconds" value="95550" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -198,7 +191,7 @@
       <workItem from="1716232023384" duration="1090000" />
       <workItem from="1716235900620" duration="970000" />
       <workItem from="1716282426241" duration="2614000" />
-      <workItem from="1716358518835" duration="2123000" />
+      <workItem from="1716358518835" duration="2182000" />
     </task>
     <task id="LOCAL-00001" summary="sracok ez nevetseges volt...">
       <option name="closed" value="true" />
